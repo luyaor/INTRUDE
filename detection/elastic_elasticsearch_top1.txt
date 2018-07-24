@@ -1,0 +1,856 @@
+elastic/elasticsearch    32138     5641 0.9175
+  0.5194   0.0000   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/32138
+https://www.github.com/elastic/elasticsearch/pull/5641
+elastic/elasticsearch    32137    30520 0.3887
+  0.1693   0.0062   0.1449   0.2857   0.2177   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/32137
+https://www.github.com/elastic/elasticsearch/pull/30520
+elastic/elasticsearch    32135    31501 0.9932
+  0.4382   0.0363   0.0000   1.0000   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32135
+https://www.github.com/elastic/elasticsearch/pull/31501
+elastic/elasticsearch    32134    28077 0.1272
+  0.0609   0.0372   0.0638   0.3333   0.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32134
+https://www.github.com/elastic/elasticsearch/pull/28077
+elastic/elasticsearch    32132    31644 0.9197
+  0.4413   0.2659   0.0000   0.0417   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32132
+https://www.github.com/elastic/elasticsearch/pull/31644
+elastic/elasticsearch    32131    12209 0.3648
+  0.5165   0.2313   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/32131
+https://www.github.com/elastic/elasticsearch/pull/12209
+elastic/elasticsearch    32128    21867 0.6720
+  0.2807   0.1348   0.0000   0.0182   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32128
+https://www.github.com/elastic/elasticsearch/pull/21867
+elastic/elasticsearch    32121    31442 0.1461
+  0.3863   0.0333   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/32121
+https://www.github.com/elastic/elasticsearch/pull/31442
+elastic/elasticsearch    32116    31201 0.2510
+  0.3658   0.4000   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/32116
+https://www.github.com/elastic/elasticsearch/pull/31201
+elastic/elasticsearch    32115    31434 0.7046
+  0.3263   0.3040   0.0000   0.1875   0.1900   0.0000   3.0000
+https://www.github.com/elastic/elasticsearch/pull/32115
+https://www.github.com/elastic/elasticsearch/pull/31434
+elastic/elasticsearch    32114    31315 0.9704
+  0.4209   0.1891   0.0000   1.0000   0.2692   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32114
+https://www.github.com/elastic/elasticsearch/pull/31315
+elastic/elasticsearch    32112    25299 0.7097
+  0.4798   0.0000   0.0000   0.5000   0.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32112
+https://www.github.com/elastic/elasticsearch/pull/25299
+elastic/elasticsearch    32111    30973 0.3411
+  0.5691   0.0162   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/32111
+https://www.github.com/elastic/elasticsearch/pull/30973
+elastic/elasticsearch    32109    19033 0.9099
+  0.5974   0.2039   0.0000   0.2500   0.2893   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32109
+https://www.github.com/elastic/elasticsearch/pull/19033
+elastic/elasticsearch    32108    31328 0.2635
+  0.4627   0.1672   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/32108
+https://www.github.com/elastic/elasticsearch/pull/31328
+elastic/elasticsearch    32107    31623 0.6169
+  0.0000   0.4235   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/32107
+https://www.github.com/elastic/elasticsearch/pull/31623
+elastic/elasticsearch    32103    32026 0.9561
+  0.0000   0.0000   0.3296   0.1111   1.0000   0.0000   7.0000
+https://www.github.com/elastic/elasticsearch/pull/32103
+https://www.github.com/elastic/elasticsearch/pull/32026
+elastic/elasticsearch    32101    22577 0.9521
+  0.4905   0.5591   0.0000   0.0833   0.7031  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32101
+https://www.github.com/elastic/elasticsearch/pull/22577
+elastic/elasticsearch    32098    29405 0.9659
+  0.2598   0.0334   0.0000   1.0000   0.7925  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32098
+https://www.github.com/elastic/elasticsearch/pull/29405
+elastic/elasticsearch    32097    10040 0.8859
+  1.0000   0.0938   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/32097
+https://www.github.com/elastic/elasticsearch/pull/10040
+elastic/elasticsearch    32096    30721 0.9625
+  0.6665   0.0373   0.0000   0.0625   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32096
+https://www.github.com/elastic/elasticsearch/pull/30721
+elastic/elasticsearch    32095    31256 0.6534
+  0.7874   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/32095
+https://www.github.com/elastic/elasticsearch/pull/31256
+elastic/elasticsearch    32092    27640 0.1141
+  0.3502   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/32092
+https://www.github.com/elastic/elasticsearch/pull/27640
+elastic/elasticsearch    32085    30518 0.4621
+  0.5483   0.3309   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/32085
+https://www.github.com/elastic/elasticsearch/pull/30518
+elastic/elasticsearch    32076    14858 0.9603
+  0.1096   0.1043   0.0000   1.0000   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32076
+https://www.github.com/elastic/elasticsearch/pull/14858
+elastic/elasticsearch    32070    24493 0.9413
+  0.3947   0.3113   0.1744   0.0476   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32070
+https://www.github.com/elastic/elasticsearch/pull/24493
+elastic/elasticsearch    32068    30721 0.9337
+  0.5529   0.0475   0.0000   0.0714   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32068
+https://www.github.com/elastic/elasticsearch/pull/30721
+elastic/elasticsearch    32059    22272 0.6606
+  0.2017   0.0471   0.1252   0.1111   0.9648   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32059
+https://www.github.com/elastic/elasticsearch/pull/22272
+elastic/elasticsearch    32056    31659 0.9750
+  0.5358   0.1601   0.0252   0.3333   0.9589   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32056
+https://www.github.com/elastic/elasticsearch/pull/31659
+elastic/elasticsearch    32052    30973 0.2641
+  0.5161   0.0026   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/32052
+https://www.github.com/elastic/elasticsearch/pull/30973
+elastic/elasticsearch    32043    21858 0.9753
+  0.5798   0.0610   0.2609   0.1250   0.8803  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32043
+https://www.github.com/elastic/elasticsearch/pull/21858
+elastic/elasticsearch    32042    30522 0.9379
+  0.0000   0.0112   0.1270   0.2222   0.0000   0.0000   6.0000
+https://www.github.com/elastic/elasticsearch/pull/32042
+https://www.github.com/elastic/elasticsearch/pull/30522
+elastic/elasticsearch    32028    23544 0.5000
+  0.1888   0.0391   0.0000   0.0714   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32028
+https://www.github.com/elastic/elasticsearch/pull/23544
+elastic/elasticsearch    32026    32103 0.9561
+  0.0000   0.0000   0.3296   0.1111   1.0000   0.0000   7.0000
+https://www.github.com/elastic/elasticsearch/pull/32026
+https://www.github.com/elastic/elasticsearch/pull/32103
+elastic/elasticsearch    32022    22911 0.9772
+  0.2550   0.0197   0.0000   1.0000   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32022
+https://www.github.com/elastic/elasticsearch/pull/22911
+elastic/elasticsearch    32020    29412 0.8158
+  0.1293   0.0563   0.0213   1.0000   0.3301  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32020
+https://www.github.com/elastic/elasticsearch/pull/29412
+elastic/elasticsearch    32016    29038 0.8794
+  0.3355   0.0527   0.0000   0.6667   0.3692   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/32016
+https://www.github.com/elastic/elasticsearch/pull/29038
+elastic/elasticsearch    32015    29312 0.7659
+  0.1459   0.0601   0.0000   0.6667   0.0000  -1.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/32015
+https://www.github.com/elastic/elasticsearch/pull/29312
+elastic/elasticsearch    32014    26965 0.9473
+  0.0000   0.0000   0.0000   0.0023   0.3575   0.0000   7.0000
+https://www.github.com/elastic/elasticsearch/pull/32014
+https://www.github.com/elastic/elasticsearch/pull/26965
+elastic/elasticsearch    32013    31109 0.5487
+  0.2583   0.0000   0.0000   0.0714   0.9250   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/32013
+https://www.github.com/elastic/elasticsearch/pull/31109
+elastic/elasticsearch    32004    29045 0.9419
+  0.0000   0.1206   0.0238   0.4615   0.7125   0.0000   6.0000
+https://www.github.com/elastic/elasticsearch/pull/32004
+https://www.github.com/elastic/elasticsearch/pull/29045
+elastic/elasticsearch    31993    17367 0.8513
+  0.9172   0.1842   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31993
+https://www.github.com/elastic/elasticsearch/pull/17367
+elastic/elasticsearch    31989    16330 0.8156
+  0.3102   0.1088   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31989
+https://www.github.com/elastic/elasticsearch/pull/16330
+elastic/elasticsearch    31969    28049 0.8688
+  0.1012   0.0734   0.1416   0.2000   0.3906   0.0000   5.0000
+https://www.github.com/elastic/elasticsearch/pull/31969
+https://www.github.com/elastic/elasticsearch/pull/28049
+elastic/elasticsearch    31958    25784 0.7685
+  0.3692   0.1086   0.0363   0.0312   0.8871   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31958
+https://www.github.com/elastic/elasticsearch/pull/25784
+elastic/elasticsearch    31952    28231 0.9537
+  0.5125   0.1796   0.2082   0.1250   0.1429  -1.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/31952
+https://www.github.com/elastic/elasticsearch/pull/28231
+elastic/elasticsearch    31950    25213 0.9430
+  0.8841   0.2074   0.0000   0.6500   0.9533   0.0000  13.0000
+https://www.github.com/elastic/elasticsearch/pull/31950
+https://www.github.com/elastic/elasticsearch/pull/25213
+elastic/elasticsearch    31945    28676 0.9523
+  0.3106   0.0866   0.0213   0.3333   0.1093   0.0000   6.0000
+https://www.github.com/elastic/elasticsearch/pull/31945
+https://www.github.com/elastic/elasticsearch/pull/28676
+elastic/elasticsearch    31943    29209 0.6730
+  0.7536   0.1533   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31943
+https://www.github.com/elastic/elasticsearch/pull/29209
+elastic/elasticsearch    31931    31878 0.9745
+  0.5446   0.1636   0.0133   0.5000   0.7255   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/31931
+https://www.github.com/elastic/elasticsearch/pull/31878
+elastic/elasticsearch    31918    29296 0.9640
+  0.4433   0.1969   0.1721   0.1667   0.6398  -1.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/31918
+https://www.github.com/elastic/elasticsearch/pull/29296
+elastic/elasticsearch    31917    29252 0.7737
+  0.0000   0.0615   0.3476   0.6667   0.4737   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/31917
+https://www.github.com/elastic/elasticsearch/pull/29252
+elastic/elasticsearch    31914    13293 0.1007
+  0.3238   0.0107   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31914
+https://www.github.com/elastic/elasticsearch/pull/13293
+elastic/elasticsearch    31912    11957 0.4308
+  0.0000   0.0271   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31912
+https://www.github.com/elastic/elasticsearch/pull/11957
+elastic/elasticsearch    31910    31213 0.8781
+  0.0000   0.0288   0.0666   0.3846   0.0871   0.0000   5.0000
+https://www.github.com/elastic/elasticsearch/pull/31910
+https://www.github.com/elastic/elasticsearch/pull/31213
+elastic/elasticsearch    31903    31441 0.9419
+  0.0000   0.0471   0.0804   0.3750   0.6246   0.0000   6.0000
+https://www.github.com/elastic/elasticsearch/pull/31903
+https://www.github.com/elastic/elasticsearch/pull/31441
+elastic/elasticsearch    31901    16777 0.9728
+  0.5821   0.1125   0.0000   1.0000   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31901
+https://www.github.com/elastic/elasticsearch/pull/16777
+elastic/elasticsearch    31890    31533 0.9025
+  0.3066   0.3260   0.0000   0.2500   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31890
+https://www.github.com/elastic/elasticsearch/pull/31533
+elastic/elasticsearch    31886    25250 0.9351
+  0.7842   0.3204   0.0000   0.0417   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31886
+https://www.github.com/elastic/elasticsearch/pull/25250
+elastic/elasticsearch    31876    10013 0.3035
+  0.4821   0.2040   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31876
+https://www.github.com/elastic/elasticsearch/pull/10013
+elastic/elasticsearch    31868    28892 0.9771
+  0.7533   0.0841   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31868
+https://www.github.com/elastic/elasticsearch/pull/28892
+elastic/elasticsearch    31864    21042 0.9217
+  0.4362   0.2809   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31864
+https://www.github.com/elastic/elasticsearch/pull/21042
+elastic/elasticsearch    31861    29487 0.7503
+  0.0000   0.0166   0.0455   1.0000   0.5490   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31861
+https://www.github.com/elastic/elasticsearch/pull/29487
+elastic/elasticsearch    31846    30244 0.1854
+  0.0000   0.1670   0.0220   0.1000   0.1355   0.0000   3.0000
+https://www.github.com/elastic/elasticsearch/pull/31846
+https://www.github.com/elastic/elasticsearch/pull/30244
+elastic/elasticsearch    31821    23359 0.5890
+  0.6961   0.1451   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31821
+https://www.github.com/elastic/elasticsearch/pull/23359
+elastic/elasticsearch    31806    29276 0.5000
+  0.3295   0.2530   0.0637   0.2500   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31806
+https://www.github.com/elastic/elasticsearch/pull/29276
+elastic/elasticsearch    31781    26735 0.8382
+  0.3450   0.0000   0.0000   1.0000   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31781
+https://www.github.com/elastic/elasticsearch/pull/26735
+elastic/elasticsearch    31776    26395 0.2560
+  0.4911   0.0611   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31776
+https://www.github.com/elastic/elasticsearch/pull/26395
+elastic/elasticsearch    31756    31565 0.5338
+  0.0819   0.1227   0.2944   0.0208   0.8380   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31756
+https://www.github.com/elastic/elasticsearch/pull/31565
+elastic/elasticsearch    31743    28392 0.9045
+  0.0000   0.0878   0.0000   1.0000   0.9565   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31743
+https://www.github.com/elastic/elasticsearch/pull/28392
+elastic/elasticsearch    31713    27567 0.8226
+  0.0625   0.0832   0.0000   0.1000   0.1309   0.0000   5.0000
+https://www.github.com/elastic/elasticsearch/pull/31713
+https://www.github.com/elastic/elasticsearch/pull/27567
+elastic/elasticsearch    31700     8888 0.8934
+  0.0000   0.0000   0.0000   1.0000   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31700
+https://www.github.com/elastic/elasticsearch/pull/8888
+elastic/elasticsearch    31685    31152 0.2376
+  0.2677   0.0605   0.0000   0.0192   0.3571   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31685
+https://www.github.com/elastic/elasticsearch/pull/31152
+elastic/elasticsearch    31669    27958 0.9761
+  0.6739   0.0000   0.0332   0.7143   0.5108   0.0000   5.0000
+https://www.github.com/elastic/elasticsearch/pull/31669
+https://www.github.com/elastic/elasticsearch/pull/27958
+elastic/elasticsearch    31655    19760 0.1577
+  0.4079   0.0110   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31655
+https://www.github.com/elastic/elasticsearch/pull/19760
+elastic/elasticsearch    31638    30177 0.8739
+  0.0000   0.3537   0.0000   1.0000   0.4880  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31638
+https://www.github.com/elastic/elasticsearch/pull/30177
+elastic/elasticsearch    31618     9923 0.3332
+  0.5329   0.1118   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31618
+https://www.github.com/elastic/elasticsearch/pull/9923
+elastic/elasticsearch    31597    31468 0.6859
+  0.1791   0.1522   0.0000   0.1000   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31597
+https://www.github.com/elastic/elasticsearch/pull/31468
+elastic/elasticsearch    31588    28705 0.9365
+  0.0000   0.1606   0.0498   0.1127   0.2759   0.0000   8.0000
+https://www.github.com/elastic/elasticsearch/pull/31588
+https://www.github.com/elastic/elasticsearch/pull/28705
+elastic/elasticsearch    31565    28936 0.9457
+  0.0599   0.1317   0.0061   0.3725   0.1699   0.0000  19.0000
+https://www.github.com/elastic/elasticsearch/pull/31565
+https://www.github.com/elastic/elasticsearch/pull/28936
+elastic/elasticsearch    31564    29658 0.7392
+  0.0000   0.1064   0.4167   0.0417   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31564
+https://www.github.com/elastic/elasticsearch/pull/29658
+elastic/elasticsearch    31557    22337 0.9875
+  0.7158   0.4557   0.0000   0.0238   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31557
+https://www.github.com/elastic/elasticsearch/pull/22337
+elastic/elasticsearch    31522    30980 0.2685
+  0.5017   0.0607   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31522
+https://www.github.com/elastic/elasticsearch/pull/30980
+elastic/elasticsearch    31520    31952 0.7204
+  0.4216   0.0565   0.2304   0.0833   0.0000   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/31520
+https://www.github.com/elastic/elasticsearch/pull/31952
+elastic/elasticsearch    31469    26033 0.9654
+  0.1540   0.2948   0.0000   1.0000   0.7644   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31469
+https://www.github.com/elastic/elasticsearch/pull/26033
+elastic/elasticsearch    31468    31597 0.6859
+  0.1791   0.1522   0.0000   0.1000   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31468
+https://www.github.com/elastic/elasticsearch/pull/31597
+elastic/elasticsearch    31450    31619 0.8475
+  0.0840   0.1537   0.0000   0.0476   0.9705   1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31450
+https://www.github.com/elastic/elasticsearch/pull/31619
+elastic/elasticsearch    31447    31251 0.7522
+  0.2382   0.1123   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31447
+https://www.github.com/elastic/elasticsearch/pull/31251
+elastic/elasticsearch    31441    30975 0.9420
+  0.0000   0.0471   0.0823   0.3750   0.6756   0.0000   6.0000
+https://www.github.com/elastic/elasticsearch/pull/31441
+https://www.github.com/elastic/elasticsearch/pull/30975
+elastic/elasticsearch    31420    13656 0.7122
+  0.5220   0.2472   0.0000   0.1667   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31420
+https://www.github.com/elastic/elasticsearch/pull/13656
+elastic/elasticsearch    31406    31251 0.8572
+  0.3461   0.1693   0.0000   0.0455   0.0000   1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31406
+https://www.github.com/elastic/elasticsearch/pull/31251
+elastic/elasticsearch    31378    27808 1.0000
+  1.0000   0.0000   0.0000   1.0000   0.2874   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31378
+https://www.github.com/elastic/elasticsearch/pull/27808
+elastic/elasticsearch    31363    15094 0.4531
+  0.0000   0.0793   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31363
+https://www.github.com/elastic/elasticsearch/pull/15094
+elastic/elasticsearch    31342    29077 0.2189
+  0.0655   0.0000   0.0000   0.2000   0.7273   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31342
+https://www.github.com/elastic/elasticsearch/pull/29077
+elastic/elasticsearch    31323    27337 0.9959
+  0.5802   0.5291   0.2984   0.0500   0.2105   1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31323
+https://www.github.com/elastic/elasticsearch/pull/27337
+elastic/elasticsearch    31316    19101 0.7791
+  0.3348   0.0304   0.0000   0.0526   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31316
+https://www.github.com/elastic/elasticsearch/pull/19101
+elastic/elasticsearch    31295    22370 1.0000
+  1.0000   0.9714   0.0000   1.0000   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31295
+https://www.github.com/elastic/elasticsearch/pull/22370
+elastic/elasticsearch    31281    30590 0.9580
+  0.5221   0.0000   0.0000   0.3333   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31281
+https://www.github.com/elastic/elasticsearch/pull/30590
+elastic/elasticsearch    31140    30244 0.6490
+  0.0848   0.3285   0.0941   0.0571   0.5158  -1.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/31140
+https://www.github.com/elastic/elasticsearch/pull/30244
+elastic/elasticsearch    31118    31619 0.8173
+  0.0676   0.1323   0.0000   0.0270   0.9660   1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/31118
+https://www.github.com/elastic/elasticsearch/pull/31619
+elastic/elasticsearch    31070    10354 0.3911
+  0.6041   0.4595   0.0000   0.0000   0.0000  -1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31070
+https://www.github.com/elastic/elasticsearch/pull/10354
+elastic/elasticsearch    31047    15363 0.5366
+  0.6445   0.1964   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31047
+https://www.github.com/elastic/elasticsearch/pull/15363
+elastic/elasticsearch    31043    31120 0.2428
+  0.4837   0.0485   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31043
+https://www.github.com/elastic/elasticsearch/pull/31120
+elastic/elasticsearch    31037    15781 0.9066
+  0.3350   0.4651   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/31037
+https://www.github.com/elastic/elasticsearch/pull/15781
+elastic/elasticsearch    30920    32068 0.8979
+  0.6496   0.0000   0.0567   0.1667   0.0976   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/30920
+https://www.github.com/elastic/elasticsearch/pull/32068
+elastic/elasticsearch    30831    26574 0.7660
+  0.2639   0.1828   0.0000   0.0417   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/30831
+https://www.github.com/elastic/elasticsearch/pull/26574
+elastic/elasticsearch    30819    28034 0.8828
+  0.3993   0.0000   0.0000   1.0000   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/30819
+https://www.github.com/elastic/elasticsearch/pull/28034
+elastic/elasticsearch    30723    19594 0.9868
+  0.7287   0.2306   0.0000   0.0455   1.0000  -1.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/30723
+https://www.github.com/elastic/elasticsearch/pull/19594
+elastic/elasticsearch    30692    30331 0.2902
+  0.4796   0.1811   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/30692
+https://www.github.com/elastic/elasticsearch/pull/30331
+elastic/elasticsearch    30595    28673 0.6967
+  0.2146   0.0647   0.0000   0.1538   0.0000   0.0000   4.0000
+https://www.github.com/elastic/elasticsearch/pull/30595
+https://www.github.com/elastic/elasticsearch/pull/28673
+elastic/elasticsearch    30545     2364 0.3476
+  0.5451   0.1083   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/30545
+https://www.github.com/elastic/elasticsearch/pull/2364
+elastic/elasticsearch    30513    25620 0.9859
+  0.6276   0.7139   0.0561   0.3750   0.4589   1.0000   3.0000
+https://www.github.com/elastic/elasticsearch/pull/30513
+https://www.github.com/elastic/elasticsearch/pull/25620
+elastic/elasticsearch    30511    31190 0.5591
+  0.6769   0.1432   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/30511
+https://www.github.com/elastic/elasticsearch/pull/31190
+elastic/elasticsearch    30468    25180 0.9072
+  0.4388   0.0078   0.0000   0.2500   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/30468
+https://www.github.com/elastic/elasticsearch/pull/25180
+elastic/elasticsearch    30453    30138 0.8720
+  0.3966   0.0205   0.0338   0.0600   0.4324  -1.0000   3.0000
+https://www.github.com/elastic/elasticsearch/pull/30453
+https://www.github.com/elastic/elasticsearch/pull/30138
+elastic/elasticsearch    30446    30225 0.2780
+  0.0305   0.0376   0.0000   0.2500   0.8293   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/30446
+https://www.github.com/elastic/elasticsearch/pull/30225
+elastic/elasticsearch    30364    17994 0.5781
+  0.1527   0.0762   0.0000   0.0588   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/30364
+https://www.github.com/elastic/elasticsearch/pull/17994
+elastic/elasticsearch    30346    27420 0.9844
+  0.4983   0.0123   0.0000   1.0000   0.5000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/30346
+https://www.github.com/elastic/elasticsearch/pull/27420
+elastic/elasticsearch    30327    24178 0.5000
+  0.3386   0.8870   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/30327
+https://www.github.com/elastic/elasticsearch/pull/24178
+elastic/elasticsearch    30323    26065 0.9860
+  0.3683   0.0288   0.0000   1.0000   0.9355  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/30323
+https://www.github.com/elastic/elasticsearch/pull/26065
+elastic/elasticsearch    30320    29273 0.6228
+  0.0000   0.1022   0.1099   0.1429   0.3238  -1.0000   3.0000
+https://www.github.com/elastic/elasticsearch/pull/30320
+https://www.github.com/elastic/elasticsearch/pull/29273
+elastic/elasticsearch    30289    28931 0.4698
+  0.1327   0.0466   0.0308   0.0909   0.4074  -1.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/30289
+https://www.github.com/elastic/elasticsearch/pull/28931
+elastic/elasticsearch    30284    16868 0.4672
+  0.4811   0.5156   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/30284
+https://www.github.com/elastic/elasticsearch/pull/16868
+elastic/elasticsearch    30241    31434 0.9543
+  0.6201   0.5798   0.0584   0.0631   0.5016   0.0000   7.0000
+https://www.github.com/elastic/elasticsearch/pull/30241
+https://www.github.com/elastic/elasticsearch/pull/31434
+elastic/elasticsearch    30240    31748 0.9598
+  0.4019   0.2479   0.0000   0.0435   0.4742   1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/30240
+https://www.github.com/elastic/elasticsearch/pull/31748
+elastic/elasticsearch    30233    27706 0.5000
+  0.0325   0.1028   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/30233
+https://www.github.com/elastic/elasticsearch/pull/27706
+elastic/elasticsearch    30231    31748 0.8368
+  0.2113   0.1383   0.0000   0.0400   0.4742   1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/30231
+https://www.github.com/elastic/elasticsearch/pull/31748
+elastic/elasticsearch    30152    28077 0.4797
+  0.0000   0.1452   0.0823   0.0625   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/30152
+https://www.github.com/elastic/elasticsearch/pull/28077
+elastic/elasticsearch    30150     8446 0.9383
+  0.4429   0.2716   0.0000   0.1667   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/30150
+https://www.github.com/elastic/elasticsearch/pull/8446
+elastic/elasticsearch    29611    31441 0.7274
+  0.2374   0.1715   0.0939   0.1600   0.4396   0.0000   4.0000
+https://www.github.com/elastic/elasticsearch/pull/29611
+https://www.github.com/elastic/elasticsearch/pull/31441
+elastic/elasticsearch    29588     9084 0.9572
+  0.5766   0.2312   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/29588
+https://www.github.com/elastic/elasticsearch/pull/9084
+elastic/elasticsearch    29583    31034 0.8091
+  0.2123   0.0864   0.0000   0.2500   0.0000  -1.0000   3.0000
+https://www.github.com/elastic/elasticsearch/pull/29583
+https://www.github.com/elastic/elasticsearch/pull/31034
+elastic/elasticsearch    29581    30690 0.5951
+  0.4877   0.1823   0.0000   0.1429   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/29581
+https://www.github.com/elastic/elasticsearch/pull/30690
+elastic/elasticsearch    29532    28222 0.9546
+  0.2150   0.0098   0.2291   1.0000   0.2578   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/29532
+https://www.github.com/elastic/elasticsearch/pull/28222
+elastic/elasticsearch    29523    24178 0.4552
+  0.2919   0.9198   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/29523
+https://www.github.com/elastic/elasticsearch/pull/24178
+elastic/elasticsearch    29522     6074 0.5781
+  0.7211   0.0436   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/29522
+https://www.github.com/elastic/elasticsearch/pull/6074
+elastic/elasticsearch    29518    31295 1.0000
+  1.0000   0.1117   0.0000   1.0000   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/29518
+https://www.github.com/elastic/elasticsearch/pull/31295
+elastic/elasticsearch    29492     9628 0.3934
+  0.5653   0.1481   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/29492
+https://www.github.com/elastic/elasticsearch/pull/9628
+elastic/elasticsearch    29440    15108 0.9432
+  0.0000   0.2563   0.0000   1.0000   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/29440
+https://www.github.com/elastic/elasticsearch/pull/15108
+elastic/elasticsearch    29252    31917 0.7737
+  0.0000   0.0615   0.3476   0.6667   0.4737   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/29252
+https://www.github.com/elastic/elasticsearch/pull/31917
+elastic/elasticsearch    29226    18330 1.0000
+  1.0000   0.0000   0.0000   1.0000   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/29226
+https://www.github.com/elastic/elasticsearch/pull/18330
+elastic/elasticsearch    29216    23327 0.6576
+  0.7476   0.6334   0.0000   0.0000   0.0000  -1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/29216
+https://www.github.com/elastic/elasticsearch/pull/23327
+elastic/elasticsearch    29215    20814 0.9941
+  0.7454   0.7525   0.1812   0.8000   0.9451  -1.0000   4.0000
+https://www.github.com/elastic/elasticsearch/pull/29215
+https://www.github.com/elastic/elasticsearch/pull/20814
+elastic/elasticsearch    29201    31468 0.4873
+  0.1617   0.1215   0.1826   0.2000   0.3696  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/29201
+https://www.github.com/elastic/elasticsearch/pull/31468
+elastic/elasticsearch    29158    31198 0.9792
+  0.2364   0.3712   0.0000   1.0000   0.6705   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/29158
+https://www.github.com/elastic/elasticsearch/pull/31198
+elastic/elasticsearch    29140    30522 0.5733
+  0.0000   0.0637   0.1181   0.1000   0.1101  -1.0000   3.0000
+https://www.github.com/elastic/elasticsearch/pull/29140
+https://www.github.com/elastic/elasticsearch/pull/30522
+elastic/elasticsearch    29114    27110 0.9907
+  0.4501   0.0140   0.0000   1.0000   0.8409   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/29114
+https://www.github.com/elastic/elasticsearch/pull/27110
+elastic/elasticsearch    29108    19874 0.9644
+  0.2399   0.1757   0.1679   1.0000   0.1791   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/29108
+https://www.github.com/elastic/elasticsearch/pull/19874
+elastic/elasticsearch    29092    23327 0.5156
+  0.7245   0.4058   0.0000   0.0000   0.0000  -1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/29092
+https://www.github.com/elastic/elasticsearch/pull/23327
+elastic/elasticsearch    29085    28876 0.9279
+  0.4775   0.0000   0.0000   1.0000   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/29085
+https://www.github.com/elastic/elasticsearch/pull/28876
+elastic/elasticsearch    29078    28537 0.5604
+  0.1315   0.0229   0.0000   1.0000   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/29078
+https://www.github.com/elastic/elasticsearch/pull/28537
+elastic/elasticsearch    29076     5352 0.8736
+  0.4119   0.1791   0.0000   0.0256   0.9670  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/29076
+https://www.github.com/elastic/elasticsearch/pull/5352
+elastic/elasticsearch    29042     8952 0.4379
+  0.3782   1.0000   0.0000   0.0000   0.0000  -1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/29042
+https://www.github.com/elastic/elasticsearch/pull/8952
+elastic/elasticsearch    29030    25778 0.4796
+  0.2115   0.0000   0.0000   0.0303   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/29030
+https://www.github.com/elastic/elasticsearch/pull/25778
+elastic/elasticsearch    28978    24533 0.8531
+  0.6673   0.0000   0.0000   0.0014   0.2891   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/28978
+https://www.github.com/elastic/elasticsearch/pull/24533
+elastic/elasticsearch    28936    31565 0.9457
+  0.0599   0.1317   0.0061   0.3725   0.1699   0.0000  19.0000
+https://www.github.com/elastic/elasticsearch/pull/28936
+https://www.github.com/elastic/elasticsearch/pull/31565
+elastic/elasticsearch    28925    13602 0.9813
+  0.5441   0.0357   0.0000   0.5000   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/28925
+https://www.github.com/elastic/elasticsearch/pull/13602
+elastic/elasticsearch    28895    28787 0.6845
+  0.1310   0.1264   0.1079   0.2500   0.9524   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/28895
+https://www.github.com/elastic/elasticsearch/pull/28787
+elastic/elasticsearch    28883    27466 0.9827
+  0.0000   0.4973   0.0000   1.0000   0.5000   1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/28883
+https://www.github.com/elastic/elasticsearch/pull/27466
+elastic/elasticsearch    28862    27744 0.7244
+  0.8429   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/28862
+https://www.github.com/elastic/elasticsearch/pull/27744
+elastic/elasticsearch    28839     6270 0.9974
+  0.6079   0.0105   0.0000   1.0000   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/28839
+https://www.github.com/elastic/elasticsearch/pull/6270
+elastic/elasticsearch    28801    27276 0.2087
+  0.4640   0.0098   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/28801
+https://www.github.com/elastic/elasticsearch/pull/27276
+elastic/elasticsearch    28702    28305 0.9452
+  0.5184   0.1789   0.0000   0.1000   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/28702
+https://www.github.com/elastic/elasticsearch/pull/28305
+elastic/elasticsearch    28629    26033 0.8117
+  0.2972   0.0510   0.0000   1.0000   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/28629
+https://www.github.com/elastic/elasticsearch/pull/26033
+elastic/elasticsearch    28574    31745 0.7493
+  0.1127   0.1721   0.1506   0.0732   0.3321  -1.0000   3.0000
+https://www.github.com/elastic/elasticsearch/pull/28574
+https://www.github.com/elastic/elasticsearch/pull/31745
+elastic/elasticsearch    28548    25246 0.9058
+  0.6799   0.1929   0.0303   0.0294   0.0000   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/28548
+https://www.github.com/elastic/elasticsearch/pull/25246
+elastic/elasticsearch    28368    10476 0.7488
+  0.7833   0.2508   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/28368
+https://www.github.com/elastic/elasticsearch/pull/10476
+elastic/elasticsearch    28253    17246 0.8137
+  0.7764   0.4577   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/28253
+https://www.github.com/elastic/elasticsearch/pull/17246
+elastic/elasticsearch    28242    23891 1.0000
+  1.0000   1.0000   0.0000   1.0000   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/28242
+https://www.github.com/elastic/elasticsearch/pull/23891
+elastic/elasticsearch    28231    31952 0.9537
+  0.5125   0.1796   0.2082   0.1250   0.1429  -1.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/28231
+https://www.github.com/elastic/elasticsearch/pull/31952
+elastic/elasticsearch    28193    15765 0.9525
+  0.5905   0.4217   0.0440   0.1064   0.5468  -1.0000   5.0000
+https://www.github.com/elastic/elasticsearch/pull/28193
+https://www.github.com/elastic/elasticsearch/pull/15765
+elastic/elasticsearch    28126    27166 0.3824
+  0.0000   0.0000   0.0000   0.3333   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/28126
+https://www.github.com/elastic/elasticsearch/pull/27166
+elastic/elasticsearch    28117    20119 0.8680
+  0.2701   0.1164   0.1227   0.1667   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/28117
+https://www.github.com/elastic/elasticsearch/pull/20119
+elastic/elasticsearch    28101    12331 0.9758
+  0.4400   0.3391   0.2287   0.4000   0.0000  -1.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/28101
+https://www.github.com/elastic/elasticsearch/pull/12331
+elastic/elasticsearch    28100    21414 0.9511
+  0.0000   0.0127   0.1035   0.1321   0.4226   0.0000   7.0000
+https://www.github.com/elastic/elasticsearch/pull/28100
+https://www.github.com/elastic/elasticsearch/pull/21414
+elastic/elasticsearch    27975    18443 0.4059
+  0.3021   0.1283   0.0000   0.3333   0.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/27975
+https://www.github.com/elastic/elasticsearch/pull/18443
+elastic/elasticsearch    27967     9036 0.1572
+  0.3537   0.1737   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/27967
+https://www.github.com/elastic/elasticsearch/pull/9036
+elastic/elasticsearch    27925    25194 0.9787
+  0.4052   0.3151   0.1645   0.3333   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/27925
+https://www.github.com/elastic/elasticsearch/pull/25194
+elastic/elasticsearch    27858    31359 0.8441
+  0.3514   0.0000   0.0000   1.0000   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/27858
+https://www.github.com/elastic/elasticsearch/pull/31359
+elastic/elasticsearch    27753    14121 0.9550
+  0.2526   0.3102   0.1425   0.3043   0.2891   0.0000   7.0000
+https://www.github.com/elastic/elasticsearch/pull/27753
+https://www.github.com/elastic/elasticsearch/pull/14121
+elastic/elasticsearch    27746    21677 0.8934
+  0.0000   0.0000   0.0000   1.0000   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/27746
+https://www.github.com/elastic/elasticsearch/pull/21677
+elastic/elasticsearch    27628     9341 0.6553
+  0.1870   0.0000   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/27628
+https://www.github.com/elastic/elasticsearch/pull/9341
+elastic/elasticsearch    27600    20211 0.8370
+  0.3649   0.0000   0.0000   0.0882   0.0759  -1.0000   3.0000
+https://www.github.com/elastic/elasticsearch/pull/27600
+https://www.github.com/elastic/elasticsearch/pull/20211
+elastic/elasticsearch    27473    21861 0.6520
+  0.3843   0.0000   0.1536   0.1111   0.4245   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/27473
+https://www.github.com/elastic/elasticsearch/pull/21861
+elastic/elasticsearch    27395    26965 0.9463
+  0.0000   0.0000   0.0000   0.0023   0.0000   0.0000   7.0000
+https://www.github.com/elastic/elasticsearch/pull/27395
+https://www.github.com/elastic/elasticsearch/pull/26965
+elastic/elasticsearch    27301    23452 0.9756
+  0.2582   0.0000   0.3512   1.0000   0.2061   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/27301
+https://www.github.com/elastic/elasticsearch/pull/23452
+elastic/elasticsearch    27219    27519 0.5893
+  0.1103   0.0681   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/27219
+https://www.github.com/elastic/elasticsearch/pull/27519
+elastic/elasticsearch    27181    26635 0.9555
+  0.5098   0.1035   0.0000   1.0000   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/27181
+https://www.github.com/elastic/elasticsearch/pull/26635
+elastic/elasticsearch    27162    14661 0.8786
+  0.4855   0.3435   0.0000   0.5000   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/27162
+https://www.github.com/elastic/elasticsearch/pull/14661
+elastic/elasticsearch    27127    23974 0.4132
+  0.6172   0.0281   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/27127
+https://www.github.com/elastic/elasticsearch/pull/23974
+elastic/elasticsearch    27077    25968 0.5755
+  0.0000   0.1079   0.2048   0.3333   0.8649   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/27077
+https://www.github.com/elastic/elasticsearch/pull/25968
+elastic/elasticsearch    26719    26626 0.9758
+  0.4737   0.4255   0.0000   0.2500   0.3714   1.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/26719
+https://www.github.com/elastic/elasticsearch/pull/26626
+elastic/elasticsearch    26634     8801 0.9234
+  0.3431   0.5607   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/26634
+https://www.github.com/elastic/elasticsearch/pull/8801
+elastic/elasticsearch    26423    23400 0.9202
+  0.0000   0.0126   0.0146   0.0020   0.3647   0.0000   6.0000
+https://www.github.com/elastic/elasticsearch/pull/26423
+https://www.github.com/elastic/elasticsearch/pull/23400
+elastic/elasticsearch    26246    18366 0.7339
+  0.1730   0.1152   0.0000   0.3333   1.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/26246
+https://www.github.com/elastic/elasticsearch/pull/18366
+elastic/elasticsearch    26115    23788 0.9478
+  0.0706   0.2008   0.0602   0.0667   0.2461   0.0000   7.0000
+https://www.github.com/elastic/elasticsearch/pull/26115
+https://www.github.com/elastic/elasticsearch/pull/23788
+elastic/elasticsearch    26040    20832 0.8645
+  0.1451   0.0656   0.0018   0.1852   0.0853   0.0000   5.0000
+https://www.github.com/elastic/elasticsearch/pull/26040
+https://www.github.com/elastic/elasticsearch/pull/20832
+elastic/elasticsearch    25995    26099 0.5000
+  0.1066   0.0459   0.0000   0.0667   1.0000  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/25995
+https://www.github.com/elastic/elasticsearch/pull/26099
+elastic/elasticsearch    25915    19051 0.5361
+  0.0770   0.0000   0.0000   1.0000   0.1205   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/25915
+https://www.github.com/elastic/elasticsearch/pull/19051
+elastic/elasticsearch    25736    25014 0.7222
+  0.3564   0.1109   0.0000   0.1429   0.7241   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/25736
+https://www.github.com/elastic/elasticsearch/pull/25014
+elastic/elasticsearch    25576    23307 0.8450
+  0.5209   0.0000   0.1250   0.5000   0.0000   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/25576
+https://www.github.com/elastic/elasticsearch/pull/23307
+elastic/elasticsearch    25561    27145 0.7237
+  0.1486   0.1443   0.5102   0.0714   0.5172   0.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/25561
+https://www.github.com/elastic/elasticsearch/pull/27145
+elastic/elasticsearch    25552    28281 0.2694
+  0.0000   0.0393   0.0000   0.6667   0.0000   0.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/25552
+https://www.github.com/elastic/elasticsearch/pull/28281
+elastic/elasticsearch    25334    26160 0.9771
+  0.3254   0.2624   0.0345   0.1250   0.9326   1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/25334
+https://www.github.com/elastic/elasticsearch/pull/26160
+elastic/elasticsearch    24976    32063 0.6666
+  0.1710   0.0772   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/24976
+https://www.github.com/elastic/elasticsearch/pull/32063
+elastic/elasticsearch    23489    32101 0.8696
+  0.3062   0.3443   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/23489
+https://www.github.com/elastic/elasticsearch/pull/32101
+elastic/elasticsearch    23375    20095 0.8297
+  0.4413   0.2254   0.0938   0.2500   0.2732  -1.0000   1.0000
+https://www.github.com/elastic/elasticsearch/pull/23375
+https://www.github.com/elastic/elasticsearch/pull/20095
+elastic/elasticsearch    23009    13496 0.9597
+  0.4188   0.0000   0.0018   0.2000   0.7328  -1.0000   6.0000
+https://www.github.com/elastic/elasticsearch/pull/23009
+https://www.github.com/elastic/elasticsearch/pull/13496
+elastic/elasticsearch    23006    13496 0.9725
+  0.7983   0.0531   0.0515   0.2083   0.6937  -1.0000   5.0000
+https://www.github.com/elastic/elasticsearch/pull/23006
+https://www.github.com/elastic/elasticsearch/pull/13496
+elastic/elasticsearch    22679    19575 0.9838
+  0.7319   0.3632   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/22679
+https://www.github.com/elastic/elasticsearch/pull/19575
+elastic/elasticsearch    22339    16557 0.9079
+  0.1678   0.9221   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/22339
+https://www.github.com/elastic/elasticsearch/pull/16557
+elastic/elasticsearch    22237    13426 0.9775
+  0.4243   0.0923   0.1419   0.5000   0.5256  -1.0000   2.0000
+https://www.github.com/elastic/elasticsearch/pull/22237
+https://www.github.com/elastic/elasticsearch/pull/13426
+elastic/elasticsearch    21510    24242 0.9762
+  0.5066   0.2539   0.0813   0.3000   0.5784  -1.0000   3.0000
+https://www.github.com/elastic/elasticsearch/pull/21510
+https://www.github.com/elastic/elasticsearch/pull/24242
+elastic/elasticsearch    21453    24707 0.4132
+  0.5479   0.2396   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/elastic/elasticsearch/pull/21453
+https://www.github.com/elastic/elasticsearch/pull/24707

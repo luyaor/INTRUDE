@@ -1,0 +1,531 @@
+spring-projects/spring-framework spring-projects/spring-framework     1829     1369 0.86176 [0.10657855482423544, 0.0, 0.21250566379700953, 0.10638297872340426, 0.0, 0, 5]
+https://www.github.com/spring-projects/spring-framework/pull/1829
+https://www.github.com/spring-projects/spring-framework/pull/1369
+K spring-projects/spring-framework spring-projects/spring-framework     1827      758 0.99272 [0.296323697138568, 0.03606711520674966, 1.0, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1827
+https://www.github.com/spring-projects/spring-framework/pull/758
+spring-projects/spring-framework spring-projects/spring-framework     1825     1003 0.05163 [0.16020884193601612, 0.1256700910045805, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1825
+https://www.github.com/spring-projects/spring-framework/pull/1003
+X spring-projects/spring-framework spring-projects/spring-framework     1823     1402 0.99313 [0.5005756910404383, 0.45545764732661603, 0.0, 1.0, 0.37254901960784315, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1823
+https://www.github.com/spring-projects/spring-framework/pull/1402
+spring-projects/spring-framework spring-projects/spring-framework     1822     1372 0.33971 [0.0, 0.06618439126023243, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1822
+https://www.github.com/spring-projects/spring-framework/pull/1372
+spring-projects/spring-framework spring-projects/spring-framework     1807     1045 0.59295 [0.0, 0.009097218634792107, 0.06896551724137931, 1.0, 0.3118279569892473, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1807
+https://www.github.com/spring-projects/spring-framework/pull/1045
+spring-projects/spring-framework spring-projects/spring-framework     1798      747 0.97624 [0.25538871172462385, 0.20044208513781533, 0.18181818181818182, 1.0, 0.3090909090909091, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/1798
+https://www.github.com/spring-projects/spring-framework/pull/747
+spring-projects/spring-framework spring-projects/spring-framework     1797     1369 0.12016 [0.1468339072428794, 0.0, 0.0547945205479452, 0.05405405405405406, 0.04449152542372881, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/1797
+https://www.github.com/spring-projects/spring-framework/pull/1369
+spring-projects/spring-framework spring-projects/spring-framework     1794      573 0.38773 [0.5693883672123303, 0.15427987403468935, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1794
+https://www.github.com/spring-projects/spring-framework/pull/573
+spring-projects/spring-framework spring-projects/spring-framework     1790      439 0.67407 [0.0, 0.020951632171901657, 0.0, 1.0, 0.5, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1790
+https://www.github.com/spring-projects/spring-framework/pull/439
+spring-projects/spring-framework spring-projects/spring-framework     1783     1517 0.38732 [0.248108379254935, 0.06858781892031923, 0.06542056074766354, 0.058823529411764705, 0.5108695652173914, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1783
+https://www.github.com/spring-projects/spring-framework/pull/1517
+spring-projects/spring-framework spring-projects/spring-framework     1778      809 0.57443 [0.100919791643874, 0.14826549511937254, 0.014925373134328358, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1778
+https://www.github.com/spring-projects/spring-framework/pull/809
+spring-projects/spring-framework spring-projects/spring-framework     1775     1151 0.79872 [0.028231021661292474, 0.0, 0, 1.0, 0.6666666666666666, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1775
+https://www.github.com/spring-projects/spring-framework/pull/1151
+spring-projects/spring-framework spring-projects/spring-framework     1741     1694 0.73429 [0.31538291260442475, 0.1655656645784681, 0.18421052631578946, 0.3333333333333333, 0.5964912280701754, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/1741
+https://www.github.com/spring-projects/spring-framework/pull/1694
+spring-projects/spring-framework spring-projects/spring-framework     1739     1269 0.04641 [0.005032522894947132, 0.44282403174243873, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1739
+https://www.github.com/spring-projects/spring-framework/pull/1269
+spring-projects/spring-framework spring-projects/spring-framework     1738     1404 0.74973 [0.8660631953405982, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1738
+https://www.github.com/spring-projects/spring-framework/pull/1404
+spring-projects/spring-framework spring-projects/spring-framework     1711      461 0.31676 [0.45115826879505694, 0.321203167228524, 0, 0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1711
+https://www.github.com/spring-projects/spring-framework/pull/461
+spring-projects/spring-framework spring-projects/spring-framework     1699     1192 0.34922 [0.05347117872658534, 0.12995404817590941, 0.05747126436781609, 0.5, 0.37777777777777777, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1699
+https://www.github.com/spring-projects/spring-framework/pull/1192
+K spring-projects/spring-framework spring-projects/spring-framework     1695     1817 1.00000 [0.8842234875307418, 0.0, 0.0, 1.0, 1.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1695
+https://www.github.com/spring-projects/spring-framework/pull/1817
+spring-projects/spring-framework spring-projects/spring-framework     1694     1741 0.87638 [0.19045745883031856, 0.15904878647620194, 0.18421052631578946, 0.3333333333333333, 0.5964912280701754, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/1694
+https://www.github.com/spring-projects/spring-framework/pull/1741
+spring-projects/spring-framework spring-projects/spring-framework     1689      627 0.72224 [0.0, 0.0, 0.10679611650485436, 1.0, 0.22950819672131148, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/1689
+https://www.github.com/spring-projects/spring-framework/pull/627
+(has improve) spring-projects/spring-framework spring-projects/spring-framework     1688      614 0.96480 [0.2953225298357582, 0.02192511839082817, 0.12, 1.0, 0.35714285714285715, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/1688
+https://www.github.com/spring-projects/spring-framework/pull/614
+spring-projects/spring-framework spring-projects/spring-framework     1687      921 0.90889 [0.18827769436506303, 0.2907262111500974, 0.35714285714285715, 0.07692307692307693, 1.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1687
+https://www.github.com/spring-projects/spring-framework/pull/921
+spring-projects/spring-framework spring-projects/spring-framework     1660     1588 0.48043 [0.0037409008847672917, 0.07489106109898888, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1660
+https://www.github.com/spring-projects/spring-framework/pull/1588
+spring-projects/spring-framework spring-projects/spring-framework     1655      899 0.07513 [0.27733615952445717, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1655
+https://www.github.com/spring-projects/spring-framework/pull/899
+spring-projects/spring-framework spring-projects/spring-framework     1653     1218 0.99543 [0.5337951341427973, 0.0, 0.13333333333333333, 0.25, 1.0, 1, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1653
+https://www.github.com/spring-projects/spring-framework/pull/1218
+spring-projects/spring-framework spring-projects/spring-framework     1651      451 0.88425 [0.0, 0.07906208568035336, 0.008333333333333333, 1.0, 0.8571428571428571, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1651
+https://www.github.com/spring-projects/spring-framework/pull/451
+spring-projects/spring-framework spring-projects/spring-framework     1639      327 0.16611 [0.2560815101091267, 0.013553247906786501, 0.09375, 0.1, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1639
+https://www.github.com/spring-projects/spring-framework/pull/327
+spring-projects/spring-framework spring-projects/spring-framework     1635      965 0.07683 [0.0, 0.03538684775039592, 0.14522821576763487, 0.16666666666666666, 0.22077922077922077, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1635
+https://www.github.com/spring-projects/spring-framework/pull/965
+spring-projects/spring-framework spring-projects/spring-framework     1613     1006 0.46365 [0.003866732758882212, 0.1277784741646505, 0.10299625468164794, 0.6666666666666666, 0.14201183431952663, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/1613
+https://www.github.com/spring-projects/spring-framework/pull/1006
+spring-projects/spring-framework spring-projects/spring-framework     1607      322 0.10690 [0.06342076055850944, 0.0, 0.03225806451612903, 0.5, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1607
+https://www.github.com/spring-projects/spring-framework/pull/322
+spring-projects/spring-framework spring-projects/spring-framework     1600     1046 0.37881 [0.0, 0.0, 0.007894736842105263, 0.5, 0.7461538461538462, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1600
+https://www.github.com/spring-projects/spring-framework/pull/1046
+spring-projects/spring-framework spring-projects/spring-framework     1597     1758 0.06083 [0.17338248499864278, 0.18888374088732665, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1597
+https://www.github.com/spring-projects/spring-framework/pull/1758
+X spring-projects/spring-framework spring-projects/spring-framework     1589      346 0.99397 [0.3701946009466445, 0.12428603596635616, 0.1053864168618267, 1.0, 0.926605504587156, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1589
+https://www.github.com/spring-projects/spring-framework/pull/346
+spring-projects/spring-framework spring-projects/spring-framework     1581      406 0.66226 [0.5531961424684285, 0.11898915319595307, 0.01694915254237288, 0.1111111111111111, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1581
+https://www.github.com/spring-projects/spring-framework/pull/406
+spring-projects/spring-framework spring-projects/spring-framework     1565      482 0.05557 [0.2082234725901097, 0.02422690069928924, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1565
+https://www.github.com/spring-projects/spring-framework/pull/482
+spring-projects/spring-framework spring-projects/spring-framework     1558      773 0.33486 [0.0, 0.05844206183978458, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1558
+https://www.github.com/spring-projects/spring-framework/pull/773
+spring-projects/spring-framework spring-projects/spring-framework     1553     1401 0.85866 [0.3292567727512091, 0.10733287260376773, 0.07958477508650519, 0.6666666666666666, 0.0, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/1553
+https://www.github.com/spring-projects/spring-framework/pull/1401
+spring-projects/spring-framework spring-projects/spring-framework     1548      542 0.75975 [0.0, 0.0, 0.0, 0.0016622340425531915, 0.0, 0, 5]
+https://www.github.com/spring-projects/spring-framework/pull/1548
+https://www.github.com/spring-projects/spring-framework/pull/542
+spring-projects/spring-framework spring-projects/spring-framework     1546      994 0.09983 [0.2185780215834821, 0.306531407202362, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1546
+https://www.github.com/spring-projects/spring-framework/pull/994
+spring-projects/spring-framework spring-projects/spring-framework     1544      849 0.15284 [0.399336459095921, 0.028749059896972178, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1544
+https://www.github.com/spring-projects/spring-framework/pull/849
+spring-projects/spring-framework spring-projects/spring-framework     1541      549 0.03959 [0.15708150016735667, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1541
+https://www.github.com/spring-projects/spring-framework/pull/549
+spring-projects/spring-framework spring-projects/spring-framework     1528       30 0.51319 [0.6848119968315658, 0.028926786797369392, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1528
+https://www.github.com/spring-projects/spring-framework/pull/30
+spring-projects/spring-framework spring-projects/spring-framework     1523      920 0.56757 [0.0, 0.13345342889015344, 0.18956043956043955, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1523
+https://www.github.com/spring-projects/spring-framework/pull/920
+K spring-projects/spring-framework spring-projects/spring-framework     1522     1521 1.00000 [0.8394980483146761, 1.0, 1.0, 1.0, 1.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1522
+https://www.github.com/spring-projects/spring-framework/pull/1521
+spring-projects/spring-framework spring-projects/spring-framework     1516     1499 0.31822 [0.13634368260422572, 0.09083871346315646, 0.06832298136645963, 0.125, 0.6, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1516
+https://www.github.com/spring-projects/spring-framework/pull/1499
+spring-projects/spring-framework spring-projects/spring-framework     1506      921 0.90753 [0.43102841513699985, 0.18872280702128172, 0.09664179104477612, 0.5, 0.9334186939820742, 0, 4]
+https://www.github.com/spring-projects/spring-framework/pull/1506
+https://www.github.com/spring-projects/spring-framework/pull/921
+spring-projects/spring-framework spring-projects/spring-framework     1498      594 0.31451 [0.5548745713090059, 0.014050411555032007, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1498
+https://www.github.com/spring-projects/spring-framework/pull/594
+spring-projects/spring-framework spring-projects/spring-framework     1496      218 0.77612 [0.0, 0.13375558014763944, 0.18304033092037228, 1.0, 0.0, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/1496
+https://www.github.com/spring-projects/spring-framework/pull/218
+? spring-projects/spring-framework spring-projects/spring-framework     1492     1630 0.99595 [0.5082573771714121, 0.09246275419819179, 0.05980861244019139, 1.0, 0.84375, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1492
+https://www.github.com/spring-projects/spring-framework/pull/1630
+spring-projects/spring-framework spring-projects/spring-framework     1477      738 0.10804 [0.0, 0.0, 0.14285714285714285, 0.5, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1477
+https://www.github.com/spring-projects/spring-framework/pull/738
+spring-projects/spring-framework spring-projects/spring-framework     1474     1588 0.53198 [0.05550408823069261, 0.04141491702370604, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1474
+https://www.github.com/spring-projects/spring-framework/pull/1588
+spring-projects/spring-framework spring-projects/spring-framework     1471      229 0.16818 [0.41344633718807056, 0.04262114695444283, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1471
+https://www.github.com/spring-projects/spring-framework/pull/229
+spring-projects/spring-framework spring-projects/spring-framework     1452      681 0.25057 [0.0, 0.0, 0.0, 0.5, 0.5636363636363636, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1452
+https://www.github.com/spring-projects/spring-framework/pull/681
+spring-projects/spring-framework spring-projects/spring-framework     1441     1365 0.97864 [0.6972521868291465, 0.0, 0, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1441
+https://www.github.com/spring-projects/spring-framework/pull/1365
+? spring-projects/spring-framework spring-projects/spring-framework     1431     1068 0.99199 [0.7517223037833539, 0.2662718041309623, 0.05925925925925926, 0.5, 0.13127413127413126, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/1431
+https://www.github.com/spring-projects/spring-framework/pull/1068
+spring-projects/spring-framework spring-projects/spring-framework     1429     1709 0.05771 [0.2226010737436318, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1429
+https://www.github.com/spring-projects/spring-framework/pull/1709
+X spring-projects/spring-framework spring-projects/spring-framework     1402     1823 0.99313 [0.5005756910404383, 0.45545764732661603, 0.0, 1.0, 0.37254901960784315, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1402
+https://www.github.com/spring-projects/spring-framework/pull/1823
+spring-projects/spring-framework spring-projects/spring-framework     1375      571 0.34869 [0.40750314568738044, 0.4871119295390899, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1375
+https://www.github.com/spring-projects/spring-framework/pull/571
+spring-projects/spring-framework spring-projects/spring-framework     1355      216 0.06961 [0.26030033207337183, 0.010518605998907945, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1355
+https://www.github.com/spring-projects/spring-framework/pull/216
+spring-projects/spring-framework spring-projects/spring-framework     1336     1505 0.75976 [0.0, 0.0, 0.0, 0.0016666666666666668, 0.0, 0, 5]
+https://www.github.com/spring-projects/spring-framework/pull/1336
+https://www.github.com/spring-projects/spring-framework/pull/1505
+spring-projects/spring-framework spring-projects/spring-framework     1330     1264 0.09203 [0.2647825663003409, 0.14645728679016082, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1330
+https://www.github.com/spring-projects/spring-framework/pull/1264
+spring-projects/spring-framework spring-projects/spring-framework     1324      525 0.07781 [0.2518230021447985, 0.09629816832960944, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1324
+https://www.github.com/spring-projects/spring-framework/pull/525
+spring-projects/spring-framework spring-projects/spring-framework     1291     1161 0.07421 [0.18724337459350596, 0.24688680537748947, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1291
+https://www.github.com/spring-projects/spring-framework/pull/1161
+spring-projects/spring-framework spring-projects/spring-framework     1283     1482 0.07820 [0.25855704353979697, 0.0792722039707004, 0, 0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1283
+https://www.github.com/spring-projects/spring-framework/pull/1482
+spring-projects/spring-framework spring-projects/spring-framework     1264     1330 0.09203 [0.2647825663003409, 0.14645728679016082, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1264
+https://www.github.com/spring-projects/spring-framework/pull/1330
+spring-projects/spring-framework spring-projects/spring-framework     1249     1773 0.08519 [0.29999150254229706, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1249
+https://www.github.com/spring-projects/spring-framework/pull/1773
+spring-projects/spring-framework spring-projects/spring-framework     1246        2 0.08383 [0.22679934068755858, 0.2029026617432383, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1246
+https://www.github.com/spring-projects/spring-framework/pull/2
+spring-projects/spring-framework spring-projects/spring-framework     1218     1653 0.99543 [0.5337951341427973, 0.0, 0.13333333333333333, 0.25, 1.0, 1, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1218
+https://www.github.com/spring-projects/spring-framework/pull/1653
+spring-projects/spring-framework spring-projects/spring-framework     1217      934 0.05602 [0.2113358877269461, 0.018988089351083176, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1217
+https://www.github.com/spring-projects/spring-framework/pull/934
+spring-projects/spring-framework spring-projects/spring-framework     1215      157 0.67850 [0.41005925844766566, 0.0028595506544985957, 0.028169014084507043, 0.058823529411764705, 0.6415094339622641, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1215
+https://www.github.com/spring-projects/spring-framework/pull/157
+spring-projects/spring-framework spring-projects/spring-framework     1176      606 0.40943 [0.2276109102705361, 0.03426616368690768, 0.028871391076115485, 0.5, 0.17142857142857143, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1176
+https://www.github.com/spring-projects/spring-framework/pull/606
+spring-projects/spring-framework spring-projects/spring-framework     1169      502 0.06950 [0.26335596081972795, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1169
+https://www.github.com/spring-projects/spring-framework/pull/502
+spring-projects/spring-framework spring-projects/spring-framework     1137     1742 0.06243 [0.21444987936498439, 0.08930122448896406, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1137
+https://www.github.com/spring-projects/spring-framework/pull/1742
+? spring-projects/spring-framework spring-projects/spring-framework     1128     1285 0.97832 [0.6712180199953115, 0.0, 0.04225352112676056, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1128
+https://www.github.com/spring-projects/spring-framework/pull/1285
+spring-projects/spring-framework spring-projects/spring-framework     1117     1630 0.09435 [0.0, 0.0, 0.2106060606060606, 0.3333333333333333, 0.03783783783783784, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1117
+https://www.github.com/spring-projects/spring-framework/pull/1630
+spring-projects/spring-framework spring-projects/spring-framework     1116     1104 0.09657 [0.23580452582022354, 0.24773715763256582, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1116
+https://www.github.com/spring-projects/spring-framework/pull/1104
+spring-projects/spring-framework spring-projects/spring-framework     1078     1183 0.12830 [0.022056865455779937, 0.20133967626561672, 0.0, 0.5, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1078
+https://www.github.com/spring-projects/spring-framework/pull/1183
+spring-projects/spring-framework spring-projects/spring-framework     1075      700 0.21133 [0.22349259789984455, 0.0, 0.0, 0.13333333333333333, 0.12831858407079647, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/1075
+https://www.github.com/spring-projects/spring-framework/pull/700
+spring-projects/spring-framework spring-projects/spring-framework     1051     1142 0.10990 [0.34579233776871565, 0.0020767090325943477, 0, 0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1051
+https://www.github.com/spring-projects/spring-framework/pull/1142
+spring-projects/spring-framework spring-projects/spring-framework     1045     1807 0.59295 [0.0, 0.009097218634792107, 0.06896551724137931, 1.0, 0.3118279569892473, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1045
+https://www.github.com/spring-projects/spring-framework/pull/1807
+spring-projects/spring-framework spring-projects/spring-framework     1035     1012 0.60749 [0.3965832458669347, 0.07620950656734682, 0.0, 0.5, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1035
+https://www.github.com/spring-projects/spring-framework/pull/1012
+spring-projects/spring-framework spring-projects/spring-framework     1025     1028 0.31477 [0.01438556698304326, 0.0, 0, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1025
+https://www.github.com/spring-projects/spring-framework/pull/1028
+spring-projects/spring-framework spring-projects/spring-framework     1015       97 0.40035 [0.13085089660125737, 0.1594903057782601, 0.0, 0.14285714285714285, 0.7512437810945274, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/1015
+https://www.github.com/spring-projects/spring-framework/pull/97
+spring-projects/spring-framework spring-projects/spring-framework     1008     1504 0.76618 [0.0, 0.0, 0.10714285714285714, 1.0, 0.3561643835616438, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/1008
+https://www.github.com/spring-projects/spring-framework/pull/1504
+spring-projects/spring-framework spring-projects/spring-framework     1007      639 0.50000 [0.6222640998460607, 0.20157645973198973, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1007
+https://www.github.com/spring-projects/spring-framework/pull/639
+spring-projects/spring-framework spring-projects/spring-framework     1000     1327 0.11316 [0.351845433773405, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/1000
+https://www.github.com/spring-projects/spring-framework/pull/1327
+spring-projects/spring-framework spring-projects/spring-framework      987     1485 0.12879 [0.0, 0.0, 0.0, 0.3333333333333333, 0.4942528735632184, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/987
+https://www.github.com/spring-projects/spring-framework/pull/1485
+spring-projects/spring-framework spring-projects/spring-framework      984        4 0.10824 [0.0, 0.052459327146803125, 0.0, 0.0004459640255686041, 0.0, 0, 3]
+https://www.github.com/spring-projects/spring-framework/pull/984
+https://www.github.com/spring-projects/spring-framework/pull/4
+spring-projects/spring-framework spring-projects/spring-framework      978      218 0.26203 [0.46997894248272254, 0.14793688525869508, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/978
+https://www.github.com/spring-projects/spring-framework/pull/218
+spring-projects/spring-framework spring-projects/spring-framework      972      883 0.31116 [0.5110304316433593, 0.14196154743981462, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/972
+https://www.github.com/spring-projects/spring-framework/pull/883
+spring-projects/spring-framework spring-projects/spring-framework      959      218 0.91534 [0.09689072220378073, 0.30893388783643466, 0.1762208067940552, 1.0, 0.0, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/959
+https://www.github.com/spring-projects/spring-framework/pull/218
+? spring-projects/spring-framework spring-projects/spring-framework      956      943 0.97612 [0.4131419574248873, 0.06252506617489266, 0.33557046979865773, 0.6666666666666666, 0.23333333333333334, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/956
+https://www.github.com/spring-projects/spring-framework/pull/943
+spring-projects/spring-framework spring-projects/spring-framework      943      956 0.97612 [0.4131419574248873, 0.06252506617489266, 0.33557046979865773, 0.6666666666666666, 0.23333333333333334, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/943
+https://www.github.com/spring-projects/spring-framework/pull/956
+spring-projects/spring-framework spring-projects/spring-framework      933      507 0.72642 [0.014414725600778843, 0.011014912423358185, 0.18181818181818182, 1.0, 0.0, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/933
+https://www.github.com/spring-projects/spring-framework/pull/507
+spring-projects/spring-framework spring-projects/spring-framework      916      673 0.45457 [0.22877008809979074, 0.12220470128885567, 0.1111111111111111, 0.058823529411764705, 0.5378151260504201, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/916
+https://www.github.com/spring-projects/spring-framework/pull/673
+spring-projects/spring-framework spring-projects/spring-framework      910      354 0.53056 [0.22190690152347123, 0.15819706882237344, 0.07526881720430108, 0.1111111111111111, 0.625, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/910
+https://www.github.com/spring-projects/spring-framework/pull/354
+spring-projects/spring-framework spring-projects/spring-framework      907     1705 0.21741 [0.0, 0.0, 0.0, 0.07692307692307693, 1.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/907
+https://www.github.com/spring-projects/spring-framework/pull/1705
+spring-projects/spring-framework spring-projects/spring-framework      906      770 0.43368 [0.0790667136237146, 0.027935083529471345, 0, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/906
+https://www.github.com/spring-projects/spring-framework/pull/770
+spring-projects/spring-framework spring-projects/spring-framework      899      747 0.89126 [0.1749712640152425, 0.06865079512148467, 0.15384615384615385, 1.0, 0.0, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/899
+https://www.github.com/spring-projects/spring-framework/pull/747
+spring-projects/spring-framework spring-projects/spring-framework      894     1813 0.86756 [1.0, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/894
+https://www.github.com/spring-projects/spring-framework/pull/1813
+spring-projects/spring-framework spring-projects/spring-framework      889      958 0.48244 [0.0, 0.09009538964815256, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/spring-projects/spring-framework/pull/889
+https://www.github.com/spring-projects/spring-framework/pull/958
+spring-projects/spring-framework spring-projects/spring-framework      888     1352 0.89920 [0.4513731087251318, 0.0, 0, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/888
+https://www.github.com/spring-projects/spring-framework/pull/1352
+spring-projects/spring-framework spring-projects/spring-framework      885     1231 0.34085 [0.5747199916149345, 0.005442488817000219, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/885
+https://www.github.com/spring-projects/spring-framework/pull/1231
+spring-projects/spring-framework spring-projects/spring-framework      880     1340 0.86756 [1.0, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/880
+https://www.github.com/spring-projects/spring-framework/pull/1340
+spring-projects/spring-framework spring-projects/spring-framework      878      918 0.72017 [0.6961452613607639, 0.4264107169993038, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/878
+https://www.github.com/spring-projects/spring-framework/pull/918
+spring-projects/spring-framework spring-projects/spring-framework      870      567 0.29029 [0.0, 0.20272808651063182, 0.023809523809523808, 0.5, 0.3888888888888889, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/870
+https://www.github.com/spring-projects/spring-framework/pull/567
+spring-projects/spring-framework spring-projects/spring-framework      863      173 0.05325 [0.1618213189541929, 0.13614343758801878, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/863
+https://www.github.com/spring-projects/spring-framework/pull/173
+spring-projects/spring-framework spring-projects/spring-framework      858      770 0.80749 [0.28134895014694444, 0.13764170983422658, 0, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/858
+https://www.github.com/spring-projects/spring-framework/pull/770
+spring-projects/spring-framework spring-projects/spring-framework      852      127 0.24546 [0.40564768153671593, 0.28742580099721227, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/852
+https://www.github.com/spring-projects/spring-framework/pull/127
+spring-projects/spring-framework spring-projects/spring-framework      833     1098 0.14606 [0.0, 0.0077268749796048485, 0.0, 0.047619047619047616, 0.8591549295774648, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/833
+https://www.github.com/spring-projects/spring-framework/pull/1098
+spring-projects/spring-framework spring-projects/spring-framework      821       97 0.41675 [0.1914846321212234, 0.28398058864530457, 0.07142857142857142, 0.08333333333333333, 0.4276315789473684, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/821
+https://www.github.com/spring-projects/spring-framework/pull/97
+spring-projects/spring-framework spring-projects/spring-framework      820     1059 0.50000 [0.10693391116678974, 0.0, 0.045454545454545456, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/820
+https://www.github.com/spring-projects/spring-framework/pull/1059
+spring-projects/spring-framework spring-projects/spring-framework      815     1101 0.24086 [0.0, 0.13087648482701994, 0.0, 0.5, 0.4146341463414634, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/815
+https://www.github.com/spring-projects/spring-framework/pull/1101
+? spring-projects/spring-framework spring-projects/spring-framework      810     1212 0.99623 [0.4704169615453073, 0.27410859959028067, 0.19832402234636873, 1.0, 0.40492957746478875, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/810
+https://www.github.com/spring-projects/spring-framework/pull/1212
+spring-projects/spring-framework spring-projects/spring-framework      768      693 0.19818 [0.36367497613010535, 0.2786834459697875, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/768
+https://www.github.com/spring-projects/spring-framework/pull/693
+spring-projects/spring-framework spring-projects/spring-framework      767      796 0.47867 [0.11170842628263473, 0.015375542986677702, 0, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/767
+https://www.github.com/spring-projects/spring-framework/pull/796
+spring-projects/spring-framework spring-projects/spring-framework      762      646 0.16724 [0.42460139247345674, 0.003692203629748444, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/762
+https://www.github.com/spring-projects/spring-framework/pull/646
+spring-projects/spring-framework spring-projects/spring-framework      758     1827 0.99272 [0.296323697138568, 0.03606711520674966, 1.0, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/758
+https://www.github.com/spring-projects/spring-framework/pull/1827
+spring-projects/spring-framework spring-projects/spring-framework      752      804 0.62619 [0.10429107029291568, 0.1298364874148036, 0.0, 0.5, 0.72, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/752
+https://www.github.com/spring-projects/spring-framework/pull/804
+spring-projects/spring-framework spring-projects/spring-framework      748      136 0.28326 [0.5351370734803763, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/748
+https://www.github.com/spring-projects/spring-framework/pull/136
+spring-projects/spring-framework spring-projects/spring-framework      736     1521 0.38028 [0.0, 0.0956968168934077, 0.025, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/736
+https://www.github.com/spring-projects/spring-framework/pull/1521
+spring-projects/spring-framework spring-projects/spring-framework      732      780 0.79798 [0.0, 0.12192382091473077, 0.22439024390243903, 0.05555555555555555, 0.575, 1, 1]
+https://www.github.com/spring-projects/spring-framework/pull/732
+https://www.github.com/spring-projects/spring-framework/pull/780
+spring-projects/spring-framework spring-projects/spring-framework      729      649 0.06100 [0.2155984267692341, 0.07382401650756171, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/729
+https://www.github.com/spring-projects/spring-framework/pull/649
+spring-projects/spring-framework spring-projects/spring-framework      724      233 0.89141 [0.6549140745879729, 0.03662935487863709, 0.04784688995215311, 0.25, 0.15789473684210525, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/724
+https://www.github.com/spring-projects/spring-framework/pull/233
+spring-projects/spring-framework spring-projects/spring-framework      719      749 0.69002 [0.07563964504227808, 0.0, 0.07775768535262206, 0.5, 0.9054054054054054, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/719
+https://www.github.com/spring-projects/spring-framework/pull/749
+spring-projects/spring-framework spring-projects/spring-framework      716      354 0.05071 [0.16545467473802186, 0.10246076130541462, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/716
+https://www.github.com/spring-projects/spring-framework/pull/354
+spring-projects/spring-framework spring-projects/spring-framework      712      455 0.34493 [0.22593826292547917, 0.05885746439416307, 0.18556701030927836, 0.3333333333333333, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/712
+https://www.github.com/spring-projects/spring-framework/pull/455
+spring-projects/spring-framework spring-projects/spring-framework      699     1233 0.42758 [0.3152501313229412, 0.003393434590357827, 0.025974025974025976, 0.5, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/699
+https://www.github.com/spring-projects/spring-framework/pull/1233
+spring-projects/spring-framework spring-projects/spring-framework      684      756 0.03778 [0.12851807245234614, 0.060568537963888884, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/684
+https://www.github.com/spring-projects/spring-framework/pull/756
+spring-projects/spring-framework spring-projects/spring-framework      673      571 0.58620 [0.08328940010560443, 0.34000659651301257, 0.052884615384615384, 0.043478260869565216, 1.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/673
+https://www.github.com/spring-projects/spring-framework/pull/571
+spring-projects/spring-framework spring-projects/spring-framework      671      571 0.33151 [0.07197085660071324, 0.17943508662974075, 0.052884615384615384, 0.07142857142857142, 0.775, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/671
+https://www.github.com/spring-projects/spring-framework/pull/571
+spring-projects/spring-framework spring-projects/spring-framework      659      321 0.37291 [0.0, 0.06936240538524448, 0.037037037037037035, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/659
+https://www.github.com/spring-projects/spring-framework/pull/321
+spring-projects/spring-framework spring-projects/spring-framework      647      480 0.14325 [0.13317471810721632, 0.16017177148243159, 0.0, 0.3333333333333333, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/647
+https://www.github.com/spring-projects/spring-framework/pull/480
+spring-projects/spring-framework spring-projects/spring-framework      645      589 0.27907 [0.1391067614322797, 0.19648505156268356, 0.07602339181286549, 0.03225806451612903, 0.5, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/645
+https://www.github.com/spring-projects/spring-framework/pull/589
+spring-projects/spring-framework spring-projects/spring-framework      631      874 0.04563 [0.18184164782733186, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/631
+https://www.github.com/spring-projects/spring-framework/pull/874
+spring-projects/spring-framework spring-projects/spring-framework      612      487 0.36426 [0.0, 0.1998452277655287, 0.07333333333333333, 0.4, 0.5308641975308642, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/612
+https://www.github.com/spring-projects/spring-framework/pull/487
+spring-projects/spring-framework spring-projects/spring-framework      604     1814 0.46003 [0.16192189677432667, 0.18423361439551, 0.07204116638078903, 0.4, 0.0, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/604
+https://www.github.com/spring-projects/spring-framework/pull/1814
+spring-projects/spring-framework spring-projects/spring-framework      603      480 0.85829 [0.18653727031446163, 0.14132902671589878, 0.2682291666666667, 0.2, 0.9479166666666666, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/603
+https://www.github.com/spring-projects/spring-framework/pull/480
+spring-projects/spring-framework spring-projects/spring-framework      598      382 0.82086 [0.09417734999547993, 0.10733867857599078, 0.39903846153846156, 0.5, 0.26296296296296295, 0, 3]
+https://www.github.com/spring-projects/spring-framework/pull/598
+https://www.github.com/spring-projects/spring-framework/pull/382
+spring-projects/spring-framework spring-projects/spring-framework      581      379 0.08089 [0.26707020842925083, 0.072241895692383, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/581
+https://www.github.com/spring-projects/spring-framework/pull/379
+spring-projects/spring-framework spring-projects/spring-framework      575      972 0.25230 [0.12342807974951384, 0.3217464648661085, 0.058823529411764705, 0.3333333333333333, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/575
+https://www.github.com/spring-projects/spring-framework/pull/972
+spring-projects/spring-framework spring-projects/spring-framework      570      630 0.57228 [0.041764200899314284, 0.11116391006134996, 0.18181818181818182, 0.5, 0.5533980582524272, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/570
+https://www.github.com/spring-projects/spring-framework/pull/630
+X spring-projects/spring-framework spring-projects/spring-framework      569      566 0.99434 [0.0, 0.4012017963160194, 0.8857142857142857, 0.6666666666666666, 0.5142857142857142, 1, 2]
+https://www.github.com/spring-projects/spring-framework/pull/569
+https://www.github.com/spring-projects/spring-framework/pull/566
+spring-projects/spring-framework spring-projects/spring-framework      567      507 0.71454 [0.11525317466340149, 0.3004828994789943, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/spring-projects/spring-framework/pull/567
+https://www.github.com/spring-projects/spring-framework/pull/507
+spring-projects/spring-framework spring-projects/spring-framework      566      569 0.99434 [0.0, 0.4012017963160194, 0.8857142857142857, 0.6666666666666666, 0.5142857142857142, 1, 2]
+https://www.github.com/spring-projects/spring-framework/pull/566
+https://www.github.com/spring-projects/spring-framework/pull/569
+K spring-projects/spring-framework spring-projects/spring-framework      561      580 1.00000 [0.7953256622702907, 0.2634115654401581, 1.0, 1.0, 1.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/561
+https://www.github.com/spring-projects/spring-framework/pull/580
+spring-projects/spring-framework spring-projects/spring-framework      538      214 0.10261 [0.0, 0.0, 0, 0.14285714285714285, 0.625, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/538
+https://www.github.com/spring-projects/spring-framework/pull/214
+? spring-projects/spring-framework spring-projects/spring-framework      507      810 0.97910 [0.2959100214381602, 0.4816573472418748, 0.08490566037735849, 1.0, 0.0, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/507
+https://www.github.com/spring-projects/spring-framework/pull/810
+spring-projects/spring-framework spring-projects/spring-framework      481      116 0.13517 [0.3496806925107305, 0.10851694314894235, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/481
+https://www.github.com/spring-projects/spring-framework/pull/116
+spring-projects/spring-framework spring-projects/spring-framework      475     1076 0.47087 [0.0, 0.06394676352234423, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/spring-projects/spring-framework/pull/475
+https://www.github.com/spring-projects/spring-framework/pull/1076
+spring-projects/spring-framework spring-projects/spring-framework      467      687 0.83405 [0.13444107237711958, 0.068732968135529, 0.21586475942782835, 0.6666666666666666, 0.46488294314381273, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/467
+https://www.github.com/spring-projects/spring-framework/pull/687
+spring-projects/spring-framework spring-projects/spring-framework      456      703 0.73998 [0.28407996336819774, 0.0013265563431748026, 0, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/456
+https://www.github.com/spring-projects/spring-framework/pull/703
+spring-projects/spring-framework spring-projects/spring-framework      433      723 0.12140 [0.34604936516200296, 0.0589256104498711, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/433
+https://www.github.com/spring-projects/spring-framework/pull/723
+spring-projects/spring-framework spring-projects/spring-framework      417      879 0.05168 [0.2034535558142536, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/417
+https://www.github.com/spring-projects/spring-framework/pull/879
+spring-projects/spring-framework spring-projects/spring-framework      402      560 0.36942 [0.20757784757207565, 0.012688507120271116, 0.16587677725118483, 0.16666666666666666, 0.3707865168539326, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/402
+https://www.github.com/spring-projects/spring-framework/pull/560
+spring-projects/spring-framework spring-projects/spring-framework      387      290 0.06074 [0.22320669544814142, 0.025706495414158502, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/387
+https://www.github.com/spring-projects/spring-framework/pull/290
+spring-projects/spring-framework spring-projects/spring-framework      368      398 0.19873 [0.04520079808677477, 0.28552538223498014, 0.043478260869565216, 0.125, 0.4263565891472868, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/368
+https://www.github.com/spring-projects/spring-framework/pull/398
+spring-projects/spring-framework spring-projects/spring-framework      361      646 0.18232 [0.11292329991766041, 0.40713419001699247, 0.0, 0.2, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/361
+https://www.github.com/spring-projects/spring-framework/pull/646
+spring-projects/spring-framework spring-projects/spring-framework      355     1188 0.02660 [0.0, 0.2297502743052012, 0, 0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/355
+https://www.github.com/spring-projects/spring-framework/pull/1188
+spring-projects/spring-framework spring-projects/spring-framework      354      910 0.53056 [0.22190690152347123, 0.15819706882237344, 0.07526881720430108, 0.1111111111111111, 0.625, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/354
+https://www.github.com/spring-projects/spring-framework/pull/910
+spring-projects/spring-framework spring-projects/spring-framework      341     1505 0.75976 [0.0, 0.0, 0.0, 0.0016666666666666668, 0.0, 0, 5]
+https://www.github.com/spring-projects/spring-framework/pull/341
+https://www.github.com/spring-projects/spring-framework/pull/1505
+spring-projects/spring-framework spring-projects/spring-framework      332      913 0.55800 [0.0, 0.17722008140178558, 0.14634146341463414, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/332
+https://www.github.com/spring-projects/spring-framework/pull/913
+spring-projects/spring-framework spring-projects/spring-framework      309      439 0.33168 [0.023753299581964912, 0.0, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/309
+https://www.github.com/spring-projects/spring-framework/pull/439
+spring-projects/spring-framework spring-projects/spring-framework      301      542 0.37207 [0.0, 0.0, 0.0, 0.0013333333333333333, 0.0, 0, 4]
+https://www.github.com/spring-projects/spring-framework/pull/301
+https://www.github.com/spring-projects/spring-framework/pull/542
+spring-projects/spring-framework spring-projects/spring-framework      293     1444 0.05935 [0.22094350303368349, 0.02029372298724689, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/293
+https://www.github.com/spring-projects/spring-framework/pull/1444
+spring-projects/spring-framework spring-projects/spring-framework      285      518 0.19480 [0.0, 0.04959777725246174, 0.0, 0.06666666666666667, 0.9183673469387755, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/285
+https://www.github.com/spring-projects/spring-framework/pull/518
+X spring-projects/spring-framework spring-projects/spring-framework      277     1140 0.99053 [0.83225638060064, 0.2445443206572489, 0.0, 0.1, 0.7297297297297297, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/277
+https://www.github.com/spring-projects/spring-framework/pull/1140
+spring-projects/spring-framework spring-projects/spring-framework      276      498 0.74171 [0.0, 0.0, 0.09433962264150944, 1.0, 0.3125, 0, 2]
+https://www.github.com/spring-projects/spring-framework/pull/276
+https://www.github.com/spring-projects/spring-framework/pull/498
+spring-projects/spring-framework spring-projects/spring-framework      266     1505 0.09925 [0.0, 0.0, 0.0, 0.000999000999000999, 0.0, 0, 3]
+https://www.github.com/spring-projects/spring-framework/pull/266
+https://www.github.com/spring-projects/spring-framework/pull/1505
+spring-projects/spring-framework spring-projects/spring-framework      227      491 0.69127 [0.4583008688576354, 0.007867400783582914, 0.030303030303030304, 0.5, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/227
+https://www.github.com/spring-projects/spring-framework/pull/491
+spring-projects/spring-framework spring-projects/spring-framework      162      909 0.09346 [0.30630049922615116, 0.03297986199275504, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/162
+https://www.github.com/spring-projects/spring-framework/pull/909
+spring-projects/spring-framework spring-projects/spring-framework      142      202 0.84876 [0.6422185368687362, 0.3188257760256889, 0, 0.05555555555555555, 0.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/142
+https://www.github.com/spring-projects/spring-framework/pull/202
+spring-projects/spring-framework spring-projects/spring-framework      135     1505 0.37207 [0.0, 0.0, 0.0, 0.0013328890369876708, 0.0, 0, 4]
+https://www.github.com/spring-projects/spring-framework/pull/135
+https://www.github.com/spring-projects/spring-framework/pull/1505
+spring-projects/spring-framework spring-projects/spring-framework      107      777 0.52002 [0.0, 0.16778841906865025, 0.0, 0.3333333333333333, 1.0, 0, 1]
+https://www.github.com/spring-projects/spring-framework/pull/107
+https://www.github.com/spring-projects/spring-framework/pull/777
+spring-projects/spring-framework spring-projects/spring-framework       84     1660 0.46716 [0.0, 0.055447727923659616, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/spring-projects/spring-framework/pull/84
+https://www.github.com/spring-projects/spring-framework/pull/1660
+spring-projects/spring-framework spring-projects/spring-framework       10      260 0.17730 [0.42543593102763294, 0.037535855304501264, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/spring-projects/spring-framework/pull/10
+https://www.github.com/spring-projects/spring-framework/pull/260

@@ -1,0 +1,308 @@
+dotnet/corefx    30474    29657 0.9625
+  0.5800   0.1397   0.0091   0.2143   0.0881  -1.0000   6.0000
+https://www.github.com/dotnet/corefx/pull/30474
+https://www.github.com/dotnet/corefx/pull/29657
+dotnet/corefx    30469    16561 0.8843
+  0.1026   0.0078   0.1875   0.5000   0.0000  -1.0000   3.0000
+https://www.github.com/dotnet/corefx/pull/30469
+https://www.github.com/dotnet/corefx/pull/16561
+dotnet/corefx    30459    15562 0.1106
+  0.0752   0.0060   0.0000   0.1000   0.5172   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30459
+https://www.github.com/dotnet/corefx/pull/15562
+dotnet/corefx    30448    29992 0.9495
+  0.6454   0.0000   0.0000   0.0312   1.0000   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30448
+https://www.github.com/dotnet/corefx/pull/29992
+dotnet/corefx    30447    27522 0.9935
+  0.6820   0.0154   0.0881   0.4000   1.0000  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30447
+https://www.github.com/dotnet/corefx/pull/27522
+dotnet/corefx    30442    13184 0.5361
+  0.0878   0.1699   0.1171   0.4000   0.5210   0.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30442
+https://www.github.com/dotnet/corefx/pull/13184
+dotnet/corefx    30441    23478 1.0000
+  0.9310   0.0671   0.0000   1.0000   0.4945   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30441
+https://www.github.com/dotnet/corefx/pull/23478
+dotnet/corefx    30440    29319 0.8889
+  0.4873   0.0000   0.0000   0.1000   1.0000   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30440
+https://www.github.com/dotnet/corefx/pull/29319
+dotnet/corefx    30432    29835 0.9296
+  0.5146   0.1397   0.0102   0.0690   0.5512  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30432
+https://www.github.com/dotnet/corefx/pull/29835
+dotnet/corefx    30431    29374 0.9535
+  0.2292   0.1226   0.0164   0.1489   0.5799  -1.0000   7.0000
+https://www.github.com/dotnet/corefx/pull/30431
+https://www.github.com/dotnet/corefx/pull/29374
+dotnet/corefx    30427     3380 0.9325
+  0.2485   0.0828   0.2743   0.2000   0.2029   1.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30427
+https://www.github.com/dotnet/corefx/pull/3380
+dotnet/corefx    30411    26663 0.5059
+  0.1964   0.0060   0.0000   0.3333   0.5385  -1.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30411
+https://www.github.com/dotnet/corefx/pull/26663
+dotnet/corefx    30410    28443 0.9666
+  0.5284   0.2657   0.0000   1.0000   0.0000  -1.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30410
+https://www.github.com/dotnet/corefx/pull/28443
+dotnet/corefx    30408    13317 0.2701
+  0.5200   0.0063   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/dotnet/corefx/pull/30408
+https://www.github.com/dotnet/corefx/pull/13317
+dotnet/corefx    30407    29840 0.9231
+  0.4663   0.0000   0.0000   0.3333   0.3553  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30407
+https://www.github.com/dotnet/corefx/pull/29840
+dotnet/corefx    30401    20771 1.0000
+  0.8129   0.0000   0.0000   1.0000   0.7097   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30401
+https://www.github.com/dotnet/corefx/pull/20771
+dotnet/corefx    30398    22702 0.9230
+  0.2496   0.2009   0.0820   0.4000   0.5793  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30398
+https://www.github.com/dotnet/corefx/pull/22702
+dotnet/corefx    30387    12265 0.9596
+  0.7228   0.0000   0.0000   0.0064   0.8870   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30387
+https://www.github.com/dotnet/corefx/pull/12265
+dotnet/corefx    30386    29877 0.7461
+  0.1420   0.0986   0.1646   0.3333   0.2093  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30386
+https://www.github.com/dotnet/corefx/pull/29877
+dotnet/corefx    30381    29219 0.7998
+  0.5848   0.1471   0.0000   0.0556   0.2692   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30381
+https://www.github.com/dotnet/corefx/pull/29219
+dotnet/corefx    30379    11461 0.9845
+  0.5987   0.0144   0.1000   0.6667   0.0000  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30379
+https://www.github.com/dotnet/corefx/pull/11461
+dotnet/corefx    30376    13885 0.9457
+  0.5106   0.0000   0.0043   0.4054   0.4654   0.0000  30.0000
+https://www.github.com/dotnet/corefx/pull/30376
+https://www.github.com/dotnet/corefx/pull/13885
+dotnet/corefx    30374     4753 0.0604
+  0.2106   0.0743   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/dotnet/corefx/pull/30374
+https://www.github.com/dotnet/corefx/pull/4753
+dotnet/corefx    30371    27011 0.6090
+  0.0000   1.0000   0.0000   0.1111   0.4068   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30371
+https://www.github.com/dotnet/corefx/pull/27011
+dotnet/corefx    30370    27821 0.8144
+  0.4172   0.0251   0.0083   0.0513   0.4421  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30370
+https://www.github.com/dotnet/corefx/pull/27821
+dotnet/corefx    30367     2733 0.4782
+  0.0000   0.0212   0.0114   0.2500   1.0000  -1.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30367
+https://www.github.com/dotnet/corefx/pull/2733
+dotnet/corefx    30361    23711 0.3106
+  0.5230   0.0982   0.0000   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/dotnet/corefx/pull/30361
+https://www.github.com/dotnet/corefx/pull/23711
+dotnet/corefx    30358    24286 0.7298
+  0.5726   0.0608   0.0000   0.0247   0.0000   0.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30358
+https://www.github.com/dotnet/corefx/pull/24286
+dotnet/corefx    30342     2985 0.9101
+  0.0000   0.0000   0.0000   0.0662   0.9788   0.0000   9.0000
+https://www.github.com/dotnet/corefx/pull/30342
+https://www.github.com/dotnet/corefx/pull/2985
+dotnet/corefx    30324     7089 0.8849
+  0.3209   0.1425   0.1275   0.2857   0.2099  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30324
+https://www.github.com/dotnet/corefx/pull/7089
+dotnet/corefx    30304    17503 0.8002
+  0.4063   0.0000   0.0000   1.0000   0.6102  -1.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30304
+https://www.github.com/dotnet/corefx/pull/17503
+dotnet/corefx    30301    28875 0.8931
+  0.0248   0.0017   0.0000   0.0980   0.0000  -1.0000   5.0000
+https://www.github.com/dotnet/corefx/pull/30301
+https://www.github.com/dotnet/corefx/pull/28875
+dotnet/corefx    30297    21678 0.8696
+  0.0907   0.0451   0.0000   1.0000   0.6503   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30297
+https://www.github.com/dotnet/corefx/pull/21678
+dotnet/corefx    30291    25417 0.7033
+  0.3425   0.3947   0.0592   0.3333   0.0000  -1.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30291
+https://www.github.com/dotnet/corefx/pull/25417
+dotnet/corefx    30289    14569 0.9483
+  0.0000   0.0000   0.0000   0.1373   0.0000   0.0000   7.0000
+https://www.github.com/dotnet/corefx/pull/30289
+https://www.github.com/dotnet/corefx/pull/14569
+dotnet/corefx    30278    20771 1.0000
+  0.5490   0.0000   0.0000   1.0000   1.0000   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30278
+https://www.github.com/dotnet/corefx/pull/20771
+dotnet/corefx    30271     9529 0.9457
+  0.0000   0.0000   0.0307   0.0114   0.9378   0.0000  22.0000
+https://www.github.com/dotnet/corefx/pull/30271
+https://www.github.com/dotnet/corefx/pull/9529
+dotnet/corefx    30244    29630 0.9211
+  0.3863   0.0296   0.0000   0.2500   0.0634   0.0000   5.0000
+https://www.github.com/dotnet/corefx/pull/30244
+https://www.github.com/dotnet/corefx/pull/29630
+dotnet/corefx    30237    23577 0.7583
+  0.3488   0.3336   0.0128   0.2000   0.1435   0.0000   3.0000
+https://www.github.com/dotnet/corefx/pull/30237
+https://www.github.com/dotnet/corefx/pull/23577
+dotnet/corefx    30212     6992 0.4411
+  0.1843   0.3580   0.1262   0.3333   0.0000   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30212
+https://www.github.com/dotnet/corefx/pull/6992
+dotnet/corefx    30155     5686 0.7573
+  0.0712   0.0038   0.1302   0.5000   0.4167  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30155
+https://www.github.com/dotnet/corefx/pull/5686
+dotnet/corefx    30137    19862 0.8502
+  0.1336   0.0178   0.0000   0.5000   0.1901  -1.0000   3.0000
+https://www.github.com/dotnet/corefx/pull/30137
+https://www.github.com/dotnet/corefx/pull/19862
+dotnet/corefx    30134     9179 0.6028
+  0.2446   0.0275   0.0000   0.5000   0.2464   0.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30134
+https://www.github.com/dotnet/corefx/pull/9179
+dotnet/corefx    30112    28740 0.9457
+  0.1381   0.0913   0.1573   1.0000   0.0000  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30112
+https://www.github.com/dotnet/corefx/pull/28740
+dotnet/corefx    30104    27865 0.6702
+  0.1881   0.0355   0.0000   0.0000   0.0000   1.0000   0.0000
+https://www.github.com/dotnet/corefx/pull/30104
+https://www.github.com/dotnet/corefx/pull/27865
+dotnet/corefx    30092     7866 0.9322
+  0.3267   0.0401   0.1346   0.2000   0.0722  -1.0000   4.0000
+https://www.github.com/dotnet/corefx/pull/30092
+https://www.github.com/dotnet/corefx/pull/7866
+dotnet/corefx    30078     6341 0.9696
+  0.4065   0.2671   0.0000   0.6667   0.0737  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/30078
+https://www.github.com/dotnet/corefx/pull/6341
+dotnet/corefx    30066    28429 0.5164
+  0.2098   0.0000   0.0779   0.0909   0.8588   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30066
+https://www.github.com/dotnet/corefx/pull/28429
+dotnet/corefx    30033     2000 0.8901
+  0.2819   0.0000   0.0000   0.5000   0.0000   1.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30033
+https://www.github.com/dotnet/corefx/pull/2000
+dotnet/corefx    30031    27766 0.9340
+  0.0000   0.0260   0.0000   0.0067   0.1140  -1.0000   6.0000
+https://www.github.com/dotnet/corefx/pull/30031
+https://www.github.com/dotnet/corefx/pull/27766
+dotnet/corefx    30000    22338 0.9625
+  0.4092   0.0191   0.4046   0.1111   1.0000   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/30000
+https://www.github.com/dotnet/corefx/pull/22338
+dotnet/corefx    29989     7425 0.9912
+  0.6144   0.0883   0.0000   0.5000   0.8367  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/29989
+https://www.github.com/dotnet/corefx/pull/7425
+dotnet/corefx    29968    28529 0.6955
+  0.0000   0.1763   0.2143   1.0000   0.0000  -1.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/29968
+https://www.github.com/dotnet/corefx/pull/28529
+dotnet/corefx    29882    29281 0.9484
+  0.6458   0.0000   0.0000   0.0233   1.0000   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/29882
+https://www.github.com/dotnet/corefx/pull/29281
+dotnet/corefx    29879    27766 0.7544
+  0.0387   0.2094   0.0000   0.0045   0.0000  -1.0000   4.0000
+https://www.github.com/dotnet/corefx/pull/29879
+https://www.github.com/dotnet/corefx/pull/27766
+dotnet/corefx    29831     1371 0.9504
+  0.1058   0.0491   0.0000   0.0056   0.7023   0.0000   7.0000
+https://www.github.com/dotnet/corefx/pull/29831
+https://www.github.com/dotnet/corefx/pull/1371
+dotnet/corefx    29731    21678 0.9288
+  0.1579   0.1083   0.0554   1.0000   0.5846   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/29731
+https://www.github.com/dotnet/corefx/pull/21678
+dotnet/corefx    29697    23526 0.9464
+  0.0000   0.0000   0.0000   0.0111   0.0000   0.0000   7.0000
+https://www.github.com/dotnet/corefx/pull/29697
+https://www.github.com/dotnet/corefx/pull/23526
+dotnet/corefx    29675    12071 0.3482
+  0.0000   0.0525   0.2316   0.1875   0.8570   0.0000   3.0000
+https://www.github.com/dotnet/corefx/pull/29675
+https://www.github.com/dotnet/corefx/pull/12071
+dotnet/corefx    29673    23194 0.8720
+  0.5530   0.0000   0.0000   0.2727   0.0000   0.0000   3.0000
+https://www.github.com/dotnet/corefx/pull/29673
+https://www.github.com/dotnet/corefx/pull/23194
+dotnet/corefx    29350    28173 0.2404
+  0.0000   0.0615   0.0784   0.0256   0.2346  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/29350
+https://www.github.com/dotnet/corefx/pull/28173
+dotnet/corefx    29263    20943 0.9870
+  0.4537   0.1293   0.1825   0.5000   1.0000   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/29263
+https://www.github.com/dotnet/corefx/pull/20943
+dotnet/corefx    29262    28857 0.9630
+  0.6183   0.1898   0.0513   0.2222   0.6533   0.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/29262
+https://www.github.com/dotnet/corefx/pull/28857
+dotnet/corefx    29231    29135 0.9304
+  0.4664   0.3217   0.0059   0.5000   0.4988   0.0000   4.0000
+https://www.github.com/dotnet/corefx/pull/29231
+https://www.github.com/dotnet/corefx/pull/29135
+dotnet/corefx    29154     9286 0.9135
+  0.4451   0.0000   0.0063   1.0000   0.0000   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/29154
+https://www.github.com/dotnet/corefx/pull/9286
+dotnet/corefx    29121    15690 0.5655
+  0.0000   0.2715   0.0000   0.0769   0.2388  -1.0000   3.0000
+https://www.github.com/dotnet/corefx/pull/29121
+https://www.github.com/dotnet/corefx/pull/15690
+dotnet/corefx    29033     2445 0.8563
+  0.0000   0.1101   0.6000   0.0500   1.0000  -1.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/29033
+https://www.github.com/dotnet/corefx/pull/2445
+dotnet/corefx    28936    27766 0.7030
+  0.0000   0.0785   0.0000   0.0044   0.1792  -1.0000   4.0000
+https://www.github.com/dotnet/corefx/pull/28936
+https://www.github.com/dotnet/corefx/pull/27766
+dotnet/corefx    28894    16304 0.7166
+  0.0000   0.0000   0.3034   0.2500   0.9825  -1.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/28894
+https://www.github.com/dotnet/corefx/pull/16304
+dotnet/corefx    28883    19506 0.9460
+  0.0000   0.0848   0.0000   0.1194   0.6657   0.0000  16.0000
+https://www.github.com/dotnet/corefx/pull/28883
+https://www.github.com/dotnet/corefx/pull/19506
+dotnet/corefx    28837    27998 0.9076
+  0.2886   0.1753   0.0909   0.2500   1.0000  -1.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/28837
+https://www.github.com/dotnet/corefx/pull/27998
+dotnet/corefx    28516     7866 0.9641
+  0.1898   0.1353   0.3412   0.5455   0.4828   0.0000   6.0000
+https://www.github.com/dotnet/corefx/pull/28516
+https://www.github.com/dotnet/corefx/pull/7866
+dotnet/corefx    28415    22887 0.9779
+  0.6975   0.1258   0.0000   0.0769   0.6946  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/28415
+https://www.github.com/dotnet/corefx/pull/22887
+dotnet/corefx    28184    12299 0.9158
+  0.4426   0.0078   0.0130   1.0000   0.0000   0.0000   1.0000
+https://www.github.com/dotnet/corefx/pull/28184
+https://www.github.com/dotnet/corefx/pull/12299
+dotnet/corefx    27839    11816 0.8424
+  0.0000   0.0000   0.0461   0.2083   0.0759   0.0000   5.0000
+https://www.github.com/dotnet/corefx/pull/27839
+https://www.github.com/dotnet/corefx/pull/11816
+dotnet/corefx    26898    29846 0.8927
+  0.3047   0.0253   0.1157   0.3333   0.4730  -1.0000   2.0000
+https://www.github.com/dotnet/corefx/pull/26898
+https://www.github.com/dotnet/corefx/pull/29846
+dotnet/corefx    26859    17407 0.9091
+  0.4490   0.0480   0.0160   0.1000   0.4904  -1.0000   3.0000
+https://www.github.com/dotnet/corefx/pull/26859
+https://www.github.com/dotnet/corefx/pull/17407

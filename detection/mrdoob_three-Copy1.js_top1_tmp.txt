@@ -1,0 +1,534 @@
+mrdoob/three.js mrdoob/three.js    14475     4242 0.99408 [0.6759464791959826, 0.0, 0.05670103092783505, 1.0, 0.36666666666666664, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14475
+https://www.github.com/mrdoob/three.js/pull/4242
+X mrdoob/three.js mrdoob/three.js    14471    14015 0.99999 [0.764917153291818, 0.05740457625202159, 0.05217391304347826, 1.0, 0.5939849624060151, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14471
+https://www.github.com/mrdoob/three.js/pull/14015
+mrdoob/three.js mrdoob/three.js    14470    13831 0.87672 [0.37080282689368427, 0.14182713749424403, 0.14285714285714285, 0.2, 0.08873720136518772, -1, 2]
+https://www.github.com/mrdoob/three.js/pull/14470
+https://www.github.com/mrdoob/three.js/pull/13831
+mrdoob/three.js mrdoob/three.js    14466     4580 0.99332 [0.8276242175646847, 0.0, 0.047619047619047616, 1.0, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14466
+https://www.github.com/mrdoob/three.js/pull/4580
+mrdoob/three.js mrdoob/three.js    14447     4527 0.83694 [0.7213756117115636, 0.012830252299544122, 0.0012032789350981425, 0.2, 0.0, -1, 1]
+https://www.github.com/mrdoob/three.js/pull/14447
+https://www.github.com/mrdoob/three.js/pull/4527
+mrdoob/three.js mrdoob/three.js    14444    13023 0.82444 [0.26422832320846484, 0.07931380242039142, 0.11627906976744186, 0.2, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14444
+https://www.github.com/mrdoob/three.js/pull/13023
+mrdoob/three.js mrdoob/three.js    14443     8953 0.95387 [0.5220166613282927, 0.10316809006689048, 0.024509803921568627, 0.2, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14443
+https://www.github.com/mrdoob/three.js/pull/8953
+mrdoob/three.js mrdoob/three.js    14442     6342 0.72356 [0.052193777442501275, 0.05461664556903351, 0.2631578947368421, 1.0, 0.0, -1, 1]
+https://www.github.com/mrdoob/three.js/pull/14442
+https://www.github.com/mrdoob/three.js/pull/6342
+mrdoob/three.js mrdoob/three.js    14436    12317 0.98545 [0.5020756880951253, 0.20481280444680286, 0.004975124378109453, 1.0, 0.3106796116504854, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14436
+https://www.github.com/mrdoob/three.js/pull/12317
+mrdoob/three.js mrdoob/three.js    14427    14330 0.06198 [0.285576115440565, 0.16754241361492564, 0, 0, 0.0, -1, 0]
+https://www.github.com/mrdoob/three.js/pull/14427
+https://www.github.com/mrdoob/three.js/pull/14330
+mrdoob/three.js mrdoob/three.js    14418    13636 0.96258 [0.32327459235967043, 0.2019857193118341, 0.12940140845070422, 0.06666666666666667, 0.5911458333333334, 1, 1]
+https://www.github.com/mrdoob/three.js/pull/14418
+https://www.github.com/mrdoob/three.js/pull/13636
+mrdoob/three.js mrdoob/three.js    14413    12629 0.77474 [0.0657793319418503, 0.02743773209406219, 0.2857142857142857, 0.3333333333333333, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14413
+https://www.github.com/mrdoob/three.js/pull/12629
+mrdoob/three.js mrdoob/three.js    14408    10487 0.99126 [0.385158869156778, 0.0, 0.056338028169014086, 1.0, 0.6161616161616161, -1, 2]
+https://www.github.com/mrdoob/three.js/pull/14408
+https://www.github.com/mrdoob/three.js/pull/10487
+mrdoob/three.js mrdoob/three.js    14403    13801 0.67392 [0.14929462129666382, 0.15887112473224482, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/mrdoob/three.js/pull/14403
+https://www.github.com/mrdoob/three.js/pull/13801
+mrdoob/three.js mrdoob/three.js    14388    11893 0.97141 [0.2629063903677558, 0.0, 0.03785488958990536, 1.0, 0.8231292517006803, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14388
+https://www.github.com/mrdoob/three.js/pull/11893
+mrdoob/three.js mrdoob/three.js    14385    10984 0.75571 [0.0, 0.0020317297627064595, 0.03240548400498546, 0.0035919540229885057, 0.9784560143626571, 0, 5]
+https://www.github.com/mrdoob/three.js/pull/14385
+https://www.github.com/mrdoob/three.js/pull/10984
+mrdoob/three.js mrdoob/three.js    14369     3408 0.91573 [0.0, 0.02194332606086222, 0.05172413793103448, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14369
+https://www.github.com/mrdoob/three.js/pull/3408
+mrdoob/three.js mrdoob/three.js    14357    11043 0.85675 [0.4195306747499474, 0.005665517012428314, 0.0, 0.5, 0.34579439252336447, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/14357
+https://www.github.com/mrdoob/three.js/pull/11043
+mrdoob/three.js mrdoob/three.js    14340     8925 0.93147 [0.5872904993394099, 0.38081007950379797, 0.05263157894736842, 0.2, 0.9042553191489362, 0, 3]
+https://www.github.com/mrdoob/three.js/pull/14340
+https://www.github.com/mrdoob/three.js/pull/8925
+mrdoob/three.js mrdoob/three.js    14337     2499 0.84738 [0.3144063245922964, 0.024482152307170584, 0.17142857142857143, 0.125, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14337
+https://www.github.com/mrdoob/three.js/pull/2499
+mrdoob/three.js mrdoob/three.js    14315    10584 0.90900 [0.4595641246279432, 0.012349335833950731, 0.0, 1.0, 0.0, -1, 1]
+https://www.github.com/mrdoob/three.js/pull/14315
+https://www.github.com/mrdoob/three.js/pull/10584
+mrdoob/three.js mrdoob/three.js    14303    13512 0.73337 [0.0, 0.038536688531162246, 0.5, 0.125, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14303
+https://www.github.com/mrdoob/three.js/pull/13512
+mrdoob/three.js mrdoob/three.js    14298     9659 0.87424 [0.2931930032617977, 0.22122313297288923, 0.19881305637982197, 0.047619047619047616, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14298
+https://www.github.com/mrdoob/three.js/pull/9659
+mrdoob/three.js mrdoob/three.js    14283    10454 0.92419 [0.0, 0.09386616348110698, 0.03233256351039261, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14283
+https://www.github.com/mrdoob/three.js/pull/10454
+mrdoob/three.js mrdoob/three.js    14274     6108 0.98332 [0.7440697138269677, 0.0, 0.00625, 0.5, 0.46923076923076923, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14274
+https://www.github.com/mrdoob/three.js/pull/6108
+X mrdoob/three.js mrdoob/three.js    14273    10555 0.99742 [0.6648978531818562, 0.13844033416633716, 0.03488372093023256, 1.0, 0.6060606060606061, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14273
+https://www.github.com/mrdoob/three.js/pull/10555
+mrdoob/three.js mrdoob/three.js    14233    10551 0.79259 [0.2616335711915925, 0.0, 0.19540229885057472, 0.3333333333333333, 0.7763713080168776, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/14233
+https://www.github.com/mrdoob/three.js/pull/10551
+mrdoob/three.js mrdoob/three.js    14218    13327 0.95458 [0.5370842493866582, 0.03092953233063001, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14218
+https://www.github.com/mrdoob/three.js/pull/13327
+mrdoob/three.js mrdoob/three.js    14198    11078 0.81339 [0.0, 0.1266942699941989, 0.1461187214611872, 0.4, 0.9281045751633987, -1, 2]
+https://www.github.com/mrdoob/three.js/pull/14198
+https://www.github.com/mrdoob/three.js/pull/11078
+mrdoob/three.js mrdoob/three.js    14182     3408 0.99345 [0.43548231252189246, 0.0, 0.038461538461538464, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14182
+https://www.github.com/mrdoob/three.js/pull/3408
+mrdoob/three.js mrdoob/three.js    14170     9913 0.82375 [0.33038194673998705, 0.07924789632880012, 0, 0, 0.0, 1, 0]
+https://www.github.com/mrdoob/three.js/pull/14170
+https://www.github.com/mrdoob/three.js/pull/9913
+mrdoob/three.js mrdoob/three.js    14166    14149 0.29253 [0.4934379736440104, 0.14567931432440615, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/14166
+https://www.github.com/mrdoob/three.js/pull/14149
+mrdoob/three.js mrdoob/three.js    14164    13242 0.98133 [0.5340328002904856, 0.18478011662613725, 0.136986301369863, 1.0, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14164
+https://www.github.com/mrdoob/three.js/pull/13242
+mrdoob/three.js mrdoob/three.js    14138    13068 0.77478 [0.14221954122129674, 0.0, 0.2, 0.2, 1.0, -1, 1]
+https://www.github.com/mrdoob/three.js/pull/14138
+https://www.github.com/mrdoob/three.js/pull/13068
+mrdoob/three.js mrdoob/three.js    14131    11456 0.28689 [0.5290755176168093, 0.02065538365657735, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/14131
+https://www.github.com/mrdoob/three.js/pull/11456
+mrdoob/three.js mrdoob/three.js    14116    10445 0.92778 [0.4197201920749185, 0.01320989425056459, 0.09751434034416825, 0.25, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14116
+https://www.github.com/mrdoob/three.js/pull/10445
+mrdoob/three.js mrdoob/three.js    14115    14354 0.87527 [0.0, 0.0, 0.007936507936507936, 1.0, 0.8333333333333334, -1, 1]
+https://www.github.com/mrdoob/three.js/pull/14115
+https://www.github.com/mrdoob/three.js/pull/14354
+mrdoob/three.js mrdoob/three.js    14114    11376 0.99383 [0.13559497649267044, 0.12870760273655762, 1.0, 0.3333333333333333, 1.0, -1, 2]
+https://www.github.com/mrdoob/three.js/pull/14114
+https://www.github.com/mrdoob/three.js/pull/11376
+mrdoob/three.js mrdoob/three.js    14111    10755 0.89320 [0.3978332611687267, 0.02067719430537357, 0.014925373134328358, 1.0, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14111
+https://www.github.com/mrdoob/three.js/pull/10755
+mrdoob/three.js mrdoob/three.js    14099    13905 0.96497 [0.21416796744954075, 0.19776124306627596, 0.0, 1.0, 0.7093596059113301, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14099
+https://www.github.com/mrdoob/three.js/pull/13905
+mrdoob/three.js mrdoob/three.js    14094    11782 0.97952 [0.23537101688793693, 0.09404780226303461, 0.0, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14094
+https://www.github.com/mrdoob/three.js/pull/11782
+mrdoob/three.js mrdoob/three.js    14087    13277 0.57453 [0.0, 0.08497255059241798, 0, 0.16666666666666666, 0.7310924369747899, -1, 3]
+https://www.github.com/mrdoob/three.js/pull/14087
+https://www.github.com/mrdoob/three.js/pull/13277
+mrdoob/three.js mrdoob/three.js    14076     9415 0.96372 [0.057170042839979146, 0.613208358066494, 0.8936170212765957, 0.5, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/14076
+https://www.github.com/mrdoob/three.js/pull/9415
+mrdoob/three.js mrdoob/three.js    14030    13831 0.90161 [0.15992677578654882, 0.0, 0.0, 1.0, 0.0, -1, 2]
+https://www.github.com/mrdoob/three.js/pull/14030
+https://www.github.com/mrdoob/three.js/pull/13831
+mrdoob/three.js mrdoob/three.js    14022    11141 0.98842 [0.6124300809465979, 0.0429178730583591, 0.03571428571428571, 1.0, 0.3898305084745763, -1, 1]
+https://www.github.com/mrdoob/three.js/pull/14022
+https://www.github.com/mrdoob/three.js/pull/11141
+mrdoob/three.js mrdoob/three.js    14016     9848 0.07964 [0.2829725926246696, 0.004759842535884941, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/14016
+https://www.github.com/mrdoob/three.js/pull/9848
+mrdoob/three.js mrdoob/three.js    13982     7400 0.71829 [0.35486407627775973, 0.32330108568950894, 0.0, 0.014925373134328358, 0.64, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13982
+https://www.github.com/mrdoob/three.js/pull/7400
+? mrdoob/three.js mrdoob/three.js    13971    10857 0.99999 [0.6206968809055405, 0.24976054922752136, 0.0963302752293578, 1.0, 0.7906976744186046, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13971
+https://www.github.com/mrdoob/three.js/pull/10857
+mrdoob/three.js mrdoob/three.js    13965     4373 0.99535 [0.7470764296304395, 0.046207818885976644, 0.25925925925925924, 1.0, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13965
+https://www.github.com/mrdoob/three.js/pull/4373
+mrdoob/three.js mrdoob/three.js    13938    14235 0.99385 [0.33992730439493213, 0.0, 0.15942028985507245, 1.0, 0.817258883248731, -1, 2]
+https://www.github.com/mrdoob/three.js/pull/13938
+https://www.github.com/mrdoob/three.js/pull/14235
+mrdoob/three.js mrdoob/three.js    13917    11458 0.90536 [0.09158189253321546, 0.01605502691771732, 0.6666666666666666, 0.125, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13917
+https://www.github.com/mrdoob/three.js/pull/11458
+mrdoob/three.js mrdoob/three.js    13915     6539 0.94627 [0.3723418244877858, 0.04197306271413463, 0.0, 1.0, 0.0, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/13915
+https://www.github.com/mrdoob/three.js/pull/6539
+mrdoob/three.js mrdoob/three.js    13847     9641 0.87271 [0.0, 0.0, 0.0, 1.0, 0.9230769230769231, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13847
+https://www.github.com/mrdoob/three.js/pull/9641
+mrdoob/three.js mrdoob/three.js    13845     5854 0.99730 [0.7218760689404069, 0.010245259263963387, 0.0, 1.0, 0.6427104722792608, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13845
+https://www.github.com/mrdoob/three.js/pull/5854
+mrdoob/three.js mrdoob/three.js    13831    12920 0.96678 [0.5641367898439178, 0.11126241865436334, 0.12694877505567928, 0.5, 0.37800687285223367, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13831
+https://www.github.com/mrdoob/three.js/pull/12920
+mrdoob/three.js mrdoob/three.js    13782     8421 0.86913 [0.2529297427130029, 0.054186619579619545, 0.04081632653061224, 0.5, 0.8784530386740331, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13782
+https://www.github.com/mrdoob/three.js/pull/8421
+mrdoob/three.js mrdoob/three.js    13776     7075 0.97073 [0.5980833998420667, 0.047931847609474464, 0.01730103806228374, 0.25, 1.0, -1, 1]
+https://www.github.com/mrdoob/three.js/pull/13776
+https://www.github.com/mrdoob/three.js/pull/7075
+? mrdoob/three.js mrdoob/three.js    13764    11685 0.99011 [0.748686067161686, 0.015477524583158932, 0.0, 0.3333333333333333, 0.9636363636363636, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13764
+https://www.github.com/mrdoob/three.js/pull/11685
+mrdoob/three.js mrdoob/three.js    13748    13217 0.91121 [0.3245475106089681, 0.10538372911512743, 0.06993006993006994, 0.3333333333333333, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13748
+https://www.github.com/mrdoob/three.js/pull/13217
+mrdoob/three.js mrdoob/three.js    13634     9164 0.89769 [0.0, 0.017395764294177312, 0.0, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13634
+https://www.github.com/mrdoob/three.js/pull/9164
+mrdoob/three.js mrdoob/three.js    13621    10524 0.97151 [0.6082693561129173, 0.034166782703949745, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13621
+https://www.github.com/mrdoob/three.js/pull/10524
+mrdoob/three.js mrdoob/three.js    13544    14119 0.62750 [0.06529119591592364, 0.056837382359457615, 0.0, 0.2222222222222222, 0.9213483146067416, -1, 2]
+https://www.github.com/mrdoob/three.js/pull/13544
+https://www.github.com/mrdoob/three.js/pull/14119
+mrdoob/three.js mrdoob/three.js    13504     9158 0.87026 [0.3941237972971424, 0.1469162227840976, 0, 0.125, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13504
+https://www.github.com/mrdoob/three.js/pull/9158
+mrdoob/three.js mrdoob/three.js    13485     7700 0.60788 [0.08810614910870239, 0.1874593898868193, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13485
+https://www.github.com/mrdoob/three.js/pull/7700
+mrdoob/three.js mrdoob/three.js    13484     7700 0.99472 [0.4589739354248884, 0.08348727892307373, 0.0, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13484
+https://www.github.com/mrdoob/three.js/pull/7700
+mrdoob/three.js mrdoob/three.js    13456     5429 0.79867 [0.0, 0.0, 0.0800711743772242, 0.014450867052023121, 0.2274011299435028, 0, 5]
+https://www.github.com/mrdoob/three.js/pull/13456
+https://www.github.com/mrdoob/three.js/pull/5429
+mrdoob/three.js mrdoob/three.js    13430     9292 0.50000 [0.04755882660619483, 0.05823684329903774, 0, 0, 0.0, 1, 0]
+https://www.github.com/mrdoob/three.js/pull/13430
+https://www.github.com/mrdoob/three.js/pull/9292
+mrdoob/three.js mrdoob/three.js    13428     8421 1.00000 [0.6945205183386897, 0.09075044444193034, 0.09836065573770492, 1.0, 0.8713450292397661, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13428
+https://www.github.com/mrdoob/three.js/pull/8421
+mrdoob/three.js mrdoob/three.js    13402     7328 0.74173 [0.8110062187894664, 0.14841121832429224, 0, 0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/13402
+https://www.github.com/mrdoob/three.js/pull/7328
+mrdoob/three.js mrdoob/three.js    13393     6500 0.97358 [0.6034883261596985, 0.0, 0.0, 0.3333333333333333, 1.0, -1, 1]
+https://www.github.com/mrdoob/three.js/pull/13393
+https://www.github.com/mrdoob/three.js/pull/6500
+mrdoob/three.js mrdoob/three.js    13343     8131 0.99348 [0.4801921915605435, 0.03144544966833353, 0.07769423558897243, 1.0, 0.76, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13343
+https://www.github.com/mrdoob/three.js/pull/8131
+mrdoob/three.js mrdoob/three.js    13337       28 0.56372 [0.7249528021789174, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/13337
+https://www.github.com/mrdoob/three.js/pull/28
+mrdoob/three.js mrdoob/three.js    13314    11979 0.44173 [0.0, 0.052980542947726174, 0, 0, 0.0, 1, 0]
+https://www.github.com/mrdoob/three.js/pull/13314
+https://www.github.com/mrdoob/three.js/pull/11979
+mrdoob/three.js mrdoob/three.js    13284      156 0.99557 [0.4579832023132784, 0.15478307581904757, 0.0, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13284
+https://www.github.com/mrdoob/three.js/pull/156
+mrdoob/three.js mrdoob/three.js    13282    14348 0.87664 [0.12900670006891657, 0.38762186444353014, 0.0, 0.5, 0.9375, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13282
+https://www.github.com/mrdoob/three.js/pull/14348
+mrdoob/three.js mrdoob/three.js    13276    11083 0.92915 [0.12653659370191325, 0.02756359313841637, 0.46806996135855194, 0.5714285714285714, 0.12, 0, 4]
+https://www.github.com/mrdoob/three.js/pull/13276
+https://www.github.com/mrdoob/three.js/pull/11083
+mrdoob/three.js mrdoob/three.js    13254    13531 0.96108 [0.15798648243308175, 0.030131496939646465, 0.0, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13254
+https://www.github.com/mrdoob/three.js/pull/13531
+X (multi sols) mrdoob/three.js mrdoob/three.js    13244    14101 1.00000 [0.6236212154265569, 0.42459679745146717, 0.06542056074766354, 1.0, 0.7948717948717948, 1, 1]
+https://www.github.com/mrdoob/three.js/pull/13244
+https://www.github.com/mrdoob/three.js/pull/14101
+mrdoob/three.js mrdoob/three.js    13196    10984 0.79280 [0.0, 0.0, 0.0, 0.0035919540229885057, 0.0, 0, 5]
+https://www.github.com/mrdoob/three.js/pull/13196
+https://www.github.com/mrdoob/three.js/pull/10984
+mrdoob/three.js mrdoob/three.js    13144    13143 0.92821 [0.43693143315549016, 0.006709871125405903, 0.0, 0.3333333333333333, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13144
+https://www.github.com/mrdoob/three.js/pull/13143
+X (open - merged) mrdoob/three.js mrdoob/three.js    13134     7618 0.99126 [0.5060760026347186, 0.027728345399953305, 0.0, 1.0, 0.6956521739130435, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13134
+https://www.github.com/mrdoob/three.js/pull/7618
+mrdoob/three.js mrdoob/three.js    13115    13057 0.95219 [0.09560655064128658, 0.08365757146081033, 0.04283054003724395, 0.25, 0.1891025641025641, 0, 7]
+https://www.github.com/mrdoob/three.js/pull/13115
+https://www.github.com/mrdoob/three.js/pull/13057
+mrdoob/three.js mrdoob/three.js    13111     6909 0.96949 [0.6030195258502138, 0.017069453224533432, 0.16847826086956522, 0.06666666666666667, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13111
+https://www.github.com/mrdoob/three.js/pull/6909
+mrdoob/three.js mrdoob/three.js    13096    10683 0.45864 [0.0, 0.09189236900359458, 0, 0, 0.0, 1, 0]
+https://www.github.com/mrdoob/three.js/pull/13096
+https://www.github.com/mrdoob/three.js/pull/10683
+mrdoob/three.js mrdoob/three.js    13084     6524 0.43056 [0.0, 0.026544093773392244, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/mrdoob/three.js/pull/13084
+https://www.github.com/mrdoob/three.js/pull/6524
+mrdoob/three.js mrdoob/three.js    13083    13057 0.78332 [0.08763125822583918, 0.0304223206773769, 0.5, 0.041666666666666664, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13083
+https://www.github.com/mrdoob/three.js/pull/13057
+X mrdoob/three.js mrdoob/three.js    13082    14072 1.00000 [0.4095227111846634, 0.0, 0.8, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/13082
+https://www.github.com/mrdoob/three.js/pull/14072
+mrdoob/three.js mrdoob/three.js    13057    13115 0.95219 [0.09560655064128658, 0.08365757146081033, 0.04283054003724395, 0.25, 0.1891025641025641, 0, 7]
+https://www.github.com/mrdoob/three.js/pull/13057
+https://www.github.com/mrdoob/three.js/pull/13115
+mrdoob/three.js mrdoob/three.js    13027     8103 0.34214 [0.5098731562024831, 0.20124293936772356, 0, 0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/13027
+https://www.github.com/mrdoob/three.js/pull/8103
+mrdoob/three.js mrdoob/three.js    13017    11015 0.11964 [0.3589693280972067, 0.0, 0, 0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/13017
+https://www.github.com/mrdoob/three.js/pull/11015
+mrdoob/three.js mrdoob/three.js    12972    10984 0.94063 [0.0, 0.036807717625717454, 0.15764331210191082, 0.005751258087706686, 0.9313725490196079, 0, 8]
+https://www.github.com/mrdoob/three.js/pull/12972
+https://www.github.com/mrdoob/three.js/pull/10984
+mrdoob/three.js mrdoob/three.js    12923     4034 0.82718 [0.3173284362634409, 0.03825066628952488, 0.024390243902439025, 0.5, 0.6174496644295302, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/12923
+https://www.github.com/mrdoob/three.js/pull/4034
+mrdoob/three.js mrdoob/three.js    12886    10779 0.74814 [0.13862083530865313, 0.0, 0.0, 0.5, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/12886
+https://www.github.com/mrdoob/three.js/pull/10779
+mrdoob/three.js mrdoob/three.js    12880    10230 0.94199 [0.626737349449252, 0.06898624747626432, 0.013157894736842105, 0.16666666666666666, 0.6559139784946236, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/12880
+https://www.github.com/mrdoob/three.js/pull/10230
+mrdoob/three.js mrdoob/three.js    12849     7163 0.95518 [0.3632119369626811, 0.21578087139537258, 0.2581962807696442, 0.16666666666666666, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/12849
+https://www.github.com/mrdoob/three.js/pull/7163
+mrdoob/three.js mrdoob/three.js    12693     8008 0.90075 [0.0, 0.0, 0.02040816326530612, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/12693
+https://www.github.com/mrdoob/three.js/pull/8008
+mrdoob/three.js mrdoob/three.js    12617    14101 0.98481 [0.5951650471059637, 0.17588471299030387, 0.1590909090909091, 0.5, 0.5789473684210527, -1, 1]
+https://www.github.com/mrdoob/three.js/pull/12617
+https://www.github.com/mrdoob/three.js/pull/14101
+mrdoob/three.js mrdoob/three.js    12520     5713 0.99339 [0.45800920692601615, 0.0, 0.024475524475524476, 1.0, 0.9523809523809523, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/12520
+https://www.github.com/mrdoob/three.js/pull/5713
+mrdoob/three.js mrdoob/three.js    12464    13249 0.97168 [0.1627364788840697, 0.10304265324707235, 0.2073170731707317, 1.0, 0.684931506849315, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/12464
+https://www.github.com/mrdoob/three.js/pull/13249
+mrdoob/three.js mrdoob/three.js    12445     8255 0.65972 [0.12621843471226987, 0.09286210434285343, 0.16666666666666666, 0.3333333333333333, 0.0, -1, 2]
+https://www.github.com/mrdoob/three.js/pull/12445
+https://www.github.com/mrdoob/three.js/pull/8255
+mrdoob/three.js mrdoob/three.js    12319    13254 0.06130 [0.20857023053507012, 0.06465939434340635, 0, 0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/12319
+https://www.github.com/mrdoob/three.js/pull/13254
+mrdoob/three.js mrdoob/three.js    12118    12145 0.98536 [0.0, 0.0, 1.0, 0.5, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/12118
+https://www.github.com/mrdoob/three.js/pull/12145
+mrdoob/three.js mrdoob/three.js    12033     8003 0.46558 [0.012539562955016667, 0.07178551606623748, 0, 0, 0.0, 1, 0]
+https://www.github.com/mrdoob/three.js/pull/12033
+https://www.github.com/mrdoob/three.js/pull/8003
+K mrdoob/three.js mrdoob/three.js    12024    12334 1.00000 [1.0000000000000002, 0.0, 1.0, 0.25, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/12024
+https://www.github.com/mrdoob/three.js/pull/12334
+mrdoob/three.js mrdoob/three.js    11978    11846 0.89836 [0.021698377009167363, 0.14262548472433031, 0.036223929747530186, 0.625, 0.9376996805111821, 0, 5]
+https://www.github.com/mrdoob/three.js/pull/11978
+https://www.github.com/mrdoob/three.js/pull/11846
+mrdoob/three.js mrdoob/three.js    11934     8323 0.99655 [0.42908841695492983, 0.25751671794512615, 0.04375, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/11934
+https://www.github.com/mrdoob/three.js/pull/8323
+mrdoob/three.js mrdoob/three.js    11875    13939 0.80629 [0.17477454594549147, 0.004166373823306377, 0.0, 1.0, 0.0, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/11875
+https://www.github.com/mrdoob/three.js/pull/13939
+mrdoob/three.js mrdoob/three.js    11788     7025 0.60385 [0.07071629847638404, 0.12339252332673291, 0.07692307692307693, 1.0, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/11788
+https://www.github.com/mrdoob/three.js/pull/7025
+mrdoob/three.js mrdoob/three.js    11603    10164 0.87128 [0.4441570494032465, 0.15775094046789973, 0.08132530120481928, 0.3333333333333333, 0.3953488372093023, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/11603
+https://www.github.com/mrdoob/three.js/pull/10164
+mrdoob/three.js mrdoob/three.js    11596     5262 0.89889 [0.42674672732466995, 0.013731960377235427, 0.0, 0.3333333333333333, 0.8571428571428571, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/11596
+https://www.github.com/mrdoob/three.js/pull/5262
+mrdoob/three.js mrdoob/three.js    11523     5725 0.90620 [0.2351152770909487, 0.23503317529193826, 0.2882882882882883, 0.2, 0.9047619047619048, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/11523
+https://www.github.com/mrdoob/three.js/pull/5725
+mrdoob/three.js mrdoob/three.js    11472     4640 0.99666 [0.6717425644837364, 0.0, 0.037162162162162164, 1.0, 0.6344827586206897, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/11472
+https://www.github.com/mrdoob/three.js/pull/4640
+mrdoob/three.js mrdoob/three.js    11459    10864 0.82278 [0.24127672489282775, 0.0, 0.007692307692307693, 0.5, 0.8833333333333333, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/11459
+https://www.github.com/mrdoob/three.js/pull/10864
+mrdoob/three.js mrdoob/three.js    11376    14114 0.99383 [0.13559497649267044, 0.12870760273655762, 1.0, 0.3333333333333333, 1.0, -1, 2]
+https://www.github.com/mrdoob/three.js/pull/11376
+https://www.github.com/mrdoob/three.js/pull/14114
+mrdoob/three.js mrdoob/three.js    11312     8950 0.98345 [0.24946237580593644, 0.03530919307583999, 0.07317073170731707, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/11312
+https://www.github.com/mrdoob/three.js/pull/8950
+mrdoob/three.js mrdoob/three.js    11289     4031 0.96022 [0.4595751606223541, 0.046746087144482196, 0.16666666666666666, 1.0, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/11289
+https://www.github.com/mrdoob/three.js/pull/4031
+mrdoob/three.js mrdoob/three.js    11244     8900 0.91072 [0.3575477080377631, 0.20344254419688526, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/11244
+https://www.github.com/mrdoob/three.js/pull/8900
+mrdoob/three.js mrdoob/three.js    11134     8003 0.97037 [0.14427160504045106, 0.10023078215737082, 0.5714285714285714, 0.5, 0.8833333333333333, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/11134
+https://www.github.com/mrdoob/three.js/pull/8003
+mrdoob/three.js mrdoob/three.js    11093     3554 0.96907 [0.18594169640018107, 0.04942978233288965, 0.0023148148148148147, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/11093
+https://www.github.com/mrdoob/three.js/pull/3554
+mrdoob/three.js mrdoob/three.js    11026     5502 0.96528 [0.22304725530938782, 0.01778033712140333, 0.15601023017902813, 1.0, 0.6627450980392157, -1, 1]
+https://www.github.com/mrdoob/three.js/pull/11026
+https://www.github.com/mrdoob/three.js/pull/5502
+mrdoob/three.js mrdoob/three.js    10991     5020 0.26917 [0.5210750990491755, 0.0, 0, 0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/10991
+https://www.github.com/mrdoob/three.js/pull/5020
+mrdoob/three.js mrdoob/three.js    10941     7116 0.91281 [0.4261015756513802, 0.0436593373490521, 0.015384615384615385, 0.25, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/10941
+https://www.github.com/mrdoob/three.js/pull/7116
+mrdoob/three.js mrdoob/three.js    10821     9415 0.96183 [0.17184149326305057, 0.09922969268813675, 0.115, 1.0, 0.6904761904761905, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/10821
+https://www.github.com/mrdoob/three.js/pull/9415
+mrdoob/three.js mrdoob/three.js    10820     7023 0.81928 [0.3213776103232297, 0.06293670094238885, 0.024, 0.25, 0.9183673469387755, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/10820
+https://www.github.com/mrdoob/three.js/pull/7023
+mrdoob/three.js mrdoob/three.js    10750     5056 0.79070 [0.0, 0.12287573617550865, 0.0, 0.012165450121654502, 0.0, 0, 5]
+https://www.github.com/mrdoob/three.js/pull/10750
+https://www.github.com/mrdoob/three.js/pull/5056
+mrdoob/three.js mrdoob/three.js    10674     9043 0.96927 [0.6493445904401075, 0.10723496017169948, 0.03294691885295912, 0.2222222222222222, 0.9928514694201748, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/10674
+https://www.github.com/mrdoob/three.js/pull/9043
+K mrdoob/three.js mrdoob/three.js    10597    13706 1.00000 [0.6864320050037149, 0.5491819942535079, 0.09502262443438914, 1.0, 0.4880636604774536, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/10597
+https://www.github.com/mrdoob/three.js/pull/13706
+mrdoob/three.js mrdoob/three.js    10589    12163 0.18108 [0.0, 0.007720990248897326, 0.0, 0.029411764705882353, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/10589
+https://www.github.com/mrdoob/three.js/pull/12163
+? mrdoob/three.js mrdoob/three.js    10555    11082 0.99999 [0.6603519839404424, 0.2948351626901716, 0.08695652173913043, 1.0, 0.5625, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/10555
+https://www.github.com/mrdoob/three.js/pull/11082
+mrdoob/three.js mrdoob/three.js    10508    13271 0.89504 [0.3360077279823156, 0.17377494076717329, 0.0, 0.5, 0.6727272727272727, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/10508
+https://www.github.com/mrdoob/three.js/pull/13271
+mrdoob/three.js mrdoob/three.js    10477     7230 0.18076 [0.4380322659280981, 0.0, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/10477
+https://www.github.com/mrdoob/three.js/pull/7230
+mrdoob/three.js mrdoob/three.js    10287     4059 0.98354 [0.3661221304154587, 0.0, 0.05555555555555555, 1.0, 0.2765957446808511, -1, 2]
+https://www.github.com/mrdoob/three.js/pull/10287
+https://www.github.com/mrdoob/three.js/pull/4059
+mrdoob/three.js mrdoob/three.js    10284     3408 0.97577 [0.4406776623864935, 0.19028498786176995, 0.004329004329004329, 0.5, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/10284
+https://www.github.com/mrdoob/three.js/pull/3408
+mrdoob/three.js mrdoob/three.js    10260     6752 0.61659 [0.0, 0.23048382669298279, 0.15, 0.25, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/10260
+https://www.github.com/mrdoob/three.js/pull/6752
+mrdoob/three.js mrdoob/three.js    10216     8103 0.33141 [0.5371001528379333, 0.09459189353161263, 0, 0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/10216
+https://www.github.com/mrdoob/three.js/pull/8103
+mrdoob/three.js mrdoob/three.js    10133     6888 0.99149 [0.34407860302149373, 0.13643798382837874, 0.03260869565217391, 1.0, 0.983983983983984, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/10133
+https://www.github.com/mrdoob/three.js/pull/6888
+mrdoob/three.js mrdoob/three.js    10104     5429 0.80195 [0.0, 0.0, 0.07363013698630137, 0.014492753623188406, 0.14518760195758565, 0, 5]
+https://www.github.com/mrdoob/three.js/pull/10104
+https://www.github.com/mrdoob/three.js/pull/5429
+mrdoob/three.js mrdoob/three.js    10054    10245 0.99198 [0.4861231991258375, 0.0, 0.5714285714285714, 0.25, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/10054
+https://www.github.com/mrdoob/three.js/pull/10245
+mrdoob/three.js mrdoob/three.js    10013     7152 0.98243 [0.2677069748440427, 0.10712466889067468, 0.026455026455026454, 1.0, 0.9157509157509157, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/10013
+https://www.github.com/mrdoob/three.js/pull/7152
+mrdoob/three.js mrdoob/three.js     9962    10656 0.98319 [0.46114353220136534, 0.04751826533104639, 0.1780821917808219, 0.5, 0.9634146341463414, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/9962
+https://www.github.com/mrdoob/three.js/pull/10656
+mrdoob/three.js mrdoob/three.js     9929     9738 0.94413 [0.0, 0.18031006743041672, 0.10714285714285714, 1.0, 0.3064516129032258, 1, 2]
+https://www.github.com/mrdoob/three.js/pull/9929
+https://www.github.com/mrdoob/three.js/pull/9738
+mrdoob/three.js mrdoob/three.js     9927     9738 0.91447 [0.3645816846960754, 0.08613576285814324, 0.049019607843137254, 0.25, 0.0, 1, 1]
+https://www.github.com/mrdoob/three.js/pull/9927
+https://www.github.com/mrdoob/three.js/pull/9738
+mrdoob/three.js mrdoob/three.js     9915     5658 0.96878 [0.4288182743162732, 0.03802951808666339, 0.2962962962962963, 1.0, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/9915
+https://www.github.com/mrdoob/three.js/pull/5658
+mrdoob/three.js mrdoob/three.js     9913     8582 0.97839 [0.476425514695506, 0.07976609793026149, 0.14285714285714285, 0.5, 0.8205128205128205, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/9913
+https://www.github.com/mrdoob/three.js/pull/8582
+mrdoob/three.js mrdoob/three.js     9865    10444 0.99529 [0.33918302701950875, 0.22154258005768107, 0.13043478260869565, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/9865
+https://www.github.com/mrdoob/three.js/pull/10444
+mrdoob/three.js mrdoob/three.js     9746     6839 0.82020 [0.583629549182114, 0.08339440182498618, 0.1, 0.25, 0.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/9746
+https://www.github.com/mrdoob/three.js/pull/6839
+mrdoob/three.js mrdoob/three.js     9654     5713 0.97418 [0.5412914312771308, 0.10995658481724326, 0.06181818181818182, 0.3333333333333333, 0.9172932330827067, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/9654
+https://www.github.com/mrdoob/three.js/pull/5713
+mrdoob/three.js mrdoob/three.js     9620    10668 0.95456 [0.0, 0.0, 0.1792452830188679, 0.3888888888888889, 0.0, 0, 7]
+https://www.github.com/mrdoob/three.js/pull/9620
+https://www.github.com/mrdoob/three.js/pull/10668
+mrdoob/three.js mrdoob/three.js     9605     9586 0.99999 [0.6101760809991299, 0.08304569633685088, 0.049429657794676805, 1.0, 0.9666666666666667, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/9605
+https://www.github.com/mrdoob/three.js/pull/9586
+mrdoob/three.js mrdoob/three.js     9600     7089 0.97074 [0.4104337130797408, 0.23534766181563072, 0.14583333333333334, 0.5, 0.7950310559006211, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/9600
+https://www.github.com/mrdoob/three.js/pull/7089
+mrdoob/three.js mrdoob/three.js     9561     6721 0.79368 [0.3183731674000491, 0.11234120315827066, 0.07250755287009064, 0.5, 0.13839285714285715, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/9561
+https://www.github.com/mrdoob/three.js/pull/6721
+mrdoob/three.js mrdoob/three.js     9537    10984 0.38556 [0.0, 0.0, 0.0, 0.0028797696184305254, 0.2155688622754491, 0, 4]
+https://www.github.com/mrdoob/three.js/pull/9537
+https://www.github.com/mrdoob/three.js/pull/10984
+mrdoob/three.js mrdoob/three.js     9490     9558 0.95052 [0.031541659558263886, 0.09642556385411774, 0.0, 0.21875, 0.5358851674641149, 0, 7]
+https://www.github.com/mrdoob/three.js/pull/9490
+https://www.github.com/mrdoob/three.js/pull/9558
+mrdoob/three.js mrdoob/three.js     9455    12071 0.94343 [0.5332477620573758, 0.12435614544343283, 0.0, 0.3333333333333333, 0.6666666666666666, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/9455
+https://www.github.com/mrdoob/three.js/pull/12071
+mrdoob/three.js mrdoob/three.js     9410     3447 0.94879 [0.0, 0.04575881137942148, 0.010416666666666666, 0.028, 0.887509130752374, 0, 7]
+https://www.github.com/mrdoob/three.js/pull/9410
+https://www.github.com/mrdoob/three.js/pull/3447
+mrdoob/three.js mrdoob/three.js     9378     5446 0.15776 [0.0, 0.0, 0.14925373134328357, 0.002352941176470588, 0.7538461538461538, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/9378
+https://www.github.com/mrdoob/three.js/pull/5446
+mrdoob/three.js mrdoob/three.js     9296     4669 0.76029 [0.24666561585369068, 0.08883685439807515, 0.06654991243432574, 0.4, 0.7455621301775148, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/9296
+https://www.github.com/mrdoob/three.js/pull/4669
+mrdoob/three.js mrdoob/three.js     9163    10984 0.93718 [0.0, 0.02380095321092091, 0.0, 0.00574300071787509, 0.0, 0, 8]
+https://www.github.com/mrdoob/three.js/pull/9163
+https://www.github.com/mrdoob/three.js/pull/10984
+mrdoob/three.js mrdoob/three.js     8985    10763 0.99748 [0.6075633932363824, 0.36120556302396806, 0.2, 0.5, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/8985
+https://www.github.com/mrdoob/three.js/pull/10763
+mrdoob/three.js mrdoob/three.js     8953     6911 0.99452 [0.6340280252387822, 0.07315754598775052, 0.39293139293139295, 0.5, 0.45495495495495497, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/8953
+https://www.github.com/mrdoob/three.js/pull/6911
+mrdoob/three.js mrdoob/three.js     8952     3837 0.96816 [0.3920439431231438, 0.11801366369583847, 0.09333333333333334, 0.6666666666666666, 0.7142857142857143, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/8952
+https://www.github.com/mrdoob/three.js/pull/3837
+mrdoob/three.js mrdoob/three.js     8834     9216 0.06375 [0.18099480411194072, 0.18448396740566966, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/8834
+https://www.github.com/mrdoob/three.js/pull/9216
+mrdoob/three.js mrdoob/three.js     8767     7131 0.16739 [0.0, 0.0, 0.0, 0.005154639175257732, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/8767
+https://www.github.com/mrdoob/three.js/pull/7131
+mrdoob/three.js mrdoob/three.js     8676     8577 0.51645 [0.30336557052474167, 0.1665298358947057, 0.033854166666666664, 0.2222222222222222, 0.0, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/8676
+https://www.github.com/mrdoob/three.js/pull/8577
+mrdoob/three.js mrdoob/three.js     8543     8245 0.73980 [0.0, 0.02494535810079125, 0.5714285714285714, 0.05263157894736842, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/8543
+https://www.github.com/mrdoob/three.js/pull/8245
+mrdoob/three.js mrdoob/three.js     8510    13713 0.95177 [0.5712157758991917, 0.0100795635320527, 0.0, 0.5, 0.5185185185185185, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/8510
+https://www.github.com/mrdoob/three.js/pull/13713
+mrdoob/three.js mrdoob/three.js     8422    10164 0.96586 [0.5715970962516095, 0.15838147375311837, 0.08085106382978724, 0.16666666666666666, 0.8582089552238806, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/8422
+https://www.github.com/mrdoob/three.js/pull/10164
+mrdoob/three.js mrdoob/three.js     8368     5182 0.91930 [0.4054779565033734, 0.07277823109532727, 0.2222222222222222, 0.4, 0.3652173913043478, 0, 2]
+https://www.github.com/mrdoob/three.js/pull/8368
+https://www.github.com/mrdoob/three.js/pull/5182
+mrdoob/three.js mrdoob/three.js     8353    12248 0.82248 [0.0, 0.09108029425130865, 0, 1.0, 0.0, -1, 2]
+https://www.github.com/mrdoob/three.js/pull/8353
+https://www.github.com/mrdoob/three.js/pull/12248
+mrdoob/three.js mrdoob/three.js     8349     8356 0.97690 [0.2364317438593319, 0.1915981140887617, 0, 1.0, 0.8292682926829268, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/8349
+https://www.github.com/mrdoob/three.js/pull/8356
+mrdoob/three.js mrdoob/three.js     8315    12694 0.20787 [0.3985859635263389, 0.2055369866025202, 0, 0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/8315
+https://www.github.com/mrdoob/three.js/pull/12694
+mrdoob/three.js mrdoob/three.js     8278    14174 0.98657 [0.475552449525196, 0.21046287412638384, 0.5, 0.03125, 0.0, 1, 1]
+https://www.github.com/mrdoob/three.js/pull/8278
+https://www.github.com/mrdoob/three.js/pull/14174
+mrdoob/three.js mrdoob/three.js     8064    10577 0.90755 [0.0, 0.371479160750292, 0.058823529411764705, 1.0, 0.5819672131147541, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/8064
+https://www.github.com/mrdoob/three.js/pull/10577
+mrdoob/three.js mrdoob/three.js     7534    14227 0.98278 [0.19097761746625327, 0.02578812474719679, 0.16473988439306358, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/7534
+https://www.github.com/mrdoob/three.js/pull/14227
+K mrdoob/three.js mrdoob/three.js     6230     6301 1.00000 [0.6075896306814711, 0.17873671443025474, 0.7777777777777778, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/6230
+https://www.github.com/mrdoob/three.js/pull/6301
+mrdoob/three.js mrdoob/three.js     5687     8252 0.16939 [0.2686645678719799, 0.43216102730628586, 0, 0, 0.0, 0, 0]
+https://www.github.com/mrdoob/three.js/pull/5687
+https://www.github.com/mrdoob/three.js/pull/8252
+mrdoob/three.js mrdoob/three.js     5561     9622 0.79287 [0.0, 0.06104669897664987, 0.46218487394957986, 0.25, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/5561
+https://www.github.com/mrdoob/three.js/pull/9622
+mrdoob/three.js mrdoob/three.js     5280     7848 0.94848 [0.11102046588191004, 0.0, 0.021739130434782608, 1.0, 1.0, 0, 1]
+https://www.github.com/mrdoob/three.js/pull/5280
+https://www.github.com/mrdoob/three.js/pull/7848

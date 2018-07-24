@@ -1,0 +1,20 @@
+spring-projects/spring-framework     1885      467 0.1462
+  0.3131   0.0061   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/spring-projects/spring-framework/pull/1885
+https://www.github.com/spring-projects/spring-framework/pull/467
+spring-projects/spring-framework     1882      855 0.2394
+  0.2865   0.3447   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/spring-projects/spring-framework/pull/1882
+https://www.github.com/spring-projects/spring-framework/pull/855
+spring-projects/spring-framework     1875      273 0.8830
+  0.1482   0.0474   0.2518   0.6000   0.5664   0.0000
+https://www.github.com/spring-projects/spring-framework/pull/1875
+https://www.github.com/spring-projects/spring-framework/pull/273
+spring-projects/spring-framework     1871     1494 0.6460
+  0.6116   0.0246   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/spring-projects/spring-framework/pull/1871
+https://www.github.com/spring-projects/spring-framework/pull/1494
+spring-projects/spring-framework     1863      794 0.8196
+  0.6621   0.2572   0.0000   0.0000   0.0000   0.0000
+https://www.github.com/spring-projects/spring-framework/pull/1863
+https://www.github.com/spring-projects/spring-framework/pull/794

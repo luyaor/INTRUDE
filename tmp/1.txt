@@ -1,0 +1,76 @@
+angular/angular.js	14635	12682
+
+mozilla-b2g/gaia	13332	13292
+
+angular/angular.js	3197	3082
+
+angular/angular.js	9481	9478
+
+mozilla-b2g/gaia	2459	2420
+
+angular/angular.js	7960	7776
+
+angular/angular.js	3699	3697
+
+ansible/ansible	9490	7287
+
+mozilla-b2g/gaia	5772	5638
+
+ansible/ansible	11127	10819
+
+ansible/ansible	15533	14368
+
+ansible/ansible	24798	23001
+
+ceph/ceph	8260	7289
+
+ceph/ceph	11363	11353
+
+ceph/ceph	10438	10427
+
+ceph/ceph	13378	13367
+
+ceph/ceph	13705	13170
+
+ceph/ceph	9006	8853
+
+ceph/ceph	4491	4252
+
+cocos2d/cocos2d-x	3276	3275
+
+cocos2d/cocos2d-x	2873	2871
+
+cocos2d/cocos2d-x	4927	4925
+
+django/django	440	390
+
+django/django	4152	4143
+
+docker/docker	30290	29121
+
+docker/docker	32237	31744
+
+docker/docker	1443	1442
+
+docker/docker	1312	607
+
+docker/docker	6766	6579
+
+docker/docker	756	743
+
+dotnet/corefx	3267	3264
+
+dotnet/corefx	6337	6335
+
+dotnet/corefx	10460	10450
+
+dotnet/corefx	15044	14939
+
+dotnet/corefx	419	406
+
+dotnet/corefx	7925	7886
+
+dotnet/corefx	16069	9537
+
+elastic/elasticsearch	10923	10854
+

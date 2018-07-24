@@ -1,0 +1,30 @@
+dodgepudding/wechat-php-sdk      347      351 0.6045
+title:0.05363851330198097,desc:0.0,code:0.2236842105263158,file_list:0.3333333333333333,location:0.7682926829268293,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+High on location
+https://www.github.com/dodgepudding/wechat-php-sdk/pull/347
+https://www.github.com/dodgepudding/wechat-php-sdk/pull/351
+dodgepudding/wechat-php-sdk      338      337 1.0000
+title:0.0,desc:0.0,code:1.0,file_list:1.0,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on code,Same on file_list,Same on location
+https://www.github.com/dodgepudding/wechat-php-sdk/pull/338
+https://www.github.com/dodgepudding/wechat-php-sdk/pull/337
+dodgepudding/wechat-php-sdk      337      338 1.0000
+title:0.0,desc:0.0,code:1.0,file_list:1.0,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on code,Same on file_list,Same on location
+https://www.github.com/dodgepudding/wechat-php-sdk/pull/337
+https://www.github.com/dodgepudding/wechat-php-sdk/pull/338
+dodgepudding/wechat-php-sdk      332      276 0.9087
+title:0.0,desc:0.0,code:0,file_list:1.0,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on file_list,Same on location
+https://www.github.com/dodgepudding/wechat-php-sdk/pull/332
+https://www.github.com/dodgepudding/wechat-php-sdk/pull/276
+dodgepudding/wechat-php-sdk      324      154 0.0543
+title:0.16722619584383594,desc:0.0,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+
+https://www.github.com/dodgepudding/wechat-php-sdk/pull/324
+https://www.github.com/dodgepudding/wechat-php-sdk/pull/154
+dodgepudding/wechat-php-sdk      319      252 0.9028
+title:0.0,desc:0.0,code:0,file_list:1.0,location:0.9673258813413586,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on file_list,High on location
+https://www.github.com/dodgepudding/wechat-php-sdk/pull/319
+https://www.github.com/dodgepudding/wechat-php-sdk/pull/252

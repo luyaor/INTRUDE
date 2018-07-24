@@ -1,0 +1,585 @@
+ansible/ansible ansible/ansible    42786    34897 1.00000 [0.892923176550059, 0.3712056718844438, 0.003766478342749529, 0.5, 1.0, 1, 1]
+https://www.github.com/ansible/ansible/pull/42786
+https://www.github.com/ansible/ansible/pull/34897
+ansible/ansible ansible/ansible    42783    14023 0.92919 [0.0, 0.0, 0.13800904977375567, 0.03488372093023256, 0.19433962264150945, 0, 6]
+https://www.github.com/ansible/ansible/pull/42783
+https://www.github.com/ansible/ansible/pull/14023
+ansible/ansible ansible/ansible    42781    42643 0.78574 [0.2917857535374722, 0.05847751310677593, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42781
+https://www.github.com/ansible/ansible/pull/42643
+ansible/ansible ansible/ansible    42778    36969 0.97374 [0.5057896808779722, 0.33635226704225063, 0.0, 0.25, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42778
+https://www.github.com/ansible/ansible/pull/36969
+ansible/ansible ansible/ansible    42777    40568 0.93087 [0.3802710459077858, 0.5167340588987644, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42777
+https://www.github.com/ansible/ansible/pull/40568
+ansible/ansible ansible/ansible    42776    32080 0.90189 [0.0, 0.5169014734203186, 0.0625, 1.0, 0.3958333333333333, 0, 1]
+https://www.github.com/ansible/ansible/pull/42776
+https://www.github.com/ansible/ansible/pull/32080
+ansible/ansible ansible/ansible    42775    40606 0.98876 [0.846836834263052, 0.25059005189702643, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42775
+https://www.github.com/ansible/ansible/pull/40606
+ansible/ansible ansible/ansible    42774    35218 0.84387 [0.2935198208861438, 0.26732278201935256, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42774
+https://www.github.com/ansible/ansible/pull/35218
+ansible/ansible ansible/ansible    42773    12836 0.92647 [0.0, 0.06587183652526601, 0.059813084112149535, 1.0, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42773
+https://www.github.com/ansible/ansible/pull/12836
+ansible/ansible ansible/ansible    42771    41845 0.99999 [0.301791812412169, 0.9432477120955667, 0, 1.0, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42771
+https://www.github.com/ansible/ansible/pull/41845
+ansible/ansible ansible/ansible    42770    19537 0.89710 [0.5403925512270845, 0.22927405773021728, 0.034482758620689655, 0.5, 0.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42770
+https://www.github.com/ansible/ansible/pull/19537
+ansible/ansible ansible/ansible    42767    35310 0.88862 [0.4197815786841949, 0.11199654424104685, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42767
+https://www.github.com/ansible/ansible/pull/35310
+ansible/ansible ansible/ansible    42766    24582 0.89058 [0.20539624226459868, 0.15107324691565005, 0.09183673469387756, 0.5, 0.8994413407821229, 0, 1]
+https://www.github.com/ansible/ansible/pull/42766
+https://www.github.com/ansible/ansible/pull/24582
+ansible/ansible ansible/ansible    42765    36503 0.91948 [0.19615531333880878, 0.7046718825502122, 0.0410958904109589, 0.5, 0.48148148148148145, 0, 1]
+https://www.github.com/ansible/ansible/pull/42765
+https://www.github.com/ansible/ansible/pull/36503
+ansible/ansible ansible/ansible    42762    40161 0.96664 [0.6197797204612757, 0.4162699566515832, 0.004207573632538569, 0.3333333333333333, 0.28205128205128205, 0, 1]
+https://www.github.com/ansible/ansible/pull/42762
+https://www.github.com/ansible/ansible/pull/40161
+ansible/ansible ansible/ansible    42759    42127 0.99149 [0.7845187602115805, 0.6315608543468042, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42759
+https://www.github.com/ansible/ansible/pull/42127
+ansible/ansible ansible/ansible    42758    37845 0.76412 [0.018420783429278477, 0.722628551747994, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42758
+https://www.github.com/ansible/ansible/pull/37845
+ansible/ansible ansible/ansible    42757    21635 0.98809 [0.6006880715773576, 0.5223457228698429, 0.0, 1.0, 0.0, -1, 1]
+https://www.github.com/ansible/ansible/pull/42757
+https://www.github.com/ansible/ansible/pull/21635
+ansible/ansible ansible/ansible    42755    34622 0.99439 [0.5264285656862274, 0.2045582803234513, 0, 0.25, 1.0, 1, 1]
+https://www.github.com/ansible/ansible/pull/42755
+https://www.github.com/ansible/ansible/pull/34622
+ansible/ansible ansible/ansible    42753    41452 0.87111 [0.29019020252085553, 0.385195828817553, 0.02631578947368421, 0.25, 0.7878787878787878, 0, 1]
+https://www.github.com/ansible/ansible/pull/42753
+https://www.github.com/ansible/ansible/pull/41452
+ansible/ansible ansible/ansible    42752    30533 0.93755 [0.24843426777532207, 0.5130650011382469, 0.0, 0.5, 0.75, 0, 1]
+https://www.github.com/ansible/ansible/pull/42752
+https://www.github.com/ansible/ansible/pull/30533
+ansible/ansible ansible/ansible    42751    34838 0.91589 [0.4328709672541264, 0.2851083305280471, 0.0, 0.25, 0.723404255319149, 0, 1]
+https://www.github.com/ansible/ansible/pull/42751
+https://www.github.com/ansible/ansible/pull/34838
+ansible/ansible ansible/ansible    42750    15447 0.86583 [0.36158241251099527, 0.1665732176905688, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42750
+https://www.github.com/ansible/ansible/pull/15447
+ansible/ansible ansible/ansible    42748    42403 1.00000 [1.0, 0.784592568109791, 1.0, 0.5, 1.0, 1, 1]
+https://www.github.com/ansible/ansible/pull/42748
+https://www.github.com/ansible/ansible/pull/42403
+ansible/ansible ansible/ansible    42747    42735 1.00000 [1.0, 0.5501755263095697, 1.0, 0.5, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42747
+https://www.github.com/ansible/ansible/pull/42735
+ansible/ansible ansible/ansible    42746    19727 0.99571 [0.6898373445729381, 0.23999297884278087, 0.0036202735317779565, 0.5, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42746
+https://www.github.com/ansible/ansible/pull/19727
+ansible/ansible ansible/ansible    42745     2084 0.60184 [0.745139262974033, 0.016684083426243564, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42745
+https://www.github.com/ansible/ansible/pull/2084
+ansible/ansible ansible/ansible    42744    28626 0.79990 [0.8614712477609161, 0.16549825778421637, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42744
+https://www.github.com/ansible/ansible/pull/28626
+ansible/ansible ansible/ansible    42743    35189 0.75593 [0.0, 0.7223946686817678, 0.029333333333333333, 0.16666666666666666, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42743
+https://www.github.com/ansible/ansible/pull/35189
+ansible/ansible ansible/ansible    42739    20868 0.99308 [0.3018275299603168, 0.37208463827633265, 0.0, 1.0, 0.5555555555555556, 1, 2]
+https://www.github.com/ansible/ansible/pull/42739
+https://www.github.com/ansible/ansible/pull/20868
+ansible/ansible ansible/ansible    42738    27881 0.35298 [0.33011904952108173, 0.13962924168656227, 0.0, 0.25, 0.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42738
+https://www.github.com/ansible/ansible/pull/27881
+ansible/ansible ansible/ansible    42737    21327 0.97930 [0.0, 0.17510401210287685, 0.0, 1.0, 0.7948717948717948, 1, 1]
+https://www.github.com/ansible/ansible/pull/42737
+https://www.github.com/ansible/ansible/pull/21327
+ansible/ansible ansible/ansible    42736    40783 0.99478 [1.0, 0.3053700073303272, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42736
+https://www.github.com/ansible/ansible/pull/40783
+ansible/ansible ansible/ansible    42730    37318 0.88983 [0.3264864209505639, 0.24378595670659475, 0.04520990312163617, 0.5, 0.4339622641509434, 0, 2]
+https://www.github.com/ansible/ansible/pull/42730
+https://www.github.com/ansible/ansible/pull/37318
+ansible/ansible ansible/ansible    42729    22783 0.66191 [0.2821333281696002, 0.2597181078908826, 0.25, 0.3333333333333333, 0.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42729
+https://www.github.com/ansible/ansible/pull/22783
+ansible/ansible ansible/ansible    42724    30157 0.90327 [0.46013466402582937, 0.07972672932603767, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42724
+https://www.github.com/ansible/ansible/pull/30157
+ansible/ansible ansible/ansible    42722    41125 0.99999 [0.72245320199272, 0.2965603626358672, 0, 0.6666666666666666, 0.9338842975206612, -1, 2]
+https://www.github.com/ansible/ansible/pull/42722
+https://www.github.com/ansible/ansible/pull/41125
+ansible/ansible ansible/ansible    42721    21386 0.70845 [0.16687946392924044, 0.16387376858780953, 0, 0.3333333333333333, 0.9123505976095617, 0, 1]
+https://www.github.com/ansible/ansible/pull/42721
+https://www.github.com/ansible/ansible/pull/21386
+ansible/ansible ansible/ansible    42720    39960 0.95266 [0.5047788428429935, 0.38265354333684776, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42720
+https://www.github.com/ansible/ansible/pull/39960
+ansible/ansible ansible/ansible    42718    26416 0.83488 [0.38588485919854437, 0.46340259937054007, 0, 0.5, 0.0, -1, 1]
+https://www.github.com/ansible/ansible/pull/42718
+https://www.github.com/ansible/ansible/pull/26416
+ansible/ansible ansible/ansible    42711    28276 0.95119 [0.008492631435783288, 0.47936578468860125, 0.0, 1.0, 0.0, 1, 1]
+https://www.github.com/ansible/ansible/pull/42711
+https://www.github.com/ansible/ansible/pull/28276
+ansible/ansible ansible/ansible    42709    40409 1.00000 [0.4860740585358732, 0.2975949998293076, 0.6666666666666666, 1.0, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42709
+https://www.github.com/ansible/ansible/pull/40409
+ansible/ansible ansible/ansible    42705    37782 0.81200 [0.2621469255641962, 0.23594638671845952, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42705
+https://www.github.com/ansible/ansible/pull/37782
+ansible/ansible ansible/ansible    42704    40542 0.20989 [0.3789183428370628, 0.26539734059238107, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42704
+https://www.github.com/ansible/ansible/pull/40542
+ansible/ansible ansible/ansible    42701    37520 0.98614 [0.74228064549555, 0.4306951697554189, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42701
+https://www.github.com/ansible/ansible/pull/37520
+ansible/ansible ansible/ansible    42698    37318 0.94613 [0.5255618137124294, 0.24365853408907417, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42698
+https://www.github.com/ansible/ansible/pull/37318
+ansible/ansible ansible/ansible    42697    41667 0.97561 [0.6486687510524076, 0.3577449121963279, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42697
+https://www.github.com/ansible/ansible/pull/41667
+ansible/ansible ansible/ansible    42695    34962 0.99555 [0.6447945078304573, 0.3433282902443682, 0.0008025682182985554, 0.5, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42695
+https://www.github.com/ansible/ansible/pull/34962
+ansible/ansible ansible/ansible    42694    26442 0.98248 [0.7135185775886468, 0.3684846808386262, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42694
+https://www.github.com/ansible/ansible/pull/26442
+ansible/ansible ansible/ansible    42685    42426 0.99999 [0.46366974974782377, 0.1966515475419829, 0.2916666666666667, 1.0, 1.0, -1, 1]
+https://www.github.com/ansible/ansible/pull/42685
+https://www.github.com/ansible/ansible/pull/42426
+ansible/ansible ansible/ansible    42680    20577 0.98630 [0.6031671272914785, 0.4461335242158837, 0.10455764075067024, 0.25, 0.8686868686868687, 0, 2]
+https://www.github.com/ansible/ansible/pull/42680
+https://www.github.com/ansible/ansible/pull/20577
+ansible/ansible ansible/ansible    42678    19975 0.88791 [0.07912540175930824, 0.18772418213151787, 0.04296875, 1.0, 0.5323275862068966, 0, 1]
+https://www.github.com/ansible/ansible/pull/42678
+https://www.github.com/ansible/ansible/pull/19975
+ansible/ansible ansible/ansible    42676    28624 0.98231 [0.6322198245615913, 0.15221844149724184, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42676
+https://www.github.com/ansible/ansible/pull/28624
+ansible/ansible ansible/ansible    42673    16516 1.00000 [0.8003283225650757, 0.17762064271350939, 0.7, 1.0, 0.7272727272727273, 0, 2]
+https://www.github.com/ansible/ansible/pull/42673
+https://www.github.com/ansible/ansible/pull/16516
+ansible/ansible ansible/ansible    42668    42247 0.99999 [0.517971815271802, 0.305808348566688, 1.0, 0.75, 1.0, 1, 3]
+https://www.github.com/ansible/ansible/pull/42668
+https://www.github.com/ansible/ansible/pull/42247
+ansible/ansible ansible/ansible    42667    38280 0.71223 [0.6684740771417328, 0.48588112783863335, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42667
+https://www.github.com/ansible/ansible/pull/38280
+ansible/ansible ansible/ansible    42665    42247 0.99999 [0.4839901918706245, 0.31502572543706614, 1.0, 0.75, 1.0, 1, 3]
+https://www.github.com/ansible/ansible/pull/42665
+https://www.github.com/ansible/ansible/pull/42247
+ansible/ansible ansible/ansible    42664    21415 0.43474 [0.4781284149044977, 0.4673150865279953, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42664
+https://www.github.com/ansible/ansible/pull/21415
+ansible/ansible ansible/ansible    42663    33215 0.97501 [0.5155749080888764, 0.5342379670559091, 0.0, 0.1, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42663
+https://www.github.com/ansible/ansible/pull/33215
+ansible/ansible ansible/ansible    42659    34848 0.98111 [0.6222932843836049, 0.3490289033838277, 0.0, 0.5, 0.3709677419354839, 0, 1]
+https://www.github.com/ansible/ansible/pull/42659
+https://www.github.com/ansible/ansible/pull/34848
+ansible/ansible ansible/ansible    42657    33215 0.97608 [0.5155749080888764, 0.5369606619132763, 0.0, 0.1111111111111111, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42657
+https://www.github.com/ansible/ansible/pull/33215
+ansible/ansible ansible/ansible    42654    16676 0.70955 [0.6582126572760607, 0.507366325857676, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42654
+https://www.github.com/ansible/ansible/pull/16676
+ansible/ansible ansible/ansible    42650    38708 0.70268 [0.247874011584777, 0.13633901529584255, 0, 0.14285714285714285, 0.9779005524861878, 0, 1]
+https://www.github.com/ansible/ansible/pull/42650
+https://www.github.com/ansible/ansible/pull/38708
+ansible/ansible ansible/ansible    42645    18587 0.91676 [0.0, 0.39051106840867617, 0.08177570093457943, 0.04580152671755725, 0.1260053619302949, 0, 6]
+https://www.github.com/ansible/ansible/pull/42645
+https://www.github.com/ansible/ansible/pull/18587
+ansible/ansible ansible/ansible    42643    42421 0.99426 [0.15804506091820114, 0.4241793187162348, 1.0, 0.2222222222222222, 1.0, 1, 2]
+https://www.github.com/ansible/ansible/pull/42643
+https://www.github.com/ansible/ansible/pull/42421
+ansible/ansible ansible/ansible    42641    15481 0.99101 [0.3575828927664475, 0.11681597520457969, 0.0011389521640091116, 1.0, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42641
+https://www.github.com/ansible/ansible/pull/15481
+ansible/ansible ansible/ansible    42639    37189 0.97608 [0.478753729542765, 0.42088953207115753, 0.0, 0.3333333333333333, 0.8849557522123894, -1, 1]
+https://www.github.com/ansible/ansible/pull/42639
+https://www.github.com/ansible/ansible/pull/37189
+ansible/ansible ansible/ansible    42635    42005 1.00000 [0.9228990252755922, 0.06649851330155265, 0.29411764705882354, 0.5, 1.0, -1, 1]
+https://www.github.com/ansible/ansible/pull/42635
+https://www.github.com/ansible/ansible/pull/42005
+ansible/ansible ansible/ansible    42634    42005 1.00000 [0.9228990252755922, 0.06649851330155265, 0.29411764705882354, 0.5, 1.0, -1, 1]
+https://www.github.com/ansible/ansible/pull/42634
+https://www.github.com/ansible/ansible/pull/42005
+ansible/ansible ansible/ansible    42633    37732 0.88457 [0.008882845858103557, 0.10858740945861847, 0.0, 1.0, 0.0, 1, 1]
+https://www.github.com/ansible/ansible/pull/42633
+https://www.github.com/ansible/ansible/pull/37732
+ansible/ansible ansible/ansible    42630    42127 0.99410 [0.51295509173507, 0.2616315507066533, 0.296551724137931, 0.5, 0.8, 0, 1]
+https://www.github.com/ansible/ansible/pull/42630
+https://www.github.com/ansible/ansible/pull/42127
+ansible/ansible ansible/ansible    42624    27420 1.00000 [0.4523572554554794, 0.2906087569565422, 0.0, 1.0, 0.8409090909090909, 1, 1]
+https://www.github.com/ansible/ansible/pull/42624
+https://www.github.com/ansible/ansible/pull/27420
+ansible/ansible ansible/ansible    42618    41375 0.97100 [0.48574202608870626, 0.7405840005357387, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42618
+https://www.github.com/ansible/ansible/pull/41375
+ansible/ansible ansible/ansible    42615    30304 0.75551 [0.142811032752793, 0.3887623146007382, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42615
+https://www.github.com/ansible/ansible/pull/30304
+ansible/ansible ansible/ansible    42613    41824 0.99645 [0.6153027122674105, 0.10952703231957413, 0, 1.0, 0.6923076923076923, 0, 1]
+https://www.github.com/ansible/ansible/pull/42613
+https://www.github.com/ansible/ansible/pull/41824
+ansible/ansible ansible/ansible    42610    26249 0.31442 [0.5516113488965095, 0.016289909427072417, 0, 0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42610
+https://www.github.com/ansible/ansible/pull/26249
+ansible/ansible ansible/ansible    42609    25387 0.98751 [0.7066178734924131, 0.3683517909974533, 0.0, 0.25, 0.6442953020134228, 0, 1]
+https://www.github.com/ansible/ansible/pull/42609
+https://www.github.com/ansible/ansible/pull/25387
+ansible/ansible ansible/ansible    42604    16676 0.56345 [0.5723678624006785, 0.44820779185660137, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42604
+https://www.github.com/ansible/ansible/pull/16676
+ansible/ansible ansible/ansible    42603    24500 0.99999 [0.3607139751921234, 0.26417163525746257, 0.0125, 1.0, 0.7454545454545455, 1, 1]
+https://www.github.com/ansible/ansible/pull/42603
+https://www.github.com/ansible/ansible/pull/24500
+ansible/ansible ansible/ansible    42602    15314 0.99600 [0.7477276262181553, 0.3428238228711778, 0.07759882869692533, 0.2857142857142857, 0.6939655172413793, -1, 2]
+https://www.github.com/ansible/ansible/pull/42602
+https://www.github.com/ansible/ansible/pull/15314
+ansible/ansible ansible/ansible    42600    39339 0.97385 [0.13844866242219175, 0.32063898504900046, 0.02702702702702703, 1.0, 0.8409090909090909, -1, 1]
+https://www.github.com/ansible/ansible/pull/42600
+https://www.github.com/ansible/ansible/pull/39339
+ansible/ansible ansible/ansible    42593    34950 0.88077 [0.35745603653242614, 0.25307991388543727, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42593
+https://www.github.com/ansible/ansible/pull/34950
+ansible/ansible ansible/ansible    42587    19022 0.86902 [0.296972808146967, 0.19832640494253576, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42587
+https://www.github.com/ansible/ansible/pull/19022
+ansible/ansible ansible/ansible    42580    27710 0.28470 [0.3165676072222914, 0.586306037266469, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42580
+https://www.github.com/ansible/ansible/pull/27710
+ansible/ansible ansible/ansible    42575    34662 0.94064 [0.0, 0.23891395832777138, 0.0, 1.0, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42575
+https://www.github.com/ansible/ansible/pull/34662
+ansible/ansible ansible/ansible    42571    38782 0.84651 [0.3713451102712174, 0.04905135581119456, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42571
+https://www.github.com/ansible/ansible/pull/38782
+ansible/ansible ansible/ansible    42562    38994 0.98226 [0.3084476836270371, 0.11660453615736266, 0.0, 1.0, 0.36482084690553745, -1, 2]
+https://www.github.com/ansible/ansible/pull/42562
+https://www.github.com/ansible/ansible/pull/38994
+ansible/ansible ansible/ansible    42558    34920 0.96410 [0.6224264540177346, 0.20066846765409496, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42558
+https://www.github.com/ansible/ansible/pull/34920
+ansible/ansible ansible/ansible    42555    37708 1.00000 [0.7487160885170349, 0.3500314319370487, 0.34108527131782945, 1.0, 0.86, 1, 1]
+https://www.github.com/ansible/ansible/pull/42555
+https://www.github.com/ansible/ansible/pull/37708
+ansible/ansible ansible/ansible    42552    40133 0.66898 [0.0, 0.5380699022878478, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42552
+https://www.github.com/ansible/ansible/pull/40133
+ansible/ansible ansible/ansible    42548    39301 0.93923 [0.5883690572675945, 0.34913199601354217, 0.0, 0.5, 0.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42548
+https://www.github.com/ansible/ansible/pull/39301
+ansible/ansible ansible/ansible    42543    30457 0.98102 [0.0, 0.6067325267402337, 0.0, 1.0, 0.32934131736526945, 1, 1]
+https://www.github.com/ansible/ansible/pull/42543
+https://www.github.com/ansible/ansible/pull/30457
+ansible/ansible ansible/ansible    42542    42109 0.99999 [0.34923384533598834, 0.4113893813926017, 0.43870967741935485, 1.0, 0.7458823529411764, 0, 2]
+https://www.github.com/ansible/ansible/pull/42542
+https://www.github.com/ansible/ansible/pull/42109
+ansible/ansible ansible/ansible    42538    39660 0.87574 [0.34722751048316436, 0.25697798914867326, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42538
+https://www.github.com/ansible/ansible/pull/39660
+ansible/ansible ansible/ansible    42536    27653 0.83124 [0.22325420196409415, 0.41387244895313274, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42536
+https://www.github.com/ansible/ansible/pull/27653
+ansible/ansible ansible/ansible    42535    41153 0.99706 [0.292521497786644, 0.5076970975411239, 1.0, 0.18181818181818182, 0.7551020408163265, 1, 2]
+https://www.github.com/ansible/ansible/pull/42535
+https://www.github.com/ansible/ansible/pull/41153
+ansible/ansible ansible/ansible    42533    42112 0.99607 [0.6323415026173682, 0.44674680420029633, 0.12949640287769784, 0.6666666666666666, 0.29333333333333333, 0, 2]
+https://www.github.com/ansible/ansible/pull/42533
+https://www.github.com/ansible/ansible/pull/42112
+ansible/ansible ansible/ansible    42531    42033 1.00000 [1.0000000000000002, 0.4476642645359167, 1.0, 1.0, 1.0, -1, 1]
+https://www.github.com/ansible/ansible/pull/42531
+https://www.github.com/ansible/ansible/pull/42033
+ansible/ansible ansible/ansible    42529    37285 0.99667 [0.27260476139996725, 0.3341338678814981, 0.07446808510638298, 1.0, 0.5833333333333334, 1, 1]
+https://www.github.com/ansible/ansible/pull/42529
+https://www.github.com/ansible/ansible/pull/37285
+ansible/ansible ansible/ansible    42528    41621 0.95634 [0.03271282433833659, 0.3512721055455836, 0.625, 0.2, 1.0, -1, 1]
+https://www.github.com/ansible/ansible/pull/42528
+https://www.github.com/ansible/ansible/pull/41621
+ansible/ansible ansible/ansible    42525    41128 0.98535 [0.6901797006148821, 0.17492483322980348, 0.06741573033707865, 0.3333333333333333, 0.12244897959183673, -1, 2]
+https://www.github.com/ansible/ansible/pull/42525
+https://www.github.com/ansible/ansible/pull/41128
+ansible/ansible ansible/ansible    42521    42475 1.00000 [1.0, 0.4137788423341158, 1.0, 1.0, 1.0, 0, 2]
+https://www.github.com/ansible/ansible/pull/42521
+https://www.github.com/ansible/ansible/pull/42475
+ansible/ansible ansible/ansible    42519    39638 0.90788 [0.3758500069451014, 0.3577303032256682, 0, 0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42519
+https://www.github.com/ansible/ansible/pull/39638
+ansible/ansible ansible/ansible    42518    19316 0.99998 [0.7954541905769472, 0.27544216344306965, 0.05955334987593052, 1.0, 0.3873239436619718, -1, 1]
+https://www.github.com/ansible/ansible/pull/42518
+https://www.github.com/ansible/ansible/pull/19316
+ansible/ansible ansible/ansible    42517    23288 0.98041 [0.49737571712858497, 0.13592650351723004, 0.23824451410658307, 0.25, 0.9700854700854701, 0, 1]
+https://www.github.com/ansible/ansible/pull/42517
+https://www.github.com/ansible/ansible/pull/23288
+ansible/ansible ansible/ansible    42516    20414 0.94650 [0.3083944081436448, 0.10835352576626497, 0, 0.36585365853658536, 0.9449838187702265, 0, 15]
+https://www.github.com/ansible/ansible/pull/42516
+https://www.github.com/ansible/ansible/pull/20414
+ansible/ansible ansible/ansible    42515    20414 0.94650 [0.3083944081436448, 0.10835352576626497, 0, 0.36585365853658536, 0.9449838187702265, 0, 15]
+https://www.github.com/ansible/ansible/pull/42515
+https://www.github.com/ansible/ansible/pull/20414
+ansible/ansible ansible/ansible    42513    17365 0.92005 [0.3856371684653195, 0.11503996437365087, 0.05, 1.0, 0.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42513
+https://www.github.com/ansible/ansible/pull/17365
+ansible/ansible ansible/ansible    42510    34494 0.99697 [0.8404191543716404, 0.3285095466994176, 0.3458646616541353, 0.5, 0.2725225225225225, -1, 1]
+https://www.github.com/ansible/ansible/pull/42510
+https://www.github.com/ansible/ansible/pull/34494
+ansible/ansible ansible/ansible    42508    39660 0.83100 [0.2786589490899366, 0.258752998439075, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42508
+https://www.github.com/ansible/ansible/pull/39660
+ansible/ansible ansible/ansible    42505    37207 0.97771 [0.7451693798438966, 0.12553736425762488, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42505
+https://www.github.com/ansible/ansible/pull/37207
+ansible/ansible ansible/ansible    42502    40458 0.99280 [0.7031128618577962, 0.31940298359088687, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42502
+https://www.github.com/ansible/ansible/pull/40458
+ansible/ansible ansible/ansible    42500    21107 0.98620 [0.5843909569636918, 0.6728909080213757, 0.002097902097902098, 0.047619047619047616, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42500
+https://www.github.com/ansible/ansible/pull/21107
+ansible/ansible ansible/ansible    42494    21862 0.94807 [0.4681942783273225, 0.2754030837649152, 0.0, 0.16666666666666666, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42494
+https://www.github.com/ansible/ansible/pull/21862
+ansible/ansible ansible/ansible    42490    25306 0.99329 [0.9502461988603862, 0.08366204028238346, 0.01639344262295082, 0.043478260869565216, 0.8690476190476191, 0, 1]
+https://www.github.com/ansible/ansible/pull/42490
+https://www.github.com/ansible/ansible/pull/25306
+ansible/ansible ansible/ansible    42483    36218 0.94988 [0.0, 0.2101623088205164, 0.4, 0.35294117647058826, 0.7586206896551724, 0, 6]
+https://www.github.com/ansible/ansible/pull/42483
+https://www.github.com/ansible/ansible/pull/36218
+ansible/ansible ansible/ansible    42482    26709 1.00000 [0.4852523137642253, 0.2918670973796063, 0.3018867924528302, 1.0, 0.8838709677419355, 0, 1]
+https://www.github.com/ansible/ansible/pull/42482
+https://www.github.com/ansible/ansible/pull/26709
+ansible/ansible ansible/ansible    42481    31817 0.99998 [0.583113012051284, 0.33528672991801, 0.14671814671814673, 0.25, 0.748792270531401, 1, 1]
+https://www.github.com/ansible/ansible/pull/42481
+https://www.github.com/ansible/ansible/pull/31817
+ansible/ansible ansible/ansible    42473    34521 0.69940 [0.7419665658135358, 0.2499750036993558, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42473
+https://www.github.com/ansible/ansible/pull/34521
+ansible/ansible ansible/ansible    42472    42436 0.89486 [0.0, 0.28085109244881723, 0, 0.25, 1.0, 1, 1]
+https://www.github.com/ansible/ansible/pull/42472
+https://www.github.com/ansible/ansible/pull/42436
+ansible/ansible ansible/ansible    42471    34521 0.66332 [0.7037851209289884, 0.2803241619850739, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42471
+https://www.github.com/ansible/ansible/pull/34521
+ansible/ansible ansible/ansible    42470    17539 0.80390 [0.10146857978882522, 0.6374813737689795, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42470
+https://www.github.com/ansible/ansible/pull/17539
+ansible/ansible ansible/ansible    42468    25398 0.99557 [0.5635648632178645, 0.09389066341261777, 0.06310679611650485, 1.0, 0.566304347826087, 0, 2]
+https://www.github.com/ansible/ansible/pull/42468
+https://www.github.com/ansible/ansible/pull/25398
+ansible/ansible ansible/ansible    42467    37328 0.90302 [0.3986242444394172, 0.2607002216291344, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42467
+https://www.github.com/ansible/ansible/pull/37328
+ansible/ansible ansible/ansible    42463    33677 0.95367 [0.47216132213550455, 0.49131817784635745, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42463
+https://www.github.com/ansible/ansible/pull/33677
+ansible/ansible ansible/ansible    42456    41722 1.00000 [0.5987973950805265, 0.5121879675238522, 0.014925373134328358, 1.0, 0.4835164835164835, 1, 1]
+https://www.github.com/ansible/ansible/pull/42456
+https://www.github.com/ansible/ansible/pull/41722
+ansible/ansible ansible/ansible    42455    26926 0.99999 [0.643197045172534, 0.31268653022165865, 0.0, 1.0, 0.0, 1, 1]
+https://www.github.com/ansible/ansible/pull/42455
+https://www.github.com/ansible/ansible/pull/26926
+ansible/ansible ansible/ansible    42454    25737 1.00000 [0.925652675282523, 0.3592401884200097, 0.0, 1.0, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42454
+https://www.github.com/ansible/ansible/pull/25737
+ansible/ansible ansible/ansible    42452    42077 0.97958 [0.4389259307821244, 0.6789190192777814, 0, 0.2, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42452
+https://www.github.com/ansible/ansible/pull/42077
+ansible/ansible ansible/ansible    42451    42077 0.98981 [0.5340642301711471, 0.5266009372122854, 0, 0.3333333333333333, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42451
+https://www.github.com/ansible/ansible/pull/42077
+ansible/ansible ansible/ansible    42450    42077 0.99999 [0.8424521275240062, 0.5565697577879841, 0, 0.25, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42450
+https://www.github.com/ansible/ansible/pull/42077
+ansible/ansible ansible/ansible    42443    28453 0.98102 [0.3335951627194377, 0.23212398836471093, 0.02564102564102564, 1.0, 0.6229508196721312, -1, 1]
+https://www.github.com/ansible/ansible/pull/42443
+https://www.github.com/ansible/ansible/pull/28453
+ansible/ansible ansible/ansible    42442    42308 1.00000 [1.0, 0.11187470952461712, 0, 1.0, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42442
+https://www.github.com/ansible/ansible/pull/42308
+ansible/ansible ansible/ansible    42441    38049 0.86029 [0.2980484353628268, 0.16750686166506276, 0.0, 0.3333333333333333, 0.8160919540229885, -1, 1]
+https://www.github.com/ansible/ansible/pull/42441
+https://www.github.com/ansible/ansible/pull/38049
+ansible/ansible ansible/ansible    42440    38049 0.86029 [0.2980484353628268, 0.16750686166506276, 0.0, 0.3333333333333333, 0.8160919540229885, -1, 1]
+https://www.github.com/ansible/ansible/pull/42440
+https://www.github.com/ansible/ansible/pull/38049
+ansible/ansible ansible/ansible    42436    42472 0.89486 [0.0, 0.28085109244881723, 0, 0.25, 1.0, 1, 1]
+https://www.github.com/ansible/ansible/pull/42436
+https://www.github.com/ansible/ansible/pull/42472
+ansible/ansible ansible/ansible    42435    42472 0.89486 [0.0, 0.28085109244881723, 0, 0.25, 1.0, 1, 1]
+https://www.github.com/ansible/ansible/pull/42435
+https://www.github.com/ansible/ansible/pull/42472
+ansible/ansible ansible/ansible    42428    42073 0.85205 [0.42587753780160026, 0.25191906560077354, 0, 0.14285714285714285, 0.6730769230769231, 0, 1]
+https://www.github.com/ansible/ansible/pull/42428
+https://www.github.com/ansible/ansible/pull/42073
+ansible/ansible ansible/ansible    42424    34480 0.99295 [0.45191030813807265, 0.2604203185422002, 0.04118616144975288, 0.3333333333333333, 0.7621951219512195, 1, 1]
+https://www.github.com/ansible/ansible/pull/42424
+https://www.github.com/ansible/ansible/pull/34480
+ansible/ansible ansible/ansible    42422    35651 0.89212 [0.0, 0.11493576052883567, 0.005555555555555556, 1.0, 0.8678414096916299, 0, 1]
+https://www.github.com/ansible/ansible/pull/42422
+https://www.github.com/ansible/ansible/pull/35651
+ansible/ansible ansible/ansible    42421    41153 0.99999 [0.3385042791362233, 0.5372556056933048, 1.0, 0.18181818181818182, 0.7551020408163265, 1, 2]
+https://www.github.com/ansible/ansible/pull/42421
+https://www.github.com/ansible/ansible/pull/41153
+ansible/ansible ansible/ansible    42415    34251 1.00000 [0.7843692665417674, 0.38039044848496545, 0.1792452830188679, 1.0, 0.16501650165016502, -1, 2]
+https://www.github.com/ansible/ansible/pull/42415
+https://www.github.com/ansible/ansible/pull/34251
+ansible/ansible ansible/ansible    42413    23166 0.71422 [0.6269022219073912, 0.5995634841311503, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42413
+https://www.github.com/ansible/ansible/pull/23166
+ansible/ansible ansible/ansible    42412    41841 0.94933 [0.3092086483011009, 0.18344738473950511, 0, 1.0, 0.3465909090909091, 0, 1]
+https://www.github.com/ansible/ansible/pull/42412
+https://www.github.com/ansible/ansible/pull/41841
+ansible/ansible ansible/ansible    42410    30346 1.00000 [0.7130328109112952, 0.30859400049396546, 0.0701219512195122, 1.0, 0.6423357664233577, 0, 1]
+https://www.github.com/ansible/ansible/pull/42410
+https://www.github.com/ansible/ansible/pull/30346
+ansible/ansible ansible/ansible    42403    42748 1.00000 [1.0, 0.784592568109791, 1.0, 0.5, 1.0, 1, 1]
+https://www.github.com/ansible/ansible/pull/42403
+https://www.github.com/ansible/ansible/pull/42748
+ansible/ansible ansible/ansible    42401    41991 0.95468 [0.633550181603461, 0.02239153776692696, 0.045454545454545456, 0.14285714285714285, 0.7906976744186046, 0, 1]
+https://www.github.com/ansible/ansible/pull/42401
+https://www.github.com/ansible/ansible/pull/41991
+ansible/ansible ansible/ansible    42400    32923 0.99479 [0.4516943516602951, 0.27388758733352736, 0.04455445544554455, 1.0, 0.0, 1, 1]
+https://www.github.com/ansible/ansible/pull/42400
+https://www.github.com/ansible/ansible/pull/32923
+ansible/ansible ansible/ansible    42395    15850 1.00000 [0.6638966623123614, 0.4133375334290725, 0.08628318584070796, 1.0, 0.6855670103092784, 0, 1]
+https://www.github.com/ansible/ansible/pull/42395
+https://www.github.com/ansible/ansible/pull/15850
+ansible/ansible ansible/ansible    42387    20880 0.21618 [0.4446900958128924, 0.09393122657223425, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42387
+https://www.github.com/ansible/ansible/pull/20880
+ansible/ansible ansible/ansible    42386    35206 0.30275 [0.5214182066956943, 0.08447684254947205, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42386
+https://www.github.com/ansible/ansible/pull/35206
+ansible/ansible ansible/ansible    42380    40839 0.99725 [0.5768804586396009, 0.37643438880030095, 0.052083333333333336, 1.0, 0.11570247933884298, -1, 2]
+https://www.github.com/ansible/ansible/pull/42380
+https://www.github.com/ansible/ansible/pull/40839
+ansible/ansible ansible/ansible    42376    29031 0.99492 [0.6880958737399034, 0.3710052519302742, 0.0256, 0.3333333333333333, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42376
+https://www.github.com/ansible/ansible/pull/29031
+ansible/ansible ansible/ansible    42375    41743 0.96521 [0.5442209071926093, 0.45228933605814176, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42375
+https://www.github.com/ansible/ansible/pull/41743
+ansible/ansible ansible/ansible    42356    42421 0.99523 [0.16987568081879398, 0.5328246220453513, 1.0, 0.2222222222222222, 0.7551020408163265, 1, 2]
+https://www.github.com/ansible/ansible/pull/42356
+https://www.github.com/ansible/ansible/pull/42421
+ansible/ansible ansible/ansible    42354    31629 0.99438 [0.7022765741413526, 0.24995834907455006, 0.125, 1.0, 0.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42354
+https://www.github.com/ansible/ansible/pull/31629
+ansible/ansible ansible/ansible    42350    39175 0.92583 [0.3232135213244824, 0.16462319228366648, 0.18032786885245902, 1.0, 0.0, -1, 1]
+https://www.github.com/ansible/ansible/pull/42350
+https://www.github.com/ansible/ansible/pull/39175
+ansible/ansible ansible/ansible    42347    34302 0.77877 [0.670542925601061, 0.6412166591540603, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42347
+https://www.github.com/ansible/ansible/pull/34302
+ansible/ansible ansible/ansible    42346    21236 0.69534 [0.1699246668877627, 0.1539545796971654, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42346
+https://www.github.com/ansible/ansible/pull/21236
+ansible/ansible ansible/ansible    42345    39102 0.99999 [0.6418899238570519, 0.5069465131947348, 0.008771929824561403, 0.25, 0.7708333333333334, 1, 1]
+https://www.github.com/ansible/ansible/pull/42345
+https://www.github.com/ansible/ansible/pull/39102
+ansible/ansible ansible/ansible    42321    35434 0.85078 [0.33894991187696655, 0.16472317126299402, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42321
+https://www.github.com/ansible/ansible/pull/35434
+ansible/ansible ansible/ansible    42315    28808 0.99326 [0.8995395344866516, 0.4316936746553246, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42315
+https://www.github.com/ansible/ansible/pull/28808
+ansible/ansible ansible/ansible    42313    35759 0.93432 [0.5111175730366014, 0.16650715549027836, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42313
+https://www.github.com/ansible/ansible/pull/35759
+ansible/ansible ansible/ansible    42306    38280 0.95656 [0.23516677277398268, 0.13841904748630857, 0, 0.3888888888888889, 0.5, 0, 7]
+https://www.github.com/ansible/ansible/pull/42306
+https://www.github.com/ansible/ansible/pull/38280
+ansible/ansible ansible/ansible    42295    35450 0.97866 [0.6637654724180867, 0.3951231751091247, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42295
+https://www.github.com/ansible/ansible/pull/35450
+ansible/ansible ansible/ansible    42290    24623 0.72796 [0.09603512556667368, 0.506391945270999, 0.06060606060606061, 0.09090909090909091, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42290
+https://www.github.com/ansible/ansible/pull/24623
+ansible/ansible ansible/ansible    42279    41902 0.99266 [0.9441497367015571, 0.2402385982420419, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42279
+https://www.github.com/ansible/ansible/pull/41902
+ansible/ansible ansible/ansible    42271    38240 0.89558 [0.2734098721641616, 0.5692820548323675, 0.0, 0.3333333333333333, 0.5555555555555556, -1, 1]
+https://www.github.com/ansible/ansible/pull/42271
+https://www.github.com/ansible/ansible/pull/38240
+ansible/ansible ansible/ansible    42265    34721 0.91069 [0.3870172853095591, 0.344334403257893, 0, 0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42265
+https://www.github.com/ansible/ansible/pull/34721
+ansible/ansible ansible/ansible    42239    30939 0.95780 [0.0, 0.18748270035902423, 0.03389830508474576, 1.0, 0.3684210526315789, 1, 1]
+https://www.github.com/ansible/ansible/pull/42239
+https://www.github.com/ansible/ansible/pull/30939
+ansible/ansible ansible/ansible    42237    10812 0.88862 [0.40325134721624256, 0.010579369142462524, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42237
+https://www.github.com/ansible/ansible/pull/10812
+ansible/ansible ansible/ansible    42224    24878 0.99999 [0.7580291585597151, 0.48858356160227207, 0.038349041273968154, 0.6666666666666666, 1.0, 0, 2]
+https://www.github.com/ansible/ansible/pull/42224
+https://www.github.com/ansible/ansible/pull/24878
+ansible/ansible ansible/ansible    42219    34215 0.97670 [0.5414636995063508, 0.33903010106315984, 0.09313725490196079, 0.1111111111111111, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42219
+https://www.github.com/ansible/ansible/pull/34215
+ansible/ansible ansible/ansible    42214    12904 0.98437 [0.3689445595537555, 0.49935474595290097, 0.1302170283806344, 0.5, 0.3097560975609756, -1, 2]
+https://www.github.com/ansible/ansible/pull/42214
+https://www.github.com/ansible/ansible/pull/12904
+ansible/ansible ansible/ansible    42211    42370 0.99999 [0.4926779285315593, 0.3298512173924679, 0.0, 1.0, 0.35, 1, 1]
+https://www.github.com/ansible/ansible/pull/42211
+https://www.github.com/ansible/ansible/pull/42370
+ansible/ansible ansible/ansible    42205    42375 0.94949 [0.4626230861205619, 0.4672024165485348, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42205
+https://www.github.com/ansible/ansible/pull/42375
+ansible/ansible ansible/ansible    42203    40806 0.98530 [0.576160120668512, 0.509524583727585, 0.018018018018018018, 0.2, 0.8771929824561403, 0, 1]
+https://www.github.com/ansible/ansible/pull/42203
+https://www.github.com/ansible/ansible/pull/40806
+ansible/ansible ansible/ansible    42196    34213 0.96987 [0.44140437905012125, 0.40443402021506186, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42196
+https://www.github.com/ansible/ansible/pull/34213
+ansible/ansible ansible/ansible    42176    39907 0.98919 [0.30673247252972724, 0.2503269010599766, 0.02040816326530612, 1.0, 0.8627450980392157, 0, 1]
+https://www.github.com/ansible/ansible/pull/42176
+https://www.github.com/ansible/ansible/pull/39907
+ansible/ansible ansible/ansible    42172    41559 0.94842 [0.40611844913091233, 0.6181547497088318, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42172
+https://www.github.com/ansible/ansible/pull/41559
+ansible/ansible ansible/ansible    42171    22181 0.91901 [0.20135819802511812, 0.7145418004557615, 0, 0.1111111111111111, 0.0, 1, 1]
+https://www.github.com/ansible/ansible/pull/42171
+https://www.github.com/ansible/ansible/pull/22181
+ansible/ansible ansible/ansible    42170    32484 0.78330 [0.0, 0.031271351989362706, 0.0, 0.0016666666666666668, 0.11363636363636363, 0, 5]
+https://www.github.com/ansible/ansible/pull/42170
+https://www.github.com/ansible/ansible/pull/32484
+ansible/ansible ansible/ansible    42169    28742 0.99017 [0.8772884494388541, 0.24615254944485626, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42169
+https://www.github.com/ansible/ansible/pull/28742
+ansible/ansible ansible/ansible    42168    33692 0.97399 [0.13881745807787796, 0.41004853982808853, 0.04597701149425287, 1.0, 0.7211538461538461, 0, 1]
+https://www.github.com/ansible/ansible/pull/42168
+https://www.github.com/ansible/ansible/pull/33692
+ansible/ansible ansible/ansible    42164    28020 0.96201 [0.45168271336585764, 0.6722282146231734, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42164
+https://www.github.com/ansible/ansible/pull/28020
+ansible/ansible ansible/ansible    42163    38390 0.85719 [0.3478758125129988, 0.16686468034967683, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42163
+https://www.github.com/ansible/ansible/pull/38390
+ansible/ansible ansible/ansible    42159    41183 0.96053 [0.5592809524579808, 0.33116687741400447, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42159
+https://www.github.com/ansible/ansible/pull/41183
+ansible/ansible ansible/ansible    42158    40458 0.94984 [0.39837567727335566, 0.13839300244264907, 0.0, 1.0, 0.18292682926829268, 0, 1]
+https://www.github.com/ansible/ansible/pull/42158
+https://www.github.com/ansible/ansible/pull/40458
+ansible/ansible ansible/ansible    42153    33359 0.99513 [0.7926546154115873, 0.4670345651641513, 0.0, 0.3333333333333333, 0.6342412451361867, 0, 2]
+https://www.github.com/ansible/ansible/pull/42153
+https://www.github.com/ansible/ansible/pull/33359
+ansible/ansible ansible/ansible    42151    35875 0.95409 [0.4274358535900469, 0.31811945666043234, 0, 0.25, 1.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42151
+https://www.github.com/ansible/ansible/pull/35875
+ansible/ansible ansible/ansible    42149    37318 0.97392 [0.688824524295601, 0.19680120243948818, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/ansible/ansible/pull/42149
+https://www.github.com/ansible/ansible/pull/37318
+ansible/ansible ansible/ansible    42147    35848 0.84480 [0.652736281520387, 0.8855403666065396, 0, 0.0, 0.0, 0, 0]
+https://www.github.com/ansible/ansible/pull/42147
+https://www.github.com/ansible/ansible/pull/35848
+ansible/ansible ansible/ansible    42146    29055 0.91752 [0.34186490009546106, 0.30545377089232034, 0.0, 1.0, 0.0, -1, 1]
+https://www.github.com/ansible/ansible/pull/42146
+https://www.github.com/ansible/ansible/pull/29055
+ansible/ansible ansible/ansible    42134    39818 0.98965 [0.6001058903315392, 0.5587898321959244, 0.015384615384615385, 0.5, 0.42105263157894735, 0, 1]
+https://www.github.com/ansible/ansible/pull/42134
+https://www.github.com/ansible/ansible/pull/39818
+ansible/ansible ansible/ansible    42132    42558 0.86841 [0.33214146482396606, 0.09675807591340105, 0.013793103448275862, 1.0, 0.0, 0, 1]
+https://www.github.com/ansible/ansible/pull/42132
+https://www.github.com/ansible/ansible/pull/42558

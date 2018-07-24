@@ -1,0 +1,108 @@
+django/django django/django    10186    10066 0.93333 [0.0, 0.0, 0.09859154929577464, 0.8333333333333334, 1.0, 1, 5]
+https://www.github.com/django/django/pull/10186
+https://www.github.com/django/django/pull/10066
+django/django django/django    10185    10063 0.89100 [0.300812009432513, 0.0, 0.1652892561983471, 0.3333333333333333, 0.3953488372093023, -1, 2]
+https://www.github.com/django/django/pull/10185
+https://www.github.com/django/django/pull/10063
+django/django django/django    10184     6296 0.89310 [0.2699082774268765, 0.0, 0.125, 0.3333333333333333, 1.0, -1, 1]
+https://www.github.com/django/django/pull/10184
+https://www.github.com/django/django/pull/6296
+django/django django/django    10181     3376 0.86036 [0.35089265541343134, 0.0, 0.0, 0.3333333333333333, 0.40298507462686567, -1, 2]
+https://www.github.com/django/django/pull/10181
+https://www.github.com/django/django/pull/3376
+django/django django/django    10180     9048 0.91559 [0.15039804249883734, 0.0, 0.0, 0.5, 0.5070422535211268, -1, 4]
+https://www.github.com/django/django/pull/10180
+https://www.github.com/django/django/pull/9048
+django/django django/django    10178     4858 0.99062 [0.6089128529459615, 0.0, 0.08032596041909197, 0.8, 0.3930635838150289, -1, 4]
+https://www.github.com/django/django/pull/10178
+https://www.github.com/django/django/pull/4858
+django/django django/django    10175     8035 0.95310 [0.024206424327506554, 0.023907888019589887, 0.0, 0.28, 0.8095238095238095, -1, 7]
+https://www.github.com/django/django/pull/10175
+https://www.github.com/django/django/pull/8035
+django/django django/django    10171     6803 0.99400 [0.7411451420774332, 0.025798727987971726, 0.19148936170212766, 0.07692307692307693, 0.24242424242424243, 1, 1]
+https://www.github.com/django/django/pull/10171
+https://www.github.com/django/django/pull/6803
+django/django django/django    10170     7966 0.67601 [0.3803012546344539, 0.0, 0.1452513966480447, 0.5, 0.0, 0, 1]
+https://www.github.com/django/django/pull/10170
+https://www.github.com/django/django/pull/7966
+django/django django/django    10162     2849 0.97978 [0.7815656140605243, 0.0, 0.0, 0.3333333333333333, 0.0, -1, 2]
+https://www.github.com/django/django/pull/10162
+https://www.github.com/django/django/pull/2849
+django/django django/django    10152      991 0.84865 [0.17623396531810187, 0.40156591440594563, 0.0, 0.2, 1.0, -1, 1]
+https://www.github.com/django/django/pull/10152
+https://www.github.com/django/django/pull/991
+django/django django/django    10151     4872 0.99348 [0.494897773547269, 0.0, 0.7105263157894737, 0.5, 0.2972972972972973, 0, 2]
+https://www.github.com/django/django/pull/10151
+https://www.github.com/django/django/pull/4872
+django/django django/django    10146     3868 0.92571 [0.4970069949307934, 0.20101119891997904, 0.06588235294117648, 0.14285714285714285, 0.12811387900355872, -1, 2]
+https://www.github.com/django/django/pull/10146
+https://www.github.com/django/django/pull/3868
+django/django django/django    10140     6995 0.96435 [0.2621978345761553, 0.02264844780814705, 0.19397363465160075, 0.4, 0.41260744985673353, -1, 6]
+https://www.github.com/django/django/pull/10140
+https://www.github.com/django/django/pull/6995
+django/django django/django    10124     9440 0.96205 [0.6281128898158609, 0.15005142534262852, 0, 0.0, 0.0, 1, 0]
+https://www.github.com/django/django/pull/10124
+https://www.github.com/django/django/pull/9440
+django/django django/django    10121     9456 0.77491 [0.37936809312692776, 0.0, 0.0, 0.5, 0.40350877192982454, 0, 1]
+https://www.github.com/django/django/pull/10121
+https://www.github.com/django/django/pull/9456
+django/django django/django    10117     2465 0.98165 [0.3677657969284069, 0.15224975694619877, 0.2562358276643991, 0.5, 0.45365853658536587, -1, 3]
+https://www.github.com/django/django/pull/10117
+https://www.github.com/django/django/pull/2465
+django/django django/django    10116     3008 0.95434 [0.2680185033042547, 0.0, 0.05119047619047619, 0.6666666666666666, 0.6903765690376569, -1, 2]
+https://www.github.com/django/django/pull/10116
+https://www.github.com/django/django/pull/3008
+django/django django/django    10114     1083 0.82778 [0.611844465523493, 0.0331833067783653, 0.012345679012345678, 0.2, 0.1917808219178082, 0, 1]
+https://www.github.com/django/django/pull/10114
+https://www.github.com/django/django/pull/1083
+django/django django/django    10112     1672 0.95496 [0.0, 0.0, 0.0, 0.5, 0.46012931034482757, 0, 7]
+https://www.github.com/django/django/pull/10112
+https://www.github.com/django/django/pull/1672
+django/django django/django    10110     1082 0.91205 [0.6091393185475469, 0.0, 0.0, 0.2, 0.5735294117647058, 0, 1]
+https://www.github.com/django/django/pull/10110
+https://www.github.com/django/django/pull/1082
+django/django django/django    10106     9260 0.29559 [0.0, 0.024551466783519778, 0.03571428571428571, 0.16666666666666666, 1.0, 0, 1]
+https://www.github.com/django/django/pull/10106
+https://www.github.com/django/django/pull/9260
+django/django django/django    10102     8491 0.98383 [0.7164304264509561, 0.0, 0.15079365079365079, 0.42857142857142855, 0.8169934640522876, 1, 3]
+https://www.github.com/django/django/pull/10102
+https://www.github.com/django/django/pull/8491
+django/django django/django    10098     4801 0.95733 [0.5126929079894498, 0.37640557729798513, 0.0013698630136986301, 0.15384615384615385, 0.29365079365079366, -1, 2]
+https://www.github.com/django/django/pull/10098
+https://www.github.com/django/django/pull/4801
+django/django django/django    10097     4949 0.98403 [0.22828006263464798, 0.0, 0.13333333333333333, 1.0, 0.3333333333333333, -1, 3]
+https://www.github.com/django/django/pull/10097
+https://www.github.com/django/django/pull/4949
+django/django django/django    10092     7799 0.88540 [0.3134105511682454, 0.0, 0.17751479289940827, 0.3333333333333333, 0.2736842105263158, -1, 2]
+https://www.github.com/django/django/pull/10092
+https://www.github.com/django/django/pull/7799
+django/django django/django    10090     5551 0.29209 [0.06677230778600342, 0.23848258410834727, 0.11834319526627218, 0.2857142857142857, 0.0, 0, 2]
+https://www.github.com/django/django/pull/10090
+https://www.github.com/django/django/pull/5551
+django/django django/django    10068    10067 0.99675 [0.521301957651157, 0.27434477788588996, 0.09433962264150944, 0.3333333333333333, 0.8769230769230769, 1, 1]
+https://www.github.com/django/django/pull/10068
+https://www.github.com/django/django/pull/10067
+django/django django/django    10033    10137 1.00000 [0.7585239208178385, 0.9951651009101818, 0.07017543859649122, 0.3333333333333333, 1.0, 1, 1]
+https://www.github.com/django/django/pull/10033
+https://www.github.com/django/django/pull/10137
+django/django django/django    10023     7854 0.54774 [0.0030923852953761706, 0.0, 0.0, 1.0, 0.20833333333333334, -1, 1]
+https://www.github.com/django/django/pull/10023
+https://www.github.com/django/django/pull/7854
+django/django django/django    10013     4439 0.82350 [0.30293984879974095, 0.06463791947045382, 0.0, 1.0, 0.0, 0, 1]
+https://www.github.com/django/django/pull/10013
+https://www.github.com/django/django/pull/4439
+django/django django/django    10005     9039 1.00000 [1.0000000000000002, 0.0, 1.0, 0.5, 0.9076923076923077, 1, 3]
+https://www.github.com/django/django/pull/10005
+https://www.github.com/django/django/pull/9039
+django/django django/django     9993     2757 0.98635 [0.2581515617468013, 0.0, 0.20414201183431951, 1.0, 0.08695652173913043, -1, 3]
+https://www.github.com/django/django/pull/9993
+https://www.github.com/django/django/pull/2757
+django/django django/django     9991     1717 0.99129 [0.5109292987430101, 0.35079293094699365, 0.031055900621118012, 1.0, 0.0, 0, 2]
+https://www.github.com/django/django/pull/9991
+https://www.github.com/django/django/pull/1717
+django/django django/django     9990     6562 0.80069 [0.04361093079283567, 0.01669147424817161, 0.2155688622754491, 0.6666666666666666, 0.10294117647058823, -1, 2]
+https://www.github.com/django/django/pull/9990
+https://www.github.com/django/django/pull/6562
+django/django django/django     9983     4171 0.94763 [0.09565129060237115, 0.0, 0.043859649122807015, 0.1935483870967742, 0.0, -1, 6]
+https://www.github.com/django/django/pull/9983
+https://www.github.com/django/django/pull/4171
