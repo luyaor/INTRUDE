@@ -7,7 +7,11 @@ import random
 
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+from sklearn.tree import DecisionTreeClassifier
+
 from sklearn.utils import shuffle
 from sklearn.metrics import average_precision_score
 from sklearn.metrics import precision_recall_curve
@@ -46,13 +50,17 @@ def init_model_with_repo(repo):
     save_id = repo.replace('/','_') + '_all'
     init_model_with_pulls(get_pull_list(repo), save_id)
 
+
 def get_sim(repo, num1, num2):
     p1 = get_pull(repo, num1)
     p2 = get_pull(repo, num2)
     return get_sim_vector(p1, p2)
 
+
+'''
 def get_sim_wrap(args):
     return get_sim(*args)
+'''
 
 '''
 def get_sim(repo, num1, num2):
@@ -84,6 +92,17 @@ def print_data():
         print(x)
 '''
 
+def get_feature_vector_from_path(data):
+    X_path = data.replace('.txt','') + '_commit_feature_vector_mix' + '_X.json'
+    y_path = data.replace('.txt','') + '_commit_feature_vector_mix' + '_y.json'
+    if os.path.exists(X_path) and os.path.exists(y_path):
+        # print('warning: feature vectore already exists!', out)
+        X = localfile_tool.get_file(X_path)
+        y = localfile_tool.get_file(y_path)
+        return X, y
+    else:
+        raise Exception('no such file %s' % data)
+            
 def get_feature_vector(data, label, renew=False, out=None):
     default_path = 'data/' + data.replace('data/','').replace('.txt','').replace('/','_') + '_feature_vector'
     if out is None:
@@ -224,6 +243,21 @@ def classify(model_type='SVM', params_flag=[1,1,1,1,1,1]):
         y_train, y_test = y[:train_num], y[train_num:]
         return (X_train, y_train, X_test, y_test)
     
+    def get_small_commit_data():
+        X_train, y_train = get_feature_vector_from_path('data/rly_false_pairs.txt')
+        X_train2, y_train2 = get_feature_vector_from_path('data/small_part_msr.txt')
+        X_train += X_train2
+        y_train += y_train2
+    
+        X_test, y_test = get_feature_vector_from_path('data/small_part_negative.txt')
+        X_test2, y_test2 = get_feature_vector_from_path('data/small2_part_msr.txt')    
+        X_test += X_test2
+        y_test += y_test2
+        
+        # X_train, y_train, X_test, y_test = get_ran_shuffle(X_train + X_test, y_train + y_test, 0.75)
+        
+        return (X_train, y_train, X_test, y_test)
+        
     def get_small_data():
         renew_flag = False
         path_suffix = None
@@ -240,6 +274,10 @@ def classify(model_type='SVM', params_flag=[1,1,1,1,1,1]):
         
         # path_suffix = 'test_on_more_feature'
         
+        # path_suffix = 'commit_granularity'
+        
+        # path_suffix = 'no_split_word'
+        
         X_train, y_train = get_feature_vector('data/rly_false_pairs.txt', 0, renew_flag, path_suffix)
         
         
@@ -251,8 +289,11 @@ def classify(model_type='SVM', params_flag=[1,1,1,1,1,1]):
         X_train += X_train3
         y_train += y_train3
         
+        # X_test, y_test = [], []
+        
         X_test, y_test = get_feature_vector('data/small_part_negative.txt', 0, renew_flag, path_suffix)
         X_test2, y_test2 = get_feature_vector('data/small2_part_msr.txt', 1, renew_flag, path_suffix)
+        
         # X_test, y_test = get_feature_vector('data/big_false_data.txt', 0, renew_flag)
         # X_test2, y_test2 = get_feature_vector('data/msr_positive_pairs.txt', 1, renew_flag)
         
@@ -318,6 +359,23 @@ def classify(model_type='SVM', params_flag=[1,1,1,1,1,1]):
     
     X_train, y_train, X_test, y_test = get_small_data()
     
+    # X_train, y_train, X_test, y_test = get_small_commit_data()
+    
+    '''
+    def fil(X, y):
+        n = len(X)
+        X_ , y_ = [], []
+        for i in range(n):
+            if X[i] is not None:
+                X_.append(X[i])
+                y_.append(y[i])
+        return X_, y_
+    
+    X_train, y_train = fil(X_train, y_train)
+    X_test, y_test = fil(X_test, y_test)
+    '''
+    
+    
     draw_pic = False
     
     
@@ -348,6 +406,9 @@ def classify(model_type='SVM', params_flag=[1,1,1,1,1,1]):
     elif model_type == 'SGDClassifier':
         clf = linear_model.SGDClassifier(tol=0.01)
     
+    # clf = GradientBoostingClassifier(n_estimators=1000, max_depth=30, random_state=0).fit(X_train, y_train)
+    # clf =  DecisionTreeClassifier(max_depth=50)
+    
     clf = clf.fit(X_train, y_train)
     
     
@@ -375,7 +436,6 @@ def classify(model_type='SVM', params_flag=[1,1,1,1,1,1]):
     
     y_score = clf.decision_function(X_test)
     average_precision = average_precision_score(y_test, y_score)
-    
     print('Average precision score: {0:0.4f}'.format(average_precision))
     
     if draw_pic:

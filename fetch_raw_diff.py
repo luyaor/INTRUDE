@@ -75,9 +75,18 @@ def parse_diff(file_name, diff):
             "del_code": del_diff_code,
            }
 
-def fetch_raw_diff(url):
+def parse_files(r):
     file_list = []
+    diff_list = r.text.split('diff --git')
+    for diff in diff_list[1:]:
+        try:
+            file_full_name = re.findall('a\/.*? b\/(.*?)\n', diff)[0]
+        except:
+            continue
+        file_list.append(parse_diff(file_full_name, diff))
+    return file_list
 
+def fetch_raw_diff(url):
     s = requests.Session()
     s.mount('https://github.com', HTTPAdapter(max_retries=3))
 
@@ -88,18 +97,11 @@ def fetch_raw_diff(url):
     except:
         raise Exception('error on fetch compare page on %s!' % url)
 
-    diff_list = r.text.split('diff --git')
-    for diff in diff_list[1:]:
-        try:
-            file_full_name = re.findall('a\/.*? b\/(.*?)\n', diff)[0]
-        except:
-            continue
-        file_list.append(parse_diff(file_full_name, diff))
-    return file_list
+    return parse_files(r)
 
 if __name__ == '__main__':
-    # fetch_raw_diff('https://github.com/MarlinFirmware/Marlin/commit/6b43bfa01dd76f5475acf40d0e5b5f240fe57d9e')
-    print([x["location"] for x in fetch_raw_diff('https://github.com/mozilla-b2g/gaia/pull/34385.diff')])
+    # print(fetch_raw_diff('https://github.com/MarlinFirmware/Marlin/commit/6b43bfa01dd76f5475acf40d0e5b5f240fe57d9e'))
+    # print([x["location"] for x in fetch_raw_diff('https://github.com/mozilla-b2g/gaia/pull/34385.diff')])
     # print(fetch_raw_diff('https://github.com/mozilla-b2g/gaia/pull/34384.diff'))
-    # print([x["location"] for x in fetch_raw_diff('https://patch-diff.githubusercontent.com/raw/moby/moby/pull/21495.diff')])
+    print([x["location"] for x in fetch_raw_diff('https://patch-diff.githubusercontent.com/raw/moby/moby/pull/21495.diff')])
     # print(fetch_raw_diff("https://patch-diff.githubusercontent.com/raw/FancyCoder0/INFOX/pull/146.diff"))

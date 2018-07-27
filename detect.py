@@ -122,18 +122,18 @@ def find_on_openpr(repo, time_stp=None):
         num2 = topk[0][0]
         prob = topk[0][1]
 
-        sim = calc_sim(pull, get_pull(repo, num2))
+        sim = get_sim_vector(pull, get_pull(repo, num2))
         print("%s %8s %8s %.4f" % (repo, str(num1), str(num2), prob))
-        print(",".join("{}:{}".format(k, v) for k, v in sim.items()))
-        print(",".join(parse_sim(sim)))
+        print(" ".join("%.4f" % f for f in sim))
+        #print(",".join(parse_sim(sim)))
         
         print('https://www.github.com/%s/pull/%s' % (repo, str(num1)))
         print('https://www.github.com/%s/pull/%s' % (repo, str(num2)))
         sys.stdout.flush()
 
         print("%s %8s %8s %.4f" % (repo, str(num1), str(num2), prob), file=out2)
-        print(",".join("{}:{}".format(k, v) for k, v in sim.items()), file=out2)
-        print(",".join(parse_sim(sim)), file=out2)
+        print(" ".join("%.4f" % f for f in sim), file=out2)
+        #print(",".join(parse_sim(sim)), file=out2)
         print('https://www.github.com/%s/pull/%s' % (repo, str(num1)), file=out2)
         print('https://www.github.com/%s/pull/%s' % (repo, str(num2)), file=out2)
 

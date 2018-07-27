@@ -653,4 +653,988 @@ https://www.github.com/joomla/joomla-cms/pull/19195
 joomla/joomla-cms    19234    20772 0.7493
   0.5920   0.3050   0.0000   0.0000   0.0000   0.0000
 https://www.github.com/joomla/joomla-cms/pull/19234
-https://www.github.com/joomla/joomla-cms/pull/20772
+https://www.github.com/joomla/joomla-cms/pull/20772joomla/joomla-cms    19231    18474 0.9177
+title:0.23853802747559602,desc:0.6516819932803442,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.3818141388904628
+High on desc,Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/19231
+https://www.github.com/joomla/joomla-cms/pull/18474
+joomla/joomla-cms    19190     3710 1.0000
+title:0.5523435122925222,desc:0.02275044838199461,code:0.5454545454545454,file_list:1.0,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.5796458233991408
+High on title,High on code,Same on file_list,Same on location
+https://www.github.com/joomla/joomla-cms/pull/19190
+https://www.github.com/joomla/joomla-cms/pull/3710
+joomla/joomla-cms    19182     8985 0.4678
+title:0.0,desc:0.21515904140846473,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:0,title_idf_sum:0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/19182
+https://www.github.com/joomla/joomla-cms/pull/8985
+joomla/joomla-cms    19110    14885 0.4263
+title:0.34739996808860457,desc:0.4944422112049173,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+High on desc
+https://www.github.com/joomla/joomla-cms/pull/19110
+https://www.github.com/joomla/joomla-cms/pull/14885
+joomla/joomla-cms    19106    11922 0.6138
+title:0.1958960607712074,desc:0.19948679714818757,code:0.051533742331288344,file_list:0.07142857142857142,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/19106
+https://www.github.com/joomla/joomla-cms/pull/11922
+joomla/joomla-cms    19076    15634 0.7527
+title:0.1928247421275388,desc:0.21416460097428083,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/19076
+https://www.github.com/joomla/joomla-cms/pull/15634
+joomla/joomla-cms    19062    19241 0.7632
+title:0.0,desc:0.10174973154964743,code:0.0,file_list:0.4,location:0.4198473282442748,pattern:1,overlap_files_len:6,overlap_title_len:0,title_idf_sum:0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/19062
+https://www.github.com/joomla/joomla-cms/pull/19241
+joomla/joomla-cms    19048    19770 0.7584
+title:0.20260212169176178,desc:0.028693053346560086,code:0.0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.4055020461225234
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/19048
+https://www.github.com/joomla/joomla-cms/pull/19770
+joomla/joomla-cms    19047    17975 0.7481
+title:0.14779871207964518,desc:0.16501663888648044,code:0.0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.6802696771826007
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/19047
+https://www.github.com/joomla/joomla-cms/pull/17975
+joomla/joomla-cms    19043    20288 0.9084
+title:0.3633252907039364,desc:0.2630572766774908,code:0.08333333333333333,file_list:0.14285714285714285,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/19043
+https://www.github.com/joomla/joomla-cms/pull/20288
+joomla/joomla-cms    19038    13582 0.8690
+title:0.18398880372549622,desc:0.19520238183955466,code:0.0,file_list:0.5,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.293119426870025
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/19038
+https://www.github.com/joomla/joomla-cms/pull/13582
+joomla/joomla-cms    18976    17809 0.9599
+title:0.14679418877064732,desc:0.47768309758958943,code:0.712180746561886,file_list:0.4,location:0.0625,pattern:0,overlap_files_len:2,overlap_title_len:1,title_idf_sum:1.0
+High on desc,High on code
+https://www.github.com/joomla/joomla-cms/pull/18976
+https://www.github.com/joomla/joomla-cms/pull/17809
+joomla/joomla-cms    18966     2516 0.7573
+title:0.05898174582550758,desc:0.003493474757856232,code:0.0,file_list:0.5,location:0.9696969696969697,pattern:-1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+High on location
+https://www.github.com/joomla/joomla-cms/pull/18966
+https://www.github.com/joomla/joomla-cms/pull/2516
+joomla/joomla-cms    18961    18929 0.7340
+title:0.0,desc:0.15599958366283725,code:0.0,file_list:0.2,location:0.6707317073170732,pattern:1,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/18961
+https://www.github.com/joomla/joomla-cms/pull/18929
+joomla/joomla-cms    18917    19326 0.7853
+title:0.4361764447933461,desc:0.668318830461448,code:0.0,file_list:0.14285714285714285,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3822799116417022
+High on desc
+https://www.github.com/joomla/joomla-cms/pull/18917
+https://www.github.com/joomla/joomla-cms/pull/19326
+joomla/joomla-cms    18916    19029 0.9148
+title:0.4277540479220263,desc:0.27809810494260234,code:0.07142857142857142,file_list:0.05,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/18916
+https://www.github.com/joomla/joomla-cms/pull/19029
+joomla/joomla-cms    18894    19482 0.4225
+title:0.0,desc:0.004705796328501338,code:0.0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/18894
+https://www.github.com/joomla/joomla-cms/pull/19482
+joomla/joomla-cms    18877     4095 0.2256
+title:0.0,desc:0.01912081606673671,code:0,file_list:0.16666666666666666,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/18877
+https://www.github.com/joomla/joomla-cms/pull/4095
+joomla/joomla-cms    18846    10456 0.9262
+title:0.8194962558212053,desc:0.19393881199626223,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:4,title_idf_sum:1.8929353486734621
+High on title
+https://www.github.com/joomla/joomla-cms/pull/18846
+https://www.github.com/joomla/joomla-cms/pull/10456
+joomla/joomla-cms    18843    14307 0.8548
+title:0.1543339446722446,desc:0.24434431172067306,code:0.0,file_list:0.5,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/18843
+https://www.github.com/joomla/joomla-cms/pull/14307
+joomla/joomla-cms    18821    20069 0.9192
+title:0.46982330137185413,desc:0.06747707980043113,code:0.0,file_list:0.125,location:1.0,pattern:-1,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.2465517115252593
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/18821
+https://www.github.com/joomla/joomla-cms/pull/20069
+joomla/joomla-cms    18766     3129 0.6904
+title:0.30587173917465726,desc:0.3271355199223662,code:0.34782608695652173,file_list:0.18181818181818182,location:0.0,pattern:-1,overlap_files_len:2,overlap_title_len:2,title_idf_sum:1.3589702971638038
+
+https://www.github.com/joomla/joomla-cms/pull/18766
+https://www.github.com/joomla/joomla-cms/pull/3129
+joomla/joomla-cms    18679     6363 0.7533
+title:0.6831178982641725,desc:0.010660168063079376,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+High on title
+https://www.github.com/joomla/joomla-cms/pull/18679
+https://www.github.com/joomla/joomla-cms/pull/6363
+joomla/joomla-cms    18624    19771 0.9974
+title:0.4388153336202751,desc:0.1615446148549618,code:0.5263157894736842,file_list:0.5,location:1.0,pattern:-1,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3818451622219219
+High on code,Same on location
+https://www.github.com/joomla/joomla-cms/pull/18624
+https://www.github.com/joomla/joomla-cms/pull/19771
+joomla/joomla-cms    18570    14884 0.8473
+title:0.23227581727645752,desc:0.17850622448825257,code:0.0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/18570
+https://www.github.com/joomla/joomla-cms/pull/14884
+joomla/joomla-cms    18558     8436 0.1292
+title:0.2964452870882504,desc:0.0,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+
+https://www.github.com/joomla/joomla-cms/pull/18558
+https://www.github.com/joomla/joomla-cms/pull/8436
+joomla/joomla-cms    18554    16878 0.7476
+title:0.17739071920670518,desc:0.24607542614138408,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/18554
+https://www.github.com/joomla/joomla-cms/pull/16878
+joomla/joomla-cms    18504    14262 0.6249
+title:0.5444452830620868,desc:0.0441407077162931,code:0.0,file_list:0.11538461538461539,location:0.0,pattern:0,overlap_files_len:3,overlap_title_len:1,title_idf_sum:1.0
+High on title
+https://www.github.com/joomla/joomla-cms/pull/18504
+https://www.github.com/joomla/joomla-cms/pull/14262
+joomla/joomla-cms    18452    11276 0.9107
+title:0.5957605884082916,desc:0.06290355735150212,code:0.009345794392523364,file_list:0.5,location:0.0,pattern:0,overlap_files_len:3,overlap_title_len:1,title_idf_sum:1.0
+High on title
+https://www.github.com/joomla/joomla-cms/pull/18452
+https://www.github.com/joomla/joomla-cms/pull/11276
+joomla/joomla-cms    18441     9691 0.4172
+title:0.4649453278266513,desc:0.11417253535885118,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+
+https://www.github.com/joomla/joomla-cms/pull/18441
+https://www.github.com/joomla/joomla-cms/pull/9691
+joomla/joomla-cms    18353    19510 0.7072
+title:0.13028898039914086,desc:0.0,code:0.05128205128205128,file_list:1.0,location:0.0,pattern:-1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/18353
+https://www.github.com/joomla/joomla-cms/pull/19510
+joomla/joomla-cms    18325     6917 0.9729
+title:0.44843121617635795,desc:0.06117225246241397,code:0.0,file_list:0.5,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3402499577070595
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/18325
+https://www.github.com/joomla/joomla-cms/pull/6917
+joomla/joomla-cms    18295    17251 0.9704
+title:0.049699182470579785,desc:0.17677820732066854,code:0.058823529411764705,file_list:1.0,location:0.9337016574585635,pattern:-1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list,High on location
+https://www.github.com/joomla/joomla-cms/pull/18295
+https://www.github.com/joomla/joomla-cms/pull/17251
+joomla/joomla-cms    18167    16204 0.9401
+title:0.0,desc:0.49642128506552896,code:0.0,file_list:1.0,location:0.7333333333333333,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+High on desc,Same on file_list,High on location
+https://www.github.com/joomla/joomla-cms/pull/18167
+https://www.github.com/joomla/joomla-cms/pull/16204
+joomla/joomla-cms    18166    16204 0.9368
+title:0.0,desc:0.19979140095710288,code:0.0,file_list:1.0,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on file_list,Same on location
+https://www.github.com/joomla/joomla-cms/pull/18166
+https://www.github.com/joomla/joomla-cms/pull/16204
+joomla/joomla-cms    18146     5888 0.9169
+title:0.24184970128325453,desc:0.7019393985473364,code:0.21182266009852216,file_list:0.06666666666666667,location:0.8993135011441648,pattern:0,overlap_files_len:4,overlap_title_len:1,title_idf_sum:1.0
+High on desc,High on location
+https://www.github.com/joomla/joomla-cms/pull/18146
+https://www.github.com/joomla/joomla-cms/pull/5888
+joomla/joomla-cms    18132     5201 0.9321
+title:0.6449943015994992,desc:0.2632129008096532,code:0.1179245283018868,file_list:0.2,location:0.0,pattern:0,overlap_files_len:2,overlap_title_len:2,title_idf_sum:1.3985172403627635
+High on title
+https://www.github.com/joomla/joomla-cms/pull/18132
+https://www.github.com/joomla/joomla-cms/pull/5201
+joomla/joomla-cms    18088    20431 0.6473
+title:0.0,desc:0.12972434807102387,code:0.02631578947368421,file_list:0.25,location:0.18888888888888888,pattern:1,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/18088
+https://www.github.com/joomla/joomla-cms/pull/20431
+joomla/joomla-cms    18052    19134 0.9055
+title:0.42343054348488557,desc:0.11656634193530013,code:0.1875,file_list:0.3333333333333333,location:0.31759656652360513,pattern:0,overlap_files_len:9,overlap_title_len:3,title_idf_sum:1.7070996462442651
+
+https://www.github.com/joomla/joomla-cms/pull/18052
+https://www.github.com/joomla/joomla-cms/pull/19134
+joomla/joomla-cms    18030    20438 0.7991
+title:0.0,desc:0.15400533086915083,code:0.0,file_list:1.0,location:0.48672566371681414,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/18030
+https://www.github.com/joomla/joomla-cms/pull/20438
+joomla/joomla-cms    17926    19357 1.0000
+title:0.37817184271833676,desc:0.03650316375784897,code:1.0,file_list:0.25,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on code,Same on location
+https://www.github.com/joomla/joomla-cms/pull/17926
+https://www.github.com/joomla/joomla-cms/pull/19357
+joomla/joomla-cms    17907     5399 0.6622
+title:0.5156739046310088,desc:0.37148453062556264,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:3,title_idf_sum:1.6845769380749445
+High on title
+https://www.github.com/joomla/joomla-cms/pull/17907
+https://www.github.com/joomla/joomla-cms/pull/5399
+joomla/joomla-cms    17881     4118 0.7129
+title:0.5551806807277238,desc:0.20520530235388607,code:0,file_list:0.1,location:0.0,pattern:0,overlap_files_len:2,overlap_title_len:1,title_idf_sum:1.0
+High on title
+https://www.github.com/joomla/joomla-cms/pull/17881
+https://www.github.com/joomla/joomla-cms/pull/4118
+joomla/joomla-cms    17860     1158 0.3588
+title:0.4261719354944335,desc:0.1354274416868953,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.4141878456877532
+
+https://www.github.com/joomla/joomla-cms/pull/17860
+https://www.github.com/joomla/joomla-cms/pull/1158
+joomla/joomla-cms    17859    13058 0.9597
+title:0.3903975087511945,desc:0.03017285924662193,code:0.0,file_list:1.0,location:0.23333333333333334,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3853071979657714
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/17859
+https://www.github.com/joomla/joomla-cms/pull/13058
+joomla/joomla-cms    17856    16501 0.3814
+title:0.0,desc:0.049905519770908256,code:0.0,file_list:0.3333333333333333,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/17856
+https://www.github.com/joomla/joomla-cms/pull/16501
+joomla/joomla-cms    17802    19034 0.5000
+title:0.4617547238991689,desc:0.2579086080835211,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.4121615233224327
+
+https://www.github.com/joomla/joomla-cms/pull/17802
+https://www.github.com/joomla/joomla-cms/pull/19034
+joomla/joomla-cms    17797    20752 0.4122
+title:0.4628821267150496,desc:0.11200081345115204,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.3269818653980296
+
+https://www.github.com/joomla/joomla-cms/pull/17797
+https://www.github.com/joomla/joomla-cms/pull/20752
+joomla/joomla-cms    17769     6790 0.8971
+title:0.7120571978887374,desc:0.38018908084560504,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:3,title_idf_sum:1.6248538530443613
+High on title
+https://www.github.com/joomla/joomla-cms/pull/17769
+https://www.github.com/joomla/joomla-cms/pull/6790
+joomla/joomla-cms    17752    21100 0.8755
+title:0.28955055786767797,desc:0.11031958129410294,code:0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:2,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/17752
+https://www.github.com/joomla/joomla-cms/pull/21100
+joomla/joomla-cms    17749    18404 0.7150
+title:0.1269121064127333,desc:0.14057287153846226,code:0.008064516129032258,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.4141853815675667
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/17749
+https://www.github.com/joomla/joomla-cms/pull/18404
+joomla/joomla-cms    17735     1545 0.9740
+title:0.5471501357856655,desc:0.06379395047820344,code:0.0,file_list:0.5,location:0.6923076923076923,pattern:-1,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3863569761838421
+High on title
+https://www.github.com/joomla/joomla-cms/pull/17735
+https://www.github.com/joomla/joomla-cms/pull/1545
+joomla/joomla-cms    17725     2562 0.8479
+title:0.31219813607153,desc:0.0583689288772212,code:0.003484320557491289,file_list:0.5,location:0.5529411764705883,pattern:-1,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3863569761838421
+
+https://www.github.com/joomla/joomla-cms/pull/17725
+https://www.github.com/joomla/joomla-cms/pull/2562
+joomla/joomla-cms    17709    13766 0.9124
+title:0.15472427980164094,desc:0.22593681944633293,code:0.18433179723502305,file_list:0.1794871794871795,location:0.19230769230769232,pattern:1,overlap_files_len:7,overlap_title_len:2,title_idf_sum:1.3994790115266134
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/17709
+https://www.github.com/joomla/joomla-cms/pull/13766
+joomla/joomla-cms    17686    11772 0.7841
+title:0.5745136549365569,desc:0.4425738550988739,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:3,title_idf_sum:1.7078263016487387
+High on title,High on desc
+https://www.github.com/joomla/joomla-cms/pull/17686
+https://www.github.com/joomla/joomla-cms/pull/11772
+joomla/joomla-cms    17677      391 0.8897
+title:0.7091713778312174,desc:0.3551288641136744,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.4137823928066031
+High on title
+https://www.github.com/joomla/joomla-cms/pull/17677
+https://www.github.com/joomla/joomla-cms/pull/391
+joomla/joomla-cms    17674     2418 0.8130
+title:0.3139877607468541,desc:0.29276651555387495,code:0.15789473684210525,file_list:0.5,location:0.0,pattern:0,overlap_files_len:2,overlap_title_len:2,title_idf_sum:1.3712960217847825
+
+https://www.github.com/joomla/joomla-cms/pull/17674
+https://www.github.com/joomla/joomla-cms/pull/2418
+joomla/joomla-cms    17660    18759 0.9746
+title:0.6277352346368095,desc:0.3625805550833602,code:0.024539877300613498,file_list:0.16666666666666666,location:0.6351351351351351,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.40708066797696
+High on title
+https://www.github.com/joomla/joomla-cms/pull/17660
+https://www.github.com/joomla/joomla-cms/pull/18759
+joomla/joomla-cms    17655    20092 0.5338
+title:0.4516429464528671,desc:0.35255246418101027,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:3,title_idf_sum:1.6235317738975634
+
+https://www.github.com/joomla/joomla-cms/pull/17655
+https://www.github.com/joomla/joomla-cms/pull/20092
+joomla/joomla-cms    17646    18431 0.8308
+title:0.12185838801419499,desc:0.1756407954249638,code:0.13157894736842105,file_list:0.2857142857142857,location:1.0,pattern:-1,overlap_files_len:2,overlap_title_len:2,title_idf_sum:1.3853071979657714
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/17646
+https://www.github.com/joomla/joomla-cms/pull/18431
+joomla/joomla-cms    17586     4638 0.4250
+title:0.5323333491145198,desc:0.07313953758713453,code:0,file_list:0.0,location:0.0,pattern:-1,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.4134261334832532
+High on title
+https://www.github.com/joomla/joomla-cms/pull/17586
+https://www.github.com/joomla/joomla-cms/pull/4638
+joomla/joomla-cms    17585    16474 0.9377
+title:0.3648010836354133,desc:0.21840432299855417,code:0.18811881188118812,file_list:0.16666666666666666,location:0.93,pattern:0,overlap_files_len:2,overlap_title_len:2,title_idf_sum:1.4141899952610184
+High on location
+https://www.github.com/joomla/joomla-cms/pull/17585
+https://www.github.com/joomla/joomla-cms/pull/16474
+joomla/joomla-cms    17575     9231 0.9435
+title:0.15732742703855113,desc:0.1154060618739395,code:0.25,file_list:0.03125,location:1.0,pattern:1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on location,Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/17575
+https://www.github.com/joomla/joomla-cms/pull/9231
+joomla/joomla-cms    17555    17632 0.9477
+title:0.4076652978543162,desc:0.38406044206367695,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/17555
+https://www.github.com/joomla/joomla-cms/pull/17632
+joomla/joomla-cms    17553     6297 0.8397
+title:0.4874851053113202,desc:0.2032685582041235,code:0.2033898305084746,file_list:0.05,location:0.19327731092436976,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3246321416565316
+
+https://www.github.com/joomla/joomla-cms/pull/17553
+https://www.github.com/joomla/joomla-cms/pull/6297
+joomla/joomla-cms    17552    12994 0.9489
+title:0.2779816459840594,desc:0.10322741867090016,code:0.43243243243243246,file_list:0.07142857142857142,location:1.0,pattern:-1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/17552
+https://www.github.com/joomla/joomla-cms/pull/12994
+joomla/joomla-cms    17536    20073 0.8007
+title:0.05499695233389101,desc:0.20568630234501153,code:0.27184466019417475,file_list:0.037037037037037035,location:0.0,pattern:1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/17536
+https://www.github.com/joomla/joomla-cms/pull/20073
+joomla/joomla-cms    17504     7884 0.7015
+title:0.5788485420776661,desc:0.24555364670976093,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.3921670261008927
+High on title
+https://www.github.com/joomla/joomla-cms/pull/17504
+https://www.github.com/joomla/joomla-cms/pull/7884
+joomla/joomla-cms    17491    21138 0.8620
+title:0.3989551502212475,desc:0.2755986925935531,code:0.017391304347826087,file_list:0.034482758620689655,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.4127926733212766
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/17491
+https://www.github.com/joomla/joomla-cms/pull/21138
+joomla/joomla-cms    17490    14127 1.0000
+title:0.8371219717311422,desc:0.40219828976000144,code:0.49206349206349204,file_list:0.2857142857142857,location:0.5130111524163569,pattern:0,overlap_files_len:4,overlap_title_len:4,title_idf_sum:1.913822967319385
+High on title,High on desc
+https://www.github.com/joomla/joomla-cms/pull/17490
+https://www.github.com/joomla/joomla-cms/pull/14127
+joomla/joomla-cms    17402     7450 0.3408
+title:0.0,desc:0.17711080327650125,code:0.0,file_list:0.045454545454545456,location:1.0,pattern:-1,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/17402
+https://www.github.com/joomla/joomla-cms/pull/7450
+joomla/joomla-cms    17372     9023 0.7705
+title:0.08705957821355242,desc:0.4846260069206347,code:0.020202020202020204,file_list:0.028037383177570093,location:0.0,pattern:1,overlap_files_len:3,overlap_title_len:1,title_idf_sum:1.0
+High on desc,Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/17372
+https://www.github.com/joomla/joomla-cms/pull/9023
+joomla/joomla-cms    17322    17657 0.8881
+title:0.4724316001920559,desc:0.008157853287525144,code:0.07040417209908735,file_list:0.021739130434782608,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3883133546944801
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/17322
+https://www.github.com/joomla/joomla-cms/pull/17657
+joomla/joomla-cms    17316     9490 0.8013
+title:0.07604163837820421,desc:0.23202044469364835,code:0.5205479452054794,file_list:0.125,location:0.5813953488372093,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+High on code
+https://www.github.com/joomla/joomla-cms/pull/17316
+https://www.github.com/joomla/joomla-cms/pull/9490
+joomla/joomla-cms    17251    18295 0.9704
+title:0.049699182470579785,desc:0.17677820732066854,code:0.058823529411764705,file_list:1.0,location:0.9337016574585635,pattern:-1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list,High on location
+https://www.github.com/joomla/joomla-cms/pull/17251
+https://www.github.com/joomla/joomla-cms/pull/18295
+joomla/joomla-cms    17219    17537 0.9734
+title:0.29732282257431114,desc:0.29872880809086644,code:0.2717391304347826,file_list:0.03571428571428571,location:0.328125,pattern:1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/17219
+https://www.github.com/joomla/joomla-cms/pull/17537
+joomla/joomla-cms    17211     9972 0.8803
+title:0.18923557658387555,desc:0.10969320944733948,code:0.017543859649122806,file_list:1.0,location:0.22950819672131148,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.4088587053987394
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/17211
+https://www.github.com/joomla/joomla-cms/pull/9972
+joomla/joomla-cms    17190    21136 0.7820
+title:0.34456277585662193,desc:0.052281030780636784,code:0.015748031496062992,file_list:0.1111111111111111,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/17190
+https://www.github.com/joomla/joomla-cms/pull/21136
+joomla/joomla-cms    17187     6312 0.1561
+title:0.209704002125435,desc:0.3655753726638134,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.3442881086573018
+
+https://www.github.com/joomla/joomla-cms/pull/17187
+https://www.github.com/joomla/joomla-cms/pull/6312
+joomla/joomla-cms    17133     8852 0.7168
+title:0.19182761273097612,desc:0.06725923399913909,code:0.0,file_list:0.375,location:0.8943298969072165,pattern:0,overlap_files_len:9,overlap_title_len:1,title_idf_sum:1.0
+High on location
+https://www.github.com/joomla/joomla-cms/pull/17133
+https://www.github.com/joomla/joomla-cms/pull/8852
+joomla/joomla-cms    17109    11960 0.2368
+title:0.1531284367791596,desc:0.040148055080467836,code:0.0,file_list:0.00516795865633075,location:0.7811447811447811,pattern:0,overlap_files_len:2,overlap_title_len:3,title_idf_sum:1.65914024871872
+High on location
+https://www.github.com/joomla/joomla-cms/pull/17109
+https://www.github.com/joomla/joomla-cms/pull/11960
+joomla/joomla-cms    17105    11504 1.0000
+title:0.5753074613195617,desc:0.7955909777906475,code:0,file_list:1.0,location:0.0,pattern:1,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.663705579053174
+High on title,High on desc,Same on file_list,Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/17105
+https://www.github.com/joomla/joomla-cms/pull/11504
+joomla/joomla-cms    17012     2697 0.8405
+title:0.0,desc:0.007291645728990626,code:0.0,file_list:1.0,location:0.72,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on file_list,High on location
+https://www.github.com/joomla/joomla-cms/pull/17012
+https://www.github.com/joomla/joomla-cms/pull/2697
+joomla/joomla-cms    17010    17639 0.4770
+title:0.017624863951072715,desc:0.1828927524536107,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/17010
+https://www.github.com/joomla/joomla-cms/pull/17639
+joomla/joomla-cms    17009    10998 0.9471
+title:0.08661891348916821,desc:0.0,code:0.0,file_list:1.0,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3540885770499755
+Same on file_list,Same on location
+https://www.github.com/joomla/joomla-cms/pull/17009
+https://www.github.com/joomla/joomla-cms/pull/10998
+joomla/joomla-cms    17002    12253 0.3522
+title:0.0,desc:0.17069687081832435,code:0.0,file_list:0.0625,location:1.0,pattern:-1,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/17002
+https://www.github.com/joomla/joomla-cms/pull/12253
+joomla/joomla-cms    16940    16936 0.7136
+title:0.2693857024383142,desc:0.18009953162785758,code:0.45,file_list:0.1111111111111111,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.407569056668884
+
+https://www.github.com/joomla/joomla-cms/pull/16940
+https://www.github.com/joomla/joomla-cms/pull/16936
+joomla/joomla-cms    16909    19590 0.5616
+title:0.29812968617033214,desc:0.06127174644110129,code:0.02,file_list:0.05,location:0.6627906976744186,pattern:-1,overlap_files_len:3,overlap_title_len:1,title_idf_sum:1.0
+
+https://www.github.com/joomla/joomla-cms/pull/16909
+https://www.github.com/joomla/joomla-cms/pull/19590
+joomla/joomla-cms    16890     4674 0.7799
+title:0.13409489703183808,desc:0.275300150239257,code:0.0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.4067382810044675
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/16890
+https://www.github.com/joomla/joomla-cms/pull/4674
+joomla/joomla-cms    16880    13264 0.8535
+title:0.26476346763123776,desc:0.07337752797936119,code:0.01652892561983471,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/16880
+https://www.github.com/joomla/joomla-cms/pull/13264
+joomla/joomla-cms    16878     1590 0.9853
+title:0.23661301791423034,desc:0.015576471236049803,code:0.0,file_list:1.0,location:1.0,pattern:-1,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.6576450299703964
+Same on file_list,Same on location
+https://www.github.com/joomla/joomla-cms/pull/16878
+https://www.github.com/joomla/joomla-cms/pull/1590
+joomla/joomla-cms    16876    16216 0.9517
+title:0.15830679507833761,desc:0.14027235347718778,code:0.07407407407407407,file_list:1.0,location:0.5416666666666666,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/16876
+https://www.github.com/joomla/joomla-cms/pull/16216
+joomla/joomla-cms    16842    10331 0.9832
+title:0.5298942619472488,desc:0.0470581773078128,code:0.0,file_list:1.0,location:0.1956521739130435,pattern:0,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.6714695134720672
+High on title,Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/16842
+https://www.github.com/joomla/joomla-cms/pull/10331
+joomla/joomla-cms    16816    16902 0.9915
+title:0.5227300268614449,desc:0.08799493944215706,code:0.14473684210526316,file_list:0.5,location:0.0,pattern:1,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.4077835169606994
+High on title,Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/16816
+https://www.github.com/joomla/joomla-cms/pull/16902
+joomla/joomla-cms    16814    16928 0.8787
+title:0.0,desc:0.058261344032826866,code:0.2,file_list:1.0,location:0.43243243243243246,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/16814
+https://www.github.com/joomla/joomla-cms/pull/16928
+joomla/joomla-cms    16758     8233 0.9858
+title:0.18463208290898875,desc:0.002707998872461022,code:0.14814814814814814,file_list:1.0,location:1.0,pattern:0,overlap_files_len:3,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list,Same on location
+https://www.github.com/joomla/joomla-cms/pull/16758
+https://www.github.com/joomla/joomla-cms/pull/8233
+joomla/joomla-cms    16625     5793 0.3827
+title:0.09806895007175359,desc:0.050818242043634616,code:0,file_list:0.625,location:0.21604938271604937,pattern:0,overlap_files_len:15,overlap_title_len:1,title_idf_sum:1.0
+
+https://www.github.com/joomla/joomla-cms/pull/16625
+https://www.github.com/joomla/joomla-cms/pull/5793
+joomla/joomla-cms    16621    18915 0.5287
+title:0.06405558645601489,desc:0.1438086266536748,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/16621
+https://www.github.com/joomla/joomla-cms/pull/18915
+joomla/joomla-cms    16552     4000 0.8023
+title:0.2401339086702594,desc:0.04217362811572415,code:0.0,file_list:1.0,location:0.0,pattern:-1,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.2624614255168405
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/16552
+https://www.github.com/joomla/joomla-cms/pull/4000
+joomla/joomla-cms    16501    17856 0.3814
+title:0.0,desc:0.049905519770908256,code:0.0,file_list:0.3333333333333333,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/16501
+https://www.github.com/joomla/joomla-cms/pull/17856
+joomla/joomla-cms    16489     1054 0.8954
+title:0.35513448513534285,desc:0.0,code:0.0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.2290917053082175
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/16489
+https://www.github.com/joomla/joomla-cms/pull/1054
+joomla/joomla-cms    16474    17585 0.9377
+title:0.3648010836354133,desc:0.21840432299855417,code:0.18811881188118812,file_list:0.16666666666666666,location:0.93,pattern:0,overlap_files_len:2,overlap_title_len:2,title_idf_sum:1.4141899952610184
+High on location
+https://www.github.com/joomla/joomla-cms/pull/16474
+https://www.github.com/joomla/joomla-cms/pull/17585
+joomla/joomla-cms    16453     1023 0.9279
+title:0.0,desc:0.2515159080895336,code:0.023255813953488372,file_list:1.0,location:0.8292682926829268,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on file_list,High on location
+https://www.github.com/joomla/joomla-cms/pull/16453
+https://www.github.com/joomla/joomla-cms/pull/1023
+joomla/joomla-cms    16417    17011 0.7057
+title:0.04648036740820172,desc:0.2605474210551059,code:0.0,file_list:0.3333333333333333,location:1.0,pattern:-1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/16417
+https://www.github.com/joomla/joomla-cms/pull/17011
+joomla/joomla-cms    16355    11482 0.9705
+title:0.5021515212872273,desc:0.13953271896056524,code:0.0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3332919175247773
+High on title,Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/16355
+https://www.github.com/joomla/joomla-cms/pull/11482
+joomla/joomla-cms    16278    18955 0.7560
+title:0.23316114719131092,desc:0.10621364367515478,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.387549304535943
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/16278
+https://www.github.com/joomla/joomla-cms/pull/18955
+joomla/joomla-cms    16216     6900 0.9853
+title:0.685202366588683,desc:0.1770756644195425,code:0.0,file_list:1.0,location:0.0,pattern:-1,overlap_files_len:1,overlap_title_len:4,title_idf_sum:1.8329811409984837
+High on title,Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/16216
+https://www.github.com/joomla/joomla-cms/pull/6900
+joomla/joomla-cms    16165     4345 0.9774
+title:0.14392174620936887,desc:0.07086993032042196,code:0.0,file_list:1.0,location:1.0,pattern:-1,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.6308631397132922
+Same on file_list,Same on location
+https://www.github.com/joomla/joomla-cms/pull/16165
+https://www.github.com/joomla/joomla-cms/pull/4345
+joomla/joomla-cms    16141    18937 0.7737
+title:0.07840452496200329,desc:0.5746525002077209,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+High on desc,Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/16141
+https://www.github.com/joomla/joomla-cms/pull/18937
+joomla/joomla-cms    16076    17091 0.8119
+title:0.42635629603998426,desc:0.1796163105814049,code:0.019590382902938557,file_list:0.04081632653061224,location:0.7697841726618705,pattern:0,overlap_files_len:2,overlap_title_len:1,title_idf_sum:1.0
+High on location
+https://www.github.com/joomla/joomla-cms/pull/16076
+https://www.github.com/joomla/joomla-cms/pull/17091
+joomla/joomla-cms    16069    13336 0.9666
+title:0.3651864501512089,desc:0.31529418158983974,code:0.013157894736842105,file_list:0.5,location:0.8558558558558559,pattern:-1,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3853071979657714
+High on location
+https://www.github.com/joomla/joomla-cms/pull/16069
+https://www.github.com/joomla/joomla-cms/pull/13336
+joomla/joomla-cms    16061    18264 0.7641
+title:0.22267691526132502,desc:0.15617386870746083,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.4038902965531241
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/16061
+https://www.github.com/joomla/joomla-cms/pull/18264
+joomla/joomla-cms    15943     8973 0.8364
+title:0.6270165186837704,desc:0.4212146470353928,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:3,title_idf_sum:1.641151254750918
+High on title,High on desc
+https://www.github.com/joomla/joomla-cms/pull/15943
+https://www.github.com/joomla/joomla-cms/pull/8973
+joomla/joomla-cms    15875    15846 0.5992
+title:0.22534338308935808,desc:0.18793136381892653,code:0.02142857142857143,file_list:0.5,location:0.20526315789473684,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3864944282302172
+
+https://www.github.com/joomla/joomla-cms/pull/15875
+https://www.github.com/joomla/joomla-cms/pull/15846
+joomla/joomla-cms    15843     3375 0.4778
+title:0.0,desc:0.1592088204801815,code:0.0,file_list:0.3333333333333333,location:0.8125,pattern:-1,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+High on location
+https://www.github.com/joomla/joomla-cms/pull/15843
+https://www.github.com/joomla/joomla-cms/pull/3375
+joomla/joomla-cms    15839    11624 0.9726
+title:0.566180673262132,desc:0.23075472475883735,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+High on title,Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/15839
+https://www.github.com/joomla/joomla-cms/pull/11624
+joomla/joomla-cms    15819    17146 0.6439
+title:0.11998743654783663,desc:0.352016689643694,code:0.12,file_list:0.3333333333333333,location:0.5121951219512195,pattern:0,overlap_files_len:3,overlap_title_len:2,title_idf_sum:1.3925535675071365
+
+https://www.github.com/joomla/joomla-cms/pull/15819
+https://www.github.com/joomla/joomla-cms/pull/17146
+joomla/joomla-cms    15808    16260 0.9753
+title:0.4780820154013995,desc:0.28790244403831244,code:0.0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3886089875342238
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/15808
+https://www.github.com/joomla/joomla-cms/pull/16260
+joomla/joomla-cms    15743    10723 0.9685
+title:1.0,desc:0.030424777323037683,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.3064181315015098
+Same on title
+https://www.github.com/joomla/joomla-cms/pull/15743
+https://www.github.com/joomla/joomla-cms/pull/10723
+joomla/joomla-cms    15742    16481 0.9498
+title:0.3300565358781711,desc:0.27904852867471613,code:0.06666666666666667,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/15742
+https://www.github.com/joomla/joomla-cms/pull/16481
+joomla/joomla-cms    15707     3615 0.9765
+title:0.3894456048716126,desc:0.26911859712348063,code:0.059322033898305086,file_list:0.5,location:0.9233870967741935,pattern:0,overlap_files_len:4,overlap_title_len:2,title_idf_sum:1.3795462681680486
+High on location
+https://www.github.com/joomla/joomla-cms/pull/15707
+https://www.github.com/joomla/joomla-cms/pull/3615
+joomla/joomla-cms    15702     1631 0.5545
+title:0.5690304045769405,desc:0.0,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+High on title
+https://www.github.com/joomla/joomla-cms/pull/15702
+https://www.github.com/joomla/joomla-cms/pull/1631
+joomla/joomla-cms    15634    16124 0.8642
+title:0.30912098809140215,desc:0.2029896540110504,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.4133520214724662
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/15634
+https://www.github.com/joomla/joomla-cms/pull/16124
+joomla/joomla-cms    15619    19446 0.7987
+title:0.6422389695664549,desc:0.26324008194737597,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:3,title_idf_sum:1.6635872217268077
+High on title
+https://www.github.com/joomla/joomla-cms/pull/15619
+https://www.github.com/joomla/joomla-cms/pull/19446
+joomla/joomla-cms    15436     5562 0.9933
+title:0.2902643308874903,desc:0.11790632625945564,code:0.7857142857142857,file_list:0.2,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+High on code,Same on location
+https://www.github.com/joomla/joomla-cms/pull/15436
+https://www.github.com/joomla/joomla-cms/pull/5562
+joomla/joomla-cms    15417     7644 0.7848
+title:0.6267836865933223,desc:0.2774658294073799,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:2,title_idf_sum:1.4133630230167107
+High on title
+https://www.github.com/joomla/joomla-cms/pull/15417
+https://www.github.com/joomla/joomla-cms/pull/7644
+joomla/joomla-cms    15331    19753 0.6345
+title:0.14072681665352343,desc:0.24402269906901014,code:0.09815950920245399,file_list:0.25,location:0.7362637362637363,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+High on location
+https://www.github.com/joomla/joomla-cms/pull/15331
+https://www.github.com/joomla/joomla-cms/pull/19753
+joomla/joomla-cms    15258     6721 0.2535
+title:0.10190992893499855,desc:0.017056601637215764,code:0.10526315789473684,file_list:0.5,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+
+https://www.github.com/joomla/joomla-cms/pull/15258
+https://www.github.com/joomla/joomla-cms/pull/6721
+joomla/joomla-cms    15236    15384 0.6996
+title:0.28210655287673525,desc:0.0,code:0.0,file_list:0.16666666666666666,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3137064772404656
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/15236
+https://www.github.com/joomla/joomla-cms/pull/15384
+joomla/joomla-cms    15225    20403 0.5885
+title:0.2574180725006833,desc:0.15397639668616586,code:0.0,file_list:0.0136986301369863,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/15225
+https://www.github.com/joomla/joomla-cms/pull/20403
+joomla/joomla-cms    15181     3558 1.0000
+title:0.7251793001508363,desc:0.1784008122646286,code:0.41379310344827586,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:12,title_idf_sum:3.1074123128190125
+High on title,Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/15181
+https://www.github.com/joomla/joomla-cms/pull/3558
+joomla/joomla-cms    14999    17573 0.6624
+title:0.557039591583536,desc:0.23999475495370876,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+High on title
+https://www.github.com/joomla/joomla-cms/pull/14999
+https://www.github.com/joomla/joomla-cms/pull/17573
+joomla/joomla-cms    14993     1474 0.9197
+title:0.2926417373171571,desc:0.409677381310552,code:0.5,file_list:0.2727272727272727,location:0.0,pattern:0,overlap_files_len:3,overlap_title_len:1,title_idf_sum:1.0
+High on desc,High on code
+https://www.github.com/joomla/joomla-cms/pull/14993
+https://www.github.com/joomla/joomla-cms/pull/1474
+joomla/joomla-cms    14953     2737 0.6248
+title:0.591327653216031,desc:0.05002129844749152,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+High on title
+https://www.github.com/joomla/joomla-cms/pull/14953
+https://www.github.com/joomla/joomla-cms/pull/2737
+joomla/joomla-cms    14883     6427 0.9460
+title:0.4001160344992615,desc:0.012377633770681046,code:0.08333333333333333,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3189915893226694
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/14883
+https://www.github.com/joomla/joomla-cms/pull/6427
+joomla/joomla-cms    14875    16329 0.7930
+title:0.508206480006317,desc:0.19732004144211424,code:0.0,file_list:0.3333333333333333,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.7105022647835422
+High on title
+https://www.github.com/joomla/joomla-cms/pull/14875
+https://www.github.com/joomla/joomla-cms/pull/16329
+joomla/joomla-cms    14688     1525 0.4529
+title:0.4915084103980611,desc:0.08749823739793405,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+
+https://www.github.com/joomla/joomla-cms/pull/14688
+https://www.github.com/joomla/joomla-cms/pull/1525
+joomla/joomla-cms    14671    15962 0.9914
+title:0.3252943769138302,desc:0.28978002754728166,code:0.2,file_list:1.0,location:0.41025641025641024,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.39767388040764
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/14671
+https://www.github.com/joomla/joomla-cms/pull/15962
+joomla/joomla-cms    14641    13336 0.5959
+title:0.493493133575737,desc:0.32335973216398556,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:3,title_idf_sum:1.637283369017028
+
+https://www.github.com/joomla/joomla-cms/pull/14641
+https://www.github.com/joomla/joomla-cms/pull/13336
+joomla/joomla-cms    14427    11030 0.9180
+title:0.1726137328696635,desc:0.5530752696002809,code:0.12048192771084337,file_list:0.3333333333333333,location:0.891566265060241,pattern:-1,overlap_files_len:4,overlap_title_len:1,title_idf_sum:1.0
+High on desc,High on location
+https://www.github.com/joomla/joomla-cms/pull/14427
+https://www.github.com/joomla/joomla-cms/pull/11030
+joomla/joomla-cms    14402     6571 0.9730
+title:0.48870413536778035,desc:0.21662287742541406,code:0.0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.3338496204112151
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/14402
+https://www.github.com/joomla/joomla-cms/pull/6571
+joomla/joomla-cms    14305    20794 0.9423
+title:0.14525981072306332,desc:0.23714467954719587,code:0.0,file_list:1.0,location:0.5569620253164557,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/14305
+https://www.github.com/joomla/joomla-cms/pull/20794
+joomla/joomla-cms    14272     1067 0.5342
+title:0.5585230424918199,desc:0.0,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+High on title
+https://www.github.com/joomla/joomla-cms/pull/14272
+https://www.github.com/joomla/joomla-cms/pull/1067
+joomla/joomla-cms    14251    16137 0.4261
+title:0.0,desc:0.011189983844893723,code:0.0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/14251
+https://www.github.com/joomla/joomla-cms/pull/16137
+joomla/joomla-cms    14189    17552 0.6186
+title:0.3334550565921136,desc:0.5380290069308951,code:0.10344827586206896,file_list:0.07692307692307693,location:0.176,pattern:-1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+High on desc
+https://www.github.com/joomla/joomla-cms/pull/14189
+https://www.github.com/joomla/joomla-cms/pull/17552
+joomla/joomla-cms    14116     9231 0.6686
+title:0.14942826129688178,desc:0.014168402091654927,code:0.35549525101763907,file_list:0.17647058823529413,location:0.4892703862660944,pattern:-1,overlap_files_len:6,overlap_title_len:1,title_idf_sum:1.0
+
+https://www.github.com/joomla/joomla-cms/pull/14116
+https://www.github.com/joomla/joomla-cms/pull/9231
+joomla/joomla-cms    14033    15059 0.9902
+title:0.3537172997368064,desc:0.6150697415001829,code:0.0,file_list:0.3333333333333333,location:0.5769230769230769,pattern:1,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.414062408305218
+High on desc,Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/14033
+https://www.github.com/joomla/joomla-cms/pull/15059
+joomla/joomla-cms    13946     8064 0.6583
+title:0.24990347832471774,desc:0.18739028253613801,code:0.034482758620689655,file_list:0.045454545454545456,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.7108271997079387
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/13946
+https://www.github.com/joomla/joomla-cms/pull/8064
+joomla/joomla-cms    13902     8524 0.6620
+title:0.0,desc:0.546482865874172,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:0,title_idf_sum:0
+High on desc,Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/13902
+https://www.github.com/joomla/joomla-cms/pull/8524
+joomla/joomla-cms    13856    19942 0.8821
+title:0.0,desc:0.2504910239923291,code:0.16546762589928057,file_list:1.0,location:0.34328358208955223,pattern:0,overlap_files_len:3,overlap_title_len:0,title_idf_sum:0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/13856
+https://www.github.com/joomla/joomla-cms/pull/19942
+joomla/joomla-cms    13836     5546 0.9905
+title:0.2786710069796368,desc:0.22645863840616115,code:0.0,file_list:1.0,location:1.0,pattern:0,overlap_files_len:2,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list,Same on location
+https://www.github.com/joomla/joomla-cms/pull/13836
+https://www.github.com/joomla/joomla-cms/pull/5546
+joomla/joomla-cms    13789     5015 0.7768
+title:0.4630075027351607,desc:0.157951144518889,code:0.1951219512195122,file_list:0.16666666666666666,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+
+https://www.github.com/joomla/joomla-cms/pull/13789
+https://www.github.com/joomla/joomla-cms/pull/5015
+joomla/joomla-cms    13692    18873 0.4043
+title:0.4778960343583013,desc:0.04585266886953508,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+
+https://www.github.com/joomla/joomla-cms/pull/13692
+https://www.github.com/joomla/joomla-cms/pull/18873
+joomla/joomla-cms    13622     8899 0.9402
+title:0.6913272747706881,desc:0.18837221652623318,code:0.012835472578763127,file_list:0.045454545454545456,location:0.4075425790754258,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.4038494755195035
+High on title
+https://www.github.com/joomla/joomla-cms/pull/13622
+https://www.github.com/joomla/joomla-cms/pull/8899
+joomla/joomla-cms    13605      870 0.8884
+title:0.0,desc:0.012271051518625732,code:0.02631578947368421,file_list:1.0,location:0.8333333333333334,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on file_list,High on location
+https://www.github.com/joomla/joomla-cms/pull/13605
+https://www.github.com/joomla/joomla-cms/pull/870
+joomla/joomla-cms    13553     9274 0.5565
+title:0.0,desc:0.1577303107971434,code:0.0,file_list:1.0,location:0.0,pattern:-1,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/13553
+https://www.github.com/joomla/joomla-cms/pull/9274
+joomla/joomla-cms    13502     3346 1.0000
+title:0.4674953814369444,desc:0.13383478497573698,code:0.10213243546576879,file_list:1.0,location:0.8989690721649485,pattern:0,overlap_files_len:2,overlap_title_len:4,title_idf_sum:1.9568925684796552
+Same on file_list,High on location
+https://www.github.com/joomla/joomla-cms/pull/13502
+https://www.github.com/joomla/joomla-cms/pull/3346
+joomla/joomla-cms    13501    16958 0.7476
+title:0.455723331169574,desc:0.2198788313415879,code:0.008988764044943821,file_list:0.2,location:0.21195652173913043,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.414108654916565
+
+https://www.github.com/joomla/joomla-cms/pull/13501
+https://www.github.com/joomla/joomla-cms/pull/16958
+joomla/joomla-cms    13500    14685 0.9452
+title:0.40020705071416807,desc:0.15404451100654826,code:0.0,file_list:0.38461538461538464,location:0.9469026548672567,pattern:0,overlap_files_len:5,overlap_title_len:3,title_idf_sum:1.6493976460903863
+High on location
+https://www.github.com/joomla/joomla-cms/pull/13500
+https://www.github.com/joomla/joomla-cms/pull/14685
+joomla/joomla-cms    13415    15561 0.6381
+title:0.5684628766423088,desc:0.1510692572654905,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:3,title_idf_sum:1.6619234843801274
+High on title
+https://www.github.com/joomla/joomla-cms/pull/13415
+https://www.github.com/joomla/joomla-cms/pull/15561
+joomla/joomla-cms    13377       72 0.8076
+title:0.715787203197562,desc:0.04308341066548025,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:3,title_idf_sum:1.6883667335130477
+High on title
+https://www.github.com/joomla/joomla-cms/pull/13377
+https://www.github.com/joomla/joomla-cms/pull/72
+joomla/joomla-cms    13363     5568 0.9034
+title:0.14872295080936052,desc:0.45323485873738645,code:0.062432723358449946,file_list:0.8333333333333334,location:0.27996965098634297,pattern:0,overlap_files_len:10,overlap_title_len:1,title_idf_sum:1.0
+High on desc,High on file_list
+https://www.github.com/joomla/joomla-cms/pull/13363
+https://www.github.com/joomla/joomla-cms/pull/5568
+joomla/joomla-cms    13338    19006 0.9105
+title:0.20468639984681683,desc:0.20546617735775383,code:0.05822784810126582,file_list:0.5,location:0.8405797101449275,pattern:-1,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.7084559722687724
+High on location
+https://www.github.com/joomla/joomla-cms/pull/13338
+https://www.github.com/joomla/joomla-cms/pull/19006
+joomla/joomla-cms    13286     7632 1.0000
+title:0.3605350401752823,desc:0.660218957037801,code:0.14388489208633093,file_list:1.0,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:4,title_idf_sum:1.882509624961886
+High on desc,Same on file_list,Same on location
+https://www.github.com/joomla/joomla-cms/pull/13286
+https://www.github.com/joomla/joomla-cms/pull/7632
+joomla/joomla-cms    13260    20169 0.7094
+title:0.5244386967831477,desc:0.43405804876005893,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:3,title_idf_sum:1.680778961619184
+High on title,High on desc
+https://www.github.com/joomla/joomla-cms/pull/13260
+https://www.github.com/joomla/joomla-cms/pull/20169
+joomla/joomla-cms    13217     3411 0.7640
+title:0.08240440565780903,desc:0.06659025370816528,code:0.31754874651810583,file_list:0.23076923076923078,location:0.9184782608695652,pattern:0,overlap_files_len:3,overlap_title_len:1,title_idf_sum:1.0
+High on location
+https://www.github.com/joomla/joomla-cms/pull/13217
+https://www.github.com/joomla/joomla-cms/pull/3411
+joomla/joomla-cms    13038     5109 0.9429
+title:0.4274102623399245,desc:0.44447453530063424,code:0.008064516129032258,file_list:0.25,location:0.7631578947368421,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+High on desc,High on location
+https://www.github.com/joomla/joomla-cms/pull/13038
+https://www.github.com/joomla/joomla-cms/pull/5109
+joomla/joomla-cms    13018     6323 0.9273
+title:0.36479223827382656,desc:0.0601718852581459,code:0.041666666666666664,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.5547203234074374
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/13018
+https://www.github.com/joomla/joomla-cms/pull/6323
+joomla/joomla-cms    12994    15974 0.9843
+title:0.5132020979864648,desc:0.24123685969782177,code:0.002967359050445104,file_list:0.42857142857142855,location:1.0,pattern:0,overlap_files_len:3,overlap_title_len:3,title_idf_sum:1.5393831452150883
+High on title,Same on location
+https://www.github.com/joomla/joomla-cms/pull/12994
+https://www.github.com/joomla/joomla-cms/pull/15974
+joomla/joomla-cms    12981      939 0.9149
+title:0.28981052317433914,desc:0.058001539541121166,code:0.0,file_list:0.5,location:0.9864575908766928,pattern:0,overlap_files_len:3,overlap_title_len:1,title_idf_sum:1.0
+High on location
+https://www.github.com/joomla/joomla-cms/pull/12981
+https://www.github.com/joomla/joomla-cms/pull/939
+joomla/joomla-cms    12979     6756 0.9309
+title:0.4923737058116788,desc:0.14365083818055052,code:0.23333333333333334,file_list:0.06666666666666667,location:0.5471264367816092,pattern:0,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.7171319201004989
+
+https://www.github.com/joomla/joomla-cms/pull/12979
+https://www.github.com/joomla/joomla-cms/pull/6756
+joomla/joomla-cms    12962     6722 0.9186
+title:0.59402855169486,desc:0.20885675212969615,code:0.1276595744680851,file_list:0.14285714285714285,location:0.17989417989417988,pattern:0,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.7171319201004989
+High on title
+https://www.github.com/joomla/joomla-cms/pull/12962
+https://www.github.com/joomla/joomla-cms/pull/6722
+joomla/joomla-cms    12847     9504 0.9942
+title:0.6208333081604022,desc:0.43844837312172735,code:0.06060606060606061,file_list:0.3333333333333333,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.4063644501979542
+High on title,High on desc,Same on location
+https://www.github.com/joomla/joomla-cms/pull/12847
+https://www.github.com/joomla/joomla-cms/pull/9504
+joomla/joomla-cms    12801     8416 0.5578
+title:0.4345803006467334,desc:0.44284317797117445,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+High on desc
+https://www.github.com/joomla/joomla-cms/pull/12801
+https://www.github.com/joomla/joomla-cms/pull/8416
+joomla/joomla-cms    12588     9549 0.5677
+title:0.08405020907500431,desc:0.1561320278081094,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/12588
+https://www.github.com/joomla/joomla-cms/pull/9549
+joomla/joomla-cms    12544     6401 0.9593
+title:0.022782850711126987,desc:0.08131688789488374,code:0.016666666666666666,file_list:1.0,location:1.0,pattern:-1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list,Same on location
+https://www.github.com/joomla/joomla-cms/pull/12544
+https://www.github.com/joomla/joomla-cms/pull/6401
+joomla/joomla-cms    12543     9243 0.9790
+title:0.17613095158573291,desc:0.08022869538838442,code:0.04,file_list:1.0,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.4075797033002946
+Same on file_list,Same on location
+https://www.github.com/joomla/joomla-cms/pull/12543
+https://www.github.com/joomla/joomla-cms/pull/9243
+joomla/joomla-cms    12453    16811 0.8170
+title:0.3394368297735951,desc:0.281779920466825,code:0.16666666666666666,file_list:0.017241379310344827,location:0.6956521739130435,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.4141583248983478
+
+https://www.github.com/joomla/joomla-cms/pull/12453
+https://www.github.com/joomla/joomla-cms/pull/16811
+joomla/joomla-cms    12447     9463 0.9875
+title:0.09867269917272645,desc:0.12495130518329749,code:0.25,file_list:1.0,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list,Same on location
+https://www.github.com/joomla/joomla-cms/pull/12447
+https://www.github.com/joomla/joomla-cms/pull/9463
+joomla/joomla-cms    12414    13018 0.8507
+title:0.42166124481165207,desc:0.20549147321707154,code:0.005917159763313609,file_list:0.047619047619047616,location:0.9293478260869565,pattern:0,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.5547203234074374
+High on location
+https://www.github.com/joomla/joomla-cms/pull/12414
+https://www.github.com/joomla/joomla-cms/pull/13018
+joomla/joomla-cms    12253    17894 0.7501
+title:0.1857678904586088,desc:0.16566405257688654,code:0.0,file_list:0.0625,location:0.0,pattern:1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/12253
+https://www.github.com/joomla/joomla-cms/pull/17894
+joomla/joomla-cms    12244     4593 0.4600
+title:0.09865031131012307,desc:0.0220020889154534,code:0.0,file_list:0.25,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/12244
+https://www.github.com/joomla/joomla-cms/pull/4593
+joomla/joomla-cms    12014    16800 0.9048
+title:0.7099061343832098,desc:0.4115472947645488,code:0,file_list:0.009345794392523364,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+High on title,High on desc
+https://www.github.com/joomla/joomla-cms/pull/12014
+https://www.github.com/joomla/joomla-cms/pull/16800
+joomla/joomla-cms    11829     7170 0.9585
+title:0.5856258678877712,desc:0.38179758734270197,code:0.0405616224648986,file_list:0.06666666666666667,location:0.6809440559440559,pattern:0,overlap_files_len:1,overlap_title_len:5,title_idf_sum:2.223977472948011
+High on title
+https://www.github.com/joomla/joomla-cms/pull/11829
+https://www.github.com/joomla/joomla-cms/pull/7170
+joomla/joomla-cms    11766    14319 0.6490
+title:0.12107734426033664,desc:0.20097721302036906,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/11766
+https://www.github.com/joomla/joomla-cms/pull/14319
+joomla/joomla-cms    11632    11227 0.9235
+title:0.30561038190436196,desc:0.3484951235050386,code:0.04081632653061224,file_list:0.25,location:1.0,pattern:-1,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/11632
+https://www.github.com/joomla/joomla-cms/pull/11227
+joomla/joomla-cms    11489    13354 0.9959
+title:0.7112277894792255,desc:0.36817072522202043,code:0.03333333333333333,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:4,title_idf_sum:1.9054679905328042
+High on title,Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/11489
+https://www.github.com/joomla/joomla-cms/pull/13354
+joomla/joomla-cms    11339     6864 0.9954
+title:0.4070113916845795,desc:0.10580836881357526,code:0.02702702702702703,file_list:1.0,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.6701400218471185
+Same on file_list,Same on location
+https://www.github.com/joomla/joomla-cms/pull/11339
+https://www.github.com/joomla/joomla-cms/pull/6864
+joomla/joomla-cms    11151     5247 0.5978
+title:0.0264031096816576,desc:0.223718391217989,code:0.0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:1,title_idf_sum:1.0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/11151
+https://www.github.com/joomla/joomla-cms/pull/5247
+joomla/joomla-cms    10657     4967 0.5418
+title:0.5357369592420336,desc:0.09290936197284412,code:0,file_list:0.0,location:0.0,pattern:0,overlap_files_len:0,overlap_title_len:3,title_idf_sum:1.7017520122219154
+High on title
+https://www.github.com/joomla/joomla-cms/pull/10657
+https://www.github.com/joomla/joomla-cms/pull/4967
+joomla/joomla-cms    10455     4175 0.4365
+title:0.0,desc:0.029723717466351916,code:0.0,file_list:1.0,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:0,title_idf_sum:0
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/10455
+https://www.github.com/joomla/joomla-cms/pull/4175
+joomla/joomla-cms    10453    15696 0.9919
+title:0.38370381866880726,desc:0.32752796945220536,code:0.0,file_list:1.0,location:0.6712328767123288,pattern:-1,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.676044800681583
+Same on file_list
+https://www.github.com/joomla/joomla-cms/pull/10453
+https://www.github.com/joomla/joomla-cms/pull/15696
+joomla/joomla-cms    10284     4114 0.9915
+title:0.7290450822798193,desc:0.3286992630752538,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:3,title_idf_sum:1.6601891242041393
+High on title,Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/10284
+https://www.github.com/joomla/joomla-cms/pull/4114
+joomla/joomla-cms    10268    15754 0.8058
+title:0.19741552688713818,desc:0.33468765405203493,code:0,file_list:0.0,location:0.0,pattern:1,overlap_files_len:0,overlap_title_len:1,title_idf_sum:1.0
+Related to the same Issue
+https://www.github.com/joomla/joomla-cms/pull/10268
+https://www.github.com/joomla/joomla-cms/pull/15754
+joomla/joomla-cms    10011    15801 0.9640
+title:0.6234619741724897,desc:0.01835867260947281,code:0.09090909090909091,file_list:0.0625,location:0.9230769230769231,pattern:-1,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.414114913417598
+High on title,High on location
+https://www.github.com/joomla/joomla-cms/pull/10011
+https://www.github.com/joomla/joomla-cms/pull/15801
+joomla/joomla-cms     9155     1407 0.9194
+title:0.21950782885256184,desc:0.0,code:0.13636363636363635,file_list:0.5,location:1.0,pattern:0,overlap_files_len:1,overlap_title_len:3,title_idf_sum:1.6903576963166114
+Same on location
+https://www.github.com/joomla/joomla-cms/pull/9155
+https://www.github.com/joomla/joomla-cms/pull/1407
+joomla/joomla-cms     8825     9976 0.6876
+title:0.3695731741809208,desc:0.3175604565713061,code:0.24242424242424243,file_list:0.0625,location:0.0,pattern:0,overlap_files_len:1,overlap_title_len:2,title_idf_sum:1.4086367834495745
+
+https://www.github.com/joomla/joomla-cms/pull/8825
+https://www.github.com/joomla/joomla-cms/pull/9976

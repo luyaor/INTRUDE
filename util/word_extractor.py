@@ -23,7 +23,7 @@ def word_split_by_char(s):
         Returns:
             List of the split words
     """
-    #return [s]
+    # return [s]
     
     old_words = []
     old_words.append(s)

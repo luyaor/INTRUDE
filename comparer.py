@@ -41,10 +41,10 @@ def text_keywords_similarity(A, B):
 def get_BoW(text):
     return word_extractor.get_words_from_text(text)
 
+def get_file_list(pull):
+    return [x["name"] for x in pull['file_list']]
+
 def fetch_pr_info(pull, must_in_local = False):
-    if 'commit_flag' in pull:
-        return fetch_commit(pull['commit_flag'])
-        
     path = '/DATA/luyao/pr_data/%s/%s' % (pull["base"]["repo"]["full_name"], pull["number"])
     if os.path.exists(path + '/raw_diff.json') or os.path.exists(path + '/pull_files.json'):
         if os.path.exists(path + '/raw_diff.json'):
@@ -69,11 +69,10 @@ def fetch_pr_info(pull, must_in_local = False):
 
 def get_location(pull):
     location_set = []
-    for file in fetch_pr_info(pull):
+    for file in pull["file_list"]:
         for x in file["location"]["add"]:
             location_set.append([file["name"], int(x[0]), int(x[0]) + int(x[1])])
     return location_set
-
 
 def get_code_from_pr_info(pr_info):
     add_code = []
@@ -83,16 +82,8 @@ def get_code_from_pr_info(pr_info):
         del_code += word_extractor.get_words_from_file(file["name"], file["del_code"])
     return [add_code, del_code]
 
-def get_code_tokens(pull):
-    path = '/DATA/luyao/pr_data/%s/%s/code_tokens.json' % (pull["base"]["repo"]["full_name"], pull["number"])
-    if os.path.exists(path):
-        return localfile_tool.get_file(path)
-    result = get_code_from_pr_info(fetch_pr_info(pull))
-    localfile_tool.write_to_file(path, result)
-    return result
-
 def get_code_tokens_overlap(pull, overlap_set):
-    new_pr_info = list(filter(lambda x: x["name"] in overlap_set, fetch_pr_info(pull)))
+    new_pr_info = list(filter(lambda x: x["name"] in overlap_set, pull["file_list"]))
     return get_code_from_pr_info(new_pr_info)
 
 def get_delta_code_tokens_keywords(code_tokens_result, top_number=300):
@@ -109,8 +100,19 @@ def get_delta_code_tokens_keywords(code_tokens_result, top_number=300):
             changed_c[t] = times
     
     return dict(changed_c.most_common(top_number))
-        
-    
+
+def get_code_keywords_counter_overlap(pull, overlap_set): # return a counter
+    return get_delta_code_tokens_keywords(get_code_tokens_overlap(pull, overlap_set))
+
+'''
+def get_code_tokens(pull):
+    path = '/DATA/luyao/pr_data/%s/%s/code_tokens.json' % (pull["base"]["repo"]["full_name"], pull["number"])
+    if os.path.exists(path):
+        return localfile_tool.get_file(path)
+    result = get_code_from_pr_info(pull["file_list"])
+    localfile_tool.write_to_file(path, result)
+    return result
+
 def get_code_keywords_counter(pull): # return a counter
     path = '/DATA/luyao/pr_data/%s/%s/code_keywords_counter.json' % (pull["base"]["repo"]["full_name"], pull["number"])
     if os.path.exists(path):
@@ -118,18 +120,14 @@ def get_code_keywords_counter(pull): # return a counter
     result = get_delta_code_tokens_keywords(get_code_tokens(pull))
     localfile_tool.write_to_file(path, result)    
     return result
+'''
 
-def get_code_keywords_counter_overlap(pull, overlap_set): # return a counter
-    return get_delta_code_tokens_keywords(get_code_tokens_overlap(pull, overlap_set))
-    
-
-def get_file_list(pull):
-    return [x["name"] for x in fetch_pr_info(pull)]
-
-def cross(x1, y1, x2, y2):
-    return not((y1 < x2) or (y2 < x1))
 
 def location_similarity(la, lb):
+
+    def cross(x1, y1, x2, y2):
+        return not((y1 < x2) or (y2 < x1))
+
     if (la is None) or (lb is None):
         return 0.0
     
@@ -256,8 +254,6 @@ def calc_sim(A, B):
 
     location_sim = location_similarity(get_location(A), get_location(B))
     
-    
-    
     common_words = list(set(get_BoW(A["title"])) & set(get_BoW(B["title"])))
     overlap_title_len = len(common_words)
     
@@ -268,24 +264,12 @@ def calc_sim(A, B):
                 
     overlap_files_len = len(overlap_files_set)
 
-    '''
-    if file_list_sim <= 0.2:
-        code_sim = 0
-        location_sim = 0
-    else:    
-        code_sim = counter_similarity(get_code_keywords_counter(A), get_code_keywords_counter(B))
-        # anthor way: use just added code
-        # code_sim = text_keywords_similarity(get_code(A), get_code(B))
-        location_sim = location_similarity(get_location(A), get_location(B))
-    '''
-    
     # code_sim = counter_similarity(get_code_keywords_counter(A), get_code_keywords_counter(B))
-    
     code_sim = counter_similarity(get_code_keywords_counter_overlap(A, overlap_files_set),
                                   get_code_keywords_counter_overlap(B, overlap_files_set))
-    
-    # code_sim = text_keywords_similarity(get_code(A), get_code(B))
-    
+
+    # anthor way: use just added code
+    # code_sim = text_keywords_similarity(get_code(A), get_code(B))    
     # time_sim = (get_time(A["created_at"]) - get_time(B["created_at"])).days
     
     return {
@@ -300,13 +284,30 @@ def calc_sim(A, B):
             'title_idf_sum': title_idf_sum,
            }
 
-# pull requests sim
-def get_sim_vector(A, B):
-    r = calc_sim(A, B)
-    return [r['title'],r['desc'],r['code'],r['file_list'],\
-            r['location'], r['pattern'],\
+def sim_to_vet(r):
+    return [r['title'],r['desc'],r['code'],r['file_list'],r['location'], r['pattern'],\
             # r['overlap_files_len'],r['overlap_title_len'],r['title_idf_sum'],
            ]
+
+
+# pull requests sim
+def get_sim_vector(A, B):
+    A["file_list"] = fetch_pr_info(A)
+    B["file_list"] = fetch_pr_info(B)
+    ret = calc_sim(A, B)
+    return sim_to_vet(ret)
+
+def get_sim_vector_on_commit(A, B):
+    def commit_to_pull(x):
+        t = {}
+        t["number"] = x['sha']
+        t['title'] = t['body'] = x['commit']['message']
+        t["file_list"] = fetch_commit(pull['commit_flag'])
+        t['commit_flag'] = True
+        return t
+    ret = calc_sim(commit_to_pull(A), commit_to_pull(B))
+    return sim_to_vet(ret)
+
 
 def parse_sim(sim):
     tres_hold = {
@@ -326,16 +327,6 @@ def parse_sim(sim):
         r.append('Related to the same Issue')
     return r
 
-
-def get_sim_vector_on_commit(A, B):
-    def commit_to_pull(x):
-        t = {}
-        t["number"] = x['sha']
-        t['title'] = t['body'] = x['commit']['message']
-        t['commit_flag'] = x['url']
-        return t
-
-    return get_sim_vector(commit_to_pull(A), commit_to_pull(B))
 
 '''
 other_model = [None, None, None]
