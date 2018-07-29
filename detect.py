@@ -88,12 +88,7 @@ def find_on_openpr(repo, time_stp=None):
     for pull in pulls:
         cite[str(pull["number"])] = get_another_pull(pull)
     
-    try:
-        init_model_with_pulls(None, repo.replace('/','_') + '_marked')
-    except:
-        print('no exist model!')
-        li = shuffle(pulls)[:5000]        
-        init_model_with_pulls(li, repo.replace('/','_') + '_marked2')
+    init_model_with_repo(repo)
     
     mode = 'a' if last_number else 'w'
     print('write mode=',mode)

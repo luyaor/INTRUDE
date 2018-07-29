@@ -286,6 +286,7 @@ def calc_sim(A, B):
 
 def sim_to_vet(r):
     return [r['title'],r['desc'],r['code'],r['file_list'],r['location'], r['pattern'],\
+            r['overlap_files_len'],r['title_idf_sum']
             # r['overlap_files_len'],r['overlap_title_len'],r['title_idf_sum'],
            ]
 

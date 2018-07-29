@@ -77,7 +77,7 @@ def parse_diff(file_name, diff):
 
 def parse_files(r):
     file_list = []
-    diff_list = r.text.split('diff --git')
+    diff_list = r.split('diff --git')
     for diff in diff_list[1:]:
         try:
             file_full_name = re.findall('a\/.*? b\/(.*?)\n', diff)[0]
@@ -97,7 +97,7 @@ def fetch_raw_diff(url):
     except:
         raise Exception('error on fetch compare page on %s!' % url)
 
-    return parse_files(r)
+    return parse_files(r.text)
 
 if __name__ == '__main__':
     # print(fetch_raw_diff('https://github.com/MarlinFirmware/Marlin/commit/6b43bfa01dd76f5475acf40d0e5b5f240fe57d9e'))
