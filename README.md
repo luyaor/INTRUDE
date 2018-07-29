@@ -8,7 +8,7 @@ comparer.py: Feature Extraction and calculate the similarity.
 
 detect.py: Detection on (open) pull requests.
 
-stimulate_part_pr.py: stimulate "part PR detection"
+stimulate_part_pr.py: stimulate "part PR detection".
 
 test_commit.py: compare on granularity of commits.
 
@@ -26,5 +26,5 @@ gen.py: Generate the random pairs & potential pairs(from duplicate labels)
 
 --- 
 
-run_XXX.py: run script.
+run_XXX.py: scripts for testing.
 
