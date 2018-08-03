@@ -31,11 +31,11 @@ dataset = [
     ['data/small2_part_msr.txt', 1, 'test'],
 ]
 
-part_params = [1,1,1,1,1,1]
+part_params = None
 draw_pic = False
 model_data_random_shuffle_flag = False
 model_data_renew_flag = False
-model_data_save_path_suffix = None
+model_data_save_path_suffix = 'test'
 
 # ------------------------------------------------------------
 def init_model_with_pulls(pulls, save_id=None):
