@@ -1,0 +1,4 @@
+['https://github.com/codenrhoden/kubernetes/pull/1', 'https://github.com/vmware/kubernetes/pull/482', [1.0, 0.014813982856845329, 0.0, 1.0, 0.0, 0, 1, 1.4068346729118613], 0.9727764129277003, False]
+['https://github.com/codenrhoden/kubernetes/pull/1', 'https://github.com/jaags/kubernetes/pull/1', [0.4480122787867118, 0.06126541633206132, 0.030303030303030304, 1.0, 0.0, 0, 1, 1.4068346729118613], 0.9209514766295703, False]
+['https://github.com/codenrhoden/kubernetes/pull/1', 'https://github.com/hyperhq/hypernetes/pull/59', [0.6433229707331884, 0.0, 0.0, 0.5, 0.0, 0, 1, 1.4068346729118613], 0.8801644157506743, False]
+['https://github.com/jaags/kubernetes/pull/1', 'https://github.com/vmware/kubernetes/pull/482', [0.4480122787867118, 0.128554708370384, 0.0, 1.0, 0.0, 0, 1, 1.4068346729118613], 0.923738409247579, False]

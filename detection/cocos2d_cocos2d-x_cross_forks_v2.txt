@@ -1,0 +1,1 @@
+['https://github.com/elnormous/cocos2d-x/pull/1', 'https://github.com/cocos2d/cocos2d-x/pull/14808', [0.8718637304748666, 0.0, 0, 0.041666666666666664, 0.01940755873340143, 0, 2, 1.6590030205643158], 0.9941227015831141, False]

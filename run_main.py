@@ -2,8 +2,9 @@ from git import *
 
 # main.run_and_save('FancyCoder0/INFOX')
 
+file = 'data/repoList_morethan200PR.txt' # 'data/top500_repo_list.txt'
 
-with open('data/top500_repo_list.txt') as f:
+with open(file) as f:
     r = f.readlines()
 
 for repo in r:

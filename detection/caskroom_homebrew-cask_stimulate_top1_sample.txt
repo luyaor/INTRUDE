@@ -1,0 +1,400 @@
+caskroom/homebrew-cask    46489     8954 0.4744
+0.5302 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/46489
+https://www.github.com/caskroom/homebrew-cask/pull/8954
+caskroom/homebrew-cask     5956     5123 0.1412
+0.3152 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/5956
+https://www.github.com/caskroom/homebrew-cask/pull/5123
+caskroom/homebrew-cask    48548    33508 1.0000
+1.0000 1.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/48548
+https://www.github.com/caskroom/homebrew-cask/pull/33508
+caskroom/homebrew-cask    37132    22673 1.0000
+0.9939 0.4368 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/37132
+https://www.github.com/caskroom/homebrew-cask/pull/22673
+caskroom/homebrew-cask    17476    13078 0.9963
+0.4934 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/17476
+https://www.github.com/caskroom/homebrew-cask/pull/13078
+caskroom/homebrew-cask    33072    23057 0.9787
+0.0000 0.7671 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/33072
+https://www.github.com/caskroom/homebrew-cask/pull/23057
+caskroom/homebrew-cask    15770    14885 1.0000
+1.0000 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/15770
+https://www.github.com/caskroom/homebrew-cask/pull/14885
+caskroom/homebrew-cask    45847    41680 0.4413
+0.0000 0.3503 0.1667 0.0227 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/45847
+https://www.github.com/caskroom/homebrew-cask/pull/41680
+caskroom/homebrew-cask     4998     2357 0.5687
+0.5781 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/4998
+https://www.github.com/caskroom/homebrew-cask/pull/2357
+caskroom/homebrew-cask    10476    10465 0.1310
+0.3040 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/10476
+https://www.github.com/caskroom/homebrew-cask/pull/10465
+caskroom/homebrew-cask    29579    19608 1.0000
+0.6283 0.0000 0.0000 1.0000 1.0000 1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/29579
+https://www.github.com/caskroom/homebrew-cask/pull/19608
+caskroom/homebrew-cask    30548    22606 1.0000
+0.7441 0.4180 0.0000 0.5000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/30548
+https://www.github.com/caskroom/homebrew-cask/pull/22606
+caskroom/homebrew-cask    29563    17335 0.9881
+0.0000 0.0000 0.4583 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/29563
+https://www.github.com/caskroom/homebrew-cask/pull/17335
+caskroom/homebrew-cask    32794    17434 1.0000
+0.6795 0.0000 0.2500 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/32794
+https://www.github.com/caskroom/homebrew-cask/pull/17434
+caskroom/homebrew-cask    45394    35958 1.0000
+1.0000 0.5102 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/45394
+https://www.github.com/caskroom/homebrew-cask/pull/35958
+caskroom/homebrew-cask     7713     7668 1.0000
+1.0000 0.0000 0.5000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/7713
+https://www.github.com/caskroom/homebrew-cask/pull/7668
+caskroom/homebrew-cask    47951    43941 1.0000
+0.6038 0.3176 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/47951
+https://www.github.com/caskroom/homebrew-cask/pull/43941
+caskroom/homebrew-cask    31598    31568 1.0000
+0.6668 0.1076 0.0468 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/31598
+https://www.github.com/caskroom/homebrew-cask/pull/31568
+caskroom/homebrew-cask    33291    19580 1.0000
+0.9648 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/33291
+https://www.github.com/caskroom/homebrew-cask/pull/19580
+caskroom/homebrew-cask    45432    34645 0.7540
+0.3449 1.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/45432
+https://www.github.com/caskroom/homebrew-cask/pull/34645
+caskroom/homebrew-cask    32236    32226 0.2393
+0.0000 1.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/32236
+https://www.github.com/caskroom/homebrew-cask/pull/32226
+caskroom/homebrew-cask    37785    34374 1.0000
+0.0000 0.2246 1.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/37785
+https://www.github.com/caskroom/homebrew-cask/pull/34374
+caskroom/homebrew-cask    49905    48738 0.9700
+0.3012 1.0000 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/49905
+https://www.github.com/caskroom/homebrew-cask/pull/48738
+caskroom/homebrew-cask    40084    23188 1.0000
+0.7525 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/40084
+https://www.github.com/caskroom/homebrew-cask/pull/23188
+caskroom/homebrew-cask    27867    19417 0.7557
+0.6877 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/27867
+https://www.github.com/caskroom/homebrew-cask/pull/19417
+caskroom/homebrew-cask     1513      492 1.0000
+0.8233 0.0000 0.1000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/1513
+https://www.github.com/caskroom/homebrew-cask/pull/492
+caskroom/homebrew-cask    17148    16801 1.0000
+0.9098 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/17148
+https://www.github.com/caskroom/homebrew-cask/pull/16801
+caskroom/homebrew-cask    47083    37390 1.0000
+1.0000 0.5102 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/47083
+https://www.github.com/caskroom/homebrew-cask/pull/37390
+caskroom/homebrew-cask    46426    44616 0.9911
+0.5525 0.8991 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/46426
+https://www.github.com/caskroom/homebrew-cask/pull/44616
+caskroom/homebrew-cask    26889      381 0.9973
+0.5361 0.0080 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/26889
+https://www.github.com/caskroom/homebrew-cask/pull/381
+caskroom/homebrew-cask    29007    19638 0.9091
+0.0000 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/29007
+https://www.github.com/caskroom/homebrew-cask/pull/19638
+caskroom/homebrew-cask    44753    12937 1.0000
+0.6844 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/44753
+https://www.github.com/caskroom/homebrew-cask/pull/12937
+caskroom/homebrew-cask     4672      665 1.0000
+0.8509 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/4672
+https://www.github.com/caskroom/homebrew-cask/pull/665
+caskroom/homebrew-cask    25050    12005 1.0000
+0.6917 0.0000 0.3333 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/25050
+https://www.github.com/caskroom/homebrew-cask/pull/12005
+caskroom/homebrew-cask    19909     8397 0.9717
+1.0000 0.0598 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/19909
+https://www.github.com/caskroom/homebrew-cask/pull/8397
+caskroom/homebrew-cask     5910     1363 0.6847
+0.6420 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/5910
+https://www.github.com/caskroom/homebrew-cask/pull/1363
+caskroom/homebrew-cask    31285    30780 0.5289
+0.4457 0.3646 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/31285
+https://www.github.com/caskroom/homebrew-cask/pull/30780
+caskroom/homebrew-cask    20631    16742 1.0000
+1.0000 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/20631
+https://www.github.com/caskroom/homebrew-cask/pull/16742
+caskroom/homebrew-cask    16746    16656 1.0000
+0.9761 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/16746
+https://www.github.com/caskroom/homebrew-cask/pull/16656
+caskroom/homebrew-cask    36365    34385 1.0000
+0.8064 0.9794 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/36365
+https://www.github.com/caskroom/homebrew-cask/pull/34385
+caskroom/homebrew-cask    49291    38781 0.6595
+0.0000 0.2791 0.0000 1.0000 0.0000 -1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/49291
+https://www.github.com/caskroom/homebrew-cask/pull/38781
+caskroom/homebrew-cask    37869    37859 0.8560
+0.0000 1.0000 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/37869
+https://www.github.com/caskroom/homebrew-cask/pull/37859
+caskroom/homebrew-cask    28327    16878 1.0000
+0.8782 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/28327
+https://www.github.com/caskroom/homebrew-cask/pull/16878
+caskroom/homebrew-cask     5632     5626 1.0000
+1.0000 0.0000 0.2000 1.0000 1.0000 1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/5632
+https://www.github.com/caskroom/homebrew-cask/pull/5626
+caskroom/homebrew-cask    26475    14341 1.0000
+1.0000 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/26475
+https://www.github.com/caskroom/homebrew-cask/pull/14341
+caskroom/homebrew-cask    12892    12863 0.9681
+1.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/12892
+https://www.github.com/caskroom/homebrew-cask/pull/12863
+caskroom/homebrew-cask    32968    31816 0.7906
+0.3759 1.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/32968
+https://www.github.com/caskroom/homebrew-cask/pull/31816
+caskroom/homebrew-cask    29254    23161 0.4281
+0.2393 0.7671 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/29254
+https://www.github.com/caskroom/homebrew-cask/pull/23161
+caskroom/homebrew-cask    23014    19560 1.0000
+0.7109 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/23014
+https://www.github.com/caskroom/homebrew-cask/pull/19560
+caskroom/homebrew-cask    32879    28225 1.0000
+0.9041 0.0392 0.1765 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/32879
+https://www.github.com/caskroom/homebrew-cask/pull/28225
+caskroom/homebrew-cask    27588    19707 1.0000
+0.9522 0.0000 0.2500 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/27588
+https://www.github.com/caskroom/homebrew-cask/pull/19707
+caskroom/homebrew-cask    14867     5476 0.5260
+0.5563 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/14867
+https://www.github.com/caskroom/homebrew-cask/pull/5476
+caskroom/homebrew-cask    35037    21232 1.0000
+0.9144 0.3112 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/35037
+https://www.github.com/caskroom/homebrew-cask/pull/21232
+caskroom/homebrew-cask    13081    12151 1.0000
+0.7945 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/13081
+https://www.github.com/caskroom/homebrew-cask/pull/12151
+caskroom/homebrew-cask    44671    44670 1.0000
+1.0000 0.9288 0.2000 1.0000 1.0000 1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/44671
+https://www.github.com/caskroom/homebrew-cask/pull/44670
+caskroom/homebrew-cask    27744    12290 1.0000
+0.6949 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/27744
+https://www.github.com/caskroom/homebrew-cask/pull/12290
+caskroom/homebrew-cask    12385     3809 0.3168
+0.4462 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/12385
+https://www.github.com/caskroom/homebrew-cask/pull/3809
+caskroom/homebrew-cask    12666    12585 1.0000
+1.0000 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/12666
+https://www.github.com/caskroom/homebrew-cask/pull/12585
+caskroom/homebrew-cask     3496     1571 0.9886
+0.0000 0.0475 0.4468 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/3496
+https://www.github.com/caskroom/homebrew-cask/pull/1571
+caskroom/homebrew-cask    32062    18239 0.9091
+0.0000 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/32062
+https://www.github.com/caskroom/homebrew-cask/pull/18239
+caskroom/homebrew-cask    26830    19719 1.0000
+0.9680 0.0000 0.2000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/26830
+https://www.github.com/caskroom/homebrew-cask/pull/19719
+caskroom/homebrew-cask    24426    16763 1.0000
+1.0000 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/24426
+https://www.github.com/caskroom/homebrew-cask/pull/16763
+caskroom/homebrew-cask     7297     4524 0.1783
+0.0000 0.0271 0.0000 0.0833 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/7297
+https://www.github.com/caskroom/homebrew-cask/pull/4524
+caskroom/homebrew-cask    36918    36914 1.0000
+0.8127 0.1208 0.0000 1.0000 1.0000 1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/36918
+https://www.github.com/caskroom/homebrew-cask/pull/36914
+caskroom/homebrew-cask    16032    16022 1.0000
+0.9416 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/16032
+https://www.github.com/caskroom/homebrew-cask/pull/16022
+caskroom/homebrew-cask    49992    41680 0.9923
+0.5636 0.9554 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/49992
+https://www.github.com/caskroom/homebrew-cask/pull/41680
+caskroom/homebrew-cask    47365    27040 1.0000
+0.8481 1.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/47365
+https://www.github.com/caskroom/homebrew-cask/pull/27040
+caskroom/homebrew-cask    39442    13571 0.9512
+0.8826 0.0000 0.0000 0.1250 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/39442
+https://www.github.com/caskroom/homebrew-cask/pull/13571
+caskroom/homebrew-cask    36313    36276 0.8560
+0.0000 1.0000 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/36313
+https://www.github.com/caskroom/homebrew-cask/pull/36276
+caskroom/homebrew-cask      896      141 0.2824
+0.0000 0.0000 0.0000 0.2500 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/896
+https://www.github.com/caskroom/homebrew-cask/pull/141
+caskroom/homebrew-cask    49238    49223 0.2393
+0.0000 1.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/49238
+https://www.github.com/caskroom/homebrew-cask/pull/49223
+caskroom/homebrew-cask     3031     1330 0.7298
+0.6701 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/3031
+https://www.github.com/caskroom/homebrew-cask/pull/1330
+caskroom/homebrew-cask    18509     5110 0.9257
+0.0327 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/18509
+https://www.github.com/caskroom/homebrew-cask/pull/5110
+caskroom/homebrew-cask    38183    16064 1.0000
+0.8662 0.0000 0.0000 0.5000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/38183
+https://www.github.com/caskroom/homebrew-cask/pull/16064
+caskroom/homebrew-cask    35372    34552 1.0000
+0.6223 1.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/35372
+https://www.github.com/caskroom/homebrew-cask/pull/34552
+caskroom/homebrew-cask    22233    20241 0.9960
+0.4794 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/22233
+https://www.github.com/caskroom/homebrew-cask/pull/20241
+caskroom/homebrew-cask    11109      812 0.2181
+0.3820 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/11109
+https://www.github.com/caskroom/homebrew-cask/pull/812
+caskroom/homebrew-cask      995      132 0.9926
+0.6524 0.0000 0.0000 0.5000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/995
+https://www.github.com/caskroom/homebrew-cask/pull/132
+caskroom/homebrew-cask    38247    35033 1.0000
+1.0000 0.5004 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/38247
+https://www.github.com/caskroom/homebrew-cask/pull/35033
+caskroom/homebrew-cask     4498     3258 0.0947
+0.2574 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/4498
+https://www.github.com/caskroom/homebrew-cask/pull/3258
+caskroom/homebrew-cask    39284    39278 0.8560
+0.0000 1.0000 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/39284
+https://www.github.com/caskroom/homebrew-cask/pull/39278
+caskroom/homebrew-cask     4606     2201 0.6972
+0.6495 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/4606
+https://www.github.com/caskroom/homebrew-cask/pull/2201
+caskroom/homebrew-cask    37124    36433 0.9604
+0.2549 0.9852 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/caskroom/homebrew-cask/pull/37124
+https://www.github.com/caskroom/homebrew-cask/pull/36433
+caskroom/homebrew-cask    33768    17301 1.0000
+0.9849 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/33768
+https://www.github.com/caskroom/homebrew-cask/pull/17301
+caskroom/homebrew-cask    22223    17188 1.0000
+1.0000 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/22223
+https://www.github.com/caskroom/homebrew-cask/pull/17188
+caskroom/homebrew-cask    12577    12574 0.3524
+0.4650 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/12577
+https://www.github.com/caskroom/homebrew-cask/pull/12574
+caskroom/homebrew-cask    29665    29662 0.2393
+0.0000 1.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/29665
+https://www.github.com/caskroom/homebrew-cask/pull/29662
+caskroom/homebrew-cask    12924    12412 0.4235
+0.5041 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/12924
+https://www.github.com/caskroom/homebrew-cask/pull/12412
+caskroom/homebrew-cask    44322    19563 1.0000
+0.9550 0.0000 0.2000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/44322
+https://www.github.com/caskroom/homebrew-cask/pull/19563
+caskroom/homebrew-cask    39058    34810 1.0000
+1.0000 0.5004 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/39058
+https://www.github.com/caskroom/homebrew-cask/pull/34810
+caskroom/homebrew-cask    44976    17637 1.0000
+0.8199 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/44976
+https://www.github.com/caskroom/homebrew-cask/pull/17637
+caskroom/homebrew-cask    17051    16343 0.9880
+0.7024 0.0000 0.0000 1.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/17051
+https://www.github.com/caskroom/homebrew-cask/pull/16343
+caskroom/homebrew-cask    49300    35227 1.0000
+0.9267 1.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/49300
+https://www.github.com/caskroom/homebrew-cask/pull/35227
+caskroom/homebrew-cask    25949    20816 1.0000
+0.7512 0.3316 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/25949
+https://www.github.com/caskroom/homebrew-cask/pull/20816
+caskroom/homebrew-cask    23396    23266 1.0000
+0.5722 1.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/23396
+https://www.github.com/caskroom/homebrew-cask/pull/23266
+caskroom/homebrew-cask    31554    23559 0.7615
+0.0000 0.7671 0.0000 0.3333 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/31554
+https://www.github.com/caskroom/homebrew-cask/pull/23559
+caskroom/homebrew-cask    13349    12800 1.0000
+0.8731 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/13349
+https://www.github.com/caskroom/homebrew-cask/pull/12800
+caskroom/homebrew-cask    12660     9607 0.9974
+0.5494 0.0000 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/12660
+https://www.github.com/caskroom/homebrew-cask/pull/9607
+caskroom/homebrew-cask    28743    14220 1.0000
+0.8584 0.0124 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/28743
+https://www.github.com/caskroom/homebrew-cask/pull/14220
+caskroom/homebrew-cask     9671     7711 0.2991
+0.4357 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/caskroom/homebrew-cask/pull/9671
+https://www.github.com/caskroom/homebrew-cask/pull/7711

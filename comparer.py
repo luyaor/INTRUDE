@@ -1,6 +1,8 @@
 import os
 import re
+import itertools
 
+from datetime import datetime
 from collections import Counter
 
 from util import word_extractor
@@ -8,7 +10,6 @@ from util import localfile_tool
 from util import language_tool
 
 import fetch_raw_diff
-import fetch_pull_files
 
 from git import *
 
@@ -75,11 +76,8 @@ def get_location(pull):
     return location_set
 
 def get_code_from_pr_info(pr_info):
-    add_code = []
-    del_code = []    
-    for file in pr_info:
-        add_code += word_extractor.get_words_from_file(file["name"], file["add_code"])
-        del_code += word_extractor.get_words_from_file(file["name"], file["del_code"])
+    add_code = list(itertools.chain(*[word_extractor.get_words_from_file(file["name"], file["add_code"]) for file in pr_info]))
+    del_code = list(itertools.chain(*[word_extractor.get_words_from_file(file["name"], file["del_code"]) for file in pr_info]))
     return [add_code, del_code]
 
 def get_code_tokens_overlap(pull, overlap_set):
@@ -121,7 +119,6 @@ def get_code_keywords_counter(pull): # return a counter
     localfile_tool.write_to_file(path, result)    
     return result
 '''
-
 
 def location_similarity(la, lb):
 
@@ -200,9 +197,20 @@ model = None
 def init_model_from_raw_docs(documents, save_id=None):
     global model
     model = nlp.Model([get_BoW(document) for document in documents], save_id)
-    print('init nlp model successfully!')
+    print('init nlp model for text successfully!')
 
-def text_sim(A, B, text_type="default"):
+'''
+import spacy
+import wmd
+en_nlp = spacy.load('en', create_pipeline=wmd.WMD.create_spacy_pipeline)
+
+def get_text_sim(A, B, text_type="default"):
+    if (A is None) or (B is None):
+        return 0
+    return en_nlp(A).similarity(en_nlp(B))
+'''
+
+def get_text_sim(A, B, text_type="default"):
     A = get_BoW(A)
     B = get_BoW(B)
     if model is None:
@@ -214,11 +222,31 @@ def text_sim(A, B, text_type="default"):
         return model.query_sim_tfidf(A, B)
         # return model.query_sim_common_words_idf(A, B)
 
+
+'''
+code_model = None
+def init_code_model_from_tokens(documents, save_id=None):
+    global code_model
+    code_model = nlp.Model(documents, save_id)
+    print('init nlp model for code successfully!')
+
+def get_code_sim(A, B):
+    overlap_files_set = set(get_file_list(A)) & set(get_file_list(B))
+    if code_model is None:
+        A = get_code_keywords_counter_overlap(A, overlap_files_set)
+        B = get_code_keywords_counter_overlap(B, overlap_files_set)
+        return counter_similarity(A, B)
+    else:
+        A = get_code_tokens_overlap(A, overlap_files_set)[0]
+        B = get_code_tokens_overlap(B, overlap_files_set)[0]
+        return code_model.query_sim_tfidf(A, B)
+'''
+
 '''
 #detect cases: feat(xxxx)
 
 def special_pattern(a):
-    x1 = get_pr_numbers(a)
+    x1 = get_pr_and_issue_numbers(a)
     x2 = re.findall('\((.*?)\)', a)
     x1 = list(filter(lambda x: len(x) > 1, x1))
     return x1 + x2
@@ -237,23 +265,30 @@ def check_pattern(A, B):
     if a_set & b_set:
         return 1
     else:
-        a_set = set(get_pr_numbers(A["title"]) + get_pr_numbers(A["body"])) - ab_num
-        b_set = set(get_pr_numbers(B["title"]) + get_pr_numbers(B["body"])) - ab_num
+        a_set = set(get_pr_and_issue_numbers(A["title"]) + get_pr_and_issue_numbers(A["body"])) - ab_num
+        b_set = set(get_pr_and_issue_numbers(B["title"]) + get_pr_and_issue_numbers(B["body"])) - ab_num
         if a_set and b_set and (a_set != b_set):
             return -1
         return 0
 
+def get_time(t):
+    return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
 
 def calc_sim(A, B):
     pattern = check_pattern(A, B)
-    title_sim = text_sim(A["title"], B["title"])
-    desc_sim = text_sim(A["body"], B["body"])
+    title_sim = get_text_sim(A["title"], B["title"])
+    desc_sim = get_text_sim(A["body"], B["body"])
+    # code_sim = get_code_sim(A, B)
     file_list_sim = set_similarity(get_file_list(A), get_file_list(B))
     
+    #code_sim = counter_similarity(get_code_keywords_counter(A), get_code_keywords_counter(B))
+    
     overlap_files_set = set(get_file_list(A)) & set(get_file_list(B))
-
+    code_sim = counter_similarity(get_code_keywords_counter_overlap(A, overlap_files_set), get_code_keywords_counter_overlap(B, overlap_files_set))
+    
     location_sim = location_similarity(get_location(A), get_location(B))
     
+
     common_words = list(set(get_BoW(A["title"])) & set(get_BoW(B["title"])))
     overlap_title_len = len(common_words)
     
@@ -261,16 +296,15 @@ def calc_sim(A, B):
         title_idf_sum = model.get_idf_sum(common_words)
     else:
         title_idf_sum = 0
-                
+    
+    
     overlap_files_len = len(overlap_files_set)
-
-    # code_sim = counter_similarity(get_code_keywords_counter(A), get_code_keywords_counter(B))
-    code_sim = counter_similarity(get_code_keywords_counter_overlap(A, overlap_files_set),
-                                  get_code_keywords_counter_overlap(B, overlap_files_set))
+    
+    time_sim = abs((get_time(A["created_at"]) - get_time(B["created_at"])).days)
+    
 
     # anthor way: use just added code
     # code_sim = text_keywords_similarity(get_code(A), get_code(B))    
-    # time_sim = (get_time(A["created_at"]) - get_time(B["created_at"])).days
     
     return {
             'title': title_sim,
@@ -279,14 +313,16 @@ def calc_sim(A, B):
             'file_list': file_list_sim,
             'location': location_sim, 
             'pattern': pattern,
+            'time': time_sim,
             'overlap_files_len': overlap_files_len,
             'overlap_title_len': overlap_title_len,
             'title_idf_sum': title_idf_sum,
            }
 
 def sim_to_vet(r):
-    return [r['title'],r['desc'],r['code'],r['file_list'],r['location'], r['pattern'],\
-            r['overlap_files_len'],r['title_idf_sum']
+    return [r['title'],r['desc'],r['code'],r['file_list'],r['location'], r['pattern'],
+            # r['overlap_files_len'],r['title_idf_sum'],
+            # r['time'],
             # r['overlap_files_len'],r['overlap_title_len'],r['title_idf_sum'],
            ]
 

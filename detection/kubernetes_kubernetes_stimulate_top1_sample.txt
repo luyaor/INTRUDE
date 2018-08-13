@@ -1,0 +1,400 @@
+kubernetes/kubernetes    58197    36395 0.9730
+0.4644 0.6091 0.0417 0.3333 0.5366 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/58197
+https://www.github.com/kubernetes/kubernetes/pull/36395
+kubernetes/kubernetes    44943    44872 0.9711
+0.0075 0.6765 1.0000 0.0005 0.4828 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/44943
+https://www.github.com/kubernetes/kubernetes/pull/44872
+kubernetes/kubernetes    50185    42406 0.8809
+0.2146 0.5484 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/kubernetes/kubernetes/pull/50185
+https://www.github.com/kubernetes/kubernetes/pull/42406
+kubernetes/kubernetes    20186    19936 0.1574
+0.3038 0.0000 0.0000 0.0000 0.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/20186
+https://www.github.com/kubernetes/kubernetes/pull/19936
+kubernetes/kubernetes     2401     2293 0.8160
+0.2698 0.0033 0.0190 0.1250 1.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/2401
+https://www.github.com/kubernetes/kubernetes/pull/2293
+kubernetes/kubernetes      517       73 0.7052
+0.1903 0.0000 0.0000 1.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/517
+https://www.github.com/kubernetes/kubernetes/pull/73
+kubernetes/kubernetes    16183     1365 0.2778
+0.0000 1.0000 0.0000 0.0000 0.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/16183
+https://www.github.com/kubernetes/kubernetes/pull/1365
+kubernetes/kubernetes    19784     4781 0.9089
+0.6855 0.0543 0.0000 0.3333 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/19784
+https://www.github.com/kubernetes/kubernetes/pull/4781
+kubernetes/kubernetes    32632    25262 0.4773
+0.3018 0.6823 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/32632
+https://www.github.com/kubernetes/kubernetes/pull/25262
+kubernetes/kubernetes     5912     1608 0.4233
+0.0201 0.0000 0.0000 1.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/5912
+https://www.github.com/kubernetes/kubernetes/pull/1608
+kubernetes/kubernetes    43687    41593 0.3510
+0.0000 0.0000 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/kubernetes/kubernetes/pull/43687
+https://www.github.com/kubernetes/kubernetes/pull/41593
+kubernetes/kubernetes    38180    34533 0.6588
+0.5998 0.0944 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/38180
+https://www.github.com/kubernetes/kubernetes/pull/34533
+kubernetes/kubernetes     7597      883 0.4184
+0.4190 0.2725 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/7597
+https://www.github.com/kubernetes/kubernetes/pull/883
+kubernetes/kubernetes    53585    31240 0.7319
+0.1250 0.2088 0.0039 0.5000 0.7890 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/53585
+https://www.github.com/kubernetes/kubernetes/pull/31240
+kubernetes/kubernetes    20808    12221 0.9919
+1.0000 0.0000 0.0935 0.3333 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/20808
+https://www.github.com/kubernetes/kubernetes/pull/12221
+kubernetes/kubernetes    45575    39587 0.4468
+0.4830 0.1252 0.0000 0.0000 0.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/45575
+https://www.github.com/kubernetes/kubernetes/pull/39587
+kubernetes/kubernetes    26016    11921 0.7331
+0.1654 0.2305 0.0000 0.0909 1.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/26016
+https://www.github.com/kubernetes/kubernetes/pull/11921
+kubernetes/kubernetes     5468     5467 1.0000
+0.5745 0.0000 1.0000 1.0000 1.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/5468
+https://www.github.com/kubernetes/kubernetes/pull/5467
+kubernetes/kubernetes    62895    50557 0.7343
+0.4389 0.7851 0.0000 0.0000 0.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/62895
+https://www.github.com/kubernetes/kubernetes/pull/50557
+kubernetes/kubernetes     9929     8767 0.4019
+0.0000 0.1053 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/kubernetes/kubernetes/pull/9929
+https://www.github.com/kubernetes/kubernetes/pull/8767
+kubernetes/kubernetes    28193    27696 0.8382
+0.2335 0.3409 0.0000 0.0022 0.0000 1.0000
+https://www.github.com/kubernetes/kubernetes/pull/28193
+https://www.github.com/kubernetes/kubernetes/pull/27696
+kubernetes/kubernetes    14767    14390 0.9005
+0.2970 0.3029 0.0120 0.2000 0.8955 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/14767
+https://www.github.com/kubernetes/kubernetes/pull/14390
+kubernetes/kubernetes    61492    60846 0.8664
+0.7456 0.2873 0.0000 0.0000 0.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/61492
+https://www.github.com/kubernetes/kubernetes/pull/60846
+kubernetes/kubernetes    34082    33902 0.9840
+0.0000 0.5738 1.0000 0.0065 1.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/34082
+https://www.github.com/kubernetes/kubernetes/pull/33902
+kubernetes/kubernetes    56675    56314 0.7627
+0.0000 0.6178 0.0000 1.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/56675
+https://www.github.com/kubernetes/kubernetes/pull/56314
+kubernetes/kubernetes    14448     8597 0.6683
+0.1659 0.0000 0.0000 1.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/14448
+https://www.github.com/kubernetes/kubernetes/pull/8597
+kubernetes/kubernetes    10287     2554 0.8259
+0.7435 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/10287
+https://www.github.com/kubernetes/kubernetes/pull/2554
+kubernetes/kubernetes    16929    14637 0.4388
+0.3975 0.3687 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/16929
+https://www.github.com/kubernetes/kubernetes/pull/14637
+kubernetes/kubernetes    45222    44872 0.8749
+0.0642 0.1056 0.5086 0.0010 0.9401 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/45222
+https://www.github.com/kubernetes/kubernetes/pull/44872
+kubernetes/kubernetes    54169    37486 0.5750
+0.1088 0.0000 0.0000 1.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/54169
+https://www.github.com/kubernetes/kubernetes/pull/37486
+kubernetes/kubernetes    19090     3793 0.2754
+0.4085 0.0000 0.0000 0.0000 0.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/19090
+https://www.github.com/kubernetes/kubernetes/pull/3793
+kubernetes/kubernetes    17650    16942 0.8573
+0.7500 0.2345 0.0000 0.0000 0.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/17650
+https://www.github.com/kubernetes/kubernetes/pull/16942
+kubernetes/kubernetes     4907     4431 0.5893
+0.3452 0.2308 0.0761 0.1429 0.2366 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/4907
+https://www.github.com/kubernetes/kubernetes/pull/4431
+kubernetes/kubernetes    56111    55463 0.9363
+0.0000 0.0443 0.6667 0.5000 0.6087 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/56111
+https://www.github.com/kubernetes/kubernetes/pull/55463
+kubernetes/kubernetes    45686    41177 0.9410
+0.5791 0.3739 0.1994 0.0667 0.1963 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/45686
+https://www.github.com/kubernetes/kubernetes/pull/41177
+kubernetes/kubernetes    31752    15708 0.4556
+0.0000 0.2033 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/kubernetes/kubernetes/pull/31752
+https://www.github.com/kubernetes/kubernetes/pull/15708
+kubernetes/kubernetes    41544    25434 0.6029
+0.2638 0.0000 0.1579 0.0190 0.7690 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/41544
+https://www.github.com/kubernetes/kubernetes/pull/25434
+kubernetes/kubernetes    63106    10594 0.6878
+0.6412 0.0095 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/63106
+https://www.github.com/kubernetes/kubernetes/pull/10594
+kubernetes/kubernetes    14569    13335 1.0000
+0.8487 0.0244 0.9155 1.0000 1.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/14569
+https://www.github.com/kubernetes/kubernetes/pull/13335
+kubernetes/kubernetes    18483    16026 0.5156
+0.5511 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/18483
+https://www.github.com/kubernetes/kubernetes/pull/16026
+kubernetes/kubernetes    47399    45517 0.9134
+0.3661 0.1006 0.0000 1.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/47399
+https://www.github.com/kubernetes/kubernetes/pull/45517
+kubernetes/kubernetes     2923     2598 0.5240
+0.0780 0.1059 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/kubernetes/kubernetes/pull/2923
+https://www.github.com/kubernetes/kubernetes/pull/2598
+kubernetes/kubernetes    14343     7380 0.9783
+0.6824 0.0000 0.0197 0.1500 0.9612 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/14343
+https://www.github.com/kubernetes/kubernetes/pull/7380
+kubernetes/kubernetes    60367    51242 0.2319
+0.3074 0.2746 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/60367
+https://www.github.com/kubernetes/kubernetes/pull/51242
+kubernetes/kubernetes    22985     9560 0.8928
+0.5980 0.2548 0.1284 0.1509 0.0101 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/22985
+https://www.github.com/kubernetes/kubernetes/pull/9560
+kubernetes/kubernetes    38286    26248 0.9957
+0.3323 0.2413 0.0000 1.0000 1.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/38286
+https://www.github.com/kubernetes/kubernetes/pull/26248
+kubernetes/kubernetes    33021    32038 0.9020
+0.5645 0.8423 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/33021
+https://www.github.com/kubernetes/kubernetes/pull/32038
+kubernetes/kubernetes     9164     9095 0.9737
+0.0000 0.0000 0.9831 0.0179 1.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/9164
+https://www.github.com/kubernetes/kubernetes/pull/9095
+kubernetes/kubernetes     5304     1641 1.0000
+0.6067 1.0000 0.0000 0.5000 1.0000 1.0000
+https://www.github.com/kubernetes/kubernetes/pull/5304
+https://www.github.com/kubernetes/kubernetes/pull/1641
+kubernetes/kubernetes    23534    22645 0.9765
+0.0000 0.0000 0.6882 0.6471 0.8006 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/23534
+https://www.github.com/kubernetes/kubernetes/pull/22645
+kubernetes/kubernetes    43940    39069 0.9608
+0.5903 0.4698 0.1358 0.3333 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/43940
+https://www.github.com/kubernetes/kubernetes/pull/39069
+kubernetes/kubernetes     1180      781 0.2437
+0.0000 0.0000 0.0000 0.2000 1.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/1180
+https://www.github.com/kubernetes/kubernetes/pull/781
+kubernetes/kubernetes    48567    48485 0.6819
+0.1826 0.1007 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/kubernetes/kubernetes/pull/48567
+https://www.github.com/kubernetes/kubernetes/pull/48485
+kubernetes/kubernetes    57078    54049 0.8461
+0.5724 0.0747 0.0769 0.3333 0.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/57078
+https://www.github.com/kubernetes/kubernetes/pull/54049
+kubernetes/kubernetes    49871     1143 0.7713
+0.6771 0.0761 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/49871
+https://www.github.com/kubernetes/kubernetes/pull/1143
+kubernetes/kubernetes    37275    37078 0.8205
+0.5239 0.6764 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/37275
+https://www.github.com/kubernetes/kubernetes/pull/37078
+kubernetes/kubernetes    15943    11655 0.4566
+0.5211 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/15943
+https://www.github.com/kubernetes/kubernetes/pull/11655
+kubernetes/kubernetes     5836     3017 0.1594
+0.3332 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/5836
+https://www.github.com/kubernetes/kubernetes/pull/3017
+kubernetes/kubernetes    57650    57640 0.9633
+0.1888 0.9920 0.0000 0.2000 0.0000 1.0000
+https://www.github.com/kubernetes/kubernetes/pull/57650
+https://www.github.com/kubernetes/kubernetes/pull/57640
+kubernetes/kubernetes    45351    45061 0.9722
+0.5622 0.0325 0.0000 1.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/45351
+https://www.github.com/kubernetes/kubernetes/pull/45061
+kubernetes/kubernetes    35800    22131 0.9814
+0.0854 0.5391 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/35800
+https://www.github.com/kubernetes/kubernetes/pull/22131
+kubernetes/kubernetes    57470    56270 0.9933
+0.4272 0.1725 0.1029 1.0000 0.4915 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/57470
+https://www.github.com/kubernetes/kubernetes/pull/56270
+kubernetes/kubernetes    15166    14431 0.2008
+0.3588 0.0356 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/15166
+https://www.github.com/kubernetes/kubernetes/pull/14431
+kubernetes/kubernetes    44745    30949 0.4239
+0.4734 0.1110 0.0000 0.0000 0.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/44745
+https://www.github.com/kubernetes/kubernetes/pull/30949
+kubernetes/kubernetes    41373    39809 0.6478
+0.5770 0.0843 0.0000 0.0500 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/41373
+https://www.github.com/kubernetes/kubernetes/pull/39809
+kubernetes/kubernetes     9209     2926 0.1363
+0.2893 0.0714 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/9209
+https://www.github.com/kubernetes/kubernetes/pull/2926
+kubernetes/kubernetes    31919    25107 0.5000
+0.4085 0.4365 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/31919
+https://www.github.com/kubernetes/kubernetes/pull/25107
+kubernetes/kubernetes    39629     8946 0.7327
+0.5889 0.0000 0.0572 0.0870 0.0493 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/39629
+https://www.github.com/kubernetes/kubernetes/pull/8946
+kubernetes/kubernetes    25907    22488 0.6331
+0.5200 0.3026 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/25907
+https://www.github.com/kubernetes/kubernetes/pull/22488
+kubernetes/kubernetes    45559    45470 0.1614
+0.0000 0.0565 0.0255 0.0001 1.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/45559
+https://www.github.com/kubernetes/kubernetes/pull/45470
+kubernetes/kubernetes    55752    55740 0.8801
+0.4742 0.7224 0.0297 0.2000 0.0522 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/55752
+https://www.github.com/kubernetes/kubernetes/pull/55740
+kubernetes/kubernetes     4592     1091 0.2973
+0.1570 0.0830 0.1087 0.1667 0.3966 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/4592
+https://www.github.com/kubernetes/kubernetes/pull/1091
+kubernetes/kubernetes    50565    49976 0.7450
+0.5229 0.5052 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/50565
+https://www.github.com/kubernetes/kubernetes/pull/49976
+kubernetes/kubernetes    11381     3541 0.9466
+0.3457 0.0000 0.0000 0.6667 0.7805 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/11381
+https://www.github.com/kubernetes/kubernetes/pull/3541
+kubernetes/kubernetes    55350    18033 0.9488
+1.0000 0.0000 0.0000 0.0000 0.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/55350
+https://www.github.com/kubernetes/kubernetes/pull/18033
+kubernetes/kubernetes     5394     4831 0.2908
+0.4306 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/5394
+https://www.github.com/kubernetes/kubernetes/pull/4831
+kubernetes/kubernetes    61294    29087 0.9246
+0.3897 0.1088 0.0480 0.2941 0.7233 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/61294
+https://www.github.com/kubernetes/kubernetes/pull/29087
+kubernetes/kubernetes    12508     9055 0.4883
+0.5372 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/12508
+https://www.github.com/kubernetes/kubernetes/pull/9055
+kubernetes/kubernetes     8956     2079 0.1848
+0.3558 0.0000 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/8956
+https://www.github.com/kubernetes/kubernetes/pull/2079
+kubernetes/kubernetes    14431    12589 0.3687
+0.2509 0.2230 0.0602 0.0455 0.2249 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/14431
+https://www.github.com/kubernetes/kubernetes/pull/12589
+kubernetes/kubernetes    23110    12228 0.7455
+0.5040 0.1077 0.0000 0.0571 0.4111 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/23110
+https://www.github.com/kubernetes/kubernetes/pull/12228
+kubernetes/kubernetes    62482    47235 0.9135
+0.0000 0.0877 0.0000 1.0000 0.6667 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/62482
+https://www.github.com/kubernetes/kubernetes/pull/47235
+kubernetes/kubernetes      476      452 0.4430
+0.4496 0.0000 0.0105 0.0235 0.1739 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/476
+https://www.github.com/kubernetes/kubernetes/pull/452
+kubernetes/kubernetes    13870    13784 0.9725
+0.6094 0.2765 0.0000 0.0909 1.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/13870
+https://www.github.com/kubernetes/kubernetes/pull/13784
+kubernetes/kubernetes      429      406 0.3352
+0.1229 0.0000 0.0000 0.0769 1.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/429
+https://www.github.com/kubernetes/kubernetes/pull/406
+kubernetes/kubernetes    39927    38950 0.5528
+0.5680 0.0069 0.0000 0.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/39927
+https://www.github.com/kubernetes/kubernetes/pull/38950
+kubernetes/kubernetes    12096     9752 0.7241
+0.1616 0.0000 0.0643 0.1200 1.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/12096
+https://www.github.com/kubernetes/kubernetes/pull/9752
+kubernetes/kubernetes    18611    18541 0.6874
+0.0868 0.1630 0.0802 0.7143 0.2045 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/18611
+https://www.github.com/kubernetes/kubernetes/pull/18541
+kubernetes/kubernetes    30297    15439 0.9955
+1.0000 0.0000 0.0107 0.0017 1.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/30297
+https://www.github.com/kubernetes/kubernetes/pull/15439
+kubernetes/kubernetes    58547     1090 0.6697
+0.1621 0.1357 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/kubernetes/kubernetes/pull/58547
+https://www.github.com/kubernetes/kubernetes/pull/1090
+kubernetes/kubernetes    35478    32458 0.4891
+0.2894 0.7316 0.0000 0.0000 0.0000 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/35478
+https://www.github.com/kubernetes/kubernetes/pull/32458
+kubernetes/kubernetes    17861     2646 0.5694
+0.0952 0.0305 0.0000 1.0000 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/17861
+https://www.github.com/kubernetes/kubernetes/pull/2646
+kubernetes/kubernetes    20055    16362 0.4292
+0.0000 0.0000 0.0789 0.0667 0.9653 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/20055
+https://www.github.com/kubernetes/kubernetes/pull/16362
+kubernetes/kubernetes    16580     7894 0.5679
+0.3871 0.0775 0.0351 0.0286 0.4694 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/16580
+https://www.github.com/kubernetes/kubernetes/pull/7894
+kubernetes/kubernetes    38741     8890 0.9605
+0.7158 0.0000 0.2344 0.2500 0.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/38741
+https://www.github.com/kubernetes/kubernetes/pull/8890
+kubernetes/kubernetes    54057    47383 0.9433
+0.0708 0.0157 0.0000 1.0000 1.0000 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/54057
+https://www.github.com/kubernetes/kubernetes/pull/47383
+kubernetes/kubernetes    57766    31027 0.7945
+0.4078 0.0795 0.0272 0.3333 0.3929 0.0000
+https://www.github.com/kubernetes/kubernetes/pull/57766
+https://www.github.com/kubernetes/kubernetes/pull/31027
+kubernetes/kubernetes     5500     3697 0.4393
+0.0000 0.3483 0.0000 0.0068 0.9492 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/5500
+https://www.github.com/kubernetes/kubernetes/pull/3697
+kubernetes/kubernetes    30890    30843 0.6822
+0.0000 0.7262 0.1650 0.2500 0.4065 -1.0000
+https://www.github.com/kubernetes/kubernetes/pull/30890
+https://www.github.com/kubernetes/kubernetes/pull/30843
+kubernetes/kubernetes    50913    44836 0.3884
+0.0000 0.0788 0.0000 0.0000 0.0000 1.0000
+https://www.github.com/kubernetes/kubernetes/pull/50913
+https://www.github.com/kubernetes/kubernetes/pull/44836

@@ -1,0 +1,8 @@
+['https://github.com/zhangzg187/spark/pull/2', 'https://github.com/spark-test/spark/pull/6', [0.5112133959993209, 0.0, 0, 0.02857142857142857, 1.0, 0, 1, 1.0], 0.8869137216392695, False]
+['https://github.com/dukedbgroup/spark/pull/1', 'https://github.com/tdas/spark/pull/33', [0.0, 0.0, 0, 0.25925925925925924, 0.15164314412279797, 0, 21, 0], 0.9308361479340658, False]
+['https://github.com/Flipkart/spark/pull/1', 'https://github.com/Kyligence/spark/pull/4', [0.0, 1.0, 0.0, 0.26153846153846155, 0.9201101928374655, 0, 17, 0], 0.9294560341560711, False]
+['https://github.com/Guavus/spark/pull/1', 'https://github.com/palantir/spark/pull/54', [0.3758054149849037, 0.0, 0.07142857142857142, 0.3333333333333333, 0.0, 0, 1, 1.6309151675138818], 0.8619484713239811, False]
+['https://github.com/Guavus/spark/pull/1', 'https://github.com/clearstorydata/spark/pull/94', [0.35225236924768805, 0.0, 0.0, 0.5, 0.0, 0, 1, 1.6355830233628357], 0.8561721659856445, False]
+['https://github.com/zhangzg187/spark/pull/2', 'https://github.com/clearstorydata/spark/pull/201', [0.7152410616196462, 0.0, 0.16580310880829016, 0.05172413793103448, 0.18120805369127516, 0, 3, 1.0], 0.9682808572426946, False]
+['https://github.com/zhangzg187/spark/pull/1', 'https://github.com/clearstorydata/spark/pull/206', [0.0, 0.06786112623744207, 1.0, 0.07142857142857142, 1.0, 0, 1, 0], 0.9128443021235656, False]
+['https://github.com/mateiz/spark/pull/1', 'https://github.com/palantir/spark/pull/16', [0.184016887561444, 0.09810773957286713, 0.11458333333333333, 0.1, 0.5, 0, 2, 1.3938199772771005], 0.9820315350061888, False]

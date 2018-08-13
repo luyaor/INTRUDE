@@ -3,7 +3,7 @@ from gensim import corpora, models, similarities, matutils
 
 model_path = '/DATA/luyao/model/'
 
-class Model:    
+class Model:
     def __init__(self, texts, save_id = None):
         if save_id is not None:
             try:
@@ -88,7 +88,7 @@ class Model:
     """
 
 if __name__ == "__main__":
-    documents = ["Shipment of gold damaged in a fire", "Delivery of silver arrived in a silver truck", "Shipment of gold arrived in a truck"]
+    documents = ["Shipment of gold damaged in a fire", "Delivery of silver arrived in a silver truck", "Shipment of gold arrived in a truck", "orz"]
     texts = [[word for word in document.lower().split()] for document in documents]
     m = Model(texts)
     # z = ['water', 'gold',  'in', 'the', 'shipment', 'shipment']
@@ -107,10 +107,10 @@ if __name__ == "__main__":
     # print(m.get_tfidf(['shipment', 'in', 'fire']))
     
     # print(m.query_sim_tfidf(['shipment'],['shipment']))
-    # print(m.query_sim_tfidf(['shipment', 'in', 'fire'],['shipment', 'in', 'fire']))
+    print(m.query_sim_tfidf(['gold', 'in', 'shipment', 'shipment', 'orz'],['shipment', 'in', 'fire']))
     
-    print(m.get_idf_sum(['shipment']))
-    print(m.get_idf_sum(['shipment', 'in', 'fire']))
+    # print(m.get_idf_sum(['shipment']))
+    # print(m.get_idf_sum(['shipment', 'in', 'fire']))
     
     '''
     print(m.query_sim_tfidf(texts[0], texts[1]))

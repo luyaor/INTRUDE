@@ -23,6 +23,7 @@ from util import localfile_tool
 from comparer import *
 from git import *
 
+'''
 dataset = [
     ['data/rly_false_pairs.txt', 0, 'train'],
     ['data/small_part_msr.txt', 1, 'train'],
@@ -30,14 +31,26 @@ dataset = [
     ['data/small_part_negative.txt', 0, 'test'],
     ['data/small2_part_msr.txt', 1, 'test'],
 ]
+'''
 
-part_params = None
+dataset = [
+    ['data/msr_positive_pairs.txt', 1, 'train'],
+    ['data/big_false_data.txt', 1, 'train'],
+]
+
+model_data_save_path_suffix = 'all_clues'
+# model_data_save_path_suffix = '_bow'
+part_params = [1,1,1,1,1,1]
+
 draw_pic = False
-model_data_random_shuffle_flag = False
+model_data_random_shuffle_flag = True
 model_data_renew_flag = False
-model_data_save_path_suffix = 'test'
+
+
+print('Data Type:', model_data_save_path_suffix)
 
 # ------------------------------------------------------------
+
 def init_model_with_pulls(pulls, save_id=None):
     t = [str(pull["title"]) for pull in pulls]
     b = []
@@ -45,18 +58,29 @@ def init_model_with_pulls(pulls, save_id=None):
         if pull["body"] and (len(pull["body"]) <= 1000):
             b.append(pull["body"])
     init_model_from_raw_docs(t + b, save_id)
-    print('finish init nlp model!')
     
-def init_model_with_repo(repo):
+    '''
+    c = []
+    for pull in pulls: # only added code
+        if not check_too_big(pull):
+            c.append(get_code_from_pr_info(fetch_pr_info(pull))[0])
+    init_code_model_from_tokens(c, save_id + '_code' if save_id is not None else None)
+    '''
+
+def init_model_with_repo(repo, save_id=None):
     print('init nlp model with %s data!' % repo)
     #save_id = repo.replace('/','_') + '_all'
     #init_model_with_pulls(get_pull_list(repo), save_id)
-    save_id = repo.replace('/','_') + '_marked2'
+    if save_id is None:
+        save_id = repo.replace('/','_') + '_marked'
+    else:
+        save_id = repo.replace('/','_') + '_' + save_id
+
     try:
         init_model_with_pulls([], save_id)
     except:
         init_model_with_pulls(shuffle(get_pull_list(repo))[:5000], save_id)
-
+    
 def get_sim(repo, num1, num2):
     p1 = get_pull(repo, num1)
     p2 = get_pull(repo, num2)
@@ -75,7 +99,7 @@ def get_feature_vector_from_path(data):
         return X, y
     else:
         raise Exception('no such file %s' % data)
-            
+
 def get_feature_vector(data, label, renew=False, out=None):
     default_path = 'data/' + data.replace('data/','').replace('.txt','').replace('/','_') + '_feature_vector'
     if out is None:
@@ -122,7 +146,7 @@ def get_feature_vector(data, label, renew=False, out=None):
             li.append(get_pull(r, z[0]))
             li.append(get_pull(r, z[1]))
         print('model PR num=', len(li))
-        init_model_with_pulls(li, r.replace('/','_') + '_marked')
+        init_model_with_pulls(li, r.replace('/','_') + '_ver2')
         print('pairs num=', len(p[r]))
         
         # sequence
@@ -152,8 +176,7 @@ def get_feature_vector(data, label, renew=False, out=None):
     localfile_tool.write_to_file(y_path, y)
     return (X, y)
 
-def classify(model_type='SVM'):
-
+def print_params():
     if part_params is not None:
         params_set = ['title', 'desc', 'code', 'file_list', 'location', 'pattern']
         used_set = []
@@ -166,7 +189,9 @@ def classify(model_type='SVM'):
         elif len(used_set) == len(part_params) - 1:
             name = 'D_' + '_'.join(set(params_set) - set(used_set))
         print(name)
-    
+
+def classify(model_type='SVM'):
+
     
     def get_ran_shuffle(X, y, train_percent = 0.8):
         X, y = shuffle(X, y)
@@ -192,7 +217,7 @@ def classify(model_type='SVM'):
 
         # ran shuffle with train set and test set
         if model_data_random_shuffle_flag:
-            X_train, y_train, X_test, y_test = get_ran_shuffle(X_train + X_test, y_train + y_test, 0.9)
+            X_train, y_train, X_test, y_test = get_ran_shuffle(X_train + X_test, y_train + y_test, 0.8)
         
         return (X_train, y_train, X_test, y_test)
     
