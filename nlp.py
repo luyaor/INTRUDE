@@ -2,6 +2,7 @@ from gensim import corpora, models, similarities, matutils
 
 
 model_path = '/DATA/luyao/model/'
+lsi_topic_num = 500
 
 class Model:
     def __init__(self, texts, save_id = None):
@@ -10,8 +11,8 @@ class Model:
                 self.dictionary = corpora.Dictionary.load(model_path + '%s.dictionary' % save_id)
                 self.tfidf = models.TfidfModel.load(model_path + '%s.tfidf' % save_id)
                 self.index_tfidf = similarities.MatrixSimilarity.load(model_path + '%s.index_tfidf' % save_id)
-                self.lsi = models.LsiModel.load(model_path + '%s.lsi' % save_id)
-                self.index_lsi = similarities.MatrixSimilarity.load(model_path + '%s.index_lsi' % save_id)
+                self.lsi = models.LsiModel.load(model_path + '%s_%s.lsi' % (save_id, lsi_topic_num))
+                self.index_lsi = similarities.MatrixSimilarity.load(model_path + '%s_%s.index_lsi' % (save_id, lsi_topic_num))
                 print('model already exists!')
                 return
             except:
@@ -30,8 +31,7 @@ class Model:
         
         self.index_tfidf = similarities.MatrixSimilarity(corpus_tfidf)
         
-        # self.lsi = models.LsiModel(corpus_tfidf, id2word=self.dictionary, num_topics=500)
-        self.lsi = models.LsiModel(corpus, id2word=self.dictionary, num_topics=300)
+        self.lsi = models.LsiModel(corpus_tfidf, id2word=self.dictionary, num_topics=lsi_topic_num)
 
         corpus_lsi = self.lsi[corpus_tfidf]
         
@@ -42,8 +42,8 @@ class Model:
             self.dictionary.save(model_path + '%s.dictionary' % save_id)
             self.tfidf.save(model_path + '%s.tfidf' % save_id)
             self.index_tfidf.save(model_path + '%s.index_tfidf' % save_id)
-            self.lsi.save(model_path + '%s.lsi' % save_id)
-            self.index_lsi.save(model_path + '%s.index_lsi' % save_id)
+            self.lsi.save(model_path + '%s_%s.lsi' % (save_id, lsi_topic_num))
+            self.index_lsi.save(model_path + '%s_%s.index_lsi' % (save_id, lsi_topic_num))
             
         
     def get_idf_sum(self, tokens):
@@ -61,7 +61,8 @@ class Model:
     
     def get_lsi(self, tokens):
         query_bow = self.dictionary.doc2bow(tokens)
-        query_lsi = self.lsi[query_bow]
+        query_tfidf = self.tfidf[query_bow]
+        query_lsi = self.lsi[query_tfidf]
         return query_lsi
     
     def query_tfidf(self, tokens):

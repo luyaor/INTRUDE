@@ -2,6 +2,7 @@ import os
 import re
 import itertools
 
+from gensim import matutils
 from datetime import datetime
 from collections import Counter
 
@@ -13,10 +14,12 @@ import fetch_raw_diff
 
 from git import *
 
+text_sim_type = 'lsi'
+code_sim_type = 'bow'
+
 def counter_similarity(A_counter, B_counter):
     C = set(A_counter) | set(B_counter)
-    tot1 = 0
-    tot2 = 0
+    tot1, tot2 = 0, 0
     for x in C:
         tot1 += min(A_counter.get(x,0), B_counter.get(x,0))
         tot2 += max(A_counter.get(x,0), B_counter.get(x,0))
@@ -33,11 +36,10 @@ def set_similarity(A, B):
     B_counter = word_extractor.get_counter(B)
     return counter_similarity(A_counter, B_counter)
 
-def get_keywords(text):
-    return word_extractor.get_top_words_from_text(text, 100)
+def vsm_bow_similarity(A_counter, B_counter):
+    return matutils.cossim(list(A_counter.items()), list(B_counter.items()))
 
-def text_keywords_similarity(A, B):
-    return set_similarity(get_keywords(A), get_keywords(B))
+# ---------------------------------------------------------------------------
 
 def get_BoW(text):
     return word_extractor.get_words_from_text(text)
@@ -84,7 +86,7 @@ def get_code_tokens_overlap(pull, overlap_set):
     new_pr_info = list(filter(lambda x: x["name"] in overlap_set, pull["file_list"]))
     return get_code_from_pr_info(new_pr_info)
 
-def get_delta_code_tokens_keywords(code_tokens_result, top_number=300):
+def get_delta_code_tokens_counter(code_tokens_result):
     add_code_tokens = code_tokens_result[0]
     del_code_tokens = code_tokens_result[1]
     
@@ -96,29 +98,9 @@ def get_delta_code_tokens_keywords(code_tokens_result, top_number=300):
         times = add_c[t] - del_c[t]
         if times > 0:
             changed_c[t] = times
-    
-    return dict(changed_c.most_common(top_number))
+    return changed_c
 
-def get_code_keywords_counter_overlap(pull, overlap_set): # return a counter
-    return get_delta_code_tokens_keywords(get_code_tokens_overlap(pull, overlap_set))
-
-'''
-def get_code_tokens(pull):
-    path = '/DATA/luyao/pr_data/%s/%s/code_tokens.json' % (pull["base"]["repo"]["full_name"], pull["number"])
-    if os.path.exists(path):
-        return localfile_tool.get_file(path)
-    result = get_code_from_pr_info(pull["file_list"])
-    localfile_tool.write_to_file(path, result)
-    return result
-
-def get_code_keywords_counter(pull): # return a counter
-    path = '/DATA/luyao/pr_data/%s/%s/code_keywords_counter.json' % (pull["base"]["repo"]["full_name"], pull["number"])
-    if os.path.exists(path):
-        return localfile_tool.get_file(path)
-    result = get_delta_code_tokens_keywords(get_code_tokens(pull))
-    localfile_tool.write_to_file(path, result)    
-    return result
-'''
+# ---------------------------------------------------------------------------
 
 def location_similarity(la, lb):
 
@@ -156,7 +138,6 @@ def location_similarity(la, lb):
                 match_a[i] = True
                 match_b[j] = True
     
-    
     # weigh with code line
     a_match, a_tot = 0, 0
     for i in range(len(la)):
@@ -175,22 +156,9 @@ def location_similarity(la, lb):
     if a_tot + b_tot == 0:
         return 0
     return (a_match + b_match) / (a_tot + b_tot)
-
     # return (match_a.count(True) + match_b.count(True)) / (len(match_a) + len(match_b))
 
-'''
-def same_author(A, B):
-    return A["user"]["id"] == B["user"]["id"]
-
-def same_code(A, B):
-    return code_calc(A, B) >= 0.9
-
-def same_title(A, B):
-    return title_calc(A, B) >= 0.9
-
-def same_file_list(A, B):
-    return file_list_calc(A, B) >= 0.9
-'''
+# ---------------------------------------------------------------------------
 
 import nlp
 model = None
@@ -199,16 +167,6 @@ def init_model_from_raw_docs(documents, save_id=None):
     model = nlp.Model([get_BoW(document) for document in documents], save_id)
     print('init nlp model for text successfully!')
 
-'''
-import spacy
-import wmd
-en_nlp = spacy.load('en', create_pipeline=wmd.WMD.create_spacy_pipeline)
-
-def get_text_sim(A, B, text_type="default"):
-    if (A is None) or (B is None):
-        return 0
-    return en_nlp(A).similarity(en_nlp(B))
-'''
 
 def get_text_sim(A, B, text_type="default"):
     A = get_BoW(A)
@@ -218,29 +176,14 @@ def get_text_sim(A, B, text_type="default"):
         return set_similarity(A, B)
     else:
         #print('model_similarity')
-        # return model.query_sim_lsi(A, B)
-        return model.query_sim_tfidf(A, B)
+        if text_sim_type == 'lsi':
+            return model.query_sim_lsi(A, B)
+
+        if text_sim_type == 'tfidf':
+            return model.query_sim_tfidf(A, B)
         # return model.query_sim_common_words_idf(A, B)
 
-
-'''
-code_model = None
-def init_code_model_from_tokens(documents, save_id=None):
-    global code_model
-    code_model = nlp.Model(documents, save_id)
-    print('init nlp model for code successfully!')
-
-def get_code_sim(A, B):
-    overlap_files_set = set(get_file_list(A)) & set(get_file_list(B))
-    if code_model is None:
-        A = get_code_keywords_counter_overlap(A, overlap_files_set)
-        B = get_code_keywords_counter_overlap(B, overlap_files_set)
-        return counter_similarity(A, B)
-    else:
-        A = get_code_tokens_overlap(A, overlap_files_set)[0]
-        B = get_code_tokens_overlap(B, overlap_files_set)[0]
-        return code_model.query_sim_tfidf(A, B)
-'''
+# ---------------------------------------------------------------------------
 
 '''
 #detect cases: feat(xxxx)
@@ -271,24 +214,30 @@ def check_pattern(A, B):
             return -1
         return 0
 
-def get_time(t):
-    return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
+# ---------------------------------------------------------------------------
+
 
 def calc_sim(A, B):
     pattern = check_pattern(A, B)
     title_sim = get_text_sim(A["title"], B["title"])
     desc_sim = get_text_sim(A["body"], B["body"])
-    # code_sim = get_code_sim(A, B)
     file_list_sim = set_similarity(get_file_list(A), get_file_list(B))
-    
-    #code_sim = counter_similarity(get_code_keywords_counter(A), get_code_keywords_counter(B))
-    
+
     overlap_files_set = set(get_file_list(A)) & set(get_file_list(B))
-    code_sim = counter_similarity(get_code_keywords_counter_overlap(A, overlap_files_set), get_code_keywords_counter_overlap(B, overlap_files_set))
+    
+    A_overlap_code_tokens = get_code_tokens_overlap(A, overlap_files_set)
+    B_overlap_code_tokens = get_code_tokens_overlap(B, overlap_files_set)
+    
+    A_delta_code_counter = get_delta_code_tokens_counter(A_overlap_code_tokens)
+    B_delta_code_counter = get_delta_code_tokens_counter(B_overlap_code_tokens)
+    
+    if code_sim_type == 'bow':
+        code_sim = vsm_bow_similarity(A_delta_code_counter, B_delta_code_counter)
+    if code_sim_type == 'jac':
+        code_sim = counter_similarity(A_delta_code_counter, B_delta_code_counter)
     
     location_sim = location_similarity(get_location(A), get_location(B))
     
-
     common_words = list(set(get_BoW(A["title"])) & set(get_BoW(B["title"])))
     overlap_title_len = len(common_words)
     
@@ -297,14 +246,7 @@ def calc_sim(A, B):
     else:
         title_idf_sum = 0
     
-    
     overlap_files_len = len(overlap_files_set)
-    
-    time_sim = abs((get_time(A["created_at"]) - get_time(B["created_at"])).days)
-    
-
-    # anthor way: use just added code
-    # code_sim = text_keywords_similarity(get_code(A), get_code(B))    
     
     return {
             'title': title_sim,
@@ -313,7 +255,6 @@ def calc_sim(A, B):
             'file_list': file_list_sim,
             'location': location_sim, 
             'pattern': pattern,
-            'time': time_sim,
             'overlap_files_len': overlap_files_len,
             'overlap_title_len': overlap_title_len,
             'title_idf_sum': title_idf_sum,
@@ -322,19 +263,19 @@ def calc_sim(A, B):
 def sim_to_vet(r):
     return [r['title'],r['desc'],r['code'],r['file_list'],r['location'], r['pattern'],
             # r['overlap_files_len'],r['title_idf_sum'],
-            # r['time'],
             # r['overlap_files_len'],r['overlap_title_len'],r['title_idf_sum'],
            ]
 
 
 # pull requests sim
-def get_sim_vector(A, B):
+def get_pr_sim_vector(A, B):
     A["file_list"] = fetch_pr_info(A)
     B["file_list"] = fetch_pr_info(B)
     ret = calc_sim(A, B)
     return sim_to_vet(ret)
 
-def get_sim_vector_on_commit(A, B):
+# commits sim
+def get_commit_sim_vector(A, B):
     def commit_to_pull(x):
         t = {}
         t["number"] = x['sha']
@@ -344,47 +285,3 @@ def get_sim_vector_on_commit(A, B):
         return t
     ret = calc_sim(commit_to_pull(A), commit_to_pull(B))
     return sim_to_vet(ret)
-
-
-def parse_sim(sim):
-    tres_hold = {
-        'title': 0.5,
-        'desc': 0.4,
-        'code': 0.5,
-        'file_list': 0.7,
-        'location': 0.7,
-    }
-    r = []
-    for clue in tres_hold:
-        if abs(sim[clue] - 1.0) <= 1e-5:
-            r.append('Same on ' + clue)
-        elif sim[clue] >= tres_hold[clue]:
-            r.append('High on ' + clue)
-    if sim['pattern'] == 1:
-        r.append('Related to the same Issue')
-    return r
-
-
-'''
-other_model = [None, None, None]
-def init_other_model(d_3, t=None):
-    global other_model
-    for num in range(3):
-        if t is not None:
-            save_id = t + str(num)
-        else:
-            save_id = None
-        other_model[num] = nlp.Model([get_BoW(document) for document in d_3[num]], save_id)
-    
-def other_feature(A, B):
-    f = []
-    for x in [A["title"], A["body"], str(A["title"]) + str(A["body"])]:
-        for y in [B["title"], B["body"], str(B["title"]) + str(B["body"])]:
-            tx = get_BoW(x) 
-            ty = get_BoW(y)
-            common = list(set(tx) & set(ty))
-            for n in range(3):
-                f.append(other_model[n].get_idf_sum(common))
-    return f
-              
-'''

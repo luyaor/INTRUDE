@@ -80,7 +80,7 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
                 print('progress = ', 1.0 * cnt / tot)        
                 sys.stdout.flush()
         
-        feature_vector = get_sim_vector(pullA, pull)        
+        feature_vector = get_pr_sim_vector(pullA, pull)        
         results[pull["number"]] = c.predict_proba([feature_vector])[0][1]
         # pre_results[pull["number"]] = c.predict([feature_vector])[0]
     
@@ -114,6 +114,12 @@ def simulate_timeline_only_dup_pair(repo):
     
 
 def simulate_timeline(repo):
+    # out_path = 'detection/'+repo.replace('/','_')+'_stimulate_top1.txt'
+    out_path = 'detection/'+repo.replace('/','_')+'_stimulate_top1_sample200.txt'
+    
+    if (os.path.exists(out_path)) and (os.path.getsize(out_path) > 0):
+        return
+    
     init_model_with_repo(repo)
     
     pulls = get_pull_list(repo, renew_pr_list)
@@ -122,12 +128,7 @@ def simulate_timeline(repo):
     select_pulls = shuffle(pulls)[:200]
     # select_pulls = pulls
     
-    # out_path = 'detection/'+repo.replace('/','_')+'_stimulate_top1.txt'
-    out_path = 'detection/'+repo.replace('/','_')+'_stimulate_top1_sample200.txt'
-    
-    if (os.path.exists(out_path)) and (os.path.getsize(out_path) > 0):
-        return
-    
+    out = open(out_path+'.log', 'w')
     out2 = open(out_path, 'w')
     
     print('Run on', repo, 'PR Num = ', len(select_pulls))
@@ -145,7 +146,10 @@ def simulate_timeline(repo):
         print(" ".join("%.4f" % f for f in vet), file=out2)
         print('https://www.github.com/%s/pull/%s' % (repo, str(num1)), file=out2)
         print('https://www.github.com/%s/pull/%s' % (repo, str(num2)), file=out2)
-
+        print(repo, num1, ':', topk, file=out)
+    
+    out.close()
+    out2.close()
     
                  
 def find_on_openpr(repo, time_stp=None):
@@ -207,14 +211,20 @@ def find_on_openpr(repo, time_stp=None):
     out2.close()
 
 if __name__ == "__main__":
-    with open('data/run_list.txt') as f:
-        while True:
-            try:
+    while True:
+        try:
+            ok = True
+            with open('data/run_list.txt') as f:
                 for t in f.readlines():
-                    simulate_timeline(t.strip())
+                    try:
+                        simulate_timeline(t.strip())
+                    except Exception as e:
+                        ok = False
+                        print(e)
+            if ok:
                 break
-            except:
-                continue
+        except:
+            continue
             
     '''
     # print(get_topK('pytorch/vision', '492', 10, True))

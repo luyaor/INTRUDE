@@ -49,16 +49,6 @@ def word_split_by_char(s):
         old_words = new_words
     return result
 
-def word_process(word):
-    search_result = re.search("[0-9A-Za-z_]", word)
-    if not search_result:
-        return ""
-    word = word[search_result.start():]
-    while (len(word) > 0) and (not re.match("[0-9A-Za-z_]", word[-1:])):
-        word = word[:-1]
-    return word
-
-
 def filter_common_words_in_pr(tokens):
     return list(filter(lambda x: x not in language_tool.get_common_words_in_pr(), tokens))
 
@@ -99,14 +89,12 @@ def get_words_from_file(file, text):
     if text is None:
         return []
 
-    raw_tokens = nltk.word_tokenize(text)
+    tokens = nltk.word_tokenize(text)
 
-    # origin_tokens = [word_process(x) for x in raw_tokens]
-    
-    tokens = raw_tokens
-    
     tokens = list(itertools.chain(*[word_split_by_char(token) for token in tokens]))
     # tokens.extend(list(itertools.chain(*[word_split_by_char(token) for token in origin_tokens]))) # Keep original tokens
+    
+    tokens = list(filter(lambda x: re.search("[0-9A-Za-z_]", x), tokens))
     
     tokens = [x.lower() for x in tokens]
     

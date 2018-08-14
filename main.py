@@ -23,7 +23,7 @@ from util import localfile_tool
 from comparer import *
 from git import *
 
-'''
+
 dataset = [
     ['data/rly_false_pairs.txt', 0, 'train'],
     ['data/small_part_msr.txt', 1, 'train'],
@@ -32,18 +32,20 @@ dataset = [
     ['data/small2_part_msr.txt', 1, 'test'],
 ]
 '''
-
 dataset = [
     ['data/msr_positive_pairs.txt', 1, 'train'],
-    ['data/big_false_data.txt', 1, 'train'],
+    ['data/big_false_data.txt', 0, 'train'],
 ]
+'''
 
-model_data_save_path_suffix = 'all_clues'
-# model_data_save_path_suffix = '_bow'
-part_params = [1,1,1,1,1,1]
+print('text sim type=', text_sim_type)
+print('code sim type=', code_sim_type)
+
+model_data_save_path_suffix = 'all_clues_with_text_lsi_code_bow'
+part_params = None
 
 draw_pic = False
-model_data_random_shuffle_flag = True
+model_data_random_shuffle_flag = False
 model_data_renew_flag = False
 
 
@@ -84,7 +86,7 @@ def init_model_with_repo(repo, save_id=None):
 def get_sim(repo, num1, num2):
     p1 = get_pull(repo, num1)
     p2 = get_pull(repo, num2)
-    return get_sim_vector(p1, p2)
+    return get_pr_sim_vector(p1, p2)
 
 
 # ------------------------------------------------------------
@@ -218,7 +220,7 @@ def classify(model_type='SVM'):
         # ran shuffle with train set and test set
         if model_data_random_shuffle_flag:
             X_train, y_train, X_test, y_test = get_ran_shuffle(X_train + X_test, y_train + y_test, 0.8)
-        
+            
         return (X_train, y_train, X_test, y_test)
     
     X_train, y_train, X_test, y_test = model_data_prepare(dataset)
