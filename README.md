@@ -13,6 +13,7 @@ init_model_with_repo(repo) # prepare for prediction
 
 nlp.py: Natural Language Processing model for calculating the text similarity.
 
+
 ``` python
 m = Model(texts)
 text_sim = query_sim_tfidf(tokens1, tokens2)
