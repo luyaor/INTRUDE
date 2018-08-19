@@ -4,7 +4,7 @@ import git
 import comp
 
 def detect(repo):
-    issue_list = git.repo_get(repo, 'issue')
+    issue_list = git.get_repo_info(repo, 'issue', True)
     for i in issue_list:
         max_s, max_i = -1, None
         

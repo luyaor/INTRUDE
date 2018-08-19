@@ -201,3 +201,6 @@ facebook/react	13231	12289	0.9880	1	N/A	0.3813	0.2079	0.5271	1.0000	0.0000	0.000
 facebook/react	9098	8745	0.6326	1	N/A	0.1972	0.0070	0.2949	0.0690	1.0000	0.0000	https://www.github.com/facebook/react/pull/9098	https://www.github.com/facebook/react/pull/8745
 facebook/react	91	18	0.0199	0	N/A	0.0506	0.0182	0.0000	0.0000	0.0000	0.0000	https://www.github.com/facebook/react/pull/91	https://www.github.com/facebook/react/pull/18
 facebook/react	8918	4104	0.4528	0	N/A	0.2610	0.0384	0.0000	0.2000	0.7667	0.0000	https://www.github.com/facebook/react/pull/8918	https://www.github.com/facebook/react/pull/4104
+facebook/react	6095	1934	0.2847	0	N/A	0.4097	-0.0059	0.0000	0.0000	0.0000	0.0000	https://www.github.com/facebook/react/pull/6095	https://www.github.com/facebook/react/pull/1934
+facebook/react	4344	4220	1.0000	1	Y	0.3324	0.1356	0.8100	0.5000	1.0000	1.0000	https://www.github.com/facebook/react/pull/4344	https://www.github.com/facebook/react/pull/4220
+facebook/react	1570	1439	0.4373	0	N/A	0.0289	0.2426	0.0000	0.0000	0.0000	1.0000	https://www.github.com/facebook/react/pull/1570	https://www.github.com/facebook/react/pull/1439

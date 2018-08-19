@@ -1,9 +1,9 @@
-import comp
-import git
-import clf
+from git import *
+from clf import *
+from comp import *
 from util import localfile
 
-m = clf.classify()
+m = classify()
 
 def gen_commit_feature_vet(data, label, out=None):
     with open(data) as f:
@@ -35,7 +35,7 @@ def gen_commit_feature_vet(data, label, out=None):
         # print(pair)
         
         if last_repo != repo:
-            clf.init_model_with_repo(repo)
+            init_model_with_repo(repo)
             last_repo = repo
 
         p1 = get_pull(repo, num1)
@@ -54,7 +54,7 @@ def gen_commit_feature_vet(data, label, out=None):
 
         for c1 in cl1:
             for c2 in cl2:
-                vet = get_sim_vector_on_commit(c1, c2)
+                vet = get_commit_sim_vector(c1, c2)
                 t = m.predict_proba([vet])[0][1]
                 if t > max_s:
                     max_s, max_p1, max_p2, max_vet = t, c1['html_url'], c2['html_url'], vet

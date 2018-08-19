@@ -1,4 +1,4 @@
-from main import *
+from git import *
 
 def check_both_merged(p1, p2):
     pd = 0

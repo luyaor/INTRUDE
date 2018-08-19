@@ -346,7 +346,7 @@ def get_commit_sim_vector(A, B):
         t = {}
         t["number"] = x['sha']
         t['title'] = t['body'] = x['commit']['message']
-        t["file_list"] = fetch_commit(pull['commit_flag'])
+        t["file_list"] = fetch_commit(x['url'])
         t['commit_flag'] = True
         return t
     ret = calc_sim(commit_to_pull(A), commit_to_pull(B))

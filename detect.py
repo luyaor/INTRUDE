@@ -7,13 +7,15 @@ from sklearn.utils import shuffle
 from clf import *
 from git import *
 from comp import *
-from gen import *
 
 c = classify()
 
 cite = {}
 last_number = None
-renew_pr_list = False
+renew_pr_list_flag = False
+
+filter_out_too_big_pull_flag = False
+filter_out_too_old_pull_flag = False
 
 simulate_mode = True
 
@@ -70,17 +72,16 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
            (get_time(pull["merged_at"]) < get_time(pullA["created_at"])):
             continue
         
-        '''
-        # filter out too big pull
-        if check_too_big(pull):
-            continue
+        if filter_out_too_big_pull_flag:
+            if check_too_big(pull):
+                continue
         
-        # filter out too old pull
-        if abs((get_time(pullA["updated_at"]) - \
-                get_time(pull["updated_at"])).days) >= 4 * 365: # more than 4 years
-            continue
-        '''
-        
+        if filter_out_too_old_pull_flag:
+            if abs((get_time(pullA["updated_at"]) - \
+                    get_time(pull["updated_at"])).days) >= 4 * 365: # more than 4 years
+                continue
+
+
         if print_progress:
             if cnt % 1000 == 0:
                 print('progress = ', 1.0 * cnt / tot)        
@@ -92,9 +93,6 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
     
     result = [(x,y) for x, y in sorted(results.items(), key=lambda x: x[1], reverse=True)][:topK]
     
-    # for x, y in result:
-    #     print(x, sim(pullA, api.get('repos/%s/pulls/%s' % (repo, x))))
-
     return result
 
 
@@ -111,7 +109,7 @@ def load_part(repo):
 
 def simulate_timeline(repo, renew=False, run_num=200):
     init_model_with_repo(repo)
-    pulls = get_repo_info(repo, 'pull', renew_pr_list)
+    pulls = get_repo_info(repo, 'pull', renew_pr_list_flag)
 
     all_p = set([str(pull["number"]) for pull in pulls])
     part_p = load_part(repo)
@@ -159,7 +157,7 @@ def find_on_openpr(repo, time_stp=None):
     print('time_stp', time_stp)
     
     # init model
-    pulls = get_repo_info(repo, 'pull', renew_pr_list)
+    pulls = get_repo_info(repo, 'pull', renew_pr_list_flag)
     
     for pull in pulls:
         cite[str(pull["number"])] = get_another_pull(pull)
@@ -277,7 +275,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         r = sys.argv[1]
     if len(sys.argv) > 2:
-        renew_pr_list = (sys.argv[2] == 'True')
+        renew_pr_list_flag = (sys.argv[2] == 'True')
     if len(sys.argv) > 3:
         last_number = int(sys.argv[3])
         print('last = ', last_number)
