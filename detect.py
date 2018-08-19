@@ -134,7 +134,7 @@ def simulate_timeline(repo, renew=False, run_num=200):
         vet = get_pr_sim_vector(pull, get_pull(repo, num2))
         pre = c.predict([vet])[0]
         
-        status = 'Y' if (prob >= 0.99) else 'N/A'
+        status = 'N/A'
         
         if (num2 in get_another_pull(pull)) or (num1 in get_another_pull(get_pull(repo, num2))):
             status += '(mention)'
