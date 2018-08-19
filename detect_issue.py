@@ -1,11 +1,10 @@
 import sys
 
-from git import *
-from comparer import *
-
+import git
+import comp
 
 def detect(repo):
-    issue_list = repo_get(repo, 'issue')
+    issue_list = git.repo_get(repo, 'issue')
     for i in issue_list:
         max_s, max_i = -1, None
         
@@ -13,8 +12,8 @@ def detect(repo):
             if i['number'] <= i2['number']:
                 continue
 
-            s1 = get_text_sim(i['title'], i2['title'])
-            s2 = get_text_sim(i['body'], i2['body'])
+            s1 = comp.get_text_sim(i['title'], i2['title'])
+            s2 = comp.get_text_sim(i['body'], i2['body'])
             
             if s1 + s2 >= max_s:
                 max_s = s1 + s2;

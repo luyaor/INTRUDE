@@ -1,12 +1,13 @@
 import os
+import sys
 
 from datetime import datetime, timedelta
 from sklearn.utils import shuffle
 
-from main import *
+from clf import *
 from git import *
+from comp import *
 from gen import *
-from comparer import *
 
 c = classify()
 
@@ -20,7 +21,7 @@ def get_time(t):
     return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
 
 def get_topK(repo, num1, topK = 10, print_progress = False):
-    pulls = repo_get(repo, 'pull')
+    pulls = get_repo_info(repo, 'pull')
     pullA = get_pull(repo, num1)
     
     if not simulate_mode:
@@ -110,8 +111,8 @@ def load_part(repo):
 
 def simulate_timeline(repo, renew=False, run_num=200):
     init_model_with_repo(repo)
-    pulls = repo_get(repo, 'pull', renew_pr_list)
-        
+    pulls = get_repo_info(repo, 'pull', renew_pr_list)
+
     all_p = set([str(pull["number"]) for pull in pulls])
     part_p = load_part(repo)
     select_p = set(shuffle(list(all_p - part_p))[:run_num])
@@ -158,7 +159,7 @@ def find_on_openpr(repo, time_stp=None):
     print('time_stp', time_stp)
     
     # init model
-    pulls = get_pull_list(repo, renew_pr_list)
+    pulls = get_repo_info(repo, 'pull', renew_pr_list)
     
     for pull in pulls:
         cite[str(pull["number"])] = get_another_pull(pull)

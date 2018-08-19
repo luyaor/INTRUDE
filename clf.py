@@ -20,8 +20,9 @@ from numpy import array
 from multiprocessing import Pool
 
 from util import localfile
-import comp
-import git
+
+from comp import *
+from git import *
 
 dataset = [
     ['data/rly_false_pairs.txt', 0, 'train'],
@@ -38,10 +39,10 @@ dataset = [
 ]
 '''
 
-print('text sim type=', comp.text_sim_type)
-print('code sim type=', comp.code_sim_type)
+print('text sim type=', text_sim_type)
+print('code sim type=', code_sim_type)
 
-model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s' % (comp.text_sim_type, comp.code_sim_type)
+model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s' % (text_sim_type, code_sim_type)
 part_params = None
 
 draw_pic = False
@@ -59,16 +60,16 @@ def init_model_with_pulls(pulls, save_id=None):
     for pull in pulls:
         if pull["body"] and (len(pull["body"]) <= 1000):
             b.append(pull["body"])
-    comp.init_model_from_raw_docs(t + b, save_id)
+    init_model_from_raw_docs(t + b, save_id)
     
-    if comp.code_sim_type == 'tfidf':
+    if code_sim_type == 'tfidf':
         c = []
         pulls = pulls[:500]
         for pull in pulls: # only added code
             if not check_too_big(pull):
                 c.append(get_code_from_pr_info(fetch_pr_info(pull))[0])
         
-        comp.init_code_model_from_tokens(c, save_id + '_code' if save_id is not None else None)
+        init_code_model_from_tokens(c, save_id + '_code' if save_id is not None else None)
 
 
 def init_model_with_repo(repo, save_id=None):
@@ -83,11 +84,11 @@ def init_model_with_repo(repo, save_id=None):
     try:
         init_model_with_pulls([], save_id)
     except:
-        init_model_with_pulls(shuffle(git.repo_get(repo, 'pull'))[:5000], save_id)
+        init_model_with_pulls(shuffle(get_repo_info(repo, 'pull'))[:5000], save_id)
     
 def get_sim(repo, num1, num2):
-    p1 = git.get_pull(repo, num1)
-    p2 = git.get_pull(repo, num2)
+    p1 = get_pull(repo, num1)
+    p2 = get_pull(repo, num2)
     return get_pr_sim_vector(p1, p2)
 
 
@@ -145,7 +146,7 @@ def get_feature_vector(data, label, renew=False, out=None):
         # print('init_other_model ok!')
         
         # init_model_with_repo(r)        
-        li = shuffle(get_pull_list(r))[:5000]
+        li = shuffle(get_repo_info(r, 'pull'))[:5000]
         for z in p[r]:
             li.append(get_pull(r, z[0]))
             li.append(get_pull(r, z[1]))
@@ -179,20 +180,6 @@ def get_feature_vector(data, label, renew=False, out=None):
     localfile.write_to_file(X_path, X)
     localfile.write_to_file(y_path, y)
     return (X, y)
-
-def print_params():
-    if part_params is not None:
-        params_set = ['title', 'desc', 'code', 'file_list', 'location', 'pattern']
-        used_set = []
-        for j in range(len(part_params)):
-            if part_params[j]:
-                used_set.append(params_set[j])
-        name = '+'.join(used_set)
-        if len(used_set) == len(part_params):
-            name = 'All'
-        elif len(used_set) == len(part_params) - 1:
-            name = 'D_' + '_'.join(set(params_set) - set(used_set))
-        print(name)
 
 def classify(model_type='SVM'):
 

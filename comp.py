@@ -9,9 +9,8 @@ from collections import Counter
 from util import wordext
 from util import localfile
 
-import git
-import fetch_raw_diff
-
+from git import *
+from fetch_raw_diff import *
 
 text_sim_type = 'lsi'
 # code_sim_type = 'bow_three'
@@ -57,7 +56,7 @@ def fetch_pr_info(pull, must_in_local = False):
             file_list = localfile.get_file(path + '/raw_diff.json')
         elif os.path.exists(path + '/pull_files.json'):
             pull_files = localfile.get_file(path + '/pull_files.json')
-            file_list = [fetch_raw_diff.parse_diff(file["file_full_name"], file["changed_code"]) for file in pull_files]
+            file_list = [parse_diff(file["file_full_name"], file["changed_code"]) for file in pull_files]
         else:
             raise Exception('error on fetch local file %s' % path)
     else:
