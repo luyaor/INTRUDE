@@ -5,6 +5,8 @@ clf.py: Classification Model using Machine Learning.
 ``` python
 c = classify()
 c.predict_proba(feature_vector)
+
+init_model_with_repo(repo) # prepare for prediction
 ```
 
 
@@ -21,6 +23,7 @@ text_sim = query_sim_tfidf(tokens1, tokens2)
 comp.py: Calculate the similarity for feature extraction.
 
 ``` 
+
 feature_vector = get_pr_sim_vector(pull1, pull2)
 ```
 
@@ -58,17 +61,6 @@ test_commit.py: compare on granularity of commits.
 
 git.py: About GitHub API setting and fetching.
 
-fetch_raw_diff.py: Get data from API, raw diff parse.
-
-``` python
-parse_diff(file_name, diff) # parse raw diff
-fetch_raw_diff(url) # parse raw diff from GitHub API
-```
-
-
-
-fetch_pull_files.py: Get data from webpage.
-
 ``` python
 get_repo_info('FancyCoder0/INFOX',
               'fork' / 'pull' / 'issue' / 'commit' / 'branch',
@@ -80,6 +72,18 @@ fetch_file_list(pull, renew)
 get_another_pull(pull, renew)
 check_too_big(pull)
 ```
+
+
+fetch_raw_diff.py: Get data from API, raw diff parse.
+
+``` python
+parse_diff(file_name, diff) # parse raw diff
+fetch_raw_diff(url) # parse raw diff from GitHub API
+```
+
+
+
+fetch_pull_files.py: Get data from webpage.
 
 
 
