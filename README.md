@@ -1,12 +1,14 @@
 # INTRUDE
 
-main.py: Machine Learning model.
+clf.py: Classification Model using Machine Learning.
 
 nlp.py: Natural Language Processing model for calculating the text similarity.
 
-comparer.py: Feature Extraction and calculate the similarity.
+comp.py: Calculate the similarity for feature extraction.
 
 detect.py: Detection on (open) pull requests.
+
+detect_on_cross_forks.py: Detection on pull requests of cross-projects.
 
 stimulate_part_pr.py: stimulate "part PR detection".
 
@@ -24,7 +26,5 @@ fetch_pull_content.py: Fetch the webpage.
 
 gen.py: Generate the random pairs & potential pairs(from duplicate labels)
 
---- 
-
-run_XXX.py: scripts for testing.
+---
 
