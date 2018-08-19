@@ -1,0 +1,55 @@
+<!doctype html>
+<script type="text/javascript"> var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }}; </script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+
+<script type="text/javascript">
+    $(function() {
+        var jump = function(e) {
+            location.href = "/openprdb/" + $('#owner').val() + '/' + $('#repo').val()
+        };
+        $('button').click(jump);
+    });
+</script>
+
+<h1>
+    INTRUDE <sub><b>I</b>de<b>N</b><b>T</b>ifying <b>R</b>ed<b>U</b>ndancies in Fork-based <b>D</b><b>E</b>velopment</sub>
+</h1>
+
+<hr>
+
+<h2 align="center">
+    <b> Duplicate </b> Detection of Open Pull Requests
+</h2>
+
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" type="button">Repo Owner</button>
+    </div>
+    <input id="owner" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" type="button">Repo Name</button>
+    </div>
+    <input id="repo" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+</div>
+
+<button type="submit" class="btn btn-primary btn-block">Try it!</button>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+<div class="footer-copyright text-center py-3">
+    Large repository will be a little bit slow. And detection is not running until click refresh. Refresh all will be very slow. Please be patient.</h4>    
+</div>
+</footer>
+<!-- Footer -->
+
+<h5>
+    

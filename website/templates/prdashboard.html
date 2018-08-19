@@ -63,6 +63,7 @@ $(document).ready( function () {
         "columnDefs": [ { "searchable": false, "orderable": false, "targets": 0 },
                         { "searchable": false, "orderable": false, "targets": 8 },
                         { "searchable": false, "orderable": false, "targets": 9 },
+                        { "searchable": false, "orderable": false, "targets": 10 },
                       ],
         dom: 'Blfrtip',
         buttons: [
@@ -145,8 +146,9 @@ $(document).ready( function () {
             <td class="mark"> {{ dup.get('mark', '') }} </td>
 
             <td class="comment"> 
-                <div style="float:left;" class="content">{{ dup.get('comment', '') }}</div>
-                <input style="float:right;" type="text" size="8" id="C">
+                <div align="center" class="content"> {{ dup.get('comment', '') }} </div>
+                
+                <input align="center" style="margin:0px; font-size:10px; height:13px;" type="text" id="C">
             </td>
             
             <td>

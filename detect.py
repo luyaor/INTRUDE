@@ -22,7 +22,15 @@ simulate_mode = True
 def get_time(t):
     return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
 
+last_detect_repo = None
+
 def get_topK(repo, num1, topK = 10, print_progress = False):
+    
+    global last_detect_repo
+    if last_detect_repo != repo:
+        last_detect_repo = repo
+        init_model_with_repo(repo)
+
     pulls = get_repo_info(repo, 'pull')
     pullA = get_pull(repo, num1)
     
@@ -37,6 +45,7 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
     
     for pull in pulls:
         cnt += 1
+
         if simulate_mode:
             if int(pull["number"]) >= int(num1):
                 continue
@@ -56,11 +65,10 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
         
         if not simulate_mode:
             # for predict
+            
             # "cite" cases
-            if str(pull["number"]) in cite.get(str(pullA["number"]), []):
-                continue
-
-            if str(pullA["number"]) in cite.get(str(pull["number"]), []):
+            if (str(pull["number"]) in cite.get(str(pullA["number"]), [])) or\
+            (str(pullA["number"]) in cite.get(str(pull["number"]), [])):
                 continue
 
             # revert cases
@@ -81,7 +89,6 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
                     get_time(pull["updated_at"])).days) >= 4 * 365: # more than 4 years
                 continue
 
-
         if print_progress:
             if cnt % 1000 == 0:
                 print('progress = ', 1.0 * cnt / tot)        
@@ -89,10 +96,8 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
         
         feature_vector = get_pr_sim_vector(pullA, pull)        
         results[pull["number"]] = c.predict_proba([feature_vector])[0][1]
-        # pre_results[pull["number"]] = c.predict([feature_vector])[0]
     
-    result = [(x,y) for x, y in sorted(results.items(), key=lambda x: x[1], reverse=True)][:topK]
-    
+    result = [(x,y) for x, y in sorted(results.items(), key=lambda x: x[1], reverse=True)][:topK]    
     return result
 
 
@@ -232,6 +237,14 @@ def simulate_timeline_only_dup_pair(repo):
     print('top1 acc =', 1.0 * top1_num / top1_tot)
     print('top5 acc =', 1.0 * top5_num / top1_tot)
 
+
+def detect_one(repo, num):
+    print('detect on', repo, num)
+    ret = get_topK(repo, num , 1, True)
+    if len(ret) < 1:
+        return -1, -1
+    else:
+        return ret[0][0], ret[0][1]
 
 if __name__ == "__main__":
     

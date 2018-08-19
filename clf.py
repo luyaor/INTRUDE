@@ -24,23 +24,24 @@ from util import localfile
 from comp import *
 from git import *
 
+# ----------------INPUT & CONFIG------------------------------------
+
+data_folder = '/home/luyao/PR_get/INTRUDE/data'
+
 dataset = [
-    ['data/rly_false_pairs.txt', 0, 'train'],
-    ['data/small_part_msr.txt', 1, 'train'],
-    ['data/rly_true_pairs.txt', 1, 'train'],
-    ['data/small_part_negative.txt', 0, 'test'],
-    ['data/small2_part_msr.txt', 1, 'test'],
+    [data_folder + '/rly_false_pairs.txt', 0, 'train'],
+    [data_folder + '/small_part_msr.txt', 1, 'train'],
+    [data_folder + '/rly_true_pairs.txt', 1, 'train'],
+    [data_folder + '/small_part_negative.txt', 0, 'test'],
+    [data_folder + '/small2_part_msr.txt', 1, 'test'],
 ]
 
 '''
 dataset = [
-    ['data/msr_positive_pairs.txt', 1, 'train'],
-    ['data/big_false_data.txt', 0, 'train'],
+    [data_folder + '/msr_positive_pairs.txt', 1, 'train'],
+    [data_folder + '/big_false_data.txt', 0, 'train'],
 ]
 '''
-
-print('text sim type=', text_sim_type)
-print('code sim type=', code_sim_type)
 
 model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s' % (text_sim_type, code_sim_type)
 part_params = None
@@ -49,7 +50,10 @@ draw_pic = False
 model_data_random_shuffle_flag = False
 model_data_renew_flag = False
 
+# ------------------------------------------------------------
 
+print('text sim type=', text_sim_type)
+print('code sim type=', code_sim_type)
 print('Data Type:', model_data_save_path_suffix)
 
 # ------------------------------------------------------------
@@ -85,12 +89,6 @@ def init_model_with_repo(repo, save_id=None):
         init_model_with_pulls([], save_id)
     except:
         init_model_with_pulls(shuffle(get_repo_info(repo, 'pull'))[:5000], save_id)
-    
-def get_sim(repo, num1, num2):
-    p1 = get_pull(repo, num1)
-    p2 = get_pull(repo, num2)
-    return get_pr_sim_vector(p1, p2)
-
 
 # ------------------------------------------------------------
 
@@ -106,25 +104,19 @@ def get_feature_vector_from_path(data):
         raise Exception('no such file %s' % data)
 
 def get_feature_vector(data, label, renew=False, out=None):
-    default_path = 'data/' + data.replace('data/','').replace('.txt','').replace('/','_') + '_feature_vector'
-    if out is None:
-        out = default_path
-    else:
-        out = default_path + '_' + out
-
-    X_path = out + '_X.json'
-    y_path = out + '_y.json'
-    
     print('Model Data Input=', data)
     
+    default_path = data.replace('.txt','') + '_feature_vector'
+    out = default_path if out is None else default_path + '_' + out
+    X_path, y_path = out + '_X.json', out + '_y.json'
+    
     if os.path.exists(X_path) and os.path.exists(y_path) and (not renew):
-        # print('warning: feature vectore already exists!', out)
+        print('warning: feature vectore already exists!', out)
         X = localfile.get_file(X_path)
         y = localfile.get_file(y_path)
         return X, y
-    
-    X = []
-    y = []
+
+    X, y = [], []
     
     # run with all PR's info model
     p = {}
@@ -135,25 +127,28 @@ def get_feature_vector(data, label, renew=False, out=None):
                 p[r] = []
             p[r].append((n1, n2, label))
 
-    print('finish read!')
-
     out_file = open(out + '_X_and_Y.txt', 'w+')
     
     for r in p:
-        print(r)        
-        # pull_list = get_pull_list(r)
-        # init_other_model([[p["title"] for p in pull_list], [p["body"] for p in pull_list], [ str(p["title"]) + str(p["body"]) for p in pull_list] ])
-        # print('init_other_model ok!')
-        
+        print('Start running on', r)
+
+        # init NLP model
         # init_model_with_repo(r)        
-        li = shuffle(get_repo_info(r, 'pull'))[:5000]
+        li = shuffle(get_repo_info(r, 'pull'))[:5000] # part sample, all will get Memory Error
         for z in p[r]:
             li.append(get_pull(r, z[0]))
             li.append(get_pull(r, z[1]))
+        
         print('model PR num=', len(li))
         init_model_with_pulls(li, r.replace('/','_') + '_ver2')        
         print('pairs num=', len(p[r]))
         
+        # calc feature vet
+        def get_sim(repo, num1, num2):
+            p1 = get_pull(repo, num1)
+            p2 = get_pull(repo, num2)
+            return get_pr_sim_vector(p1, p2)
+
         # sequence
         for z in p[r]:
             x0, y0 = get_sim(r, z[0], z[1]), z[2]
@@ -173,7 +168,7 @@ def get_feature_vector(data, label, renew=False, out=None):
             X.extend(result)
             y.extend([label for i in range(len(result))])
         '''
-        
+
     out_file.close()
 
     # save to local
@@ -182,17 +177,6 @@ def get_feature_vector(data, label, renew=False, out=None):
     return (X, y)
 
 def classify(model_type='SVM'):
-
-    
-    def get_ran_shuffle(X, y, train_percent = 0.8):
-        X, y = shuffle(X, y, random_state=12345)
-        num = len(X)
-        train_num = int (num * train_percent)
-        X_train, X_test = X[:train_num], X[train_num:]
-        y_train, y_test = y[:train_num], y[train_num:]
-        return (X_train, y_train, X_test, y_test)
-    
-
     def model_data_prepare(dataset):        
         X_train, y_train = [], []
         X_test, y_test = [], []
@@ -206,15 +190,24 @@ def classify(model_type='SVM'):
                 X_test += new_X
                 y_test += new_y
 
+        def get_ran_shuffle(X, y, train_percent = 0.8):
+            X, y = shuffle(X, y, random_state=12345)
+            num = len(X)
+            train_num = int (num * train_percent)
+            X_train, X_test = X[:train_num], X[train_num:]
+            y_train, y_test = y[:train_num], y[train_num:]
+            return (X_train, y_train, X_test, y_test)
+
         # ran shuffle with train set and test set
         if model_data_random_shuffle_flag:
-            X_train, y_train, X_test, y_test = get_ran_shuffle(X_train + X_test, y_train + y_test, 0.8)
+            X_train, y_train, X_test, y_test = get_ran_shuffle(X_train + X_test, y_train + y_test)
             
         return (X_train, y_train, X_test, y_test)
     
+    print('Data Loading.........')
+
     X_train, y_train, X_test, y_test = model_data_prepare(dataset)
     
-
     if part_params:
         def extract_col(a, c):
             for i in range(len(a)):
@@ -227,10 +220,11 @@ def classify(model_type='SVM'):
         extract_col(X_test, part_params)
         print('extract=', part_params)
     
+    print('--------------------------')
     print('Model: training_set', len(X_train), 'testing_set', len(X_test), 'feature_length=', len(X_train[0]))
     
     # model choice
-    # print('model: GradientBoostingClassifier')
+
     # clf = GradientBoostingClassifier(n_estimators=160, learning_rate=1.0, max_depth=15, random_state=0).fit(X_train, y_train)
     # clf = AdaBoostClassifier(n_estimators=60).fit(X_train, y_train)
     # clf =  DecisionTreeClassifier(max_depth=50)
