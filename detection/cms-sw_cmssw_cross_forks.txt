@@ -1,2 +1,0 @@
-['https://github.com/cms-patatrack/cmssw/pull/23', 'https://github.com/cms-nanoAOD/cmssw/pull/43', [0.14750427858008247, 0.0, 0.17073170731707318, 0.15789473684210525, 0.0, 0, 3, 1.0], 0.924503280259765, False]
-['https://github.com/cms-met/cmssw/pull/20', 'https://github.com/cms-nanoAOD/cmssw/pull/160', [0.4461055507577729, 0.1528540470432726, 0.3448275862068966, 0.2, 0.8372093023255814, 0, 1, 1.9653240971278976], 0.9973317055096617, False]

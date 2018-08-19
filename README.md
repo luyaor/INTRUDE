@@ -3,6 +3,7 @@
 clf.py: Classification Model using Machine Learning.
 
 ``` python
+# Set up the input dataset
 c = classify()
 c.predict_proba(feature_vector)
 
@@ -24,6 +25,7 @@ text_sim = query_sim_tfidf(tokens1, tokens2)
 comp.py: Calculate the similarity for feature extraction.
 
 ``` 
+# Set up the params of compare (different metrics).
 # Check for init NLP model.
 feature_vector = get_pr_sim_vector(pull1, pull2)
 ```

@@ -1,4 +1,0 @@
-SpoonLabs/astor      105       58 0.1439
-0.0000 0.0000 0.0000 1.0000 0.0000 0.0000 1.0000 0.0000
-https://www.github.com/SpoonLabs/astor/pull/105
-https://www.github.com/SpoonLabs/astor/pull/58
