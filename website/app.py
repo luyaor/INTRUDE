@@ -14,6 +14,7 @@ app.config["SECRET_KEY"] = "build_the_intrude_tool"
 
 mongo = PyMongo(app)
 
+debug_flag = False
 read_only_mode = True
 
 def load_new_dup(data):
@@ -235,4 +236,4 @@ def openpr():
     
 	
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=4000, debug=True)
+    app.run(host='0.0.0.0', port=4000, threaded=True, debug=debug_flag)
