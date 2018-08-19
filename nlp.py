@@ -39,6 +39,7 @@ class Model:
         
         # save model
         if save_id is not None:
+            print('save model: ', save_id)
             self.dictionary.save(model_path + '%s.dictionary' % save_id)
             self.tfidf.save(model_path + '%s.tfidf' % save_id)
             self.index_tfidf.save(model_path + '%s.index_tfidf' % save_id)

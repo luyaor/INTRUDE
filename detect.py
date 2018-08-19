@@ -1,14 +1,12 @@
-# ------------------------------------------------------------
+import os
+
 from datetime import datetime, timedelta
 from sklearn.utils import shuffle
-
-import os
 
 from main import *
 from git import *
 from gen import *
 from comparer import *
-from util import localfile_tool
 
 c = classify()
 
@@ -16,14 +14,14 @@ cite = {}
 last_number = None
 renew_pr_list = False
 
+simulate_mode = True
+
 def get_time(t):
     return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
 
-simulate_mode = True
-
 def get_topK(repo, num1, topK = 10, print_progress = False):
-    pulls = get_pull_list(repo)
-    pullA = get_pull(repo, num1) # api.get('repos/%s/pulls/%s' % (repo, num1))
+    pulls = repo_get(repo, 'pull')
+    pullA = get_pull(repo, num1)
     
     if not simulate_mode:
         cite[str(pullA["number"])] = get_another_pull(pullA)
@@ -48,6 +46,11 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
         if pullA["user"]["id"] == pull["user"]["id"]:
             continue
         
+        # case of following up work 
+        if str(pull["number"]) in (get_pr_and_issue_numbers(pullA["title"]) + \
+                                   get_pr_and_issue_numbers(pullA["body"])):
+            continue
+        
         if not simulate_mode:
             # for predict
             # "cite" cases
@@ -62,7 +65,8 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
                 continue
         
         # create after another is merged
-        if (pull["merged_at"] is not None) and (get_time(pull["merged_at"]) < get_time(pullA["created_at"])):
+        if (pull["merged_at"] is not None) and \
+           (get_time(pull["merged_at"]) < get_time(pullA["created_at"])):
             continue
         
         '''
@@ -71,7 +75,8 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
             continue
         
         # filter out too old pull
-        if abs((get_time(pullA["updated_at"]) - get_time(pull["updated_at"])).days) >= 4 * 365: # more than 4 years
+        if abs((get_time(pullA["updated_at"]) - \
+                get_time(pull["updated_at"])).days) >= 4 * 365: # more than 4 years
             continue
         '''
         
@@ -91,67 +96,64 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
 
     return result
 
-def simulate_timeline_only_dup_pair(repo):
-    init_model_with_repo(repo)
-    top1_num, top1_tot = 0, 0
-    top5_num = 0
-    
-    labeled_dup = {}
-    with open('data/msr_positive_pairs.txt') as f:
-        for t in f.readlines():
-            r, n1, n2 = t.strip().split()
-            if n1 > n2:
-                n1, n2 = n2, n1
-            if r == repo:
-                li = [int(x[0]) for x in get_topK(repo, n2, 5)]
-                if int(n1) == li[0]:
-                    top1_num += 1
-                if int(n1) in li:
-                    top5_num += 1
-                top1_tot += 1
-    print('top1 acc =', 1.0 * top1_num / top1_tot)
-    print('top5 acc =', 1.0 * top5_num / top1_tot)
-    
 
-def simulate_timeline(repo):
-    # out_path = 'detection/'+repo.replace('/','_')+'_stimulate_top1.txt'
-    out_path = 'detection/'+repo.replace('/','_')+'_stimulate_top1_sample200.txt'
-    
-    if (os.path.exists(out_path)) and (os.path.getsize(out_path) > 0):
-        return
-    
+def load_part(repo):
+    sheet_path = 'evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet.txt'
+    select_set = set()
+    if (os.path.exists(sheet_path)) and (os.path.getsize(sheet_path) > 0):
+        with open(sheet_path) as f:
+            for t in f.readlines():
+                tt = t.strip().split()
+                select_set.add(str(tt[1]))
+    return select_set
+
+
+def simulate_timeline(repo, renew=False, run_num=200):
     init_model_with_repo(repo)
+    pulls = repo_get(repo, 'pull', renew_pr_list)
+        
+    all_p = set([str(pull["number"]) for pull in pulls])
+    part_p = load_part(repo)
+    select_p = set(shuffle(list(all_p - part_p))[:run_num])
     
-    pulls = get_pull_list(repo, renew_pr_list)
-    pulls = sorted(pulls, key=lambda x: x['created_at'])
+    log = open('evaluation/'+repo.replace('/','_')+'_stimulate_detect.log', 'a+')
+    out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet.txt', 'a+')
     
-    select_pulls = shuffle(pulls)[:200]
-    # select_pulls = pulls
-    
-    out = open(out_path+'.log', 'w')
-    out2 = open(out_path, 'w')
-    
-    print('Run on', repo, 'PR Num = ', len(select_pulls))
-    
-    # for pull in pulls:
-    for pull in select_pulls:
+    for pull in pulls:
         num1 = str(pull["number"])
+        
+        if num1 not in select_p:
+            continue
+        
+        print('Run on PR #%s' % num1)
+        
         topk = get_topK(repo, num1, 10)
         if len(topk) == 0:
             continue
+
         num2, prob = topk[0][0], topk[0][1]
-        vet = get_sim_vector(pull, get_pull(repo, num2))
+        vet = get_pr_sim_vector(pull, get_pull(repo, num2))
+        pre = c.predict([vet])[0]
         
-        print("%s %8s %8s %.4f" % (repo, str(num1), str(num2), prob), file=out2)
-        print(" ".join("%.4f" % f for f in vet), file=out2)
-        print('https://www.github.com/%s/pull/%s' % (repo, str(num1)), file=out2)
-        print('https://www.github.com/%s/pull/%s' % (repo, str(num2)), file=out2)
-        print(repo, num1, ':', topk, file=out)
+        status = 'Y' if (prob >= 0.99) else 'N/A'
+        
+        if (num2 in get_another_pull(pull)) or (num1 in get_another_pull(get_pull(repo, num2))):
+            status += '(mention)'
+        
+        print("\t".join([repo, str(num1), str(num2), "%.4f" % prob, str(pre)] + \
+                        [status] + \
+                        ["%.4f" % f for f in vet] + \
+                        ['https://www.github.com/%s/pull/%s' % (repo, str(num1)),\
+                         'https://www.github.com/%s/pull/%s' % (repo, str(num2))]
+                       ),
+              file=out)
+        out.flush()
+        print(repo, num1, ':', topk, file=log)
     
+    log.close()
     out.close()
-    out2.close()
-    
-                 
+
+
 def find_on_openpr(repo, time_stp=None):
     print('time_stp', time_stp)
     
@@ -190,7 +192,7 @@ def find_on_openpr(repo, time_stp=None):
         num2 = topk[0][0]
         prob = topk[0][1]
 
-        sim = get_sim_vector(pull, get_pull(repo, num2))
+        sim = get_pr_sim_vector(pull, get_pull(repo, num2))
         print("%s %8s %8s %.4f" % (repo, str(num1), str(num2), prob))
         print(" ".join("%.4f" % f for f in sim))
         #print(",".join(parse_sim(sim)))
@@ -210,22 +212,61 @@ def find_on_openpr(repo, time_stp=None):
     out.close()
     out2.close()
 
+
+def simulate_timeline_only_dup_pair(repo):
+    init_model_with_repo(repo)
+    top1_num, top1_tot, top5_num = 0, 0, 0
+    
+    labeled_dup = {}
+    with open('data/msr_positive_pairs.txt') as f:
+        for t in f.readlines():
+            r, n1, n2 = t.strip().split()
+            if n1 > n2:
+                n1, n2 = n2, n1
+            if r == repo:
+                li = [int(x[0]) for x in get_topK(repo, n2, 5)]
+                if int(n1) == li[0]:
+                    top1_num += 1
+                if int(n1) in li:
+                    top5_num += 1
+                top1_tot += 1
+    print('top1 acc =', 1.0 * top1_num / top1_tot)
+    print('top5 acc =', 1.0 * top5_num / top1_tot)
+
+
 if __name__ == "__main__":
-    while True:
-        try:
-            ok = True
-            with open('data/run_list.txt') as f:
-                for t in f.readlines():
-                    try:
-                        simulate_timeline(t.strip())
-                    except Exception as e:
-                        ok = False
-                        print(e)
-            if ok:
-                break
-        except:
-            continue
-            
+    
+    if len(sys.argv) > 1:
+        r = sys.argv[1].strip()
+        if len(sys.argv) > 2:
+            num = int(sys.argv[2].strip())
+        else:
+            num = 100
+        simulate_timeline(r, False, num)
+    
+    if len(sys.argv) == 1:
+        while True:
+            try:
+                ok = True
+                with open('data/run_list.txt') as f:
+                    rs = f.readlines()
+                    for t in rs:
+                        sheet_path = 'evaluation/'+t.strip().replace('/','_')+'_stimulate_top1_sample200_sheet.txt'
+                        if (os.path.exists(sheet_path)):
+                            continue
+                        
+
+                        try:
+                            simulate_timeline(t.strip())
+                        except Exception as e:
+                            ok = False
+                            print(e)
+                if ok:
+                    break
+            except:
+                continue
+    
+    
     '''
     # print(get_topK('pytorch/vision', '492', 10, True))
     # print(get_topK('scikit-learn/scikit-learn', '10365', 10, True))

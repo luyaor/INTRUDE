@@ -6,16 +6,19 @@ from gensim import matutils
 from datetime import datetime
 from collections import Counter
 
-from util import word_extractor
-from util import localfile_tool
-from util import language_tool
+from util import wordext
+from util import localfile
 
+import git
 import fetch_raw_diff
 
-from git import *
 
 text_sim_type = 'lsi'
+# code_sim_type = 'bow_three'
+# code_sim_type = 'bow_two'
 code_sim_type = 'bow'
+# code_sim_type = 'bow_with_ori'
+# code_sim_type = 'tfidf'
 
 def counter_similarity(A_counter, B_counter):
     C = set(A_counter) | set(B_counter)
@@ -27,13 +30,13 @@ def counter_similarity(A_counter, B_counter):
         return 0
     return 1.0 * tot1 / tot2
 
-def set_similarity(A, B):
+def list_similarity(A, B):
     if (A is None) or (B is None):
         return 0
     if (len(A) == 0) or (len(B) == 0):
         return 0
-    A_counter = word_extractor.get_counter(A)
-    B_counter = word_extractor.get_counter(B)
+    A_counter = wordext.get_counter(A)
+    B_counter = wordext.get_counter(B)
     return counter_similarity(A_counter, B_counter)
 
 def vsm_bow_similarity(A_counter, B_counter):
@@ -41,8 +44,8 @@ def vsm_bow_similarity(A_counter, B_counter):
 
 # ---------------------------------------------------------------------------
 
-def get_BoW(text):
-    return word_extractor.get_words_from_text(text)
+def get_tokens(text):
+    return wordext.get_words_from_text(text)
 
 def get_file_list(pull):
     return [x["name"] for x in pull['file_list']]
@@ -51,9 +54,9 @@ def fetch_pr_info(pull, must_in_local = False):
     path = '/DATA/luyao/pr_data/%s/%s' % (pull["base"]["repo"]["full_name"], pull["number"])
     if os.path.exists(path + '/raw_diff.json') or os.path.exists(path + '/pull_files.json'):
         if os.path.exists(path + '/raw_diff.json'):
-            file_list = localfile_tool.get_file(path + '/raw_diff.json')
+            file_list = localfile.get_file(path + '/raw_diff.json')
         elif os.path.exists(path + '/pull_files.json'):
-            pull_files = localfile_tool.get_file(path + '/pull_files.json')
+            pull_files = localfile.get_file(path + '/pull_files.json')
             file_list = [fetch_raw_diff.parse_diff(file["file_full_name"], file["changed_code"]) for file in pull_files]
         else:
             raise Exception('error on fetch local file %s' % path)
@@ -65,7 +68,7 @@ def fetch_pr_info(pull, must_in_local = False):
         if must_in_local:
             raise Exception('not found in local')
         
-        file_list = fetch_file_list(pull["base"]["repo"]["full_name"], pull)
+        file_list = fetch_file_list(pull)
 
     # print(path, [x["name"] for x in file_list])
     return file_list
@@ -78,8 +81,8 @@ def get_location(pull):
     return location_set
 
 def get_code_from_pr_info(pr_info):
-    add_code = list(itertools.chain(*[word_extractor.get_words_from_file(file["name"], file["add_code"]) for file in pr_info]))
-    del_code = list(itertools.chain(*[word_extractor.get_words_from_file(file["name"], file["del_code"]) for file in pr_info]))
+    add_code = list(itertools.chain(*[wordext.get_words_from_file(file["name"], file["add_code"]) for file in pr_info]))
+    del_code = list(itertools.chain(*[wordext.get_words_from_file(file["name"], file["del_code"]) for file in pr_info]))
     return [add_code, del_code]
 
 def get_code_tokens_overlap(pull, overlap_set):
@@ -90,8 +93,8 @@ def get_delta_code_tokens_counter(code_tokens_result):
     add_code_tokens = code_tokens_result[0]
     del_code_tokens = code_tokens_result[1]
     
-    add_c = word_extractor.get_counter(add_code_tokens)
-    del_c = word_extractor.get_counter(del_code_tokens)
+    add_c = wordext.get_counter(add_code_tokens)
+    del_c = wordext.get_counter(del_code_tokens)
     
     changed_c = Counter()
     for t in add_c:
@@ -164,16 +167,15 @@ import nlp
 model = None
 def init_model_from_raw_docs(documents, save_id=None):
     global model
-    model = nlp.Model([get_BoW(document) for document in documents], save_id)
+    model = nlp.Model([get_tokens(document) for document in documents], save_id)
     print('init nlp model for text successfully!')
 
 
 def get_text_sim(A, B, text_type="default"):
-    A = get_BoW(A)
-    B = get_BoW(B)
+    A = get_tokens(A)
+    B = get_tokens(B)
     if model is None:
-        # print('set_similarity')
-        return set_similarity(A, B)
+        return list_similarity(A, B)
     else:
         #print('model_similarity')
         if text_sim_type == 'lsi':
@@ -182,6 +184,22 @@ def get_text_sim(A, B, text_type="default"):
         if text_sim_type == 'tfidf':
             return model.query_sim_tfidf(A, B)
         # return model.query_sim_common_words_idf(A, B)
+
+code_model = None
+def init_code_model_from_tokens(documents, save_id=None):
+    global code_model
+    code_model = nlp.Model(documents, save_id)
+    print('init nlp model for code successfully!')
+
+def counter2list(A):
+    a_c = []
+    for x in A:
+        for t in range(A[x]):
+            a_c.append(x)
+    return a_c
+
+def vsm_tfidf_similarity(A, B):
+    return code_model.query_sim_tfidf(counter2list(A), counter2list(B))
 
 # ---------------------------------------------------------------------------
 
@@ -221,7 +239,7 @@ def calc_sim(A, B):
     pattern = check_pattern(A, B)
     title_sim = get_text_sim(A["title"], B["title"])
     desc_sim = get_text_sim(A["body"], B["body"])
-    file_list_sim = set_similarity(get_file_list(A), get_file_list(B))
+    file_list_sim = list_similarity(get_file_list(A), get_file_list(B))
 
     overlap_files_set = set(get_file_list(A)) & set(get_file_list(B))
     
@@ -230,15 +248,40 @@ def calc_sim(A, B):
     
     A_delta_code_counter = get_delta_code_tokens_counter(A_overlap_code_tokens)
     B_delta_code_counter = get_delta_code_tokens_counter(B_overlap_code_tokens)
+
+    # print(A_delta_code_counter)
+    # print(B_delta_code_counter)
     
     if code_sim_type == 'bow':
         code_sim = vsm_bow_similarity(A_delta_code_counter, B_delta_code_counter)
     if code_sim_type == 'jac':
         code_sim = counter_similarity(A_delta_code_counter, B_delta_code_counter)
-    
+    if code_sim_type == 'tfidf':
+        code_sim = vsm_tfidf_similarity(A_delta_code_counter, B_delta_code_counter)
+    if code_sim_type == 'bow_two':
+        code_sim_add = vsm_bow_similarity(wordext.get_counter(A_overlap_code_tokens[0]),
+                                          wordext.get_counter(B_overlap_code_tokens[0]))
+        code_sim_del = vsm_bow_similarity(wordext.get_counter(A_overlap_code_tokens[1]),
+                                          wordext.get_counter(B_overlap_code_tokens[1]))
+    if code_sim_type == 'bow_three':
+        code_sim_delta = vsm_bow_similarity(A_delta_code_counter, B_delta_code_counter)
+        code_sim_add = vsm_bow_similarity(wordext.get_counter(A_overlap_code_tokens[0]),
+                                          wordext.get_counter(B_overlap_code_tokens[0]))
+        code_sim_del = vsm_bow_similarity(wordext.get_counter(A_overlap_code_tokens[1]),
+                                          wordext.get_counter(B_overlap_code_tokens[1]))        
+    if code_sim_type == 'bow_with_ori':
+        code_sim1 = vsm_bow_similarity(A_delta_code_counter, B_delta_code_counter)
+        
+        A_overlap_code_tokens = get_code_tokens_overlap(A, get_file_list(A))
+        B_overlap_code_tokens = get_code_tokens_overlap(B, get_file_list(B))
+        A_delta_code_counter = get_delta_code_tokens_counter(A_overlap_code_tokens)
+        B_delta_code_counter = get_delta_code_tokens_counter(B_overlap_code_tokens)
+
+        code_sim2 = vsm_bow_similarity(A_delta_code_counter, B_delta_code_counter)
+
     location_sim = location_similarity(get_location(A), get_location(B))
     
-    common_words = list(set(get_BoW(A["title"])) & set(get_BoW(B["title"])))
+    common_words = list(set(get_tokens(A["title"])) & set(get_tokens(B["title"])))
     overlap_title_len = len(common_words)
     
     if model is not None:
@@ -248,10 +291,11 @@ def calc_sim(A, B):
     
     overlap_files_len = len(overlap_files_set)
     
-    return {
+    ret = {
             'title': title_sim,
             'desc': desc_sim,
-            'code': code_sim,
+            #'code': code_sim,
+            #'code': (code_sim_add, code_sim_del),
             'file_list': file_list_sim,
             'location': location_sim, 
             'pattern': pattern,
@@ -259,8 +303,31 @@ def calc_sim(A, B):
             'overlap_title_len': overlap_title_len,
             'title_idf_sum': title_idf_sum,
            }
+    
+    if code_sim_type == 'bow':
+        ret['code'] = code_sim
+
+    if code_sim_type == 'bow_two':
+        ret['code'] = (code_sim_add, code_sim_del)
+        
+    if code_sim_type == 'bow_three':
+        ret['code'] = (code_sim_delta, code_sim_add, code_sim_del)
+    
+    if code_sim_type == 'bow_with_ori':
+        ret['code'] = (code_sim1, code_sim2)
+    
+    return ret
 
 def sim_to_vet(r):
+    if code_sim_type == 'bow_three':
+        return [r['title'],r['desc'],r['code'][0],r['code'][1],r['code'][2],r['file_list'],r['location'], r['pattern']]
+    
+    if code_sim_type == 'bow_two':
+        return [r['title'],r['desc'],r['code'][0],r['code'][1],r['file_list'],r['location'], r['pattern']]
+    
+    if code_sim_type == 'bow_with_ori':
+        return [r['title'],r['desc'],r['code'][0],r['code'][1],r['file_list'],r['location'], r['pattern']]
+    
     return [r['title'],r['desc'],r['code'],r['file_list'],r['location'], r['pattern'],
             # r['overlap_files_len'],r['title_idf_sum'],
             # r['overlap_files_len'],r['overlap_title_len'],r['title_idf_sum'],

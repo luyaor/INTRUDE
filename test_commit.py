@@ -1,9 +1,9 @@
-from comparer import *
-from git import *
-from main import *
-from util import localfile_tool
+import comp
+import git
+import clf
+from util import localfile
 
-m = classify()
+m = clf.classify()
 
 def gen_commit_feature_vet(data, label, out=None):
     with open(data) as f:
@@ -35,7 +35,7 @@ def gen_commit_feature_vet(data, label, out=None):
         # print(pair)
         
         if last_repo != repo:
-            init_model_with_pulls([], repo.replace('/','_') + '_marked')
+            clf.init_model_with_repo(repo)
             last_repo = repo
 
         p1 = get_pull(repo, num1)
@@ -74,6 +74,8 @@ def gen_commit_feature_vet(data, label, out=None):
     localfile_tool.write_to_file(y_path, y)
 
 if __name__ == "__main__":
+    gen_commit_feature_vet('data/rly_false_pairs.txt', 0)
+    '''
     while True:
         try:
             gen_commit_feature_vet('data/rly_false_pairs.txt', 0)
@@ -84,5 +86,5 @@ if __name__ == "__main__":
             break
         except:
             pass
-
+    '''
     
