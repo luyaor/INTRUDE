@@ -24,7 +24,7 @@ text_sim = query_sim_tfidf(tokens1, tokens2)
 comp.py: Calculate the similarity for feature extraction.
 
 ``` 
-
+# Check for init NLP model.
 feature_vector = get_pr_sim_vector(pull1, pull2)
 ```
 
