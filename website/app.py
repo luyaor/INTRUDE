@@ -1,21 +1,97 @@
 import sys
 import os
+from functools import wraps
+
+from flask import Flask, render_template, request, jsonify, redirect, url_for, flash, g, abort
+from flask_login import LoginManager, UserMixin, AnonymousUserMixin, logout_user, login_user, login_required, current_user
+from flask_pymongo import PyMongo
+from flask_github import GitHub
 
 sys.path.append('/home/luyao/PR_get/INTRUDE')
 import git
+import detect
 
-from flask import Flask, render_template, request, jsonify, redirect, url_for, flash
-from flask_pymongo import PyMongo
+detect.simulate_mode = False
 
 app = Flask(__name__)
 
-app.config["MONGO_URI"] = "mongodb://localhost:27017/intrude_db"
+app.config["MONGO_URI"] = "mongodb://localhost:27017/intrude_db?connect=false"
 app.config["SECRET_KEY"] = "build_the_intrude_tool"
+
+app.config['GITHUB_CLIENT_ID'] = '48141b0acd98d9b523a8'
+app.config['GITHUB_CLIENT_SECRET'] = '0b262a65a3065cb0a02065a24eeac5e7d90f2084'
+
+github = GitHub(app)
+
+login_manager = LoginManager(app)
 
 mongo = PyMongo(app)
 
 debug_flag = False
-read_only_mode = False
+
+class User(UserMixin):
+    def __init__(self, username, github_access_token):
+        self.id = username
+        self.github_access_token = github_access_token
+
+    def is_admin(self):
+        return self.id == 'FancyCoder0'
+    
+class AnonymousUser(AnonymousUserMixin):
+    def is_admin(self):
+        return False
+
+login_manager.anonymous_user = AnonymousUser
+def admin_required(f):
+    @wraps(f)
+    def inner(*args, **kwargs):
+        if not current_user.is_admin():
+            abort(403)
+        return f(*args, **kwargs)
+    return inner
+
+@login_manager.user_loader
+def load_user(username):
+    user = mongo.db.github_user.find_one({'_id': username})
+    return User(user['_id'], user['github_access_token'])
+
+@github.access_token_getter
+def token_getter():
+    if current_user.is_authenticated:
+        return current_user.github_access_token
+    else:
+        return g.get('github_access_token', None)
+
+@app.route('/login')
+def login():
+    return github.authorize()
+
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return 'Logout!'
+
+@app.route('/github-callback')
+@github.authorized_handler
+def authorized(oauth_token):
+    next_url = request.args.get('next') or url_for('index')
+    if oauth_token is None:
+        flash("Authorization failed.")
+        return redirect(next_url)
+    
+    g.github_access_token = oauth_token    
+    github_user_info = github.get('user')
+    github_username = github_user_info["login"]
+        
+    user = mongo.db.github_user.find_one({'_id': github_username})
+    if user is None:
+        mongo.db.github_user.save({'_id': github_username, 'github_access_token': oauth_token})
+    
+    login_user(User(github_username, oauth_token))
+    return redirect(next_url)
+
+# -------------------------------------------------------------------------------------
 
 def load_new_dup(data):
     _id = data['repo'] + '/' + data['num']
@@ -42,6 +118,7 @@ def load_new_dup(data):
     
 
 @app.route('/random_add', methods=['GET', 'POST'])
+@admin_required
 def random_add():
     repo = request.args.get('repo').strip()
     flash('Start analyzing %s! Please load later.' % repo, 'info')
@@ -49,19 +126,15 @@ def random_add():
 
 
 @app.route('/delete/<path:repo>')
+@admin_required
 def delete(repo):
-    if read_only_mode:
-        return 'Can\'t delete. Read Only Mode.'
-
     mongo.db.detect.remove({'repo': repo})
     return 'done!'
 
 
 @app.route('/load/<path:repo>')
+@admin_required
 def load(repo):
-    if read_only_mode:
-        return 'Can\'t load. Read Only Mode.'
-
     sheet_path = '/home/luyao/PR_get/INTRUDE/evaluation/' + \
                  repo.replace('/','_') + '_stimulate_top1_sample200_sheet.txt'
     if not os.path.exists(sheet_path):
@@ -108,6 +181,7 @@ def load(repo):
 
 
 @app.route('/mark', methods=['GET', 'POST'])
+@admin_required
 def mark():
     repo = request.args.get('repo').strip()
     num = request.args.get('num').strip()
@@ -174,8 +248,6 @@ def export_mark():
     return jsonify(ret)
 
 
-import detect
-detect.simulate_mode = False
 
 def get_state(git_pull):
     if git_pull['merged_at'] is not None:
@@ -183,8 +255,10 @@ def get_state(git_pull):
     else:
         return git_pull['state']
     
-def update_one_openpr(pull):
+def update_one_openpr(pull, renew=False):
     if pull and ('repo' in pull) and ('num' in pull):
+        if ('num2' in pull) and (not renew):
+            return
         num2, proba = detect.detect_one(pull['repo'], pull['num'])
         git_pull = git.get_pull(pull['repo'], num2)
         data = {'num2': num2, 'proba': proba, 'title2': git_pull['title'], 'link2': git_pull['html_url'], 'state2': get_state(git_pull), }
@@ -234,6 +308,6 @@ def openprdb(repo):
 def openpr():
     return render_template('openpr_welcome.html')
     
-	
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=4000, threaded=True, debug=debug_flag)
