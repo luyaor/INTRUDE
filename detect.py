@@ -152,7 +152,9 @@ def simulate_timeline(repo, renew=False, run_num=200):
                        ),
               file=out)
         out.flush()
+
         print(repo, num1, ':', topk, file=log)
+        log.flush()
     
     log.close()
     out.close()
@@ -263,7 +265,8 @@ if __name__ == "__main__":
                 with open('data/run_list.txt') as f:
                     rs = f.readlines()
                     for t in rs:
-                        sheet_path = 'evaluation/'+t.strip().replace('/','_')+'_stimulate_top1_sample200_sheet.txt'
+                        
+                        sheet_path = 'evaluation/'+t.strip().replace('/','_')+'_stimulate_detect.log'
                         if (os.path.exists(sheet_path)):
                             continue
                         

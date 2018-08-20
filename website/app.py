@@ -15,7 +15,7 @@ app.config["SECRET_KEY"] = "build_the_intrude_tool"
 mongo = PyMongo(app)
 
 debug_flag = False
-read_only_mode = True
+read_only_mode = False
 
 def load_new_dup(data):
     _id = data['repo'] + '/' + data['num']
