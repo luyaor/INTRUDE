@@ -12,14 +12,11 @@ and
 to
 in
 for
-add
-update
 of
 with
 on
 from
 is
-get
 do
 a
 an

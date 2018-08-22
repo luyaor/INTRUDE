@@ -29,6 +29,7 @@ mongo = PyMongo(app)
 
 debug_flag = False
 
+
 class User(UserMixin):
     def __init__(self, username, github_access_token):
         self.id = username

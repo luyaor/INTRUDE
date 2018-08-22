@@ -3,7 +3,7 @@ import sys
 
 from datetime import datetime, timedelta
 
-import main
+import clf
 import comp
 import git
 import fetch_raw_diff
@@ -14,7 +14,6 @@ def fetch_pull_from_local(pull):
     repo_path = '/DATA/luyao/repo/%s' % repo
     
     pull_id = pull["node_id"] if 'node_id' in pull else pull['id']
-    #print(pull_id)
     
     if not os.path.exists(repo_path):
         os.system('git clone %s %s' % (repo_url, repo_path))
@@ -140,17 +139,17 @@ def simulate(repo, num1, num2):
     
     return max_s, (l_a + l_b - max_t), history
 
-m = main.classify()
+m = clf.classify()
 
 def run(s):
     r, n1, n2 = s.split()
-    main.init_model_with_repo(r)
+    clf.init_model_with_repo(r)
     simulate(r, n1, n2)
     
     
 if __name__ == '__main__':
     # fetch_pull_from_local()
-    simulate('angular/angular.js', '2522', '3025')
+    # simulate('angular/angular.js', '2522', '3025')
 
     # print(simulate('JuliaLang/julia', '16942', '16917'))
     
@@ -158,13 +157,23 @@ if __name__ == '__main__':
     
     # print(simulate('ceph/ceph','4276', '4245'))
     
-    sys.exit()
+    # print(simulate('almasaeed2010/AdminLTE', '1294', '861'))
+        
+    # sys.exit()
     
     result = []
     
-    log = open('detection/msr_multi_commits_result_log.txt', 'w+')
+    in_file = 'data/multi_commits_rly_false_pairs.txt'
+    # file = 'data/msr_multi_commits_no_repeat.txt'
     
-    with open('data/msr_multi_commits_no_repeat.txt') as f:
+    out_file = 'detection/' + in_file.replace('.txt','').replace('data/','') + '_result.txt'
+    
+    print('input=', in_file)
+    print('output=', out_file)
+    
+    log = open(out_file + '.log', 'w+')
+    
+    with open(in_file) as f:
         pairs = f.readlines()
         pairs = sorted(pairs, key=lambda x: x[0])
         
@@ -173,7 +182,7 @@ if __name__ == '__main__':
             r, n1, n2, z = pair.split()
 
             if r != last_repo:
-                main.init_model_with_repo(r)
+                clf.init_model_with_repo(r)
                 last_repo = r
             
             print('run on ', r, n1, n2)
@@ -186,14 +195,14 @@ if __name__ == '__main__':
             
             
             if max_s > 0:
-                with open('detection/msr_multi_commits_result_tmp2.txt', 'a+') as f:
+                with open(out_file, 'a+') as f:
                     print(r, n1, n2, z, max_s, float(z) - max_s, save_t, history, file=f)
                 
             result.append((pair, history))
     
     result = sorted(result, key=lambda x: x[1], reverse=True)
     
-    with open('detection/msr_multi_commits_result.txt', 'w') as f:
+    with open(out_file + '.whole', 'w') as f:
         print(result, file=f)
     
     log.close()

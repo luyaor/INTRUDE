@@ -49,8 +49,8 @@ def word_split_by_char(s):
         old_words = new_words
     return result
 
-def filter_common_words_in_pr(tokens):
-    return list(filter(lambda x: x not in language_tool.get_common_words_in_pr(), tokens))
+#def filter_common_words_in_pr(tokens):
+#    return list(filter(lambda x: x not in language_tool.get_common_words_in_pr(), tokens))
 
 def stem_process(tokens):
     # Do stem on the tokens.

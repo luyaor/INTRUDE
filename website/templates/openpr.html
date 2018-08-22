@@ -108,14 +108,18 @@ $(document).ready( function () {
             <td class="num"> {{ pull.get('num', '') }} </td>
 
             <td>
-                {{ '[%s]' % pull.get('state', '').upper() }}
+                {% if 'state' in pull %}
+                {{ '[%s]' % pull.get('state').upper() }}
+                {% endif %}
                 <a tag="title" href="{{ pull.get('link', '') }}" target="_blank">{{ pull.get('title', '') }} </a>
             </td>
 
             <td class="num2"> {{ pull.get('num2', '') }} </td>
 
             <td>
-                {{ '[%s]' % pull.get('state2', '').upper() }}
+                {% if 'state2' in pull %}
+                {{ '[%s]' % pull.get('state2').upper() }}
+                {% endif %}
                 <a tag="title2" href="{{ pull.get('link2', '') }}" target="_blank"> {{ pull.get('title2', '') }} </a>
             </td>
 
