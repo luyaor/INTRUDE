@@ -43,7 +43,7 @@ dataset = [
 ]
 '''
 
-model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s' % (text_sim_type, code_sim_type)
+model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
 part_params = None
 
 draw_pic = False
@@ -52,8 +52,9 @@ model_data_renew_flag = False
 
 # ------------------------------------------------------------
 
-print('text sim type=', text_sim_type)
-print('code sim type=', code_sim_type)
+print('text_sim_type=', text_sim_type)
+print('code_sim_type=', code_sim_type)
+print('extract_sim_type=', extract_sim_type)
 print('Data Type:', model_data_save_path_suffix)
 
 # ------------------------------------------------------------

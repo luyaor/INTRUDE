@@ -160,22 +160,31 @@ def simulate_timeline(repo, renew=False, run_num=200):
     out.close()
 
 
+total_number = 0
+
+openpr_suffix = 'weekly'
+
 def find_on_openpr(repo, time_stp=None):
     print('time_stp', time_stp)
+    print('simulate_mode', simulate_mode)
     
-    # init model
     pulls = get_repo_info(repo, 'pull', renew_pr_list_flag)
-    
     for pull in pulls:
         cite[str(pull["number"])] = get_another_pull(pull)
     
+    pulls = git.api.request('GET', 'repos/%s/pulls?state=open' % repo, True)
+    for pull in pulls:
+        cite[str(pull["number"])] = get_another_pull(pull)
+    
+    
+    # init model
     init_model_with_repo(repo)
     
     mode = 'a' if last_number else 'w'
     print('write mode=',mode)
     
-    out = open('detection/'+repo.replace('/','_')+'_topk.txt', mode)
-    out2 = open('detection/'+repo.replace('/','_')+'_top1.txt', mode)
+    out = open('detection/'+repo.replace('/','_')+'_topk_' + openpr_suffix + '.txt', mode)
+    out2 = open('detection/'+repo.replace('/','_')+'_top1_' + openpr_suffix + '.txt', mode)
     
     for pull in pulls:
         if time_stp and (get_time(pull["created_at"]) < time_stp):
@@ -199,20 +208,20 @@ def find_on_openpr(repo, time_stp=None):
         prob = topk[0][1]
 
         sim = get_pr_sim_vector(pull, get_pull(repo, num2))
+        
+        if prob >= 0.95:
+            total_number += 1
+            
         print("%s %8s %8s %.4f" % (repo, str(num1), str(num2), prob))
         print(" ".join("%.4f" % f for f in sim))
-        #print(",".join(parse_sim(sim)))
-        
         print('https://www.github.com/%s/pull/%s' % (repo, str(num1)))
         print('https://www.github.com/%s/pull/%s' % (repo, str(num2)))
         sys.stdout.flush()
 
         print("%s %8s %8s %.4f" % (repo, str(num1), str(num2), prob), file=out2)
         print(" ".join("%.4f" % f for f in sim), file=out2)
-        #print(",".join(parse_sim(sim)), file=out2)
         print('https://www.github.com/%s/pull/%s' % (repo, str(num1)), file=out2)
         print('https://www.github.com/%s/pull/%s' % (repo, str(num2)), file=out2)
-
         print(repo, num1, ':', topk, file=out)
 
     out.close()
@@ -249,7 +258,9 @@ def detect_one(repo, num):
         return ret[0][0], ret[0][1]
 
 if __name__ == "__main__":
-    
+
+    # detection on history (random sampling)
+    '''
     if len(sys.argv) > 1:
         r = sys.argv[1].strip()
         if len(sys.argv) > 2:
@@ -280,13 +291,10 @@ if __name__ == "__main__":
                     break
             except:
                 continue
-    
+    '''
+
     
     '''
-    # print(get_topK('pytorch/vision', '492', 10, True))
-    # print(get_topK('scikit-learn/scikit-learn', '10365', 10, True))
-    # print(get_topK('facebook/react', '12755', 10, True))
-    
     r = 'spring-projects/spring-framework'
     if len(sys.argv) > 1:
         r = sys.argv[1]
@@ -295,13 +303,18 @@ if __name__ == "__main__":
     if len(sys.argv) > 3:
         last_number = int(sys.argv[3])
         print('last = ', last_number)
-    
-    print('start detect open PR on', r)
-    
-    # default_time_stp = datetime.utcnow() - timedelta(days=30)
-    default_time_stp = None
-    
-    find_on_openpr(r, default_time_stp)
-
-    # find_on_openpr('spring-projects/spring-framework')
     '''
+
+    with open('data/run_list.txt') as f:
+        repos = f.readlines()
+    
+    simulate_mode = False
+    renew_pr_list_flag = True
+    
+    for r in repos:
+        r = r.strip()
+        print('start detect open PR on', r)
+        default_time_stp = datetime.utcnow() - timedelta(days=30)
+        find_on_openpr(r, default_time_stp)
+        
+        print('total number=', total_number)

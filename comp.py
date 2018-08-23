@@ -1,5 +1,6 @@
 import os
 import re
+import copy
 import itertools
 
 from gensim import matutils
@@ -18,6 +19,7 @@ text_sim_type = 'lsi'
 code_sim_type = 'bow'
 # code_sim_type = 'bow_with_ori'
 # code_sim_type = 'tfidf'
+extract_sim_type = 'ori_and_overlap'
 
 def counter_similarity(A_counter, B_counter):
     C = set(A_counter) | set(B_counter)
@@ -79,14 +81,18 @@ def get_location(pull):
             location_set.append([file["name"], int(x[0]), int(x[0]) + int(x[1])])
     return location_set
 
-def get_code_from_pr_info(pr_info):
+def get_code_from_file_list(pr_info):
     add_code = list(itertools.chain(*[wordext.get_words_from_file(file["name"], file["add_code"]) for file in pr_info]))
     del_code = list(itertools.chain(*[wordext.get_words_from_file(file["name"], file["del_code"]) for file in pr_info]))
     return [add_code, del_code]
 
-def get_code_tokens_overlap(pull, overlap_set):
-    new_pr_info = list(filter(lambda x: x["name"] in overlap_set, pull["file_list"]))
-    return get_code_from_pr_info(new_pr_info)
+def get_code_tokens(pull):
+    return get_code_from_file_list(pull["file_list"])
+
+def get_pull_on_overlap(pull, overlap_set):
+    new_pull = copy.deepcopy(pull)
+    new_pull["file_list"] = list(filter(lambda x: x["name"] in overlap_set, new_pull["file_list"]))
+    return new_pull
 
 def get_delta_code_tokens_counter(code_tokens_result):
     add_code_tokens = code_tokens_result[0]
@@ -112,6 +118,7 @@ def location_similarity(la, lb):
     if (la is None) or (lb is None):
         return 0.0
     
+    '''
     # only calc on overlap files
     a_f = [x[0] for x in la]
     b_f = [x[0] for x in lb]
@@ -119,7 +126,8 @@ def location_similarity(la, lb):
     
     la = list(filter(lambda x: x[0] in c_f, la))
     lb = list(filter(lambda x: x[0] in c_f, lb))
-    
+    '''
+
     if len(la) + len(lb) == 0:
         return 0.0
 
@@ -231,6 +239,35 @@ def check_pattern(A, B):
             return -1
         return 0
 
+def get_code_sim(A, B):
+    A_overlap_code_tokens = get_code_tokens(A)
+    B_overlap_code_tokens = get_code_tokens(B)
+
+    A_delta_code_counter = get_delta_code_tokens_counter(A_overlap_code_tokens)
+    B_delta_code_counter = get_delta_code_tokens_counter(B_overlap_code_tokens)
+
+    if code_sim_type == 'bow':
+        code_sim = vsm_bow_similarity(A_delta_code_counter, B_delta_code_counter)
+        return [code_sim]
+    if code_sim_type == 'jac':
+        code_sim = counter_similarity(A_delta_code_counter, B_delta_code_counter)
+        return [code_sim]
+    if code_sim_type == 'tfidf':
+        code_sim = vsm_tfidf_similarity(A_delta_code_counter, B_delta_code_counter)
+        return [code_sim]
+    if code_sim_type == 'bow_two':
+        code_sim_add = vsm_bow_similarity(wordext.get_counter(A_overlap_code_tokens[0]),
+                                          wordext.get_counter(B_overlap_code_tokens[0]))
+        code_sim_del = vsm_bow_similarity(wordext.get_counter(A_overlap_code_tokens[1]),
+                                          wordext.get_counter(B_overlap_code_tokens[1]))
+        return [code_sim_add, code_sim_del]
+    if code_sim_type == 'bow_three':
+        code_sim_delta = vsm_bow_similarity(A_delta_code_counter, B_delta_code_counter)
+        code_sim_add = vsm_bow_similarity(wordext.get_counter(A_overlap_code_tokens[0]),
+                                          wordext.get_counter(B_overlap_code_tokens[0]))
+        code_sim_del = vsm_bow_similarity(wordext.get_counter(A_overlap_code_tokens[1]),
+                                          wordext.get_counter(B_overlap_code_tokens[1]))
+        return [code_sim_delta, code_sim_add, code_sim_del]
 # ---------------------------------------------------------------------------
 
 
@@ -242,43 +279,12 @@ def calc_sim(A, B):
 
     overlap_files_set = set(get_file_list(A)) & set(get_file_list(B))
     
-    A_overlap_code_tokens = get_code_tokens_overlap(A, overlap_files_set)
-    B_overlap_code_tokens = get_code_tokens_overlap(B, overlap_files_set)
-    
-    A_delta_code_counter = get_delta_code_tokens_counter(A_overlap_code_tokens)
-    B_delta_code_counter = get_delta_code_tokens_counter(B_overlap_code_tokens)
+    A_overlap, B_overlap = get_pull_on_overlap(A, overlap_files_set), get_pull_on_overlap(B, overlap_files_set)
+    code_sim = get_code_sim(A, B) + get_code_sim(A_overlap,B_overlap)
 
-    # print(A_delta_code_counter)
-    # print(B_delta_code_counter)
-    
-    if code_sim_type == 'bow':
-        code_sim = vsm_bow_similarity(A_delta_code_counter, B_delta_code_counter)
-    if code_sim_type == 'jac':
-        code_sim = counter_similarity(A_delta_code_counter, B_delta_code_counter)
-    if code_sim_type == 'tfidf':
-        code_sim = vsm_tfidf_similarity(A_delta_code_counter, B_delta_code_counter)
-    if code_sim_type == 'bow_two':
-        code_sim_add = vsm_bow_similarity(wordext.get_counter(A_overlap_code_tokens[0]),
-                                          wordext.get_counter(B_overlap_code_tokens[0]))
-        code_sim_del = vsm_bow_similarity(wordext.get_counter(A_overlap_code_tokens[1]),
-                                          wordext.get_counter(B_overlap_code_tokens[1]))
-    if code_sim_type == 'bow_three':
-        code_sim_delta = vsm_bow_similarity(A_delta_code_counter, B_delta_code_counter)
-        code_sim_add = vsm_bow_similarity(wordext.get_counter(A_overlap_code_tokens[0]),
-                                          wordext.get_counter(B_overlap_code_tokens[0]))
-        code_sim_del = vsm_bow_similarity(wordext.get_counter(A_overlap_code_tokens[1]),
-                                          wordext.get_counter(B_overlap_code_tokens[1]))        
-    if code_sim_type == 'bow_with_ori':
-        code_sim1 = vsm_bow_similarity(A_delta_code_counter, B_delta_code_counter)
-        
-        A_overlap_code_tokens = get_code_tokens_overlap(A, get_file_list(A))
-        B_overlap_code_tokens = get_code_tokens_overlap(B, get_file_list(B))
-        A_delta_code_counter = get_delta_code_tokens_counter(A_overlap_code_tokens)
-        B_delta_code_counter = get_delta_code_tokens_counter(B_overlap_code_tokens)
-
-        code_sim2 = vsm_bow_similarity(A_delta_code_counter, B_delta_code_counter)
-
-    location_sim = location_similarity(get_location(A), get_location(B))
+    location_sim = [location_similarity(get_location(A), get_location(B)),\
+                    location_similarity(get_location(A_overlap), get_location(B_overlap))
+                   ]
     
     common_words = list(set(get_tokens(A["title"])) & set(get_tokens(B["title"])))
     overlap_title_len = len(common_words)
@@ -291,47 +297,25 @@ def calc_sim(A, B):
     overlap_files_len = len(overlap_files_set)
     
     ret = {
-            'title': title_sim,
-            'desc': desc_sim,
-            #'code': code_sim,
-            #'code': (code_sim_add, code_sim_del),
-            'file_list': file_list_sim,
+            'title': [title_sim],
+            'desc': [desc_sim],
+            'code': code_sim,
+            'file_list': [file_list_sim, overlap_files_len],
             'location': location_sim, 
-            'pattern': pattern,
-            'overlap_files_len': overlap_files_len,
-            'overlap_title_len': overlap_title_len,
-            'title_idf_sum': title_idf_sum,
+            'pattern': [pattern],
            }
-    
-    if code_sim_type == 'bow':
-        ret['code'] = code_sim
-
-    if code_sim_type == 'bow_two':
-        ret['code'] = (code_sim_add, code_sim_del)
-        
-    if code_sim_type == 'bow_three':
-        ret['code'] = (code_sim_delta, code_sim_add, code_sim_del)
-    
-    if code_sim_type == 'bow_with_ori':
-        ret['code'] = (code_sim1, code_sim2)
-    
     return ret
 
 def sim_to_vet(r):
-    if code_sim_type == 'bow_three':
-        return [r['title'],r['desc'],r['code'][0],r['code'][1],r['code'][2],r['file_list'],r['location'], r['pattern']]
-    
-    if code_sim_type == 'bow_two':
-        return [r['title'],r['desc'],r['code'][0],r['code'][1],r['file_list'],r['location'], r['pattern']]
-    
-    if code_sim_type == 'bow_with_ori':
-        return [r['title'],r['desc'],r['code'][0],r['code'][1],r['file_list'],r['location'], r['pattern']]
-    
-    return [r['title'],r['desc'],r['code'],r['file_list'],r['location'], r['pattern'],
-            # r['overlap_files_len'],r['title_idf_sum'],
-            # r['overlap_files_len'],r['overlap_title_len'],r['title_idf_sum'],
-           ]
-
+    '''
+    vet = []
+    for v in [r['title'],r['desc'],r['code'],r['file_list'],r['location'], r['pattern']]:
+        vet += v
+    '''
+    vet = []
+    for k, v in r.items():
+        vet += v
+    return vet
 
 # pull requests sim
 def get_pr_sim_vector(A, B):
