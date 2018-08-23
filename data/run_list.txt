@@ -1,4 +1,3 @@
-facebook/react
 caskroom/homebrew-cask
 kubernetes/kubernetes
 mozilla-b2g/gaia
@@ -19,3 +18,13 @@ cocos2d/cocos2d-x
 elastic/elasticsearch
 CocoaPods/Specs
 laravel/framework
+xbmc/xbmc
+nodejs/node
+dotnet/roslyn
+django/django
+w3c/web-platform-tests
+grpc/grpc
+bitcoin/bitcoin
+angular/angular
+PrestaShop/PrestaShop
+twbs/bootstrap

@@ -1,5 +1,7 @@
 import sys
 import os
+from datetime import datetime
+
 from functools import wraps
 
 from flask import Flask, render_template, request, jsonify, redirect, url_for, flash, g, abort
@@ -289,18 +291,26 @@ def detect_openpr():
     updated_pull = dict(mongo.db.openpr.find_one({'repo': repo, 'num': num}))
     return jsonify(updated_pull)
 
+
 @app.route('/openprdb/<path:repo>')
 def openprdb(repo):
     try:
         openpr = git.api.request('GET', 'repos/%s/pulls?state=open' % repo, True)
     except:
         return 'Not Found!'
-
+    
+    open_number = set()
     for git_pull in openpr:
         num = str(git_pull['number'])
+        open_number.add(num)
         _id = repo + '/' + num
-        data = {'repo': repo, 'num': num, 'title': git_pull['title'], 'link': git_pull['html_url'], 'state': get_state(git_pull), }
+        data = {'repo': repo, 'num': num, 'title': git_pull['title'], 'link': git_pull['html_url'], 'state': get_state(git_pull), 'created_at': datetime.strptime(git_pull['created_at'], "%Y-%m-%dT%H:%M:%SZ"), }
         mongo.db.openpr.update({'_id': _id}, {'$set': data}, upsert=True)
+    
+    pr_list = mongo.db.openpr.find({'repo': repo})
+    for pull in pr_list:
+        if pull['num'] not in open_number:
+            mongo.db.openpr.remove({'repo': repo, 'num': pull['num']})
 
     pr_list = mongo.db.openpr.find({'repo': repo})
     return render_template('openpr.html', repo=repo, pr_list=pr_list)

@@ -52,13 +52,12 @@
 $(document).ready( function () {
     var t = $('table').DataTable({
         "columnDefs": [ { "searchable": false, "orderable": false, "targets": 0 },
-                        { "searchable": false, "orderable": false, "targets": 7 },
                       ],
         dom: 'Blfrtip',
         buttons: [
             'csv',
         ],
-        "order": [[ 5, "desc" ]],
+        "order": [[ 1, "desc" ]],
         "pagingType": "input",
         fixedColumns:   {
             heightMatch: 'none'
@@ -93,6 +92,7 @@ $(document).ready( function () {
             <th> </th>
             <th> Number </th>
             <th> Title </th>
+            <th> Create time </th>
             <th> Dup's Number </th>
             <th> Dup's Title </th>
             <th> Level </th>
@@ -113,7 +113,11 @@ $(document).ready( function () {
                 {% endif %}
                 <a tag="title" href="{{ pull.get('link', '') }}" target="_blank">{{ pull.get('title', '') }} </a>
             </td>
-
+            <td nowrap>
+                {% if 'created_at' in pull %}
+                {{ pull['created_at'].strftime("%Y-%m-%d") }}
+                {% endif %}
+            </td>
             <td class="num2"> {{ pull.get('num2', '') }} </td>
 
             <td>
