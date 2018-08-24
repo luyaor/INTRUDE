@@ -38,7 +38,7 @@ class User(UserMixin):
         self.github_access_token = github_access_token
 
     def is_admin(self):
-        return self.id == 'FancyCoder0'
+        return (self.id == 'FancyCoder0') or (self.id == 'shuiblue')
     
 class AnonymousUser(AnonymousUserMixin):
     def is_admin(self):

@@ -44,7 +44,7 @@ dataset = [
 '''
 
 model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
-part_params = None
+part_params = [1,1,1,1,1,1,1,1,1]
 
 draw_pic = False
 model_data_random_shuffle_flag = False
