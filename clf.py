@@ -2,6 +2,7 @@ import os
 import re
 import sys
 import random
+import copy
 
 from sklearn.ensemble import *
 from sklearn.metrics import *
@@ -28,10 +29,11 @@ from git import *
 
 data_folder = '/home/luyao/PR_get/INTRUDE/data'
 
+'''
 dataset = [
     [data_folder + '/rly_false_pairs.txt', 0, 'train'],
     [data_folder + '/small_part_msr.txt', 1, 'train'],
-    [data_folder + '/rly_true_pairs.txt', 1, 'train'],
+    #[data_folder + '/rly_true_pairs.txt', 1, 'train'],
     [data_folder + '/small_part_negative.txt', 0, 'test'],
     [data_folder + '/small2_part_msr.txt', 1, 'test'],
 ]
@@ -41,10 +43,10 @@ dataset = [
     [data_folder + '/msr_positive_pairs.txt', 1, 'train'],
     [data_folder + '/big_false_data.txt', 0, 'train'],
 ]
-'''
+
 
 model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
-part_params = [1,1,1,1,1,1,1,1,1]
+part_params = None
 
 draw_pic = False
 model_data_random_shuffle_flag = False
@@ -72,7 +74,9 @@ def init_model_with_pulls(pulls, save_id=None):
         pulls = pulls[:500]
         for pull in pulls: # only added code
             if not check_too_big(pull):
-                c.append(get_code_from_pr_info(fetch_pr_info(pull))[0])
+                p = copy.deepcopy(pull)
+                p["file_list"] = fetch_pr_info(p)
+                c.append(get_code_tokens(p)[0])
         
         init_code_model_from_tokens(c, save_id + '_code' if save_id is not None else None)
 
