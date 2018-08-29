@@ -1,3 +1,60 @@
+import sys
+
+from flask import Flask
+from flask_pymongo import PyMongo
+
+app = Flask(__name__)
+
+app.config["MONGO_URI"] = "mongodb://localhost:27017/intrude_db?connect=false"
+
+mongo = PyMongo(app)
+
+pr_list = mongo.db.detect.find()
+
+
+sys.path.append('/home/luyao/PR_get/INTRUDE')
+import git
+
+def check_meaningless(title):
+    title = title.lower()
+    if 'revert' in title:
+        return True
+    if ('fix' in title) and ('typo' in title):
+        return True
+    if (('update' in title) or ('upgrade' in title)) and (('version' in title) or ('doc' in title)):
+        return True
+    if 'readme' in title:
+        return True
+    
+    return False
+
+for pr in pr_list:
+    if 'num2' in pr:
+        r, n1, n2, proba = pr['repo'], pr['num'], pr['num2'], float(pr['proba'])
+    else:
+        print('error=')
+        print(pr)
+        continue
+
+    p1 = git.get_pull(r, n1)
+    p2 = git.get_pull(r, n2)
+
+    if proba >= 0.99:
+        t1, t2 = p1['title'], p2['title']
+        if check_meaningless(t1):
+            print(t1)
+            print(t2)
+            print('--------')
+        
+        
+# ------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 '''
 sys.path.append('/home/luyao/PR_get/INTRUDE')
 import git

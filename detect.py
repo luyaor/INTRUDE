@@ -169,10 +169,11 @@ def find_on_openpr(repo, time_stp=None):
     print('simulate_mode', simulate_mode)
     
     pulls = get_repo_info(repo, 'pull', renew_pr_list_flag)
+    '''
     for pull in pulls:
         cite[str(pull["number"])] = get_another_pull(pull)
-    
-    pulls = git.api.request('GET', 'repos/%s/pulls?state=open' % repo, True)
+    '''
+    pulls = api.request('GET', 'repos/%s/pulls?state=open' % repo, True)
     for pull in pulls:
         cite[str(pull["number"])] = get_another_pull(pull)
     
@@ -183,8 +184,10 @@ def find_on_openpr(repo, time_stp=None):
     mode = 'a' if last_number else 'w'
     print('write mode=',mode)
     
-    out = open('detection/'+repo.replace('/','_')+'_topk_' + openpr_suffix + '.txt', mode)
-    out2 = open('detection/'+repo.replace('/','_')+'_top1_' + openpr_suffix + '.txt', mode)
+    out = open('detection/firehouse/'+repo.replace('/','_')+'_topk_' + openpr_suffix + '.txt', mode)
+    out2 = open('detection/firehouse/'+repo.replace('/','_')+'_top1_' + openpr_suffix + '.txt', mode)
+    
+    global total_number
     
     for pull in pulls:
         if time_stp and (get_time(pull["created_at"]) < time_stp):
@@ -309,12 +312,12 @@ if __name__ == "__main__":
         repos = f.readlines()
     
     simulate_mode = False
-    renew_pr_list_flag = True
+    renew_pr_list_flag = False
     
     for r in repos:
         r = r.strip()
         print('start detect open PR on', r)
-        default_time_stp = datetime.utcnow() - timedelta(days=30)
+        default_time_stp = datetime.utcnow() - timedelta(days=7)
         find_on_openpr(r, default_time_stp)
         
         print('total number=', total_number)

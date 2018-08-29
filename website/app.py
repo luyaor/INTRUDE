@@ -148,7 +148,9 @@ def load(repo):
         for t in f.readlines():
             l = len(t.strip().split())
             
-            if l == 14:
+            if l == 17:
+                r, n1, n2, proba, pre, status, s1, s2, s3, s4, s5, s6, s7, s8, s9, l1, l2 = t.strip().split()
+            elif l == 14:
                 r, n1, n2, proba, pre, status, s1, s2, s3, s4, s5, s6, l1, l2 = t.strip().split()
             else:
                 r, n1, n2, proba, status, s1, s2, s3, s4, s5, s6, l1, l2 = t.strip().split()
@@ -209,6 +211,21 @@ def mark():
 
 
 
+def check_meaningless(title):
+    title = title.lower()
+    if 'revert' in title:
+        return True
+    if 'typo' in title:
+        return True
+    if (('updat' in title) or ('upgrade' in title)) and ('to' in title.split(' ')):
+        return True
+    if (('updat' in title) or ('upgrade' in title)) and (('version' in title) or ('doc' in title)):
+        return True
+    if 'readme' in title:
+        return True
+    
+    return False
+
 @app.route('/db/<path:repo>', methods=['GET', 'POST'])
 def prdashboard(repo):
     # pull_list = mongo.db.pull_list.find({'repo_name': repo})
@@ -218,7 +235,11 @@ def prdashboard(repo):
         pull_dict[str(x['number'])] = x
         
     dup_list = mongo.db.detect.find({'repo': repo})
-    
+    new_dup_list = []
+    for dup in dup_list:
+        if not check_meaningless(pull_dict[dup['num']]['title']):
+            new_dup_list.append(dup)
+
     '''
     for dup in dup_list:
         num1 = dup['num']
@@ -227,7 +248,9 @@ def prdashboard(repo):
             pull_dict[num1]['mention'] = 'Yes'
     '''
     
-    return render_template('prdashboard.html', repo=repo, dup_list=dup_list, pull_dict=pull_dict)
+    return render_template('prdashboard.html', repo=repo, dup_list=new_dup_list, pull_dict=pull_dict, \
+                          ori_dup_list_len=dup_list.count(), now_dup_list_len=len(list(new_dup_list)), \
+                          )
 
 
 @app.route('/')
@@ -251,6 +274,7 @@ def export_mark():
     return jsonify(ret)
 
 
+# -------------- OPEN PR ------------------------------------
 
 def get_state(git_pull):
     if git_pull['merged_at'] is not None:

@@ -102,7 +102,12 @@ $(document).ready( function () {
     !-->
     <button type="button" class="btn btn-info btn-sm" id="addmore">Add More</button>
 </h1>
+
+Random sampling number: {{ ori_dup_list_len }}
+After filtering meaningless PR: {{ now_dup_list_len }}
+
 </div>
+
 
 {% for message in get_flashed_messages(with_categories=True) %}
     <div class="alert alert-{{ message[0] }}">

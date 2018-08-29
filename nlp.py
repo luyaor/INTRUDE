@@ -10,9 +10,7 @@ class Model:
             try:
                 self.dictionary = corpora.Dictionary.load(model_path + '%s.dictionary' % save_id)
                 self.tfidf = models.TfidfModel.load(model_path + '%s.tfidf' % save_id)
-                self.index_tfidf = similarities.MatrixSimilarity.load(model_path + '%s.index_tfidf' % save_id)
                 self.lsi = models.LsiModel.load(model_path + '%s_%s.lsi' % (save_id, lsi_topic_num))
-                self.index_lsi = similarities.MatrixSimilarity.load(model_path + '%s_%s.index_lsi' % (save_id, lsi_topic_num))
                 print('model already exists!')
                 return
             except:
@@ -28,33 +26,16 @@ class Model:
         self.tfidf = models.TfidfModel(corpus)
         
         corpus_tfidf = self.tfidf[corpus]
-        
-        self.index_tfidf = similarities.MatrixSimilarity(corpus_tfidf)
-        
+                
         self.lsi = models.LsiModel(corpus_tfidf, id2word=self.dictionary, num_topics=lsi_topic_num)
-
-        corpus_lsi = self.lsi[corpus_tfidf]
-        
-        self.index_lsi = similarities.MatrixSimilarity(corpus_lsi)
         
         # save model
         if save_id is not None:
             print('save model: ', save_id)
             self.dictionary.save(model_path + '%s.dictionary' % save_id)
             self.tfidf.save(model_path + '%s.tfidf' % save_id)
-            self.index_tfidf.save(model_path + '%s.index_tfidf' % save_id)
             self.lsi.save(model_path + '%s_%s.lsi' % (save_id, lsi_topic_num))
-            self.index_lsi.save(model_path + '%s_%s.index_lsi' % (save_id, lsi_topic_num))
-            
-        
-    def get_idf_sum(self, tokens):
-        query_bow = self.dictionary.doc2bow(tokens)
-        counter = dict(query_bow)
-        sum = 0
-        for x in self.tfidf[query_bow]:
-            sum += x[1] / counter[x[0]]
-        return sum
-        
+
     def get_tfidf(self, tokens):
         query_bow = self.dictionary.doc2bow(tokens)
         query_tfidf = self.tfidf[query_bow]
@@ -66,21 +47,24 @@ class Model:
         query_lsi = self.lsi[query_tfidf]
         return query_lsi
     
-    def query_tfidf(self, tokens):
-        sims = self.index_tfidf[self.get_tfidf(tokens)]
-        sort_sims = sorted(enumerate(sims), key=lambda item: -item[1])
-        return sort_sims
-    
     def query_sim_tfidf(self, tokens1, tokens2):
         return matutils.cossim(self.get_tfidf(tokens1), self.get_tfidf(tokens2))
     
     def query_sim_lsi(self, tokens1, tokens2):
         return matutils.cossim(self.get_lsi(tokens1), self.get_lsi(tokens2))
     
+    """
+    def get_idf_sum(self, tokens):
+        query_bow = self.dictionary.doc2bow(tokens)
+        counter = dict(query_bow)
+        sum = 0
+        for x in self.tfidf[query_bow]:
+            sum += x[1] / counter[x[0]]
+        return sum
+
     def query_sim_common_words_idf(self, tokens1, tokens2):
         return self.get_idf_sum(list(set(tokens1) & set(tokens2)))
 
-    """
     def query_lsi(self, tokens):
         query_bow = self.dictionary.doc2bow(tokens)
         query_lsi = self.lsi[self.tfidf[query_bow]]

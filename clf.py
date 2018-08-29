@@ -29,7 +29,7 @@ from git import *
 
 data_folder = '/home/luyao/PR_get/INTRUDE/data'
 
-'''
+
 dataset = [
     [data_folder + '/rly_false_pairs.txt', 0, 'train'],
     [data_folder + '/small_part_msr.txt', 1, 'train'],
@@ -37,19 +37,18 @@ dataset = [
     [data_folder + '/small_part_negative.txt', 0, 'test'],
     [data_folder + '/small2_part_msr.txt', 1, 'test'],
 ]
-
 '''
 dataset = [
     [data_folder + '/msr_positive_pairs.txt', 1, 'train'],
     [data_folder + '/big_false_data.txt', 0, 'train'],
 ]
-
+'''
 
 model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
 part_params = None
 
 draw_pic = False
-model_data_random_shuffle_flag = False
+model_data_random_shuffle_flag = True
 model_data_renew_flag = False
 
 # ------------------------------------------------------------
@@ -71,12 +70,15 @@ def init_model_with_pulls(pulls, save_id=None):
     
     if code_sim_type == 'tfidf':
         c = []
-        pulls = pulls[:500]
+        pulls = pulls[:1000]
         for pull in pulls: # only added code
-            if not check_too_big(pull):
-                p = copy.deepcopy(pull)
-                p["file_list"] = fetch_pr_info(p)
-                c.append(get_code_tokens(p)[0])
+            try:
+                if not check_too_big(pull):
+                    p = copy.deepcopy(pull)
+                    p["file_list"] = fetch_pr_info(p)
+                    c.append(get_code_tokens(p)[0])
+            except Exception as e:
+                print('Error on get', pull['url'])
         
         init_code_model_from_tokens(c, save_id + '_code' if save_id is not None else None)
 
@@ -138,7 +140,7 @@ def get_feature_vector(data, label, renew=False, out=None):
         print('Start running on', r)
 
         # init NLP model
-        # init_model_with_repo(r)        
+        # init_model_with_repo(r)    
         li = shuffle(get_repo_info(r, 'pull'))[:5000] # part sample, all will get Memory Error
         for z in p[r]:
             li.append(get_pull(r, z[0]))

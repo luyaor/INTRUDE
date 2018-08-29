@@ -1,4 +1,4 @@
-caskroom/homebrew-cask
+Homebrew/homebrew-cask
 kubernetes/kubernetes
 mozilla-b2g/gaia
 saltstack/salt
