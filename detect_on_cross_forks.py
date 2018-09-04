@@ -1,10 +1,11 @@
 import os
+from sklearn.utils import shuffle
 
 from git import *
-from main import *
-from comparer import *
+from clf import *
+from comp import *
 
-include_self_flag = True
+filter_big = True
 
 def get_all_fork_list(repo):
     q = [api.get('repos/%s' % repo)]
@@ -20,47 +21,30 @@ def get_all_fork_list(repo):
         i += 1
     return q
     
-    
-def detect_on_pr(repo):
-    if include_self_flag:
-        out_file = 'detection/' + repo.replace('/', '_') + '_cross_forks_v2.txt'        
-    else:
-        out_file = 'detection/' + repo.replace('/', '_') + '_cross_forks.txt'
-    
-    if os.path.exists(out_file):
-        return
 
-    
-    q = list(filter(lambda x: int(x['forks_count']) > 0, get_all_fork_list(repo)))
-    
-    '''
-    q = [{'full_name': 'MarlinFirmware/Marlin'},\
-    {'full_name': 'Ultimaker/Ultimaker2Marlin'},\
-    {'full_name': 'RichCattell/Marlin'},\
-    {'full_name': 'jcrocholl/Marlin'}]
-    '''
-    
+def detect_dup_pr_cross_repo(upstream, q, out_file):
     pr = {}
     num = 0
     tot_len = 0
     for branch in q:
-        if not include_self_flag:
-            if branch['full_name'] == repo:
-                continue
-        
-        t = get_pull_list(branch['full_name'])
+        t = get_repo_info(branch['full_name'], 'pull')
         if len(t) > 0:
             pr[branch['full_name']] = t
     
-    
+    print('start on ', out_file)
     print('number of sub repo', len(pr))
 
     out = open(out_file, 'w')
-    out2 = open('detection/' + repo.replace('/', '_') + '_cross_forks_all.txt', 'a')
+    #out2 = open(out_file + '.log', 'a')
 
     c = classify()
 
-    init_model_with_repo(repo)
+    # init_model_with_repo(upstream)
+    all_pr = []
+    for b in pr:
+        all_pr += shuffle(pr[b])[:2000]
+    save_id = out_file.replace('/', '_').replace('.txt', '')
+    init_model_with_pulls(all_pr, save_id)
 
     results = []
 
@@ -71,13 +55,20 @@ def detect_on_pr(repo):
                     b1, b2 = b2, b1
 
                 for p1 in pr[b1]:
+                    if filter_big and check_too_big(p1):
+                        continue
+
                     li = []
                     for p2 in pr[b2]:
+                        if filter_big and check_too_big(p2):
+                            continue
 
-                        # if p1["user"]["id"] == p2["user"]["id"]:
-                        #     continue
+                        # print(p2['number'])
 
-                        feature_vector = get_sim_vector(p1, p2)
+                        if p1["user"]["id"] == p2["user"]["id"]:
+                            continue
+
+                        feature_vector = get_pr_sim_vector(p1, p2)
 
                         t = [p1["html_url"], p2["html_url"], feature_vector, c.predict_proba([feature_vector])[0][1], \
                              p1["user"]["id"] == p2["user"]["id"], \
@@ -92,7 +83,25 @@ def detect_on_pr(repo):
                         print(li[0], file=out)
 
     out.close()
-    out2.close()
+    #out2.close()
+
+
+def detect_on_pr(repo):
+    out_file = 'detection/' + repo.replace('/', '_') + '_cross_forks.txt'
+
+    if os.path.exists(out_file):
+        return
+    
+    q = list(filter(lambda x: int(x['forks_count']) > 0, get_all_fork_list(repo)))
+    
+    '''
+    q = [{'full_name': 'MarlinFirmware/Marlin'},\
+    {'full_name': 'Ultimaker/Ultimaker2Marlin'},\
+    {'full_name': 'RichCattell/Marlin'},\
+    {'full_name': 'jcrocholl/Marlin'}]
+    '''
+    detect_dup_pr_cross_repo(repo, q, out_file)
+
 
 '''
 def detect_on_commit(repo):
@@ -107,8 +116,32 @@ def detect_on_commit(repo):
         branch_list = get_branch_list(r)
 ''' 
     
+def run_cross_repo(r1, r2):
+    q =[{'full_name': r1}, {'full_name': r2}]
+    
+    out_file = 'detection/' + (r1 + '_' + r2).replace('/', '_') + '_cross_forks_version2.txt'
+
+    if os.path.exists(out_file) and (os.path.getsize(out_file) > 0):
+        print('Already run before =', r1, r2)
+        return
+
+    detect_dup_pr_cross_repo(r2, q, out_file)
     
 if __name__ == "__main__":
+    if len(sys.argv) == 3:
+        r1 = sys.argv[1].strip()
+        r2 = sys.argv[2].strip()
+        run_cross_repo(r1, r2)
+        sys.exit()
+
+    hard_forks = open('data/hard_forks_small.txt').readlines()
+
+    for repo_pair in hard_forks:
+        r1, r2 = repo_pair.strip().split()
+        run_cross_repo(r1, r2)
+        
+
+    '''
     if len(sys.argv) == 2:
         r = sys.argv[1].strip()
         detect_on_pr(r)
@@ -118,3 +151,4 @@ if __name__ == "__main__":
         for repo in t:
             r = repo.strip()
             detect_on_pr(r)
+    '''

@@ -51,13 +51,24 @@ def get_tokens(text):
 def get_file_list(pull):
     return [x["name"] for x in pull['file_list']]
 
+
 def fetch_pr_info(pull, must_in_local = False):
     path = '/DATA/luyao/pr_data/%s/%s' % (pull["base"]["repo"]["full_name"], pull["number"])
-    if os.path.exists(path + '/raw_diff.json') or os.path.exists(path + '/pull_files.json'):
-        if os.path.exists(path + '/raw_diff.json'):
-            file_list = localfile.get_file(path + '/raw_diff.json')
-        elif os.path.exists(path + '/pull_files.json'):
-            pull_files = localfile.get_file(path + '/pull_files.json')
+    parse_diff_path = path + '/parse_diff.json'
+    raw_diff_path = path + '/raw_diff.json'
+    pull_files_path = path + '/pull_files.json'
+
+    if os.path.exists(parse_diff_path):
+        try:
+            return localfile.get_file(parse_diff_path)
+        except:
+            pass
+
+    if os.path.exists(raw_diff_path) or os.path.exists(pull_files_path):
+        if os.path.exists(raw_diff_path):
+            file_list = localfile.get_file(raw_diff_path)
+        elif os.path.exists(pull_files_path):
+            pull_files = localfile.get_file(pull_files_path)
             file_list = [parse_diff(file["file_full_name"], file["changed_code"]) for file in pull_files]
         else:
             raise Exception('error on fetch local file %s' % path)
@@ -72,6 +83,7 @@ def fetch_pr_info(pull, must_in_local = False):
         file_list = fetch_file_list(pull)
 
     # print(path, [x["name"] for x in file_list])
+    localfile.write_to_file(parse_diff_path, file_list)
     return file_list
 
 def get_location(pull):
