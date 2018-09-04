@@ -190,20 +190,23 @@ def init_model_from_raw_docs(documents, save_id=None):
     print('init nlp model for text successfully!')
 
 
-def get_text_sim(A, B, text_type="default"):
+def get_text_sim(A, B):
     A = get_tokens(A)
     B = get_tokens(B)
     if model is None:
-        return list_similarity(A, B)
-    else:
-        #print('model_similarity')
-        if text_sim_type == 'lsi':
-            return model.query_sim_lsi(A, B)
+        return [list_similarity(A, B)]
+    
+    if text_sim_type == 'lsi':
+        sim = model.query_sim_lsi(A, B)
 
-        if text_sim_type == 'tfidf':
-            return model.query_sim_tfidf(A, B)
-        # return model.query_sim_common_words_idf(A, B)
+    if text_sim_type == 'tfidf':
+        sim = model.query_sim_tfidf(A, B)
 
+    conf = model.query_vet_len_mul(A, B)
+    
+    return [sim, conf]
+    
+    
 code_model = None
 def init_code_model_from_tokens(documents, save_id=None):
     global code_model
@@ -240,13 +243,16 @@ def title_has_same_pattern(a, b):
 
 def check_pattern(A, B):
     ab_num = set([A["number"], B["number"]])    
-    a_set = set(get_numbers(A["title"]) + get_numbers(A["body"])) - ab_num
-    b_set = set(get_numbers(B["title"]) + get_numbers(B["body"])) - ab_num
+    a_set = set(get_numbers(A["title"] + ' ' + A['body'])) - ab_num
+    b_set = set(get_numbers(B["title"] + ' ' + B['body'])) - ab_num
     if a_set & b_set:
         return 1
     else:
-        a_set = set(get_pr_and_issue_numbers(A["title"]) + get_pr_and_issue_numbers(A["body"])) - ab_num
-        b_set = set(get_pr_and_issue_numbers(B["title"]) + get_pr_and_issue_numbers(B["body"])) - ab_num
+        def get_reasonable_numbers(x):
+            return get_pr_and_issue_numbers(x) + get_version_numbers(x)
+
+        a_set = set(get_reasonable_numbers(A["title"] + ' ' + A['body'])) - ab_num
+        b_set = set(get_reasonable_numbers(B["title"] + ' ' + B['body'])) - ab_num
         if a_set and b_set and (a_set != b_set):
             return -1
         return 0
@@ -310,8 +316,8 @@ def calc_sim(A, B):
     overlap_files_len = len(overlap_files_set)
     
     ret = {
-            'title': [title_sim],
-            'desc': [desc_sim],
+            'title': title_sim,
+            'desc': desc_sim,
             'code': code_sim,
             'file_list': [file_list_sim, overlap_files_len],
             'location': location_sim, 
@@ -334,6 +340,13 @@ def sim_to_vet(r):
 def get_pr_sim_vector(A, B):
     A["file_list"] = fetch_pr_info(A)
     B["file_list"] = fetch_pr_info(B)
+    
+    A["title"] = str(A["title"] or '')
+    A["body"] = str(A["body"] or '')
+    
+    B["title"] = str(B["title"] or '')
+    B["body"] = str(B["body"] or '')
+    
     ret = calc_sim(A, B)
     return sim_to_vet(ret)
 
@@ -342,7 +355,7 @@ def get_commit_sim_vector(A, B):
     def commit_to_pull(x):
         t = {}
         t["number"] = x['sha']
-        t['title'] = t['body'] = x['commit']['message']
+        t['title'] = t['body'] = str(x['commit']['message'] or '')
         t["file_list"] = fetch_commit(x['url'])
         t['commit_flag'] = True
         return t

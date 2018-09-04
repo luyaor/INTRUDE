@@ -53,6 +53,9 @@ class Model:
     def query_sim_lsi(self, tokens1, tokens2):
         return matutils.cossim(self.get_lsi(tokens1), self.get_lsi(tokens2))
     
+    def query_vet_len_mul(self, tokens1, tokens2):
+        return matutils.veclen(self.get_tfidf(tokens1)) * matutils.veclen(self.get_tfidf(tokens2))
+        
     """
     def get_idf_sum(self, tokens):
         query_bow = self.dictionary.doc2bow(tokens)

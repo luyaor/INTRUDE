@@ -43,7 +43,7 @@ dataset = [
 ]
 '''
 
-model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
+model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s_%s_conf' % (text_sim_type, code_sim_type, extract_sim_type)
 part_params = None
 
 draw_pic = False
