@@ -3,7 +3,9 @@
 ## *I*de*NT*ifying *R*ed*U*ndancies in Fork-based *DE*velopment
 
 
+Python library dependencies:
 
+sklearn, numpy, SciPy, matplotlib, gensim, nltk, bs4, flask, GitHub-Flask
 
 clf.py: Classification Model using Machine Learning.
 

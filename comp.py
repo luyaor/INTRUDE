@@ -280,12 +280,12 @@ def calc_sim(A, B):
     overlap_files_set = set(get_file_list(A)) & set(get_file_list(B))
     
     A_overlap, B_overlap = get_pull_on_overlap(A, overlap_files_set), get_pull_on_overlap(B, overlap_files_set)
-    code_sim = get_code_sim(A, B) + get_code_sim(A_overlap,B_overlap)
+    code_sim = get_code_sim(A, B) + get_code_sim(A_overlap, B_overlap)
 
-    location_sim = [location_similarity(get_location(A), get_location(B)),\
-                    location_similarity(get_location(A_overlap), get_location(B_overlap))
-                   ]
+    location_sim = [location_similarity(get_location(A), get_location(B))] + \
+                    [location_similarity(get_location(A_overlap), get_location(B_overlap))]
     
+    '''
     common_words = list(set(get_tokens(A["title"])) & set(get_tokens(B["title"])))
     overlap_title_len = len(common_words)
     
@@ -293,7 +293,8 @@ def calc_sim(A, B):
         title_idf_sum = model.get_idf_sum(common_words)
     else:
         title_idf_sum = 0
-    
+    '''
+
     overlap_files_len = len(overlap_files_set)
     
     ret = {

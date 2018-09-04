@@ -14,8 +14,8 @@ cite = {}
 last_number = None
 renew_pr_list_flag = False
 
-filter_out_too_big_pull_flag = False
-filter_out_too_old_pull_flag = False
+filter_out_too_big_pull_flag = True
+filter_out_too_old_pull_flag = True
 
 simulate_mode = True
 
@@ -45,6 +45,15 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
     
     for pull in pulls:
         cnt += 1
+        
+        if filter_out_too_big_pull_flag:
+            if check_too_big(pull):
+                continue
+        
+        if filter_out_too_old_pull_flag:
+            if abs((get_time(pullA["updated_at"]) - \
+                    get_time(pull["updated_at"])).days) >= 4 * 365: # more than 4 years
+                continue
 
         if simulate_mode:
             if int(pull["number"]) >= int(num1):
@@ -80,17 +89,8 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
            (get_time(pull["merged_at"]) < get_time(pullA["created_at"])):
             continue
         
-        if filter_out_too_big_pull_flag:
-            if check_too_big(pull):
-                continue
-        
-        if filter_out_too_old_pull_flag:
-            if abs((get_time(pullA["updated_at"]) - \
-                    get_time(pull["updated_at"])).days) >= 4 * 365: # more than 4 years
-                continue
-
         if print_progress:
-            if cnt % 1000 == 0:
+            if cnt % 100 == 0:
                 print('progress = ', 1.0 * cnt / tot)        
                 sys.stdout.flush()
         

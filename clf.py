@@ -29,7 +29,7 @@ from git import *
 
 data_folder = '/home/luyao/PR_get/INTRUDE/data'
 
-
+'''
 dataset = [
     [data_folder + '/rly_false_pairs.txt', 0, 'train'],
     [data_folder + '/small_part_msr.txt', 1, 'train'],
@@ -42,7 +42,7 @@ dataset = [
     [data_folder + '/msr_positive_pairs.txt', 1, 'train'],
     [data_folder + '/big_false_data.txt', 0, 'train'],
 ]
-'''
+
 
 model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
 part_params = None

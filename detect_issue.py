@@ -4,7 +4,7 @@ import git
 import comp
 
 def detect(repo):
-    issue_list = git.get_repo_info(repo, 'issue', True)
+    issue_list = git.get_repo_info(repo, 'issue', False)
     for i in issue_list:
         max_s, max_i = -1, None
         
@@ -19,7 +19,8 @@ def detect(repo):
                 max_s = s1 + s2;
                 max_i = i2['number']
         
-        print(i['number'], max_i, max_s)
+        if max_s >= 1.0:
+            print(i['number'], max_i, max_s)
 
 if __name__ == "__main__":
     
