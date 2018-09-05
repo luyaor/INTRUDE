@@ -4,14 +4,13 @@ from gensim import corpora, models, similarities, matutils
 model_path = '/DATA/luyao/model/'
 lsi_topic_num = 500
 
-tfidf_normalize = False
 
 class Model:
     def __init__(self, texts, save_id = None):
         if save_id is not None:
             try:
                 self.dictionary = corpora.Dictionary.load(model_path + '%s.dictionary' % save_id)
-                self.tfidf = models.TfidfModel.load(model_path + '%s_%s.tfidf' % (save_id, str(tfidf_normalize)))
+                self.tfidf = models.TfidfModel.load(model_path + '%s.tfidf' % save_id)
                 self.lsi = models.LsiModel.load(model_path + '%s_%s.lsi' % (save_id, lsi_topic_num))
                 print('model already exists!')
                 return
@@ -25,7 +24,7 @@ class Model:
         
         corpus = [self.dictionary.doc2bow(text) for text in texts]     
         
-        self.tfidf = models.TfidfModel(corpus, normalize=tfidf_normalize)
+        self.tfidf = models.TfidfModel(corpus)
         
         corpus_tfidf = self.tfidf[corpus]
                 
@@ -35,7 +34,7 @@ class Model:
         if save_id is not None:
             print('save model: ', save_id)
             self.dictionary.save(model_path + '%s.dictionary' % save_id)
-            self.tfidf.save(model_path + '%s_%s.tfidf' % (save_id, str(tfidf_normalize)))
+            self.tfidf.save(model_path + '%s.tfidf' % save_id)
             self.lsi.save(model_path + '%s_%s.lsi' % (save_id, lsi_topic_num))
 
     def get_tfidf(self, tokens):
@@ -55,10 +54,11 @@ class Model:
     def query_sim_lsi(self, tokens1, tokens2):
         return matutils.cossim(self.get_lsi(tokens1), self.get_lsi(tokens2))
     
-    def query_vet_len_mul(self, tokens1, tokens2):
-        return matutils.veclen(self.get_tfidf(tokens1)) * matutils.veclen(self.get_tfidf(tokens2))
-        
     """
+    def query_vet_len_mul(self, tokens1, tokens2):
+        print('lsi=', matutils.veclen(self.get_lsi(tokens1)) * matutils.veclen(self.get_lsi(tokens2)))
+        return matutils.veclen(self.get_tfidf(tokens1)) * matutils.veclen(self.get_tfidf(tokens2))
+
     def get_idf_sum(self, tokens):
         query_bow = self.dictionary.doc2bow(tokens)
         counter = dict(query_bow)
@@ -87,7 +87,7 @@ if __name__ == "__main__":
     # print('sum', m.get_idf_sum(z))
     print(m.query_sim_tfidf(z1, z2))
     print(m.query_sim_lsi(z1, z2))
-    print(m.query_vet_len_mul(z1, z2))
+    #print(m.query_vet_len_mul(z1, z2))
     '''
     
     z1 = texts[0]
@@ -102,7 +102,7 @@ if __name__ == "__main__":
     # print(m.query_sim_tfidf(['shipment'],['shipment']))
     print(m.query_sim_tfidf(['gold', 'in', 'shipment', 'shipment', 'orz'],['shipment', 'in', 'fire']))
     print(m.query_sim_lsi(['gold', 'in', 'shipment', 'shipment', 'orz'],['shipment', 'in', 'fire']))
-    print(m.query_vet_len_mul(['gold', 'in', 'shipment', 'shipment', 'orz'],['shipment', 'in', 'fire']))
+    #print(m.query_vet_len_mul(['gold', 'in', 'shipment', 'shipment', 'orz'],['shipment', 'in', 'fire']))
     
     # print(m.get_idf_sum(['shipment']))
     # print(m.get_idf_sum(['shipment', 'in', 'fire']))

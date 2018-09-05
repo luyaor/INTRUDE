@@ -29,6 +29,7 @@ from git import *
 
 data_folder = '/home/luyao/PR_get/INTRUDE/data/clf'
 
+
 dataset = [
     [data_folder + '/rly_false_pairs.txt', 0, 'train'],
     [data_folder + '/small_part_msr.txt', 1, 'train'],
@@ -43,11 +44,13 @@ dataset = [
 ]
 '''
 
-model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s_%s_conf' % (text_sim_type, code_sim_type, extract_sim_type)
+model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s_%s_len' % (text_sim_type, code_sim_type, extract_sim_type)
+# part_params = [1,0,1,0,1,1,1,1,1,1,1]
 part_params = None
 
+
 draw_pic = False
-model_data_random_shuffle_flag = True
+model_data_random_shuffle_flag = False
 model_data_renew_flag = False
 
 # ------------------------------------------------------------
@@ -128,11 +131,16 @@ def get_feature_vector(data, label, renew=False, out=None):
     # run with all PR's info model
     p = {}
     with open(data) as f:
-        for l in f.readlines():
-            r, n1, n2 = l.strip().split()
-            if r not in p:
-                p[r] = []
-            p[r].append((n1, n2, label))
+        all_pr = f.readlines()
+    
+    # tiny test
+    # all_pr = shuffle(all_pr, random_state=12345)[:100]
+    
+    for l in all_pr:
+        r, n1, n2 = l.strip().split()
+        if r not in p:
+            p[r] = []
+        p[r].append((n1, n2, label))
 
     out_file = open(out + '_X_and_Y.txt', 'w+')
     
@@ -197,7 +205,7 @@ def classify(model_type='SVM'):
                 X_test += new_X
                 y_test += new_y
 
-        def get_ran_shuffle(X, y, train_percent = 0.8):
+        def get_ran_shuffle(X, y, train_percent = 0.2):
             X, y = shuffle(X, y, random_state=12345)
             num = len(X)
             train_num = int (num * train_percent)
@@ -243,7 +251,11 @@ def classify(model_type='SVM'):
         clf = LogisticRegression()
     elif model_type == 'SGDClassifier':
         clf = linear_model.SGDClassifier(tol=0.01)
-        
+    
+    clf = AdaBoostClassifier(n_estimators=160, learning_rate=0.5).fit(X_train, y_train)
+    # clf = GradientBoostingClassifier(n_estimators=200, learning_rate=0.3, max_depth=25, random_state=0)
+    
+    
     clf = clf.fit(X_train, y_train)
     
     # model result

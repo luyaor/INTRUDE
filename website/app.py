@@ -212,6 +212,8 @@ def mark():
 
 
 def check_meaningless(title):
+    return False
+
     title = title.lower()
     if 'revert' in title:
         return True

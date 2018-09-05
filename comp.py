@@ -16,9 +16,9 @@ from fetch_raw_diff import *
 text_sim_type = 'lsi'
 # code_sim_type = 'bow_three'
 # code_sim_type = 'bow_two'
-# code_sim_type = 'bow'
+code_sim_type = 'bow'
 # code_sim_type = 'bow_with_ori'
-code_sim_type = 'tfidf'
+# code_sim_type = 'tfidf'
 extract_sim_type = 'ori_and_overlap'
 
 def counter_similarity(A_counter, B_counter):
@@ -202,9 +202,10 @@ def get_text_sim(A, B):
     if text_sim_type == 'tfidf':
         sim = model.query_sim_tfidf(A, B)
 
-    conf = model.query_vet_len_mul(A, B)
-    
-    return [sim, sim * conf, conf]
+    # len_mul = model.query_vet_len_mul(A, B)
+    len_mul = len(A) * len(B)
+
+    return [sim, len_mul]
     
     
 code_model = None
