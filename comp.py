@@ -204,7 +204,7 @@ def get_text_sim(A, B):
 
     conf = model.query_vet_len_mul(A, B)
     
-    return [sim, conf]
+    return [sim, sim * conf, conf]
     
     
 code_model = None

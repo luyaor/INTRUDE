@@ -4,12 +4,14 @@ from gensim import corpora, models, similarities, matutils
 model_path = '/DATA/luyao/model/'
 lsi_topic_num = 500
 
+tfidf_normalize = False
+
 class Model:
     def __init__(self, texts, save_id = None):
         if save_id is not None:
             try:
                 self.dictionary = corpora.Dictionary.load(model_path + '%s.dictionary' % save_id)
-                self.tfidf = models.TfidfModel.load(model_path + '%s.tfidf' % save_id)
+                self.tfidf = models.TfidfModel.load(model_path + '%s_%s.tfidf' % (save_id, str(tfidf_normalize)))
                 self.lsi = models.LsiModel.load(model_path + '%s_%s.lsi' % (save_id, lsi_topic_num))
                 print('model already exists!')
                 return
@@ -23,7 +25,7 @@ class Model:
         
         corpus = [self.dictionary.doc2bow(text) for text in texts]     
         
-        self.tfidf = models.TfidfModel(corpus)
+        self.tfidf = models.TfidfModel(corpus, normalize=tfidf_normalize)
         
         corpus_tfidf = self.tfidf[corpus]
                 
@@ -33,7 +35,7 @@ class Model:
         if save_id is not None:
             print('save model: ', save_id)
             self.dictionary.save(model_path + '%s.dictionary' % save_id)
-            self.tfidf.save(model_path + '%s.tfidf' % save_id)
+            self.tfidf.save(model_path + '%s_%s.tfidf' % (save_id, str(tfidf_normalize)))
             self.lsi.save(model_path + '%s_%s.lsi' % (save_id, lsi_topic_num))
 
     def get_tfidf(self, tokens):
@@ -80,11 +82,13 @@ if __name__ == "__main__":
     documents = ["Shipment of gold damaged in a fire", "Delivery of silver arrived in a silver truck", "Shipment of gold arrived in a truck", "orz"]
     texts = [[word for word in document.lower().split()] for document in documents]
     m = Model(texts)
-    # z = ['water', 'gold',  'in', 'the', 'shipment', 'shipment']
-    # z = ['aaa', 'bbb', 'a', 'gold', 'in', 'fire', 'in']
+    z1 = ['water', 'gold',  'in', 'the', 'shipment', 'shipment']
+    z2 = ['aaa', 'bbb', 'a', 'gold', 'in', 'fire', 'in']
     # print('sum', m.get_idf_sum(z))
+    print(m.query_sim_tfidf(z1, z2))
+    print(m.query_sim_lsi(z1, z2))
+    print(m.query_vet_len_mul(z1, z2))
     '''
-    print(m.query_tfidf(z))
     
     z1 = texts[0]
     z2 = texts[0]
@@ -97,6 +101,8 @@ if __name__ == "__main__":
     
     # print(m.query_sim_tfidf(['shipment'],['shipment']))
     print(m.query_sim_tfidf(['gold', 'in', 'shipment', 'shipment', 'orz'],['shipment', 'in', 'fire']))
+    print(m.query_sim_lsi(['gold', 'in', 'shipment', 'shipment', 'orz'],['shipment', 'in', 'fire']))
+    print(m.query_vet_len_mul(['gold', 'in', 'shipment', 'shipment', 'orz'],['shipment', 'in', 'fire']))
     
     # print(m.get_idf_sum(['shipment']))
     # print(m.get_idf_sum(['shipment', 'in', 'fire']))
