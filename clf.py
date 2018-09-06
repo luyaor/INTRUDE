@@ -29,23 +29,36 @@ from git import *
 
 data_folder = '/home/luyao/PR_get/INTRUDE/data/clf'
 
+dataset = []
+
 
 dataset = [
+    #[data_folder + '/rly_true_pairs.txt', 1, 'test'],
     [data_folder + '/rly_false_pairs.txt', 0, 'train'],
     [data_folder + '/small_part_msr.txt', 1, 'train'],
-    #[data_folder + '/rly_true_pairs.txt', 1, 'train'],
-    [data_folder + '/small_part_negative.txt', 0, 'test'],
     [data_folder + '/small2_part_msr.txt', 1, 'test'],
+    [data_folder + '/small_part_negative.txt', 0, 'test'],
 ]
+
 '''
-dataset = [
+dataset += [
+    [data_folder + '/manual_label_false.txt', 0, 'train'],
+    [data_folder + '/manual_label_true.txt', 1, 'train'],
+    [data_folder + '/openpr_label_false.txt', 0, 'train'],
+    [data_folder + '/openpr_label_true.txt', 1, 'train'],
+    [data_folder + '/rly_true_pairs.txt', 1, 'test'],
+]
+
+
+dataset += [
     [data_folder + '/msr_positive_pairs.txt', 1, 'train'],
     [data_folder + '/big_false_data.txt', 0, 'train'],
 ]
 '''
 
-model_data_save_path_suffix = 'all_clues_with_text_%s_code_%s_%s_len' % (text_sim_type, code_sim_type, extract_sim_type)
-# part_params = [1,0,1,0,1,1,1,1,1,1,1]
+model_data_save_path_suffix = 'text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
+
+# part_params = [0,0,0,0,0,0,0,0,0,0,1]
 part_params = None
 
 
@@ -62,7 +75,7 @@ print('Data Type:', model_data_save_path_suffix)
 
 # ------------------------------------------------------------
 
-def init_model_with_pulls(pulls, save_id=None):
+def init_model_with_pulls(pulls, save_id=None):    
     t = [str(pull["title"]) for pull in pulls]
     b = []
     for pull in pulls:
@@ -148,16 +161,10 @@ def get_feature_vector(data, label, renew=False, out=None):
         print('Start running on', r)
 
         # init NLP model
-        # init_model_with_repo(r)    
-        li = shuffle(get_repo_info(r, 'pull'))[:5000] # part sample, all will get Memory Error
-        for z in p[r]:
-            li.append(get_pull(r, z[0]))
-            li.append(get_pull(r, z[1]))
+        init_model_with_repo(r)
         
-        print('model PR num=', len(li))
-        init_model_with_pulls(li, r.replace('/','_') + '_ver2')        
         print('pairs num=', len(p[r]))
-        
+
         # calc feature vet
         def get_sim(repo, num1, num2):
             p1 = get_pull(repo, num1)
@@ -205,7 +212,7 @@ def classify(model_type='SVM'):
                 X_test += new_X
                 y_test += new_y
 
-        def get_ran_shuffle(X, y, train_percent = 0.2):
+        def get_ran_shuffle(X, y, train_percent = 0.5):
             X, y = shuffle(X, y, random_state=12345)
             num = len(X)
             train_num = int (num * train_percent)
@@ -220,8 +227,22 @@ def classify(model_type='SVM'):
         return (X_train, y_train, X_test, y_test)
     
     print('Data Loading.........')
-
+    
     X_train, y_train, X_test, y_test = model_data_prepare(dataset)
+    
+    '''
+    X_train_new, y_train_new = [], []
+    
+    for i in range(len(y_train)):
+        X_train_new.append(X_train[i])
+        y_train_new.append(y_train[i])
+        if y_train[i] == 0:
+            for j in range(10):
+                X_train_new.append(X_train[i])
+                y_train_new.append(y_train[i])
+
+    X_train, y_train = X_train_new, y_train_new
+    '''
     
     if part_params:
         def extract_col(a, c):
@@ -251,8 +272,9 @@ def classify(model_type='SVM'):
         clf = LogisticRegression()
     elif model_type == 'SGDClassifier':
         clf = linear_model.SGDClassifier(tol=0.01)
-    
-    clf = AdaBoostClassifier(n_estimators=160, learning_rate=0.5).fit(X_train, y_train)
+    elif model_type == 'boost':
+        clf = AdaBoostClassifier(n_estimators=150, learning_rate=0.5).fit(X_train, y_train)
+
     # clf = GradientBoostingClassifier(n_estimators=200, learning_rate=0.3, max_depth=25, random_state=0)
     
     
@@ -262,6 +284,8 @@ def classify(model_type='SVM'):
     # print('coef in model = ', clf.coef_)
     # print(clf.intercept_)
     # print(clf.loss_function_)
+    
+    # print(clf.feature_importances_)
     
     # Predict
     acc = clf.score(X_test, y_test)

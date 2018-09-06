@@ -112,17 +112,22 @@ def load_part(repo):
     return select_set
 
 
-def simulate_timeline(repo, renew=False, run_num=200):
+def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
     init_model_with_repo(repo)
     pulls = get_repo_info(repo, 'pull', renew_pr_list_flag)
 
     all_p = set([str(pull["number"]) for pull in pulls])
     part_p = load_part(repo)
-    select_p = set(shuffle(list(all_p - part_p))[:run_num])
     
     log = open('evaluation/'+repo.replace('/','_')+'_stimulate_detect.log', 'a+')
-    out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet.txt', 'a+')
-    
+    if not rerun:
+        select_p = set(shuffle(list(all_p - part_p))[:run_num])
+        out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet.txt', 'a+')
+    else:
+        select_p = part_p
+        out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet_rerun.txt', 'a+')
+
+
     for pull in pulls:
         num1 = str(pull["number"])
         
@@ -236,7 +241,7 @@ def simulate_timeline_only_dup_pair(repo):
     top1_num, top1_tot, top5_num = 0, 0, 0
     
     labeled_dup = {}
-    with open('data/msr_positive_pairs.txt') as f:
+    with open('data/clf/msr_positive_pairs.txt') as f:
         for t in f.readlines():
             r, n1, n2 = t.strip().split()
             if n1 > n2:
@@ -307,7 +312,8 @@ if __name__ == "__main__":
         last_number = int(sys.argv[3])
         print('last = ', last_number)
     '''
-
+    
+    '''
     with open('data/run_list.txt') as f:
         repos = f.readlines()
     
@@ -321,3 +327,4 @@ if __name__ == "__main__":
         find_on_openpr(r, default_time_stp)
         
         print('total number=', total_number)
+    '''

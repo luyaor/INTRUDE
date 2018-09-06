@@ -134,7 +134,7 @@ if __name__ == "__main__":
         run_cross_repo(r1, r2)
         sys.exit()
 
-    hard_forks = open('data/hard_forks_small.txt').readlines()
+    hard_forks = open('data/hard_forks.txt').readlines()
 
     for repo_pair in hard_forks:
         r1, r2 = repo_pair.strip().split()

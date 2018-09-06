@@ -313,7 +313,7 @@ def detect_openpr():
         raise Exception('params error!')
 
     pull = mongo.db.openpr.find_one({'repo': repo, 'num': num})
-    update_one_openpr(pull)
+    update_one_openpr(pull, True)
     updated_pull = dict(mongo.db.openpr.find_one({'repo': repo, 'num': num}))
     return jsonify(updated_pull)
 

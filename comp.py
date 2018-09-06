@@ -16,9 +16,9 @@ from fetch_raw_diff import *
 text_sim_type = 'lsi'
 # code_sim_type = 'bow_three'
 # code_sim_type = 'bow_two'
-code_sim_type = 'bow'
+# code_sim_type = 'bow'
 # code_sim_type = 'bow_with_ori'
-# code_sim_type = 'tfidf'
+code_sim_type = 'tfidf'
 extract_sim_type = 'ori_and_overlap'
 
 def counter_similarity(A_counter, B_counter):
@@ -205,7 +205,7 @@ def get_text_sim(A, B):
     # len_mul = model.query_vet_len_mul(A, B)
     len_mul = len(A) * len(B)
 
-    return [sim, len_mul]
+    return [sim]
     
     
 code_model = None
@@ -327,13 +327,8 @@ def calc_sim(A, B):
     return ret
 
 def sim_to_vet(r):
-    '''
     vet = []
     for v in [r['title'],r['desc'],r['code'],r['file_list'],r['location'], r['pattern']]:
-        vet += v
-    '''
-    vet = []
-    for k, v in r.items():
         vet += v
     return vet
 
