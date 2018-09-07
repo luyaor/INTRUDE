@@ -21,6 +21,8 @@ text_sim_type = 'lsi'
 code_sim_type = 'tfidf'
 extract_sim_type = 'ori_and_overlap'
 
+add_timedelta = False
+
 def counter_similarity(A_counter, B_counter):
     C = set(A_counter) | set(B_counter)
     tot1, tot2 = 0, 0
@@ -313,7 +315,12 @@ def calc_sim(A, B):
     else:
         title_idf_sum = 0
     '''
+    
+    def get_time(t):
+        return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
 
+    delta_time = abs((get_time(A['created_at']) - get_time(B['created_at'])).days)
+    
     overlap_files_len = len(overlap_files_set)
     
     ret = {
@@ -323,6 +330,7 @@ def calc_sim(A, B):
             'file_list': [file_list_sim, overlap_files_len],
             'location': location_sim, 
             'pattern': [pattern],
+            'time': [delta_time],
            }
     return ret
 
@@ -330,6 +338,10 @@ def sim_to_vet(r):
     vet = []
     for v in [r['title'],r['desc'],r['code'],r['file_list'],r['location'], r['pattern']]:
         vet += v
+
+    if add_timedelta:
+        vet += r['time']
+
     return vet
 
 # pull requests sim

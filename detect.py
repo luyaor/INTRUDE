@@ -253,6 +253,10 @@ def simulate_timeline_only_dup_pair(repo):
                 if int(n1) in li:
                     top5_num += 1
                 top1_tot += 1
+            
+                print('now=', top1_tot, 'top1 acc =', 1.0 * top1_num / top1_tot)
+
+    print('end!')
     print('top1 acc =', 1.0 * top1_num / top1_tot)
     print('top5 acc =', 1.0 * top5_num / top1_tot)
 

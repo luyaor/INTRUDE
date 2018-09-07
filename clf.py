@@ -27,29 +27,30 @@ from git import *
 
 # ----------------INPUT & CONFIG------------------------------------
 
+default_model = 'boost'
+
 data_folder = '/home/luyao/PR_get/INTRUDE/data/clf'
 
 dataset = []
 
 
 dataset = [
-    #[data_folder + '/rly_true_pairs.txt', 1, 'test'],
+    [data_folder + '/rly_true_pairs.txt', 1, 'train'],
     [data_folder + '/rly_false_pairs.txt', 0, 'train'],
     [data_folder + '/small_part_msr.txt', 1, 'train'],
-    [data_folder + '/small2_part_msr.txt', 1, 'test'],
-    [data_folder + '/small_part_negative.txt', 0, 'test'],
+    [data_folder + '/small2_part_msr.txt', 1, 'train'],
+    [data_folder + '/small_part_negative.txt', 0, 'train'],
+]
+
+
+dataset += [
+    [data_folder + '/manual_label_false.txt', 0, 'test'],
+    [data_folder + '/manual_label_true.txt', 1, 'test'],
+    [data_folder + '/openpr_label_false.txt', 0, 'test'],
+    [data_folder + '/openpr_label_true.txt', 1, 'test'],
 ]
 
 '''
-dataset += [
-    [data_folder + '/manual_label_false.txt', 0, 'train'],
-    [data_folder + '/manual_label_true.txt', 1, 'train'],
-    [data_folder + '/openpr_label_false.txt', 0, 'train'],
-    [data_folder + '/openpr_label_true.txt', 1, 'train'],
-    [data_folder + '/rly_true_pairs.txt', 1, 'test'],
-]
-
-
 dataset += [
     [data_folder + '/msr_positive_pairs.txt', 1, 'train'],
     [data_folder + '/big_false_data.txt', 0, 'train'],
@@ -58,7 +59,9 @@ dataset += [
 
 model_data_save_path_suffix = 'text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
 
-# part_params = [0,0,0,0,0,0,0,0,0,0,1]
+if add_timedelta:
+    model_data_save_path_suffix += '_add_time'
+
 part_params = None
 
 
@@ -198,7 +201,7 @@ def get_feature_vector(data, label, renew=False, out=None):
     localfile.write_to_file(y_path, y)
     return (X, y)
 
-def classify(model_type='SVM'):
+def classify(model_type=default_model):
     def model_data_prepare(dataset):        
         X_train, y_train = [], []
         X_test, y_test = [], []
@@ -273,7 +276,7 @@ def classify(model_type='SVM'):
     elif model_type == 'SGDClassifier':
         clf = linear_model.SGDClassifier(tol=0.01)
     elif model_type == 'boost':
-        clf = AdaBoostClassifier(n_estimators=150, learning_rate=0.5).fit(X_train, y_train)
+        clf = AdaBoostClassifier(n_estimators=100, learning_rate=0.1).fit(X_train, y_train)
 
     # clf = GradientBoostingClassifier(n_estimators=200, learning_rate=0.3, max_depth=25, random_state=0)
     
@@ -285,7 +288,8 @@ def classify(model_type='SVM'):
     # print(clf.intercept_)
     # print(clf.loss_function_)
     
-    # print(clf.feature_importances_)
+    if model_type == 'boost':
+        print(clf.feature_importances_)
     
     # Predict
     acc = clf.score(X_test, y_test)
@@ -311,5 +315,4 @@ def classify(model_type='SVM'):
     return clf
 
 if __name__ == "__main__":
-    classify('SVM')
-
+    classify()
