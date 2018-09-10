@@ -1,7 +1,22 @@
+import sys
 from clf import *
+from comp import *
+
+
+choice = sys.argv[1]
+'''
+if choice == 'boost':
+    default_mode = 'boost'
+    add_timedelta = True
+else:
+    default_mode = 'SVM'
+    add_timedelta = False
+'''
+
 from detect import *
 
-out = open('detection/result_on_top1.txt', 'a+')
+
+out = open('detection/result_on_top1_' + choice + '.txt', 'a+')
 
 print('model:', default_model, file=out)
 out.flush()

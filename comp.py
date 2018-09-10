@@ -21,7 +21,7 @@ text_sim_type = 'lsi'
 code_sim_type = 'tfidf'
 extract_sim_type = 'ori_and_overlap'
 
-add_timedelta = False
+add_timedelta = True
 
 def counter_similarity(A_counter, B_counter):
     C = set(A_counter) | set(B_counter)
@@ -266,7 +266,7 @@ def get_code_sim(A, B):
 
     A_delta_code_counter = get_delta_code_tokens_counter(A_overlap_code_tokens)
     B_delta_code_counter = get_delta_code_tokens_counter(B_overlap_code_tokens)
-
+    
     if code_sim_type == 'bow':
         code_sim = vsm_bow_similarity(A_delta_code_counter, B_delta_code_counter)
         return [code_sim]

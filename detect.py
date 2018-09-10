@@ -254,11 +254,15 @@ def simulate_timeline_only_dup_pair(repo):
                     top5_num += 1
                 top1_tot += 1
             
-                print('now=', top1_tot, 'top1 acc =', 1.0 * top1_num / top1_tot)
+                print('now=', repo, top1_tot, 'top1 acc =', 1.0 * top1_num / top1_tot)
 
     print('end!')
-    print('top1 acc =', 1.0 * top1_num / top1_tot)
-    print('top5 acc =', 1.0 * top5_num / top1_tot)
+    top1_acc = 1.0 * top1_num / top1_tot
+    top5_acc = 1.0 * top5_num / top1_tot
+    print('top1 acc =', top1_acc)
+    print('top5 acc =', top5_acc)
+    
+    return top1_acc
 
 
 def detect_one(repo, num):
