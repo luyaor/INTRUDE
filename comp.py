@@ -263,7 +263,7 @@ def check_pattern(A, B):
 def get_code_sim(A, B):
     A_overlap_code_tokens = get_code_tokens(A)
     B_overlap_code_tokens = get_code_tokens(B)
-
+    
     A_delta_code_counter = get_delta_code_tokens_counter(A_overlap_code_tokens)
     B_delta_code_counter = get_delta_code_tokens_counter(B_overlap_code_tokens)
     
@@ -345,7 +345,7 @@ def sim_to_vet(r):
     return vet
 
 # pull requests sim
-def get_pr_sim_vector(A, B):
+def get_pr_sim(A, B):
     A["file_list"] = fetch_pr_info(A)
     B["file_list"] = fetch_pr_info(B)
     
@@ -355,8 +355,10 @@ def get_pr_sim_vector(A, B):
     B["title"] = str(B["title"] or '')
     B["body"] = str(B["body"] or '')
     
-    ret = calc_sim(A, B)
-    return sim_to_vet(ret)
+    return calc_sim(A, B)
+    
+def get_pr_sim_vector(A, B):
+    return sim_to_vet(get_pr_sim(A, B))
 
 # commits sim
 def get_commit_sim_vector(A, B):

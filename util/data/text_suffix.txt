@@ -34,3 +34,5 @@
 .hs
 .swift
 .pde
+.markdown
+.asciidoc
