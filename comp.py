@@ -22,6 +22,7 @@ code_sim_type = 'tfidf'
 extract_sim_type = 'ori_and_overlap'
 
 add_timedelta = True
+#add_timedelta = False
 
 def counter_similarity(A_counter, B_counter):
     C = set(A_counter) | set(B_counter)
@@ -245,17 +246,20 @@ def title_has_same_pattern(a, b):
 '''
 
 def check_pattern(A, B):
-    ab_num = set([A["number"], B["number"]])    
-    a_set = set(get_numbers(A["title"] + ' ' + A['body'])) - ab_num
-    b_set = set(get_numbers(B["title"] + ' ' + B['body'])) - ab_num
+    ab_num = set([A["number"], B["number"]])
+    a_text = A["title"] + ' ' + A["body"]
+    b_text = B["title"] + ' ' + B["body"]
+
+    a_set = set(get_numbers(a_text) + get_version_numbers(a_text)) - ab_num
+    b_set = set(get_numbers(b_text) + get_version_numbers(b_text)) - ab_num
     if a_set & b_set:
         return 1
     else:
         def get_reasonable_numbers(x):
             return get_pr_and_issue_numbers(x) + get_version_numbers(x)
 
-        a_set = set(get_reasonable_numbers(A["title"] + ' ' + A['body'])) - ab_num
-        b_set = set(get_reasonable_numbers(B["title"] + ' ' + B['body'])) - ab_num
+        a_set = set(get_reasonable_numbers(a_text)) - ab_num
+        b_set = set(get_reasonable_numbers(b_text)) - ab_num
         if a_set and b_set and (a_set != b_set):
             return -1
         return 0

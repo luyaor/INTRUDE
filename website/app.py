@@ -301,7 +301,7 @@ def detect_openpr_all():
 
     openpr = mongo.db.openpr.find({'repo': repo})
     for pull in openpr:
-        update_one_openpr(pull)
+        update_one_openpr(pull, True)
     updated_openpr = list(mongo.db.openpr.find({'repo': repo}))
     return jsonify(updated_openpr)
 

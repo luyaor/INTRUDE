@@ -27,6 +27,6 @@ with open('data/msr_repo_list.txt') as f:
         acc = simulate_timeline_only_dup_pair(r)
         
         print(r, ':', acc, file=out)
-        out.flush
+        out.flush()
 
 out.close()

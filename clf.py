@@ -42,13 +42,13 @@ dataset = [
     [data_folder + '/small_part_negative.txt', 0, 'train'],
 ]
 
-
 dataset += [
     [data_folder + '/manual_label_false.txt', 0, 'test'],
     [data_folder + '/manual_label_true.txt', 1, 'test'],
     [data_folder + '/openpr_label_false.txt', 0, 'test'],
     [data_folder + '/openpr_label_true.txt', 1, 'test'],
 ]
+
 
 '''
 dataset += [
@@ -276,7 +276,7 @@ def classify(model_type=default_model):
     elif model_type == 'SGDClassifier':
         clf = linear_model.SGDClassifier(tol=0.01)
     elif model_type == 'boost':
-        clf = AdaBoostClassifier(n_estimators=100, learning_rate=0.1).fit(X_train, y_train)
+        clf = AdaBoostClassifier(n_estimators=200, learning_rate=0.1).fit(X_train, y_train)
 
     # clf = GradientBoostingClassifier(n_estimators=200, learning_rate=0.3, max_depth=25, random_state=0)
     
