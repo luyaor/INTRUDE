@@ -63,6 +63,9 @@ model_data_save_path_suffix = 'text_%s_code_%s_%s' % (text_sim_type, code_sim_ty
 if add_timedelta:
     model_data_save_path_suffix += '_add_time'
 
+if add_conf:
+    model_data_save_path_suffix += '_add_conf'
+
 part_params = None
 
 

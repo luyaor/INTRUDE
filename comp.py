@@ -24,6 +24,8 @@ extract_sim_type = 'ori_and_overlap'
 #add_timedelta = True
 add_timedelta = False
 
+add_conf = True
+
 def counter_similarity(A_counter, B_counter):
     C = set(A_counter) | set(B_counter)
     tot1, tot2 = 0, 0
@@ -323,8 +325,6 @@ def calc_sim(A, B):
     def get_time(t):
         return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
 
-    delta_time = abs((get_time(A['created_at']) - get_time(B['created_at'])).days)
-    
     overlap_files_len = len(overlap_files_set)
     
     ret = {
@@ -334,8 +334,21 @@ def calc_sim(A, B):
             'file_list': [file_list_sim, overlap_files_len],
             'location': location_sim, 
             'pattern': [pattern],
-            'time': [delta_time],
            }
+    
+    if add_conf:
+        conf = 0
+        for file in overlap_files_set:
+            file_name = os.path.splitext(os.path.basename(file))[0]
+            if (file_name in A["title"]) and (file_name in B["title"]):
+                conf = 1
+                break
+        ret['conf'] = [conf]
+
+    if add_timedelta:
+        delta_time = abs((get_time(A['created_at']) - get_time(B['created_at'])).days)
+        ret['time'] = [delta_time]
+
     return ret
 
 def sim_to_vet(r):
@@ -345,7 +358,10 @@ def sim_to_vet(r):
 
     if add_timedelta:
         vet += r['time']
-
+    
+    if add_conf:
+        vet += r['conf']
+    
     return vet
 
 # pull requests sim
