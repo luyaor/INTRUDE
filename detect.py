@@ -111,22 +111,34 @@ def load_part(repo):
                 select_set.add(str(tt[1]))
     return select_set
 
+def load_select(repo):
+    path = 'evaluation/'+repo.replace('/','_')+'_select.txt'
+    select_set = set()
+    with open(path) as f:
+        for t in f.readlines():
+            select_set.add(t.strip())
+    return select_set
 
 def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
     init_model_with_repo(repo)
     pulls = get_repo_info(repo, 'pull', renew_pr_list_flag)
 
     all_p = set([str(pull["number"]) for pull in pulls])
-    part_p = load_part(repo)
+    
+    # part_p = load_part(repo)
+    part_p = load_select(repo)
     
     log = open('evaluation/'+repo.replace('/','_')+'_stimulate_detect.log', 'a+')
+    '''
     if not rerun:
         select_p = set(shuffle(list(all_p - part_p))[:run_num])
         out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet.txt', 'a+')
     else:
         select_p = part_p
         out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet_rerun.txt', 'a+')
-
+    '''
+    select_p = part_p
+    out = open('evaluation/'+repo.replace('/','_')+'_run_on_select.txt', 'a+')
 
     for pull in pulls:
         num1 = str(pull["number"])
@@ -276,6 +288,10 @@ def detect_one(repo, num):
 if __name__ == "__main__":
 
     # detection on history (random sampling)
+    if len(sys.argv) > 1:
+        r = sys.argv[1].strip()
+        simulate_timeline(r)
+    
     '''
     if len(sys.argv) > 1:
         r = sys.argv[1].strip()

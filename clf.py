@@ -42,6 +42,7 @@ dataset = [
     [data_folder + '/small_part_negative.txt', 0, 'train'],
 ]
 
+
 dataset += [
     [data_folder + '/manual_label_false.txt', 0, 'test'],
     [data_folder + '/manual_label_true.txt', 1, 'test'],

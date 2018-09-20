@@ -21,8 +21,8 @@ text_sim_type = 'lsi'
 code_sim_type = 'tfidf'
 extract_sim_type = 'ori_and_overlap'
 
-add_timedelta = True
-#add_timedelta = False
+#add_timedelta = True
+add_timedelta = False
 
 def counter_similarity(A_counter, B_counter):
     C = set(A_counter) | set(B_counter)

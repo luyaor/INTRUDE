@@ -286,11 +286,14 @@ def get_state(git_pull):
     
 def update_one_openpr(pull, renew=False):
     if pull and ('repo' in pull) and ('num' in pull):
+        if pull.get('version', '') == 'boost1':
+            return
         if ('num2' in pull) and (not renew):
             return
         num2, proba = detect.detect_one(pull['repo'], pull['num'])
         git_pull = git.get_pull(pull['repo'], num2)
         data = {'num2': num2, 'proba': proba, 'title2': git_pull['title'], 'link2': git_pull['html_url'], 'state2': get_state(git_pull), }
+        data['version'] = 'boost1'
         mongo.db.openpr.update({'_id': pull['_id']}, {'$set': data}, upsert=True)
 
 @app.route('/detect_openpr_all', methods=['GET', 'POST'])
@@ -301,7 +304,7 @@ def detect_openpr_all():
 
     openpr = mongo.db.openpr.find({'repo': repo})
     for pull in openpr:
-        update_one_openpr(pull, True)
+        update_one_openpr(pull, False)
     updated_openpr = list(mongo.db.openpr.find({'repo': repo}))
     return jsonify(updated_openpr)
 
