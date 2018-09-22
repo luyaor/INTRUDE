@@ -15,16 +15,16 @@ last_number = None
 renew_pr_list_flag = False
 
 filter_out_too_big_pull_flag = True
-filter_out_too_old_pull_flag = True
+filter_out_too_old_pull_flag = False
 
-simulate_mode = True
+predict_mode = False
 
 def get_time(t):
     return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
 
 last_detect_repo = None
 
-def get_topK(repo, num1, topK = 10, print_progress = False):
+def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
     
     global last_detect_repo
     if last_detect_repo != repo:
@@ -34,7 +34,7 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
     pulls = get_repo_info(repo, 'pull')
     pullA = get_pull(repo, num1)
     
-    if not simulate_mode:
+    if predict_mode:
         cite[str(pullA["number"])] = get_another_pull(pullA)
 
     results = {}
@@ -47,7 +47,7 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
         cnt += 1
         
         if filter_out_too_big_pull_flag:
-            if check_too_big(pull):
+            if check_large(pull):
                 continue
         
         if filter_out_too_old_pull_flag:
@@ -55,7 +55,7 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
                     get_time(pull["updated_at"])).days) >= 4 * 365: # more than 4 years
                 continue
 
-        if simulate_mode:
+        if not predict_mode:
             if int(pull["number"]) >= int(num1):
                 continue
             
@@ -67,13 +67,11 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
         if pullA["user"]["id"] == pull["user"]["id"]:
             continue
         
-        # case of following up work 
-        if str(pull["number"]) in (get_pr_and_issue_numbers(pullA["title"]) + \
-                                   get_pr_and_issue_numbers(pullA["body"])):
-            continue
-        
-        if not simulate_mode:
-            # for predict
+        if predict_mode:
+            # case of following up work (not sure)
+            if str(pull["number"]) in (get_pr_and_issue_numbers(pullA["title"]) + \
+                                       get_pr_and_issue_numbers(pullA["body"])):
+                continue
             
             # "cite" cases
             if (str(pull["number"]) in cite.get(str(pullA["number"]), [])) or\
@@ -84,19 +82,22 @@ def get_topK(repo, num1, topK = 10, print_progress = False):
             if 'revert' in pull["title"].lower():
                 continue
         
-        # create after another is merged
-        if (pull["merged_at"] is not None) and \
-           (get_time(pull["merged_at"]) < get_time(pullA["created_at"])):
-            continue
+            # create after another is merged
+            if (pull["merged_at"] is not None) and \
+               (get_time(pull["merged_at"]) < get_time(pullA["created_at"])):
+                continue
         
         if print_progress:
             if cnt % 100 == 0:
                 print('progress = ', 1.0 * cnt / tot)        
                 sys.stdout.flush()
         
-        feature_vector = get_pr_sim_vector(pullA, pull)        
-        results[pull["number"]] = c.predict_proba([feature_vector])[0][1]
-    
+        if use_way == 'new':
+            feature_vector = get_pr_sim_vector(pullA, pull)        
+            results[pull["number"]] = c.predict_proba([feature_vector])[0][1]
+        else:
+            results[pull["number"]] = old_way(pullA, pull)
+
     result = [(x,y) for x, y in sorted(results.items(), key=lambda x: x[1], reverse=True)][:topK]    
     return result
 
@@ -246,35 +247,6 @@ def find_on_openpr(repo, time_stp=None):
 
     out.close()
     out2.close()
-
-
-def simulate_timeline_only_dup_pair(repo):
-    init_model_with_repo(repo)
-    top1_num, top1_tot, top5_num = 0, 0, 0
-    
-    labeled_dup = {}
-    with open('data/clf/msr_positive_pairs.txt') as f:
-        for t in f.readlines():
-            r, n1, n2 = t.strip().split()
-            if n1 > n2:
-                n1, n2 = n2, n1
-            if r == repo:
-                li = [int(x[0]) for x in get_topK(repo, n2, 5)]
-                if int(n1) == li[0]:
-                    top1_num += 1
-                if int(n1) in li:
-                    top5_num += 1
-                top1_tot += 1
-            
-                print('now=', repo, top1_tot, 'top1 acc =', 1.0 * top1_num / top1_tot)
-
-    print('end!')
-    top1_acc = 1.0 * top1_num / top1_tot
-    top5_acc = 1.0 * top5_num / top1_tot
-    print('top1 acc =', top1_acc)
-    print('top5 acc =', top5_acc)
-    
-    return top1_acc
 
 
 def detect_one(repo, num):

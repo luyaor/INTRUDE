@@ -2,13 +2,13 @@ from detect import *
 from git import *
 
 files = [
-#'/home/luyao/PR_get/INTRUDE/data/clf/manual_label_false.txt',
-'/home/luyao/PR_get/INTRUDE/data/clf/manual_label_true.txt',
-#'/home/luyao/PR_get/INTRUDE/data/clf/openpr_label_false.txt',
-'/home/luyao/PR_get/INTRUDE/data/clf/openpr_label_true.txt'
+'/home/luyao/PR_get/INTRUDE/data/clf/manual_label_false.txt',
+#'/home/luyao/PR_get/INTRUDE/data/clf/manual_label_true.txt',
+'/home/luyao/PR_get/INTRUDE/data/clf/openpr_label_false.txt',
+#'/home/luyao/PR_get/INTRUDE/data/clf/openpr_label_true.txt'
 ]
 
-out = open('evaluation/manual_label_check_true.txt', 'a+')
+out = open('evaluation/manual_label_check_false2.txt', 'a+')
 
 for file in files:
     acc_num, tot_num = 0, 0

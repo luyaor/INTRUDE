@@ -33,7 +33,22 @@ data_folder = '/home/luyao/PR_get/INTRUDE/data/clf'
 
 dataset = []
 
+dataset = [
+    [data_folder + '/first_msr_pairs.txt', 1, 'train'],
+    [data_folder + '/second_msr_pairs.txt', 1, 'train'],
+    
+    #[data_folder + '/first_msr_pairs_nolarge.txt', 1, 'train'],
+    #[data_folder + '/second_msr_pairs_nolarge.txt', 1, 'test'],
+    #[data_folder + '/first_msr_pairs_thelarge.txt', 1, 'train'],
+    #[data_folder + '/second_msr_pairs_thelarge.txt', 1, 'test'],
 
+    [data_folder + '/first_nondup.txt', 0, 'train'],
+    [data_folder + '/second_nondup.txt', 0, 'train'],
+    [data_folder + '/rly_false_pairs.txt', 0, 'train'],
+    [data_folder + '/small_part_negative.txt', 0, 'test'],
+]
+
+'''
 dataset = [
     [data_folder + '/rly_true_pairs.txt', 1, 'train'],
     [data_folder + '/rly_false_pairs.txt', 0, 'train'],
@@ -41,15 +56,16 @@ dataset = [
     [data_folder + '/small2_part_msr.txt', 1, 'train'],
     [data_folder + '/small_part_negative.txt', 0, 'train'],
 ]
+'''
 
-
+'''
 dataset += [
     [data_folder + '/manual_label_false.txt', 0, 'test'],
     [data_folder + '/manual_label_true.txt', 1, 'test'],
     [data_folder + '/openpr_label_false.txt', 0, 'test'],
     [data_folder + '/openpr_label_true.txt', 1, 'test'],
 ]
-
+'''
 
 '''
 dataset += [
@@ -69,6 +85,11 @@ if add_conf:
 part_params = None
 
 
+fil_large = True
+
+if fil_large:
+    model_data_save_path_suffix += '_fil_large'
+
 draw_pic = False
 model_data_random_shuffle_flag = False
 model_data_renew_flag = False
@@ -86,16 +107,15 @@ def init_model_with_pulls(pulls, save_id=None):
     t = [str(pull["title"]) for pull in pulls]
     b = []
     for pull in pulls:
-        if pull["body"] and (len(pull["body"]) <= 1000):
+        if pull["body"] and (len(pull["body"]) <= 2000):
             b.append(pull["body"])
     init_model_from_raw_docs(t + b, save_id)
     
     if code_sim_type == 'tfidf':
         c = []
-        pulls = pulls[:1000]
         for pull in pulls: # only added code
             try:
-                if not check_too_big(pull):
+                if not check_large(pull):
                     p = copy.deepcopy(pull)
                     p["file_list"] = fetch_pr_info(p)
                     c.append(get_code_tokens(p)[0])
@@ -110,14 +130,17 @@ def init_model_with_repo(repo, save_id=None):
     #save_id = repo.replace('/','_') + '_all'
     #init_model_with_pulls(get_pull_list(repo), save_id)
     if save_id is None:
-        save_id = repo.replace('/','_') + '_marked'
+        # save_id = repo.replace('/','_') + '_marked'
+        # save_id = repo.replace('/','_') + '_default'
+        save_id = repo.replace('/','_') + '_allpr'
     else:
         save_id = repo.replace('/','_') + '_' + save_id
 
     try:
         init_model_with_pulls([], save_id)
     except:
-        init_model_with_pulls(shuffle(get_repo_info(repo, 'pull'))[:5000], save_id)
+        # init_model_with_pulls(shuffle(get_repo_info(repo, 'pull'))[:10000], save_id)
+        init_model_with_pulls(get_repo_info(repo, 'pull'), save_id)
 
 # ------------------------------------------------------------
 '''
@@ -132,6 +155,15 @@ def get_feature_vector_from_path(data):
     else:
         raise Exception('no such file %s' % data)
 '''
+
+# calc feature vet
+def get_sim(repo, num1, num2):
+    p1 = get_pull(repo, num1)
+    p2 = get_pull(repo, num2)
+    return get_pr_sim_vector(p1, p2)
+
+def get_sim_wrap(args):
+    return get_sim(*args)
 
 def get_feature_vector(data, label, renew=False, out=None):
     print('Model Data Input=', data)
@@ -153,16 +185,18 @@ def get_feature_vector(data, label, renew=False, out=None):
     with open(data) as f:
         all_pr = f.readlines()
     
-    # tiny test
-    # all_pr = shuffle(all_pr, random_state=12345)[:100]
-    
     for l in all_pr:
         r, n1, n2 = l.strip().split()
         if r not in p:
             p[r] = []
         p[r].append((n1, n2, label))
+    
+    print('all=', len(all_pr))
 
     out_file = open(out + '_X_and_Y.txt', 'w+')
+    
+    for r in p:
+        init_model_with_repo(r)
     
     for r in p:
         print('Start running on', r)
@@ -172,20 +206,20 @@ def get_feature_vector(data, label, renew=False, out=None):
         
         print('pairs num=', len(p[r]))
 
-        # calc feature vet
-        def get_sim(repo, num1, num2):
-            p1 = get_pull(repo, num1)
-            p2 = get_pull(repo, num2)
-            return get_pr_sim_vector(p1, p2)
-
         # sequence
+        '''
+        cnt = 0
         for z in p[r]:
             x0, y0 = get_sim(r, z[0], z[1]), z[2]
             X.append(x0)
             y.append(y0)
             print(r, z[0], z[1], x0, y0, file=out_file)
-        
+            
+            cnt += 1
+            if cnt % 100 == 0:
+                print('current', cnt)
         '''
+        
         # run parallel
         for label in [0, 1]:
             pairs = []
@@ -196,7 +230,7 @@ def get_feature_vector(data, label, renew=False, out=None):
                 result = pool.map(get_sim_wrap, pairs)
             X.extend(result)
             y.extend([label for i in range(len(result))])
-        '''
+        
 
     out_file.close()
 

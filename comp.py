@@ -13,18 +13,21 @@ from util import localfile
 from git import *
 from fetch_raw_diff import *
 
+# text_sim_type = 'tfidf'
 text_sim_type = 'lsi'
 # code_sim_type = 'bow_three'
 # code_sim_type = 'bow_two'
-# code_sim_type = 'bow'
+code_sim_type = 'bow'
 # code_sim_type = 'bow_with_ori'
-code_sim_type = 'tfidf'
+# code_sim_type = 'tfidf'
 extract_sim_type = 'ori_and_overlap'
 
 #add_timedelta = True
 add_timedelta = False
 
-add_conf = True
+#add_conf = True
+add_conf = False
+
 
 def counter_similarity(A_counter, B_counter):
     C = set(A_counter) | set(B_counter)
@@ -55,41 +58,6 @@ def get_tokens(text):
 
 def get_file_list(pull):
     return [x["name"] for x in pull['file_list']]
-
-
-def fetch_pr_info(pull, must_in_local = False):
-    path = '/DATA/luyao/pr_data/%s/%s' % (pull["base"]["repo"]["full_name"], pull["number"])
-    parse_diff_path = path + '/parse_diff.json'
-    raw_diff_path = path + '/raw_diff.json'
-    pull_files_path = path + '/pull_files.json'
-
-    if os.path.exists(parse_diff_path):
-        try:
-            return localfile.get_file(parse_diff_path)
-        except:
-            pass
-
-    if os.path.exists(raw_diff_path) or os.path.exists(pull_files_path):
-        if os.path.exists(raw_diff_path):
-            file_list = localfile.get_file(raw_diff_path)
-        elif os.path.exists(pull_files_path):
-            pull_files = localfile.get_file(pull_files_path)
-            file_list = [parse_diff(file["file_full_name"], file["changed_code"]) for file in pull_files]
-        else:
-            raise Exception('error on fetch local file %s' % path)
-    else:
-        if check_too_big(pull):
-            # print('too big for %s / %s ' % (pull["base"]["repo"]["full_name"], pull["number"]))
-            return []
-    
-        if must_in_local:
-            raise Exception('not found in local')
-        
-        file_list = fetch_file_list(pull)
-
-    # print(path, [x["name"] for x in file_list])
-    localfile.write_to_file(parse_diff_path, file_list)
-    return file_list
 
 def get_location(pull):
     location_set = []
@@ -379,6 +347,17 @@ def get_pr_sim(A, B):
     
 def get_pr_sim_vector(A, B):
     return sim_to_vet(get_pr_sim(A, B))
+
+def old_way(A, B):
+    A["title"] = str(A["title"] or '')
+    A["body"] = str(A["body"] or '')
+    
+    B["title"] = str(B["title"] or '')
+    B["body"] = str(B["body"] or '')
+
+    return model.query_sim_tfidf(get_tokens(A["title"]), get_tokens(B["title"])) + \
+    model.query_sim_tfidf(get_tokens(A["body"]), get_tokens(B["body"]))
+    
 
 # commits sim
 def get_commit_sim_vector(A, B):
