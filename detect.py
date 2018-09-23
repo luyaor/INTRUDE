@@ -15,7 +15,7 @@ last_number = None
 renew_pr_list_flag = False
 
 filter_out_too_big_pull_flag = True
-filter_out_too_old_pull_flag = False
+filter_out_too_old_pull_flag = True
 
 predict_mode = False
 
@@ -52,22 +52,22 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
         
         if filter_out_too_old_pull_flag:
             if abs((get_time(pullA["updated_at"]) - \
-                    get_time(pull["updated_at"])).days) >= 4 * 365: # more than 4 years
+                    get_time(pull["updated_at"])).days) >= 5 * 365: # more than 4 years
                 continue
 
         if not predict_mode:
             if int(pull["number"]) >= int(num1):
                 continue
-            
-        # same
-        if str(pull["number"]) == str(num1):
-            continue
-        
-        # same author
-        if pullA["user"]["id"] == pull["user"]["id"]:
-            continue
-        
+                
         if predict_mode:
+            # same
+            if str(pull["number"]) == str(num1):
+                continue
+
+            # same author
+            if pullA["user"]["id"] == pull["user"]["id"]:
+                continue
+
             # case of following up work (not sure)
             if str(pull["number"]) in (get_pr_and_issue_numbers(pullA["title"]) + \
                                        get_pr_and_issue_numbers(pullA["body"])):
@@ -81,12 +81,14 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
             # revert cases
             if 'revert' in pull["title"].lower():
                 continue
-        
+            
+            '''
             # create after another is merged
             if (pull["merged_at"] is not None) and \
                (get_time(pull["merged_at"]) < get_time(pullA["created_at"])):
                 continue
-        
+            '''
+
         if print_progress:
             if cnt % 100 == 0:
                 print('progress = ', 1.0 * cnt / tot)        

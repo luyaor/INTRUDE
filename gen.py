@@ -81,16 +81,19 @@ def get_dup(repo):
     return dup_list
 
 
+select_set = set()
+
 # todo remove noise in random pairs
 def random_pairs():
-
+    global select_set
+    
     # repos = os.listdir('/DATA/luyao/pr_data')
     
     # choose = ['saltstack/salt']
     
-    # choose = ['mozilla-b2g/gaia', 'twbs/bootstrap', 'scikit-learn/scikit-learn', 'rust-lang/rust', 'servo/servo', 'pydata/pandas', 'saltstack/salt', 'nodejs/node', 'symfony/symfony-docs', 'zendframework/zf2', 'symfony/symfony', 'kubernetes/kubernetes']
+    choose = ['mozilla-b2g/gaia', 'twbs/bootstrap', 'scikit-learn/scikit-learn', 'rust-lang/rust', 'servo/servo', 'pydata/pandas', 'saltstack/salt', 'nodejs/node', 'symfony/symfony-docs', 'zendframework/zf2', 'symfony/symfony', 'kubernetes/kubernetes']
     
-    choose = ['cocos2d/cocos2d-x', 'dotnet/corefx', 'django/django', 'angular/angular.js', 'JuliaLang/julia', 'ceph/ceph', 'joomla/joomla-cms', 'facebook/react', 'hashicorp/terraform', 'rails/rails', 'docker/docker', 'elastic/elasticsearch', 'emberjs/ember.js', 'ansible/ansible']
+    # choose = ['cocos2d/cocos2d-x', 'dotnet/corefx', 'django/django', 'angular/angular.js', 'JuliaLang/julia', 'ceph/ceph', 'joomla/joomla-cms', 'facebook/react', 'hashicorp/terraform', 'rails/rails', 'docker/docker', 'elastic/elasticsearch', 'emberjs/ember.js', 'ansible/ansible']
     
     find = False
     
@@ -110,7 +113,7 @@ def random_pairs():
                 continue
         
 
-        ok_file = '/DATA/luyao/pr_data/%s/list_for_random_generate.json' % repo
+        ok_file = '/DATA/luyao/pr_data/%s/list_for_random_generate2.json' % repo
         if os.path.exists(ok_file):
             nums = localfile.get_file(ok_file)
         else:
@@ -140,7 +143,7 @@ def random_pairs():
                 if x.isdigit():
                     p = get_pull(repo, x)
                     # print('check', repo, x)
-                    if (p["merged_at"] is not None) and (not check_too_big(p)) and \
+                    if (p["merged_at"] is not None) and (not check_large(p)) and \
                     (not too_small(p)) and (not like_localize(p)):
                         len_f = len(fetch_pr_info(p)) 
                         if (len_f > 0) and (len_f <= 10):
@@ -165,11 +168,14 @@ def random_pairs():
         ti = 0
         while True:
             ti += 1
-            if ti > 50:
+            if ti > 100:
                 break
             if l > 0:
                 x = nums[random.randint(0, l - 1)]
                 y = nums[random.randint(0, l - 1)]
+                
+                if (repo, x, y) in select_set:
+                    continue
                 
                 if (x != y) and (x.isdigit()) and (y.isdigit()):
                     p1 = get_pull(repo, x)
@@ -181,6 +187,10 @@ def random_pairs():
                         continue
                     '''
                     if p1["user"]["id"] != p2["user"]["id"]:
+                        
+                        select_set.add((repo, x, y))
+                        select_set.add((repo, y, x))
+                        
                         find = True
                         break
     

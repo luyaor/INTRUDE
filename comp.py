@@ -15,10 +15,7 @@ from fetch_raw_diff import *
 
 # text_sim_type = 'tfidf'
 text_sim_type = 'lsi'
-# code_sim_type = 'bow_three'
-# code_sim_type = 'bow_two'
 code_sim_type = 'bow'
-# code_sim_type = 'bow_with_ori'
 # code_sim_type = 'tfidf'
 extract_sim_type = 'ori_and_overlap'
 

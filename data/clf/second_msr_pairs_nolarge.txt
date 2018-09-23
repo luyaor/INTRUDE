@@ -8,9 +8,7 @@ JuliaLang/julia 17231 11888
 JuliaLang/julia 13084 11547
 JuliaLang/julia 22233 22169
 JuliaLang/julia 14098 12904
-JuliaLang/julia 12058 11242
 JuliaLang/julia 14792 14784
-JuliaLang/julia 11244 10525
 JuliaLang/julia 13062 10835
 JuliaLang/julia 13378 12986
 JuliaLang/julia 12130 11421
@@ -26,7 +24,6 @@ JuliaLang/julia 19082 18973
 JuliaLang/julia 8725 7108
 JuliaLang/julia 20408 20405
 JuliaLang/julia 8838 7108
-JuliaLang/julia 10525 9607
 JuliaLang/julia 14063 13758
 JuliaLang/julia 16257 16215
 JuliaLang/julia 21299 18688
@@ -230,13 +227,11 @@ ansible/ansible 20610 15608
 ansible/ansible 6923 6599
 ansible/ansible 10202 8345
 ansible/ansible 25375 23107
-ansible/ansible 19228 19049
 ansible/ansible 8190 8175
 ansible/ansible 18634 18616
 ansible/ansible 7943 6049
 ansible/ansible 5287 4034
 ansible/ansible 22182 19448
-ansible/ansible 22620 22521
 ansible/ansible 10258 9565
 ansible/ansible 17551 16976
 ansible/ansible 15400 15058
@@ -309,7 +304,6 @@ ceph/ceph 13131 13127
 ceph/ceph 11679 11643
 ceph/ceph 7037 7033
 ceph/ceph 9300 7973
-ceph/ceph 14771 14625
 ceph/ceph 13395 13320
 ceph/ceph 8449 8226
 ceph/ceph 14576 14535
@@ -373,7 +367,6 @@ cocos2d/cocos2d-x 5918 5683
 cocos2d/cocos2d-x 11540 3860
 cocos2d/cocos2d-x 9257 9057
 cocos2d/cocos2d-x 2370 2142
-cocos2d/cocos2d-x 5782 5769
 cocos2d/cocos2d-x 12083 10362
 cocos2d/cocos2d-x 5422 3251
 cocos2d/cocos2d-x 5496 3639
@@ -420,7 +413,6 @@ django/django 3521 3500
 django/django 1328 1284
 django/django 1690 1197
 django/django 2425 2366
-django/django 3938 3475
 django/django 1758 1752
 django/django 3503 3497
 django/django 5756 5751
@@ -468,7 +460,6 @@ docker/docker 1645 1644
 docker/docker 12920 10255
 docker/docker 3332 3303
 docker/docker 7717 7716
-docker/docker 19137 18887
 docker/docker 4247 4231
 docker/docker 29218 29138
 docker/docker 1775 1774
@@ -522,10 +513,8 @@ dotnet/corefx 4160 4157
 dotnet/corefx 16826 16814
 dotnet/corefx 8741 8740
 dotnet/corefx 14641 14631
-dotnet/corefx 441 438
 dotnet/corefx 6585 6194
 dotnet/corefx 19477 19463
-dotnet/corefx 12873 12863
 dotnet/corefx 3686 3046
 dotnet/corefx 5345 5327
 dotnet/corefx 9312 9310
@@ -539,22 +528,17 @@ elastic/elasticsearch 11570 7929
 elastic/elasticsearch 20545 20407
 elastic/elasticsearch 6976 6162
 elastic/elasticsearch 11512 8376
-elastic/elasticsearch 6576 6562
 elastic/elasticsearch 10649 10482
 elastic/elasticsearch 13573 13482
 elastic/elasticsearch 7454 7413
-elastic/elasticsearch 21912 21447
 elastic/elasticsearch 9570 7057
 elastic/elasticsearch 7744 6531
 elastic/elasticsearch 13845 13711
 elastic/elasticsearch 15266 10100
-elastic/elasticsearch 10582 10499
 elastic/elasticsearch 14639 14579
-elastic/elasticsearch 8373 7891
 elastic/elasticsearch 6303 4586
 elastic/elasticsearch 6814 5587
 elastic/elasticsearch 22038 21702
-elastic/elasticsearch 14993 13627
 elastic/elasticsearch 18545 16731
 elastic/elasticsearch 20219 15299
 elastic/elasticsearch 7068 6920
@@ -564,7 +548,6 @@ elastic/elasticsearch 14537 12457
 elastic/elasticsearch 9570 6800
 elastic/elasticsearch 16660 16659
 elastic/elasticsearch 15785 8208
-elastic/elasticsearch 14935 14766
 elastic/elasticsearch 19880 19845
 elastic/elasticsearch 4993 1464
 elastic/elasticsearch 10654 10525
@@ -579,7 +562,6 @@ elastic/elasticsearch 23520 23517
 elastic/elasticsearch 17271 17264
 elastic/elasticsearch 10789 10672
 elastic/elasticsearch 8111 8091
-elastic/elasticsearch 19594 19489
 elastic/elasticsearch 16865 16478
 elastic/elasticsearch 25209 20852
 elastic/elasticsearch 17985 15114
@@ -728,7 +710,6 @@ hashicorp/terraform 2411 2086
 hashicorp/terraform 3908 3860
 hashicorp/terraform 7666 7557
 hashicorp/terraform 11157 10870
-hashicorp/terraform 12913 12879
 hashicorp/terraform 5888 4780
 hashicorp/terraform 3330 3259
 hashicorp/terraform 10578 9789
@@ -769,7 +750,6 @@ joomla/joomla-cms 2636 2549
 joomla/joomla-cms 4739 4517
 joomla/joomla-cms 6861 6080
 joomla/joomla-cms 1279 1252
-joomla/joomla-cms 10793 10764
 joomla/joomla-cms 2763 872
 joomla/joomla-cms 5140 4936
 joomla/joomla-cms 8475 8467
@@ -786,7 +766,6 @@ joomla/joomla-cms 7342 5956
 joomla/joomla-cms 15998 15138
 joomla/joomla-cms 10817 4127
 joomla/joomla-cms 8365 7487
-joomla/joomla-cms 7212 7041
 joomla/joomla-cms 15618 15427
 joomla/joomla-cms 9330 6132
 joomla/joomla-cms 3687 3565
@@ -829,7 +808,6 @@ joomla/joomla-cms 8284 8268
 joomla/joomla-cms 3274 1620
 joomla/joomla-cms 8398 7731
 joomla/joomla-cms 2217 2213
-joomla/joomla-cms 2366 1731
 joomla/joomla-cms 5189 4726
 joomla/joomla-cms 7778 7145
 joomla/joomla-cms 5888 5664
@@ -874,7 +852,6 @@ joomla/joomla-cms 6439 4654
 joomla/joomla-cms 2763 780
 joomla/joomla-cms 7274 7235
 joomla/joomla-cms 11353 8039
-joomla/joomla-cms 14958 14750
 joomla/joomla-cms 15200 15168
 joomla/joomla-cms 9569 7554
 joomla/joomla-cms 14082 13956

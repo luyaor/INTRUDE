@@ -33,9 +33,10 @@ data_folder = '/home/luyao/PR_get/INTRUDE/data/clf'
 
 dataset = []
 
+
 dataset = [
     [data_folder + '/first_msr_pairs.txt', 1, 'train'],
-    [data_folder + '/second_msr_pairs.txt', 1, 'train'],
+    [data_folder + '/second_msr_pairs.txt', 1, 'test'],
     
     #[data_folder + '/first_msr_pairs_nolarge.txt', 1, 'train'],
     #[data_folder + '/second_msr_pairs_nolarge.txt', 1, 'test'],
@@ -43,10 +44,11 @@ dataset = [
     #[data_folder + '/second_msr_pairs_thelarge.txt', 1, 'test'],
 
     [data_folder + '/first_nondup.txt', 0, 'train'],
-    [data_folder + '/second_nondup.txt', 0, 'train'],
-    [data_folder + '/rly_false_pairs.txt', 0, 'train'],
-    [data_folder + '/small_part_negative.txt', 0, 'test'],
+    [data_folder + '/second_nondup.txt', 0, 'test'],
+    #[data_folder + '/rly_false_pairs.txt', 0, 'train'],
+    #[data_folder + '/small_part_negative.txt', 0, 'test'],
 ]
+
 
 '''
 dataset = [
@@ -56,9 +58,8 @@ dataset = [
     [data_folder + '/small2_part_msr.txt', 1, 'train'],
     [data_folder + '/small_part_negative.txt', 0, 'train'],
 ]
-'''
 
-'''
+
 dataset += [
     [data_folder + '/manual_label_false.txt', 0, 'test'],
     [data_folder + '/manual_label_true.txt', 1, 'test'],
@@ -74,7 +75,8 @@ dataset += [
 ]
 '''
 
-model_data_save_path_suffix = 'text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
+# new
+model_data_save_path_suffix = 'ok_text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
 
 if add_timedelta:
     model_data_save_path_suffix += '_add_time'
@@ -84,11 +86,6 @@ if add_conf:
 
 part_params = None
 
-
-fil_large = True
-
-if fil_large:
-    model_data_save_path_suffix += '_fil_large'
 
 draw_pic = False
 model_data_random_shuffle_flag = False
@@ -113,6 +110,7 @@ def init_model_with_pulls(pulls, save_id=None):
     
     if code_sim_type == 'tfidf':
         c = []
+        # pulls = pulls[:1000]
         for pull in pulls: # only added code
             try:
                 if not check_large(pull):
@@ -187,6 +185,11 @@ def get_feature_vector(data, label, renew=False, out=None):
     
     for l in all_pr:
         r, n1, n2 = l.strip().split()
+        
+        if 'msr_pairs' not in data:
+            if check_large(get_pull(r, n1)) or check_large(get_pull(r, n2)):
+                continue
+
         if r not in p:
             p[r] = []
         p[r].append((n1, n2, label))
@@ -205,21 +208,23 @@ def get_feature_vector(data, label, renew=False, out=None):
         init_model_with_repo(r)
         
         print('pairs num=', len(p[r]))
-
-        # sequence
+        
         '''
+        # sequence
         cnt = 0
         for z in p[r]:
+            print(r, z[0], z[1])
+            
             x0, y0 = get_sim(r, z[0], z[1]), z[2]
             X.append(x0)
             y.append(y0)
             print(r, z[0], z[1], x0, y0, file=out_file)
             
             cnt += 1
-            if cnt % 100 == 0:
-                print('current', cnt)
+            if cnt % 1 == 0:
+                print('current:', r, cnt)
         '''
-        
+
         # run parallel
         for label in [0, 1]:
             pairs = []

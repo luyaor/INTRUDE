@@ -27,6 +27,9 @@ def parse_diff(file_name, diff):
         except:
             continue
         
+        if len(part) >= 100 * 1024:
+            continue
+        
         try:
             if ('-' in add) and ('+' in dele):
                 add, dele = dele, add
@@ -103,5 +106,8 @@ if __name__ == '__main__':
     # print(fetch_raw_diff('https://github.com/MarlinFirmware/Marlin/commit/6b43bfa01dd76f5475acf40d0e5b5f240fe57d9e'))
     # print([x["location"] for x in fetch_raw_diff('https://github.com/mozilla-b2g/gaia/pull/34385.diff')])
     # print(fetch_raw_diff('https://github.com/mozilla-b2g/gaia/pull/34384.diff'))
-    print([x["location"] for x in fetch_raw_diff('https://patch-diff.githubusercontent.com/raw/moby/moby/pull/21495.diff')])
+    # print([x["location"] for x in fetch_raw_diff('https://patch-diff.githubusercontent.com/raw/moby/moby/pull/21495.diff')])
     # print(fetch_raw_diff("https://patch-diff.githubusercontent.com/raw/FancyCoder0/INFOX/pull/146.diff"))
+    
+    # fetch_raw_diff('https://github.com/kubernetes/kubernetes/pull/55744.diff')
+    print('ok')
