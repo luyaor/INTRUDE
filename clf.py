@@ -36,7 +36,7 @@ dataset = []
 
 dataset = [
     [data_folder + '/first_msr_pairs.txt', 1, 'train'],
-    [data_folder + '/second_msr_pairs.txt', 1, 'test'],
+    # [data_folder + '/second_msr_pairs.txt', 1, 'test'],
     
     #[data_folder + '/first_msr_pairs_nolarge.txt', 1, 'train'],
     #[data_folder + '/second_msr_pairs_nolarge.txt', 1, 'test'],
@@ -44,7 +44,7 @@ dataset = [
     #[data_folder + '/second_msr_pairs_thelarge.txt', 1, 'test'],
 
     [data_folder + '/first_nondup.txt', 0, 'train'],
-    [data_folder + '/second_nondup.txt', 0, 'test'],
+    #[data_folder + '/second_nondup.txt', 0, 'test'],
     #[data_folder + '/rly_false_pairs.txt', 0, 'train'],
     #[data_folder + '/small_part_negative.txt', 0, 'test'],
 ]
@@ -58,6 +58,7 @@ dataset = [
     [data_folder + '/small2_part_msr.txt', 1, 'train'],
     [data_folder + '/small_part_negative.txt', 0, 'train'],
 ]
+'''
 
 
 dataset += [
@@ -66,7 +67,7 @@ dataset += [
     [data_folder + '/openpr_label_false.txt', 0, 'test'],
     [data_folder + '/openpr_label_true.txt', 1, 'test'],
 ]
-'''
+
 
 '''
 dataset += [
