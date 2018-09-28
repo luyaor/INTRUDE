@@ -50,7 +50,7 @@ def generate_part_pull(pull):
         out_file = out + '/' + root_sha + '_' + c['sha'] + '.txt'        
         os.system('git -C %s diff %s %s > %s' % (repo_path, root_sha, c['sha'], out_file))
         
-        p = commits_to_pull(message, total_message, ti, open(out_file).read())
+        p = commits_to_pull(message, total_message, ti, open(out_file, 'r', encoding="utf-8").read())
         all_p.append(p)
     
     return all_p
@@ -77,7 +77,7 @@ def simulate(repo, num1, num2):
         for c2 in git.get_pull_commit(p2):
             if c1['commit']['message'] == c2['commit']['message']: # repeat commit
                 return 2, -1, []
-    
+
     try:
         all_pa = generate_part_pull(p1)
         all_pb = generate_part_pull(p2)
@@ -163,10 +163,12 @@ if __name__ == '__main__':
     
     result = []
     
-    in_file = 'data/multi_commits_rly_false_pairs.txt'
-    # file = 'data/msr_multi_commits_no_repeat.txt'
-    
-    out_file = 'detection/' + in_file.replace('.txt','').replace('data/','') + '_result.txt'
+    # in_file = 'data/multi_commits_second_false.txt'
+    # in_file = 'data/msr_multi_commits_no_repeat.txt'
+    # in_file = 'data/multi_commits_second_nondup_part.txt'
+    in_file = 'data/multi_commits_second_nondup_part2_1000.txt'
+
+    out_file = 'detection/' + in_file.replace('.txt','').replace('data/','') + '_newret.txt'
     
     print('input=', in_file)
     print('output=', out_file)
@@ -179,7 +181,12 @@ if __name__ == '__main__':
         
         last_repo = None
         for pair in pairs:
-            r, n1, n2, z = pair.split()
+            pair_s = pair.split()
+            r, n1, n2 = pair_s[0], pair_s[1], pair_s[2]
+            
+            if r == 'JuliaLang/julia':
+                continue
+
 
             if r != last_repo:
                 clf.init_model_with_repo(r)
@@ -194,11 +201,12 @@ if __name__ == '__main__':
                 continue
             
             
-            if max_s > 0:
-                with open(out_file, 'a+') as f:
-                    print(r, n1, n2, z, max_s, float(z) - max_s, save_t, history, file=f)
+            if max_s >= 0:
+                with open(out_file, 'a+') as outf:
+                    print(r, n1, n2, -1, max_s, -1, save_t, history, file=outf)
                 
             result.append((pair, history))
+            
     
     result = sorted(result, key=lambda x: x[1], reverse=True)
     

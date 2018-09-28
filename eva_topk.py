@@ -1,9 +1,9 @@
 import os
 import sys
 
-way = 'pre'
+way = 'new'
 
-file = 'detection/result_on_topk_%s.txt' % way
+file = 'detection/result_on_topk_%s_v3.txt' % way
 
 last_run = {}
 if os.path.exists(file):
@@ -18,7 +18,6 @@ print('last_run', len(last_run))
 
 
 from clf import *
-from comp import *
 from detect import *
 
 out = open(file, 'a+')
@@ -35,6 +34,12 @@ with open('data/clf/second_msr_pairs_nolarge.txt') as f:
         if n1 > n2:
             n1, n2 = n2, n1
         
+        if (r, n1, n2) == ('joomla/joomla-cms', '15618', '15633'):
+            continue
+        if (r, n1, n2) == ('cocos2d/cocos2d-x', '11441', '11583'):
+            continue
+
+
         if (r, n1, n2) in last_run:
             li = last_run[(r, n1, n2)]
         else:

@@ -17,7 +17,9 @@ renew_pr_list_flag = False
 filter_out_too_big_pull_flag = True
 filter_out_too_old_pull_flag = True
 
-predict_mode = False
+predict_mode = True
+filter_larger_number = True
+filter_already_cite = False
 
 def get_time(t):
     return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
@@ -34,7 +36,7 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
     pulls = get_repo_info(repo, 'pull')
     pullA = get_pull(repo, num1)
     
-    if predict_mode:
+    if filter_already_cite:
         cite[str(pullA["number"])] = get_another_pull(pullA)
 
     results = {}
@@ -55,17 +57,17 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
                     get_time(pull["updated_at"])).days) >= 5 * 365: # more than 4 years
                 continue
 
-        if not predict_mode:
+        if filter_larger_number:
             if int(pull["number"]) >= int(num1):
                 continue
                 
         if predict_mode:
             # same
-            if str(pull["number"]) == str(num1):
+            if str(pull["number"]) == str(pullA["number"]):
                 continue
 
             # same author
-            if pullA["user"]["id"] == pull["user"]["id"]:
+            if pull["user"]["id"] == pullA["user"]["id"]:
                 continue
 
             # case of following up work (not sure)
@@ -73,14 +75,17 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
                                        get_pr_and_issue_numbers(pullA["body"])):
                 continue
             
-            # "cite" cases
-            if (str(pull["number"]) in cite.get(str(pullA["number"]), [])) or\
-            (str(pullA["number"]) in cite.get(str(pull["number"]), [])):
-                continue
-
+            if filter_already_cite:
+                # "cite" cases
+                if (str(pull["number"]) in cite.get(str(pullA["number"]), [])) or\
+                (str(pullA["number"]) in cite.get(str(pull["number"]), [])):
+                    continue
+            
+            '''
             # revert cases
             if 'revert' in pull["title"].lower():
                 continue
+            '''
             
             '''
             # create after another is merged
@@ -123,6 +128,10 @@ def load_select(repo):
     return select_set
 
 def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
+    print('predict_mode=', predict_mode)
+    print('filter_already_cite=', filter_already_cite)
+    print('filter_larger=', filter_larger_number)
+
     init_model_with_repo(repo)
     pulls = get_repo_info(repo, 'pull', renew_pr_list_flag)
 
@@ -141,7 +150,7 @@ def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
         out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet_rerun.txt', 'a+')
     '''
     select_p = part_p
-    out = open('evaluation/'+repo.replace('/','_')+'_run_on_select.txt', 'a+')
+    out = open('evaluation/'+repo.replace('/','_')+'_run_on_select_new.txt', 'a+')
 
     for pull in pulls:
         num1 = str(pull["number"])
@@ -186,7 +195,9 @@ openpr_suffix = 'weekly'
 
 def find_on_openpr(repo, time_stp=None):
     print('time_stp', time_stp)
-    print('simulate_mode', simulate_mode)
+    predict_mode = True
+    filter_already_cite = True
+    filter_larger_number = False
     
     pulls = get_repo_info(repo, 'pull', renew_pr_list_flag)
     '''
@@ -194,10 +205,11 @@ def find_on_openpr(repo, time_stp=None):
         cite[str(pull["number"])] = get_another_pull(pull)
     '''
     pulls = api.request('GET', 'repos/%s/pulls?state=open' % repo, True)
-    for pull in pulls:
-        cite[str(pull["number"])] = get_another_pull(pull)
     
-    
+    if filter_already_cite:
+        for pull in pulls:
+            cite[str(pull["number"])] = get_another_pull(pull)
+
     # init model
     init_model_with_repo(repo)
     
@@ -263,6 +275,7 @@ if __name__ == "__main__":
 
     # detection on history (random sampling)
     if len(sys.argv) > 1:
+        predict_mode = True
         r = sys.argv[1].strip()
         simulate_timeline(r)
     

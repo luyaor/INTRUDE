@@ -36,7 +36,7 @@ dataset = []
 
 dataset = [
     [data_folder + '/first_msr_pairs.txt', 1, 'train'],
-    # [data_folder + '/second_msr_pairs.txt', 1, 'test'],
+    [data_folder + '/second_msr_pairs.txt', 1, 'test'],
     
     #[data_folder + '/first_msr_pairs_nolarge.txt', 1, 'train'],
     #[data_folder + '/second_msr_pairs_nolarge.txt', 1, 'test'],
@@ -44,7 +44,7 @@ dataset = [
     #[data_folder + '/second_msr_pairs_thelarge.txt', 1, 'test'],
 
     [data_folder + '/first_nondup.txt', 0, 'train'],
-    #[data_folder + '/second_nondup.txt', 0, 'test'],
+    [data_folder + '/second_nondup.txt', 0, 'test'],
     #[data_folder + '/rly_false_pairs.txt', 0, 'train'],
     #[data_folder + '/small_part_negative.txt', 0, 'test'],
 ]
@@ -60,14 +60,14 @@ dataset = [
 ]
 '''
 
-
+'''
 dataset += [
     [data_folder + '/manual_label_false.txt', 0, 'test'],
     [data_folder + '/manual_label_true.txt', 1, 'test'],
     [data_folder + '/openpr_label_false.txt', 0, 'test'],
     [data_folder + '/openpr_label_true.txt', 1, 'test'],
 ]
-
+'''
 
 '''
 dataset += [
@@ -89,6 +89,7 @@ part_params = None
 
 
 draw_pic = False
+draw_roc = False
 model_data_random_shuffle_flag = False
 model_data_renew_flag = False
 
@@ -111,7 +112,6 @@ def init_model_with_pulls(pulls, save_id=None):
     
     if code_sim_type == 'tfidf':
         c = []
-        # pulls = pulls[:1000]
         for pull in pulls: # only added code
             try:
                 if not check_large(pull):
@@ -356,6 +356,25 @@ def classify(model_type=default_model):
         plt.xlim([0.0, 1.0])
         plt.title('Precision-Recall curve')
     
+    if draw_roc:
+        # Compute ROC curve and ROC area for each class
+        fpr, tpr, _ = roc_curve(y_test, y_score)
+        roc_auc = auc(fpr, tpr)
+
+        plt.figure()
+        
+        plt.plot(fpr, tpr, color='darkorange',
+                 lw=2, label='ROC curve (area = %0.5f)' % roc_auc)
+
+        plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
+        plt.xlim([0.0, 1.0])
+        plt.ylim([0.0, 1.05])
+        plt.xlabel('False Positive Rate')
+        plt.ylabel('True Positive Rate')
+        plt.title('Receiver operating characteristic example')
+        plt.legend(loc="lower right")
+        plt.show()
+
     return clf
 
 if __name__ == "__main__":
