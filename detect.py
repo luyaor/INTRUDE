@@ -151,7 +151,7 @@ def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
     '''
     select_p = part_p
     out = open('evaluation/'+repo.replace('/','_')+'_run_on_select_new.txt', 'a+')
-
+    
     for pull in pulls:
         num1 = str(pull["number"])
         

@@ -166,8 +166,10 @@ if __name__ == '__main__':
     # in_file = 'data/multi_commits_second_false.txt'
     # in_file = 'data/msr_multi_commits_no_repeat.txt'
     # in_file = 'data/multi_commits_second_nondup_part.txt'
-    in_file = 'data/multi_commits_second_nondup_part2_1000.txt'
-
+    # in_file = 'data/multi_commits_second_nondup_part2_1000.txt'
+    # in_file = 'data/rly_false_pairs.txt'
+    in_file = 'data/big_false_data.txt'
+    
     out_file = 'detection/' + in_file.replace('.txt','').replace('data/','') + '_newret.txt'
     
     print('input=', in_file)
@@ -183,10 +185,6 @@ if __name__ == '__main__':
         for pair in pairs:
             pair_s = pair.split()
             r, n1, n2 = pair_s[0], pair_s[1], pair_s[2]
-            
-            if r == 'JuliaLang/julia':
-                continue
-
 
             if r != last_repo:
                 clf.init_model_with_repo(r)
