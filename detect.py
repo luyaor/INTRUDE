@@ -127,6 +127,14 @@ def load_select(repo):
             select_set.add(t.strip())
     return select_set
 
+def load_select_runned(path):
+    s = set()
+    with open(path) as f:
+        for t in f.readlines():
+            p = t.split()
+            s.add(p[1].strip())
+    return s
+
 def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
     print('predict_mode=', predict_mode)
     print('filter_already_cite=', filter_already_cite)
@@ -150,7 +158,13 @@ def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
         out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet_rerun.txt', 'a+')
     '''
     select_p = part_p
-    out = open('evaluation/'+repo.replace('/','_')+'_run_on_select_new.txt', 'a+')
+    out_path = 'evaluation/'+repo.replace('/','_')+'_run_on_select_new.txt'
+    
+    if os.path.exists(out_path):
+        print('keep run!')
+        select_p = select_p - load_select_runned(out_path)
+    
+    out = open(out_path, 'a+')
     
     for pull in pulls:
         num1 = str(pull["number"])
