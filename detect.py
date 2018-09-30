@@ -21,13 +21,23 @@ predict_mode = True
 filter_larger_number = True
 filter_already_cite = False
 
+speed_up = True
+
 def get_time(t):
     return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
 
 last_detect_repo = None
 
+def speed_up_check(p1, p2):
+    if set(p2['title'].split()) & set(p1['title'].split()):
+        return True
+    if set([x['name'] for x in fetch_pr_info(p1)]) & set([x['name'] for x in fetch_pr_info(p2)]):
+        return True
+    if check_pattern(p1, p2) == 1:
+        return True
+    return False
+
 def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
-    
     global last_detect_repo
     if last_detect_repo != repo:
         last_detect_repo = repo
@@ -93,7 +103,11 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
                (get_time(pull["merged_at"]) < get_time(pullA["created_at"])):
                 continue
             '''
-
+        
+        if speed_up:
+            if not speed_up_check(pullA, pull):
+                continue
+            
         if print_progress:
             if cnt % 100 == 0:
                 print('progress = ', 1.0 * cnt / tot)        

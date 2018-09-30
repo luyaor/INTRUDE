@@ -216,8 +216,8 @@ def title_has_same_pattern(a, b):
 
 def check_pattern(A, B):
     ab_num = set([A["number"], B["number"]])
-    a_text = A["title"] + ' ' + A["body"]
-    b_text = B["title"] + ' ' + B["body"]
+    a_text = str(A["title"]) + ' ' + str(A["body"])
+    b_text = str(B["title"]) + ' ' + str(B["body"])
 
     a_set = set(get_numbers(a_text) + get_version_numbers(a_text)) - ab_num
     b_set = set(get_numbers(b_text) + get_version_numbers(b_text)) - ab_num
