@@ -335,6 +335,7 @@ def classify(model_type=default_model):
     if model_type == 'boost':
         print(clf.feature_importances_)
     
+    
     # Predict
     acc = clf.score(X_test, y_test)
     print('Mean Accuracy:', acc)
@@ -342,6 +343,8 @@ def classify(model_type=default_model):
     y_score = clf.decision_function(X_test)
     average_precision = average_precision_score(y_test, y_score)
     print('Average precision score: {0:0.4f}'.format(average_precision))
+    
+    print('F1 score: {0:0.4f}'.format(f1_score(y_test, clf.predict(X_test))))
     
     if draw_pic:
         # draw the PR-curve
