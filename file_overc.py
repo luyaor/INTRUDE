@@ -1,7 +1,14 @@
 from git import *
 from detect import *
 
-file = 'evaluation/facebook_react_run_on_select_new.txt'
+repo = 'facebook_react'
+import sys
+
+if len(sys.argv) > 1:
+    repo = sys.argv[1].strip()
+
+
+file = 'evaluation/%s_run_on_select_new.txt' % repo.replace('.', '_')
 nf = file.replace('.txt', '') + '_filsamec.txt'
 
 out = open(nf, 'w')
