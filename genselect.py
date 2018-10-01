@@ -2,7 +2,7 @@ import os
 from git import *
 from sklearn.utils import shuffle
 
-repo = 'angular/angular.js'
+repo = 'docker/docker'
 
 if len(sys.argv) > 1:
     repo = sys.argv[1].strip()
@@ -13,7 +13,7 @@ file = 'evaluation/' + repo.replace('/', '_') + '_select.txt'
 
 add_flag = True
 
-gen_num = 100
+gen_num = 400
 
 has = set()
 if os.path.exists(file):

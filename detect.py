@@ -29,7 +29,7 @@ def get_time(t):
 last_detect_repo = None
 
 def speed_up_check(p1, p2):
-    if set(p2['title'].split()) & set(p1['title'].split()):
+    if set(p2['title'].lower().split()) & set(p1['title'].lower().split()):
         return True
     if set([x['name'] for x in fetch_pr_info(p1)]) & set([x['name'] for x in fetch_pr_info(p2)]):
         return True
