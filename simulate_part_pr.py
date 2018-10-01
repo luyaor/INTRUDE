@@ -168,7 +168,8 @@ if __name__ == '__main__':
     # in_file = 'data/multi_commits_second_nondup_part.txt'
     # in_file = 'data/multi_commits_second_nondup_part2_1000.txt'
     # in_file = 'data/rly_false_pairs.txt'
-    in_file = 'data/big_false_data.txt'
+    # in_file = 'data/big_false_data.txt'
+    in_file = 'data/multi_commits_second_nondup.txt'
     
     out_file = 'detection/' + in_file.replace('.txt','').replace('data/','') + '_newret.txt'
     

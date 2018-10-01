@@ -1,11 +1,17 @@
 import os
+import sys
 from git import *
 from sklearn.utils import shuffle
 
-repo = 'docker/docker'
+repo = 'mrdoob/three.js'
 
 if len(sys.argv) > 1:
     repo = sys.argv[1].strip()
+
+gen_num = 200
+
+if len(sys.argv) > 2:
+    gen_num = int(sys.argv[2].strip())
 
 print('repo', repo)
 
@@ -13,7 +19,8 @@ file = 'evaluation/' + repo.replace('/', '_') + '_select.txt'
 
 add_flag = True
 
-gen_num = 400
+
+print('num', gen_num)
 
 has = set()
 if os.path.exists(file):
