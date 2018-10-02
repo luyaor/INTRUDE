@@ -25,7 +25,7 @@ def generate_part_pull(pull):
     repo = pull["base"]["repo"]["full_name"]
     repo_path = '/DATA/luyao/repo/%s' % repo
 
-    fetch_pull_from_local(pull)
+    # fetch_pull_from_local(pull)
     
     out = '/DATA/luyao/commit_diff'
 
@@ -59,7 +59,7 @@ def generate_part_pull(pull):
 def commits_to_pull(message, total_message, ti, raw_diff):
     pull = {}
     pull['number'] = None
-    pull['title'] = message
+    pull['title'] = total_message
     pull['body'] = total_message
     pull['file_list'] = fetch_raw_diff.parse_files(raw_diff)
     pull['time'] = ti
@@ -76,20 +76,21 @@ def simulate(repo, num1, num2):
     for c1 in git.get_pull_commit(p1):
         for c2 in git.get_pull_commit(p2):
             if c1['commit']['message'] == c2['commit']['message']: # repeat commit
-                return 2, -1, []
+                return 2, -1, [], []
 
     try:
         all_pa = generate_part_pull(p1)
         all_pb = generate_part_pull(p2)
     except Exception as e:
         print('error on', repo, num1, num2, ':', e)
-        return -1, -1, []
+        return -1, -1, [], []
 
     
     # print('commit len=', len(all_pb), len(all_pb))
     
     max_s, max_t = -1, 0
     history = []
+    history_ret = []
     
     l_a, l_b = len(all_pa), len(all_pb)
     num_a, num_b = 0, 0
@@ -116,6 +117,9 @@ def simulate(repo, num1, num2):
             # print(now_a['time'], now_b['time'], num_a, num_b)
             
             ret = comp.calc_sim(now_a, now_b)
+            
+            history_ret.append(ret)
+            
             s = m.predict_proba([comp.sim_to_vet(ret)])[0][1]
             
             print(ret)
@@ -137,7 +141,7 @@ def simulate(repo, num1, num2):
             max_s = max(max_s, s)
     '''
     
-    return max_s, (l_a + l_b - max_t), history
+    return max_s, (l_a + l_b - max_t), history, history_ret
 
 m = clf.classify()
 
@@ -164,14 +168,15 @@ if __name__ == '__main__':
     result = []
     
     # in_file = 'data/multi_commits_second_false.txt'
-    # in_file = 'data/msr_multi_commits_no_repeat.txt'
+    in_file = 'data/msr_multi_commits_no_repeat.txt'
     # in_file = 'data/multi_commits_second_nondup_part.txt'
     # in_file = 'data/multi_commits_second_nondup_part2_1000.txt'
     # in_file = 'data/rly_false_pairs.txt'
     # in_file = 'data/big_false_data.txt'
-    in_file = 'data/multi_commits_second_nondup.txt'
+    # in_file = 'data/multi_commits_second_nondup.txt'
     
-    out_file = 'detection/' + in_file.replace('.txt','').replace('data/','') + '_newret.txt'
+    out_file = 'detection/' + in_file.replace('.txt','').replace('data/','') + '_newret5.txt'
+    out_log = out_file + '.log'
     
     print('input=', in_file)
     print('output=', out_file)
@@ -194,7 +199,7 @@ if __name__ == '__main__':
             print('run on ', r, n1, n2)
             
             try:
-                max_s, save_t, history = simulate(r, n1, n2)
+                max_s, save_t, history, history_ret = simulate(r, n1, n2)
             except Exception as e:
                 print('error on:', pair, e, file=log)
                 continue
@@ -203,6 +208,8 @@ if __name__ == '__main__':
             if max_s >= 0:
                 with open(out_file, 'a+') as outf:
                     print(r, n1, n2, -1, max_s, -1, save_t, history, file=outf)
+                with open(out_log, 'a+') as outf:
+                    print(r, n1, n2, history_ret, file=outf)
                 
             result.append((pair, history))
             

@@ -346,6 +346,37 @@ def classify(model_type=default_model):
     
     print('F1 score: {0:0.4f}'.format(f1_score(y_test, clf.predict(X_test))))
     
+    threshold = 0.5
+    y_pred_proba = clf.predict_proba(X_test)
+    t_acc, t_tot = 0, 0
+    t_rec, t_rec_tot = 0, 0
+    t_pre, t_pre_tot = 0, 0
+    for i in range(len(y_test)):
+        if y_pred_proba[i][1] >= threshold:
+            y_threshold_score = 1
+        else:
+            y_threshold_score = 0
+        
+        t_tot += 1
+        if y_threshold_score == y_test[i]:
+            t_acc += 1
+        
+        if y_test[i] == 1:
+            t_rec_tot += 1
+            if y_threshold_score == 1:
+                t_rec += 1
+        if y_threshold_score == 1:
+            t_pre_tot += 1
+            if y_test[i] == 1:
+                t_pre += 1
+    
+    
+    print('threshold acc =', 1.0 * t_acc / t_tot)
+    print('threshold re-call =', 1.0 * t_rec / t_rec_tot)
+    print('threshold precision =', 1.0 * t_pre / t_pre_tot)
+            
+        
+    
     if draw_pic:
         # draw the PR-curve
         precision, recall, _ = precision_recall_curve(y_test, y_score)

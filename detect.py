@@ -22,7 +22,7 @@ filter_larger_number = True
 filter_already_cite = False
 
 speed_up = True
-filter_overlap_commit = True
+filter_overlap_commit = False
 
 def get_time(t):
     return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
