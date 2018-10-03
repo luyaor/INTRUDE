@@ -38,8 +38,15 @@ def speed_up_check(p1, p2):
         return True
     return False
 
+def check_pro_pick(p1, p2):
+    if set([x[1] for x in pull_commit_sha(p1)]) & set([x[1] for x in pull_commit_sha(p2)]):
+        return True
+    return False
+
 
 def have_commit_overlap(p1, p2):
+    return False
+    '''
     t = set(pull_commit_sha(p1)) & set(pull_commit_sha(p2))
     p1_user = p1["user"]["id"]
     p2_user = p2["user"]["id"]
@@ -47,7 +54,7 @@ def have_commit_overlap(p1, p2):
         if (x[1] == p1_user) or (x[1] == p2_user):
             return True
     return False
-    
+    '''
     
 def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
     global last_detect_repo
@@ -210,14 +217,15 @@ def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
 
         num2, prob = topk[0][0], topk[0][1]
         vet = get_pr_sim_vector(pull, get_pull(repo, num2))
-        pre = c.predict([vet])[0]
+        
+        check_pick = check_pro_pick(pull, get_pull(repo, num2))
         
         status = 'N/A'
         
         if (num2 in get_another_pull(pull)) or (num1 in get_another_pull(get_pull(repo, num2))):
             status += '(mention)'
         
-        print("\t".join([repo, str(num1), str(num2), "%.4f" % prob, str(pre)] + \
+        print("\t".join([repo, str(num1), str(num2), "%.4f" % prob, str(check_pick)] + \
                         [status] + \
                         ["%.4f" % f for f in vet] + \
                         ['https://www.github.com/%s/pull/%s' % (repo, str(num1)),\
