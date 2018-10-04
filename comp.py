@@ -38,6 +38,13 @@ def counter_similarity(A_counter, B_counter):
         return 0
     return 1.0 * tot1 / tot2
 
+def set_similarity(A, B):
+    if (A is None) or (B is None):
+        return 0
+    if (len(A) == 0) or (len(B) == 0):
+        return 0
+    return len(set(A) & set(B)) / len(set(A) | set(B))
+    
 def list_similarity(A, B):
     if (A is None) or (B is None):
         return 0
@@ -270,6 +277,9 @@ def calc_sim(A, B):
     title_sim = get_text_sim(A["title"], B["title"])
     desc_sim = get_text_sim(A["body"], B["body"])
     file_list_sim = list_similarity(get_file_list(A), get_file_list(B))
+    
+    if A['merge_commit_flag'] and B['merge_commit_flag']:
+        file_list_sim = set_similarity(get_file_list(A), get_file_list(B))
 
     overlap_files_set = set(get_file_list(A)) & set(get_file_list(B))
     

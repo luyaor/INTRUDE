@@ -1,6 +1,48 @@
 from git import *
 from sklearn.utils import shuffle
 
+from datetime import datetime, timedelta
+
+def checkt(repo, num1, num2):    
+    p1 = get_pull(repo, num1)
+    p2 = get_pull(repo, num2)
+    
+    all_pa = get_pull_commit(p1)
+    all_pb = get_pull_commit(p2)
+    
+    l_a, l_b = len(all_pa), len(all_pb)
+    num_a, num_b = 0, 0
+    now_a, now_b = None, None
+    
+    numt = 0
+    while True:
+        pa = all_pa[num_a] if num_a < l_a else None
+        pb = all_pb[num_b] if num_b < l_b else None
+        if (pa is None) and (pb is None):
+            break
+        
+        if pa:
+            pat = datetime.strptime(pa['commit']['author']['date'], "%Y-%m-%dT%H:%M:%SZ")
+        if pb:
+            pbt = datetime.strptime(pb['commit']['author']['date'], "%Y-%m-%dT%H:%M:%SZ")
+        
+        if (pb is None) or (pa and (pat < pbt)):
+            num_a += 1
+            now_a = pa
+        else:
+            num_b += 1
+            now_b = pb
+        
+        if now_a and now_b:
+            if (num_a < l_a) or (num_b < l_b):
+                numt += 1
+    
+    if numt > 0:
+        return True
+    else:
+        return False
+    
+
 with open('data/clf/second_nondup.txt') as f:
     pairs = f.readlines()
 
@@ -51,6 +93,11 @@ for pair in pairs:
 
     if check_large(p1) or check_large(p2):
         continue
+    
+    '''
+    if not checkt(repo, num1, num2):
+        continue
+    '''
     
     print(pair.strip(), file=out)
     out.flush()

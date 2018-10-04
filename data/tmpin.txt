@@ -1,19 +1,15 @@
-Apple/swift	16311	16273
-Apple/swift	14146	13848
-Apple/swift	12951	12076
-Apple/swift	15901	12602
-Apple/swift	302	301
-Apple/swift	17500	17491
-Apple/swift	251	206
-Apple/swift	14141	12230
-Apple/swift	4263	4041
-Apple/swift	11507	7883
-Apple/swift	9025	8988
-Apple/swift	1985	857
-Apple/swift	395	113
-Apple/swift	13987	13621
-Apple/swift	17387	5867
-Apple/swift	5032	4964
-Apple/swift	1162	539
-Apple/swift	14929	14772
-Apple/swift	16980	14546
+facebook/react	10255	9977	0.6726
+facebook/react	11638	11371	0.6349
+facebook/react	2553	2526	0.6315
+facebook/react	2443	2422	0.6264
+facebook/react	9005	8097	0.6201
+facebook/react	4344	4220	0.6144
+facebook/react	10467	9897	0.6143
+facebook/react	11489	11186	0.6099
+facebook/react	9814	9197	0.6042
+facebook/react	12778	12890	0.6036
+facebook/react	9179	8841	0.6036
+facebook/react	12621	10730	0.6029
+facebook/react	12488	10730	0.6029
+facebook/react	1702	1548	0.6029
+facebook/react	8749	8705	0.6002
