@@ -12,9 +12,6 @@ import fetch_raw_diff
 def generate_part_pull(pull):
     commits = git.get_pull_commit(pull)
     
-    if len(commits[0]["parents"]) > 1:
-        raise Exception('have multi parents %s' % commits[0]['sha'])
-        
     total_message = ''
     
     all_p = []
@@ -40,7 +37,8 @@ def generate_part_pull(pull):
 def commits_to_pull(message, total_message, ti, file_list):
     pull = {}
     pull['number'] = None
-    pull['title'] = message
+    # pull['title'] = message
+    pull['title'] = total_message
     pull['body'] = total_message
     pull['file_list'] = copy.deepcopy(file_list)
     pull['time'] = ti
@@ -52,17 +50,19 @@ def simulate(repo, num1, num2):
     p1 = git.get_pull(repo, num1)
     p2 = git.get_pull(repo, num2)
     
+    '''
     for c1 in git.get_pull_commit(p1):
         for c2 in git.get_pull_commit(p2):
             if (len(c1['commit']['message']) > 0) and (c1['commit']['message'] == c2['commit']['message']): # repeat commit
-                return 2, -1, [], []
-
+                return 2, [], []
+    '''
+    
     try:
         all_pa = generate_part_pull(p1)
         all_pb = generate_part_pull(p2)
     except Exception as e:
         print('error on', repo, num1, num2, ':', e)
-        return -1, -1, [], []
+        return -1, [], []
     
     # print('commit len=', len(all_pb), len(all_pb))
     
@@ -90,14 +90,16 @@ def simulate(repo, num1, num2):
             ret = comp.calc_sim(now_a, now_b)
             s = m.predict_proba([comp.sim_to_vet(ret)])[0][1]
             
+            '''
             print(ret)
             print(s)
             print('-------------------')
+            '''
             
             history.append(s)
             history_ret.append(ret)
     
-    return history, history_ret
+    return 1, history, history_ret
 
 m = clf.classify()
 
@@ -109,20 +111,20 @@ def run(s):
 
 if __name__ == '__main__':
     
-    run('dotnet/corefx 23755 18185')
+    # run('dotnet/corefx 23755 18185')
     
-    '''
-    in_file = 'data/msr_multi_commits_no_repeat.txt'
-    # in_file = 'data/multi_commits_second_nondup.txt'
+    # in_file = 'data/mulc_second_msr_pairs.txt'
+    in_file = 'data/mulc_second_nondup.txt'
     
-    out_file = 'detection/' + in_file.replace('.txt','').replace('data/','') + '_newret5.txt'
+    out_file = 'detection/' + in_file.replace('.txt','').replace('data/','') + '_okret_tds.txt'
     out_log = out_file + '.log'
     
     print('input=', in_file)
     print('output=', out_file)
     
-    log = open(out_file + '.log', 'w+')
-    
+    with open(out_log, 'w') as outf:
+        print('start', file=outf)
+        
     result = []
     
     with open(in_file) as f:
@@ -138,16 +140,19 @@ if __name__ == '__main__':
                 clf.init_model_with_repo(r)
                 last_repo = r
             
-            history, history_ret = simulate(r, n1, n2)
+            status, history, history_ret = simulate(r, n1, n2)
             
             result.append((pair, history))
             
-    
+            if status >= 0:
+                with open(out_file, 'a+') as outf:
+                    print(r, n1, n2, history, file=outf)
+                with open(out_log, 'a+') as outf:
+                    print(r, n1, n2, history_ret, file=outf)
+
+
     result = sorted(result, key=lambda x: x[1], reverse=True)
-    
     with open(out_file + '.whole', 'w') as f:
         print(result, file=f)
-    
-    log.close()
-    '''
+
     

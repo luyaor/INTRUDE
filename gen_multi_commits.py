@@ -78,7 +78,6 @@ for pair in pairs:
     cl1 = get_pull_commit(p1)
     cl2 = get_pull_commit(p2)
     
-    
     #t = get_pr_sim_vector(p1, p2)
     #o = m.predict_proba([t])[0][1]
     

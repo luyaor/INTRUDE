@@ -3,7 +3,7 @@ import sys
 
 way = 'new'
 
-file = 'detection/result_on_topk_%s_v3.txt' % way
+file = 'detection/result_on_topk_%s_ok.txt' % way
 
 last_run = {}
 if os.path.exists(file):
@@ -16,8 +16,6 @@ if os.path.exists(file):
 # print(last_run)
 print('last_run', len(last_run))
 
-
-from clf import *
 from detect import *
 
 out = open(file, 'a+')
@@ -27,13 +25,16 @@ print(way)
 cnt_num = 0
 top_acc = [0 for i in range(30)]
 
+input_pairs = 'data/clf/second_msr_pairs.txt'
+# input_pairs = 'data/clf/second_msr_pairs_nolarge.txt'
 
-with open('data/clf/second_msr_pairs_nolarge.txt') as f:
+with open(input_pairs) as f:
     for t in f.readlines():
         r, n1, n2 = t.strip().split()
         if n1 > n2:
             n1, n2 = n2, n1
         
+        # noise in MSR dataset
         if (r, n1, n2) == ('joomla/joomla-cms', '15618', '15633'):
             continue
         if (r, n1, n2) == ('cocos2d/cocos2d-x', '11441', '11583'):

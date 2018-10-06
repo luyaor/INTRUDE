@@ -278,7 +278,7 @@ def calc_sim(A, B):
     desc_sim = get_text_sim(A["body"], B["body"])
     file_list_sim = list_similarity(get_file_list(A), get_file_list(B))
     
-    if A['merge_commit_flag'] and B['merge_commit_flag']:
+    if ('merge_commit_flag' in A) and ('merge_commit_flag' in B):
         file_list_sim = set_similarity(get_file_list(A), get_file_list(B))
 
     overlap_files_set = set(get_file_list(A)) & set(get_file_list(B))
@@ -343,8 +343,8 @@ def sim_to_vet(r):
 
 # pull requests sim
 def get_pr_sim(A, B):
-    A["file_list"] = fetch_pr_info(A)
-    B["file_list"] = fetch_pr_info(B)
+    A["file_list"] = fetch_pr_info(A) if not check_large(A) else []
+    B["file_list"] = fetch_pr_info(B) if not check_large(B) else []
     
     A["title"] = str(A["title"] or '')
     A["body"] = str(A["body"] or '')

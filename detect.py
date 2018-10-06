@@ -14,14 +14,14 @@ cite = {}
 last_number = None
 renew_pr_list_flag = False
 
-filter_out_too_big_pull_flag = True
+filter_out_too_big_pull_flag = False #fix
 filter_out_too_old_pull_flag = True
 
-predict_mode = True
+predict_mode = True #fix
 filter_larger_number = True
 filter_already_cite = False
 
-speed_up = True
+speed_up = False
 filter_overlap_commit = False
 
 def get_time(t):
@@ -77,10 +77,12 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
     for pull in pulls:
         cnt += 1
         
+        '''
         if filter_out_too_big_pull_flag:
             if check_large(pull):
                 continue
-        
+        '''
+
         if filter_out_too_old_pull_flag:
             if abs((get_time(pullA["updated_at"]) - \
                     get_time(pull["updated_at"])).days) >= 5 * 365: # more than 4 years
@@ -109,13 +111,7 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
                 if (str(pull["number"]) in cite.get(str(pullA["number"]), [])) or\
                 (str(pullA["number"]) in cite.get(str(pull["number"]), [])):
                     continue
-            
-            '''
-            # revert cases
-            if 'revert' in pull["title"].lower():
-                continue
-            '''
-            
+
             '''
             # create after another is merged
             if (pull["merged_at"] is not None) and \
@@ -128,7 +124,7 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
                 continue
         
         if filter_overlap_commit:
-            if have_commit_overlap(pullA, pull):
+            if check_pro_pick(pullA, pull):
                 continue
 
         if print_progress:
@@ -324,10 +320,10 @@ def detect_one(repo, num):
         return ret[0][0], ret[0][1]
 
 if __name__ == "__main__":
-
     # detection on history (random sampling)
     if len(sys.argv) > 1:
         predict_mode = True
+        speed_up = True
         r = sys.argv[1].strip()
         simulate_timeline(r)
     

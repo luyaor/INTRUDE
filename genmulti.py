@@ -45,25 +45,20 @@ def checkt(repo, num1, num2):
         return False
     
 
-with open('data/clf/second_nondup.txt') as f:
+with open('data/clf/second_msr_pairs.txt') as f:
     pairs = f.readlines()
 
 w = 0
 
-out = open('data/multi_commits_second_nondup.txt', 'w')
+out = open('data/mulc_second_msr_pairs.txt', 'w')
 
 pairs = sorted(pairs, key=lambda x: x.split()[0])
-last_repo = None
+
+all_len = []
 
 for pair in pairs:
     repo, num1, num2 = pair.strip().split()
     
-    #print(repo, num1, num2)
-    '''
-    if repo != last_repo:
-        last_repo = repo
-        init_model_with_repo(repo)
-    '''
     
     p1 = get_pull(repo, num1)
     p2 = get_pull(repo, num2)
@@ -81,11 +76,16 @@ for pair in pairs:
     if (len(cl1) == 0) or (len(cl2) == 0):
         continue
     
+    cll = max(len(cl1), len(cl2))
+    all_len.append(cll)
+    
+    """
     if (len(cl1) > 100) or (len(cl2) > 100):
         continue
-
+    
     if check_large(p1) or check_large(p2):
         continue
+    """
     
     if not checkt(repo, num1, num2):
         continue
@@ -99,3 +99,5 @@ for pair in pairs:
 
 out.close()
 print(w)
+print(all_len)
+print(max(all_len))
