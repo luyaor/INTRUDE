@@ -7,6 +7,9 @@ from sklearn.utils import shuffle
 from clf import *
 from git import *
 from comp import *
+from util import localfile
+
+from multiprocessing import Pool
 
 c = classify()
 
@@ -23,6 +26,8 @@ filter_already_cite = False
 
 speed_up = False
 filter_overlap_author = False
+
+run_repo = None
 
 def get_time(t):
     return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
@@ -138,7 +143,9 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
         else:
             results[pull["number"]] = old_way(pullA, pull)
 
-    result = [(x,y) for x, y in sorted(results.items(), key=lambda x: x[1], reverse=True)][:topK]    
+    result = [(x,y) for x, y in sorted(results.items(), key=lambda x: x[1], reverse=True)][:topK] 
+    localfile.write_to_file('evaluation/'+repo+'/'+num1+'.json', result)
+    
     return result
 
 
@@ -168,164 +175,75 @@ def load_select_runned(path):
             s.add(p[1].strip())
     return s
 
+
+def run(num1):
+    repo = run_repo
+    
+    pull = get_pull(repo, num1)
+
+    topk = get_topK(repo, num1, 10)
+    if len(topk) == 0:
+        return None
+
+    num2, prob = topk[0][0], topk[0][1]
+    vet = get_pr_sim_vector(pull, get_pull(repo, num2))
+
+    check_pick = check_pro_pick(pull, get_pull(repo, num2))
+
+    status = 'N/A'
+
+    if (num2 in get_another_pull(pull)) or (num1 in get_another_pull(get_pull(repo, num2))):
+        status += '(mention)'
+
+    result = "\t".join([repo, str(num1), str(num2), "%.4f" % prob, str(check_pick)] + \
+                    [status] + \
+                    ["%.4f" % f for f in vet] + \
+                    ['https://www.github.com/%s/pull/%s' % (repo, str(num1)),\
+                     'https://www.github.com/%s/pull/%s' % (repo, str(num2))]
+            )
+    logres = "\t".join([repo, str(num1), str(topk)])
+
+    return (result, logres)
+
+
 def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
     print('predict_mode=', predict_mode)
     print('filter_already_cite=', filter_already_cite)
     print('filter_larger=', filter_larger_number)
+    print('speed_up=', speed_up)
 
     init_model_with_repo(repo)
-    pulls = get_repo_info(repo, 'pull', renew_pr_list_flag)
-
-    all_p = set([str(pull["number"]) for pull in pulls])
     
-    # part_p = load_part(repo)
     part_p = load_select(repo)
-    
-    log = open('evaluation/'+repo.replace('/','_')+'_stimulate_detect.log', 'a+')
-    '''
-    if not rerun:
-        select_p = set(shuffle(list(all_p - part_p))[:run_num])
-        out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet.txt', 'a+')
-    else:
-        select_p = part_p
-        out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet_rerun.txt', 'a+')
-    '''
+        
     select_p = part_p
-    out_path = 'evaluation/'+repo.replace('/','_')+'_run_on_select_new.txt'
     
+    out_path = 'evaluation/'+repo.replace('/','_')+'_run_on_select_new_mv.txt'
+
     if os.path.exists(out_path):
         print('keep run!')
         select_p = select_p - load_select_runned(out_path)
-    
-    out = open(out_path, 'a+')
-    
-    for pull in pulls:
-        num1 = str(pull["number"])
-        
-        if num1 not in select_p:
-            continue
-        
-        print('Run on PR #%s' % num1)
-        
-        topk = get_topK(repo, num1, 10)
-        if len(topk) == 0:
-            continue
 
-        num2, prob = topk[0][0], topk[0][1]
-        vet = get_pr_sim_vector(pull, get_pull(repo, num2))
-        
-        check_pick = check_pro_pick(pull, get_pull(repo, num2))
-        
-        status = 'N/A'
-        
-        if (num2 in get_another_pull(pull)) or (num1 in get_another_pull(get_pull(repo, num2))):
-            status += '(mention)'
-        
-        print("\t".join([repo, str(num1), str(num2), "%.4f" % prob, str(check_pick)] + \
-                        [status] + \
-                        ["%.4f" % f for f in vet] + \
-                        ['https://www.github.com/%s/pull/%s' % (repo, str(num1)),\
-                         'https://www.github.com/%s/pull/%s' % (repo, str(num2))]
-                       ),
-              file=out)
-        out.flush()
-
-        print(repo, num1, ':', topk, file=log)
-        log.flush()
+    print('start run!')
     
-    log.close()
-    out.close()
-
-
-total_number = 0
-
-openpr_suffix = 'weekly'
-
-def find_on_openpr(repo, time_stp=None):
-    print('time_stp', time_stp)
-    predict_mode = True
-    filter_already_cite = True
-    filter_larger_number = False
+    with Pool(processes=10) as pool:
+        all_result = pool.map(run, list(select_p))
     
-    pulls = get_repo_info(repo, 'pull', renew_pr_list_flag)
-    '''
-    for pull in pulls:
-        cite[str(pull["number"])] = get_another_pull(pull)
-    '''
-    pulls = api.request('GET', 'repos/%s/pulls?state=open' % repo, True)
-    
-    if filter_already_cite:
-        for pull in pulls:
-            cite[str(pull["number"])] = get_another_pull(pull)
-
-    # init model
-    init_model_with_repo(repo)
-    
-    mode = 'a' if last_number else 'w'
-    print('write mode=',mode)
-    
-    out = open('detection/firehouse/'+repo.replace('/','_')+'_topk_' + openpr_suffix + '.txt', mode)
-    out2 = open('detection/firehouse/'+repo.replace('/','_')+'_top1_' + openpr_suffix + '.txt', mode)
-    
-    global total_number
-    
-    for pull in pulls:
-        if time_stp and (get_time(pull["created_at"]) < time_stp):
-            continue
-                
-        if pull["state"] != "open":
-            continue
- 
-        if 'revert' in pull["title"].lower():
-            continue
-        
-        num1 = str(pull["number"])
-        
-        if last_number and int(num1) >= last_number:
-            continue
-        
-        print('run on', repo, num1)
-        
-        topk = get_topK(repo, num1, 10)
-        num2 = topk[0][0]
-        prob = topk[0][1]
-
-        sim = get_pr_sim_vector(pull, get_pull(repo, num2))
-        
-        if prob >= 0.95:
-            total_number += 1
+    for res in all_result:
+        if res is not None:
+            with open(out_path, 'a+') as f:
+                print(res[0], file=f)
             
-        print("%s %8s %8s %.4f" % (repo, str(num1), str(num2), prob))
-        print(" ".join("%.4f" % f for f in sim))
-        print('https://www.github.com/%s/pull/%s' % (repo, str(num1)))
-        print('https://www.github.com/%s/pull/%s' % (repo, str(num2)))
-        sys.stdout.flush()
-
-        print("%s %8s %8s %.4f" % (repo, str(num1), str(num2), prob), file=out2)
-        print(" ".join("%.4f" % f for f in sim), file=out2)
-        print('https://www.github.com/%s/pull/%s' % (repo, str(num1)), file=out2)
-        print('https://www.github.com/%s/pull/%s' % (repo, str(num2)), file=out2)
-        print(repo, num1, ':', topk, file=out)
-
-    out.close()
-    out2.close()
-
-
-def detect_one(repo, num):
-    print('detect on', repo, num)
-    ret = get_topK(repo, num , 1, True)
-    if len(ret) < 1:
-        return -1, -1
-    else:
-        return ret[0][0], ret[0][1]
+            with open('evaluation/'+repo.replace('/','_')+'_stimulate_detect_mv.log', 'a+') as f:
+                print(res[1], file=f)
 
 if __name__ == "__main__":
     # detection on history (random sampling)
     if len(sys.argv) > 1:
         predict_mode = True
         speed_up = True
-        r = sys.argv[1].strip()
-        simulate_timeline(r)
+        run_repo = sys.argv[1].strip()
+        simulate_timeline(run_repo)
     
     '''
     if len(sys.argv) > 1:
