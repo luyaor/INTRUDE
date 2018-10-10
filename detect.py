@@ -32,8 +32,13 @@ last_detect_repo = None
 def speed_up_check(p1, p2):
     if set(p2['title'].lower().split()) & set(p1['title'].lower().split()):
         return True
-    if set([x['name'] for x in fetch_pr_info(p1)]) & set([x['name'] for x in fetch_pr_info(p2)]):
-        return True
+
+    try:
+        if set([x['name'] for x in fetch_pr_info(p1)]) & set([x['name'] for x in fetch_pr_info(p2)]):
+            return True
+    except:
+        pass
+
     if check_pattern(p1, p2) == 1:
         return True
     return False
@@ -42,6 +47,9 @@ def check_pro_pick(p1, p2):
     if set([x[1] for x in pull_commit_sha(p1)]) & set([x[1] for x in pull_commit_sha(p2)]):
         return True
     return False
+
+def check_pro_pick_with_num(r, n1, n2):
+    return check_pro_pick(get_pull(r, n1), get_pull(r, n2))
 
 
 def have_commit_overlap(p1, p2):
@@ -111,13 +119,13 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
                 if (str(pull["number"]) in cite.get(str(pullA["number"]), [])) or\
                 (str(pullA["number"]) in cite.get(str(pull["number"]), [])):
                     continue
-
-            '''
+            
             # create after another is merged
             if (pull["merged_at"] is not None) and \
-               (get_time(pull["merged_at"]) < get_time(pullA["created_at"])):
+            (get_time(pull["merged_at"]) < get_time(pullA["created_at"])) and \
+            ((get_time(pullA["created_at"]) - get_time(pull["merged_at"])).days >= 14):
                 continue
-            '''
+            
         
         if speed_up:
             if not speed_up_check(pullA, pull):
@@ -165,7 +173,8 @@ def load_select_runned(path):
     with open(path) as f:
         for t in f.readlines():
             p = t.split()
-            s.add(p[1].strip())
+            if float(p[3]) < 0.6:
+                s.add(p[1].strip())
     return s
 
 def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
@@ -214,7 +223,8 @@ def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
         num2, prob = topk[0][0], topk[0][1]
         vet = get_pr_sim_vector(pull, get_pull(repo, num2))
         
-        check_pick = check_pro_pick(pull, get_pull(repo, num2))
+        # check_pick = check_pro_pick(pull, get_pull(repo, num2))
+        check_pick = 'Mer, NoPick'
         
         status = 'N/A'
         
