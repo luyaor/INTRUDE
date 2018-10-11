@@ -61,13 +61,14 @@ for (repo, n2) in to_run:
         if n1 >= int(n2):
             continue
         
-        if check_ok_new(pull, pullA):
-            if is_filter_before(pull, pullA):
+        # if is_filter_before(pull, pullA):
+        if pull["user"]["id"] == pullA["user"]["id"]:
+            if check_ok_new(pull, pullA):
                 feature_vector = get_pr_sim_vector(pullA, pull)
                 value = c.predict_proba([feature_vector])[0][1]
                 
                 if value >= 0.59:
-                    with open('rlog/cases.txt', 'a') as outf:
+                    with open('rlog/cases_only_author.txt', 'a') as outf:
                         print(repo, n2, n1, value, file=outf)
 
                 

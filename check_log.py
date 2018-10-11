@@ -6,7 +6,7 @@ import os
 
 files = os.listdir('rlog')
 
-out = 'rlog/all_with_mark_new.txt'
+out = 'rlog/all_with_mark_new_tmp.txt'
 
 mark = {}
 with open('rlog/label.csv') as f:

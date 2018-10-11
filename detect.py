@@ -15,11 +15,14 @@ last_number = None
 renew_pr_list_flag = False
 
 filter_out_too_big_pull_flag = False #fix
+filter_same_author_and_already_mentioned = True #fix
 filter_out_too_old_pull_flag = True
 
 predict_mode = True #fix
 filter_larger_number = True
 filter_already_cite = False
+
+filter_create_after_merge = False
 
 speed_up = False
 filter_overlap_author = False
@@ -104,15 +107,16 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
             # same
             if str(pull["number"]) == str(pullA["number"]):
                 continue
+                
+            if filter_same_author_and_already_mentioned:
+                # same author
+                if pull["user"]["id"] == pullA["user"]["id"]:
+                    continue
 
-            # same author
-            if pull["user"]["id"] == pullA["user"]["id"]:
-                continue
-
-            # case of following up work (not sure)
-            if str(pull["number"]) in (get_pr_and_issue_numbers(pullA["title"]) + \
-                                       get_pr_and_issue_numbers(pullA["body"])):
-                continue
+                # case of following up work (not sure)
+                if str(pull["number"]) in (get_pr_and_issue_numbers(pullA["title"]) + \
+                                           get_pr_and_issue_numbers(pullA["body"])):
+                    continue
             
             if filter_already_cite:
                 # "cite" cases
@@ -120,11 +124,12 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
                 (str(pullA["number"]) in cite.get(str(pull["number"]), [])):
                     continue
             
-            # create after another is merged
-            if (pull["merged_at"] is not None) and \
-            (get_time(pull["merged_at"]) < get_time(pullA["created_at"])) and \
-            ((get_time(pullA["created_at"]) - get_time(pull["merged_at"])).days >= 14):
-                continue
+            if filter_create_after_merge:
+                # create after another is merged
+                if (pull["merged_at"] is not None) and \
+                (get_time(pull["merged_at"]) < get_time(pullA["created_at"])) and \
+                ((get_time(pullA["created_at"]) - get_time(pull["merged_at"])).days >= 14):
+                    continue
             
         
         if speed_up:
@@ -200,7 +205,7 @@ def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
         out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet_rerun.txt', 'a+')
     '''
     select_p = part_p
-    out_path = 'evaluation/'+repo.replace('/','_')+'_run_on_select_new.txt'
+    out_path = 'evaluation/'+repo.replace('/','_')+'_run_on_select_final.txt'
     
     if os.path.exists(out_path):
         print('keep run!')
@@ -224,13 +229,15 @@ def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
         vet = get_pr_sim_vector(pull, get_pull(repo, num2))
         
         # check_pick = check_pro_pick(pull, get_pull(repo, num2))
-        check_pick = 'Mer, NoPick'
+        check_pick = 'None'
         
         status = 'N/A'
-        
+
+        '''
         if (num2 in get_another_pull(pull)) or (num1 in get_another_pull(get_pull(repo, num2))):
             status += '(mention)'
-        
+        '''
+
         print("\t".join([repo, str(num1), str(num2), "%.4f" % prob, str(check_pick)] + \
                         [status] + \
                         ["%.4f" % f for f in vet] + \
@@ -334,6 +341,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         predict_mode = True
         speed_up = True
+        filter_create_after_merge = True
         r = sys.argv[1].strip()
         simulate_timeline(r)
     
