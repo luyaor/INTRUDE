@@ -178,7 +178,7 @@ def load_select_runned(path):
     with open(path) as f:
         for t in f.readlines():
             p = t.split()
-            if float(p[3]) < 0.6:
+            if float(p[3]) < 0.59:
                 s.add(p[1].strip())
     return s
 
@@ -205,13 +205,17 @@ def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
         out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet_rerun.txt', 'a+')
     '''
     select_p = part_p
-    out_path = 'evaluation/'+repo.replace('/','_')+'_run_on_select_final.txt'
+    out_path = 'evaluation/'+repo.replace('/','_')+'_run_on_select_new.txt'
     
     if os.path.exists(out_path):
         print('keep run!')
+        print('total run=', len(select_p))
         select_p = select_p - load_select_runned(out_path)
+        print('last for run=', len(select_p))
     
     out = open(out_path, 'a+')
+    
+    print('-----', file=out)
     
     for pull in pulls:
         num1 = str(pull["number"])
