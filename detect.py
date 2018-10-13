@@ -148,6 +148,11 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
         if use_way == 'new':
             feature_vector = get_pr_sim_vector(pullA, pull)        
             results[pull["number"]] = c.predict_proba([feature_vector])[0][1]
+        elif use_way == 'oldp':
+            results[pull["number"]] = pold_way(pullA, pull)
+        elif use_way == 'part_new':
+            feature_vector = part_new(pullA, pull)        
+            results[pull["number"]] = c.predict_proba([feature_vector])[0][1]
         else:
             results[pull["number"]] = old_way(pullA, pull)
 
@@ -177,6 +182,8 @@ def load_select_runned(path):
     s = set()
     with open(path) as f:
         for t in f.readlines():
+            if '---' in t:
+                continue
             p = t.split()
             if float(p[3]) < 0.59:
                 s.add(p[1].strip())

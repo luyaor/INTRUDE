@@ -366,8 +366,27 @@ def old_way(A, B):
 
     return model.query_sim_tfidf(get_tokens(A["title"]), get_tokens(B["title"])) + \
     model.query_sim_tfidf(get_tokens(A["body"]), get_tokens(B["body"]))
-    
 
+def pold_way(A, B):
+    A["title"] = str(A["title"] or '')
+    A["body"] = str(A["body"] or '')
+    
+    B["title"] = str(B["title"] or '')
+    B["body"] = str(B["body"] or '')
+
+    return get_text_sim(A["title"], B["title"])[0] + get_text_sim(A["body"], B["body"])[0]
+
+def part_new(A, B):
+    A["title"] = str(A["title"] or '')
+    A["body"] = str(A["body"] or '')
+    
+    B["title"] = str(B["title"] or '')
+    B["body"] = str(B["body"] or '')
+
+    title_sim = get_text_sim(A["title"], B["title"])
+    desc_sim = get_text_sim(A["body"], B["body"])
+    return [title_sim[0], desc_sim[0]]
+    
 # commits sim
 def get_commit_sim_vector(A, B):
     def commit_to_pull(x):
