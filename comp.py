@@ -357,6 +357,21 @@ def get_pr_sim(A, B):
 def get_pr_sim_vector(A, B):
     return sim_to_vet(get_pr_sim(A, B))
 
+def leave_feat(A, B, way):
+    r = get_pr_sim(A, B)
+    if 'text' in way:
+        r['title'] = r['desc'] = []
+    elif 'code' in way:
+        r['code'] = []
+    elif 'file_list' in way:
+        r['file_list'] = []
+    elif 'location' in way:
+        r['location'] = []
+    elif 'pattern' in way:
+        r['pattern'] = []
+    return sim_to_vet(r)
+        
+    
 def old_way(A, B):
     A["title"] = str(A["title"] or '')
     A["body"] = str(A["body"] or '')

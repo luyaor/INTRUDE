@@ -46,7 +46,14 @@ def commits_to_pull(message, total_message, ti, file_list):
     return pull
 
 
-def simulate(repo, num1, num2):    
+l_repo = None
+
+def simulate(repo, num1, num2):
+    global l_repo
+    if repo != l_repo:
+        l_repo = repo
+        clf.init_model_with_repo(repo)
+        
     p1 = git.get_pull(repo, num1)
     p2 = git.get_pull(repo, num2)
     
@@ -114,9 +121,10 @@ if __name__ == '__main__':
     # run('dotnet/corefx 23755 18185')
     
     # in_file = 'data/mulc_second_msr_pairs.txt'
-    in_file = 'data/mulc_second_nondup.txt'
+    # in_file = 'data/mulc_second_nondup.txt'
+    in_file = 'data/clf/second_nondup.txt'
     
-    out_file = 'detection/' + in_file.replace('.txt','').replace('data/','') + '_okret_tds.txt'
+    out_file = 'detection/' + in_file.replace('.txt','').replace('data/','').replace('clf/','') + '_okret_tds_z.txt'
     out_log = out_file + '.log'
     
     print('input=', in_file)
@@ -129,7 +137,7 @@ if __name__ == '__main__':
     
     with open(in_file) as f:
         pairs = f.readlines()
-        pairs = sorted(pairs, key=lambda x: x[0])
+        pairs = sorted(pairs, key=lambda x: x.split()[0])
         
         last_repo = None
         for pair in pairs:

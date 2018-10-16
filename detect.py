@@ -148,12 +148,15 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
         if use_way == 'new':
             feature_vector = get_pr_sim_vector(pullA, pull)        
             results[pull["number"]] = c.predict_proba([feature_vector])[0][1]
+        elif 'leave' in use_way:
+            feature_vector = leave_feat(pullA, pull, use_way)
+            results[pull["number"]] = c.predict_proba([feature_vector])[0][1]
         elif use_way == 'oldp':
             results[pull["number"]] = pold_way(pullA, pull)
         elif use_way == 'part_new':
             feature_vector = part_new(pullA, pull)        
             results[pull["number"]] = c.predict_proba([feature_vector])[0][1]
-        else:
+        elif use_way == 'old':
             results[pull["number"]] = old_way(pullA, pull)
 
     result = [(x,y) for x, y in sorted(results.items(), key=lambda x: x[1], reverse=True)][:topK]    

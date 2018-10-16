@@ -69,14 +69,24 @@ def commits_to_pull(message, total_message, ti, raw_diff):
     return pull
 
 
-def simulate(repo, num1, num2):    
+l_repo = None
+
+def simulate(repo, num1, num2):
+    global l_repo
+
+    if repo != l_repo:
+        l_repo = repo
+        clf.init_model_with_repo(repo)
+        
     p1 = git.get_pull(repo, num1)
     p2 = git.get_pull(repo, num2)
     
+    '''
     for c1 in git.get_pull_commit(p1):
         for c2 in git.get_pull_commit(p2):
             if c1['commit']['message'] == c2['commit']['message']: # repeat commit
                 return 2, -1, [], []
+    '''
 
     try:
         all_pa = generate_part_pull(p1)

@@ -35,7 +35,7 @@ dataset = []
 
 
 dataset = [
-    #[data_folder + '/first_msr_pairs.txt', 1, 'train'],
+    [data_folder + '/first_msr_pairs.txt', 1, 'train'],
     [data_folder + '/second_msr_pairs.txt', 1, 'test'],
     
     #[data_folder + '/first_msr_pairs_nolarge.txt', 1, 'train'],
@@ -43,7 +43,7 @@ dataset = [
     #[data_folder + '/first_msr_pairs_thelarge.txt', 1, 'train'],
     #[data_folder + '/second_msr_pairs_thelarge.txt', 1, 'test'],
 
-    #[data_folder + '/first_nondup.txt', 0, 'train'],
+    [data_folder + '/first_nondup.txt', 0, 'train'],
     [data_folder + '/second_nondup.txt', 0, 'test'],
     #[data_folder + '/rly_false_pairs.txt', 0, 'train'],
     #[data_folder + '/small_part_negative.txt', 0, 'test'],
@@ -60,13 +60,14 @@ dataset = [
 ]
 '''
 
-
+'''
 dataset += [
     [data_folder + '/manual_label_false.txt', 0, 'train'],
     [data_folder + '/manual_label_true.txt', 1, 'train'],
     [data_folder + '/openpr_label_false.txt', 0, 'train'],
     [data_folder + '/openpr_label_true.txt', 1, 'train'],
 ]
+'''
 
 
 '''
@@ -85,8 +86,7 @@ if add_timedelta:
 if add_conf:
     model_data_save_path_suffix += '_add_conf'
 
-# part_params = None #[1,1,1,1,1,1,1,1,1]
-part_params = [1,1,0,0,0,0,0,0,0]
+part_params = None #[1,1,1,1,1,1,1,1,1]
 
 draw_pic = False
 draw_roc = False

@@ -8,24 +8,37 @@ import os
 files = os.listdir('rlog')
 
 # out = 'rlog/all_with_mark_new_all_400.txt'
-out = 'rlog/rpart.txt'
+out = 'rlog/sample_small_data.txt'
+with open(out, 'w') as f:
+    pass
 
 mark = {}
+in_mark = set()
 #with open('rlog/label.csv') as f: # old version
 with open('rlog/new_labeled.csv') as f:
     for t in f.readlines():
         r, n1, n2, v, status = t.strip().split(',')
+        if status.strip() == 'Unknown':
+            continue
+        in_mark.add((r, n1))
         mark[(r, n1, n2)] = status
 
 have = {}
 
-only = ['ceph/ceph','joomla/joomla-cms','moby/moby','dotnet/corefx','hashicorp/terraform','emberjs/ember.js']
+# only = ['ceph/ceph','joomla/joomla-cms','moby/moby','dotnet/corefx','hashicorp/terraform','emberjs/ember.js']
 
 def check():
+    
+    totm = 0
+    
     for file in files:
         if 'log' not in file:
             continue
         
+        if file == 'hashicorp_terraform_stimulate_detect2.log':
+            continue
+        if file == 'elastic_elasticsearch_stimulate_detect_del.log':
+            continue
         '''
         only_check = False
         for o in only:
@@ -33,9 +46,10 @@ def check():
                 only_check = True
         if not only_check:
             continue
-        '''
+        
         if file != 'docker_docker_stimulate_detect.log':
             continue
+        '''
         
         print('file=', file)
 
@@ -43,10 +57,12 @@ def check():
         tot = 0
         num2 = 0
         num3 = 0
-
+        markn = 0
+        
         with open('rlog/' + file) as f:
             pairs = f.readlines()
-
+            
+            '''
             np = []
             l = len(pairs)
             check_cover = set()
@@ -59,11 +75,24 @@ def check():
                 check_cover.add((r, n_big))
                 np.append(t)
             pairs = np
+            '''
             
-            print(len(pairs), '->', 800)
+            print(len(pairs), '->', 100)
 
-            pairs = shuffle(pairs)[:800]
-
+            
+            partc = ['cocos2d_cocos2d-x', 'facebook_react', 'ansible_ansible', 'django_django', 'rails_rails', 'angular_angular.js']
+            
+            get_way = '2'
+            for partr in partc:
+                if partr in file:
+                    get_way = '1'
+                
+            if get_way == '1':
+                pairs = shuffle(pairs[:400])[:70]
+            else:
+                pairs = shuffle(pairs)[:70]
+            
+            w = []
             for t in pairs:
                 tot += 1
 
@@ -71,7 +100,13 @@ def check():
                 r, n_big = rs.strip().split()
 
                 op = vs.strip()[2:-2].split('), (')
-
+                
+                w.append((r, int(n_big)))
+                
+                if (r, n_big) in in_mark:
+                    markn +=1 
+                    
+                '''
                 for can in op:
                     n_small, proba = can.split(',')
                     proba = float(proba)
@@ -106,8 +141,20 @@ def check():
                             num2 += 1
 
                         break
-
+                '''
+            
+            w = sorted(w)
+            
+            with open(out,'a') as outf:
+                for (r, n) in w:
+                    print(r, n, file=outf)
+            
+            print('markn=',markn)
+            totm += markn
+    
+        # print(tot, num)
         #print(file, ':', num, ',', num2, '/', tot)
+        print('totm', totm)
         #return 1.0 * num3 / num2
-
+        
 check()

@@ -1,7 +1,7 @@
 import os
 import sys
 
-way = 'oldp'
+way = 'part_new'
 
 file = 'detection/result_on_topk_%s_ok.txt' % way
 
