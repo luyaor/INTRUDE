@@ -122,9 +122,10 @@ if __name__ == '__main__':
     
     # in_file = 'data/mulc_second_msr_pairs.txt'
     # in_file = 'data/mulc_second_nondup.txt'
-    in_file = 'data/clf/second_nondup.txt'
+    # in_file = 'data/clf/second_nondup.txt'
+    # in_file = 'data/clf/second_msr_pairs.txt'
     
-    out_file = 'detection/' + in_file.replace('.txt','').replace('data/','').replace('clf/','') + '_okret_tds_z.txt'
+    out_file = 'detection/' + in_file.replace('.txt','').replace('data/','').replace('clf/','') + '_his.txt'
     out_log = out_file + '.log'
     
     print('input=', in_file)
