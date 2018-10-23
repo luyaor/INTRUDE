@@ -31,49 +31,19 @@ default_model = 'boost'
 
 data_folder = '/home/luyao/PR_get/INTRUDE/data/clf'
 
-dataset = []
-
-
 dataset = [
     [data_folder + '/first_msr_pairs.txt', 1, 'train'],
     [data_folder + '/second_msr_pairs.txt', 1, 'test'],
-    
-    #[data_folder + '/first_msr_pairs_nolarge.txt', 1, 'train'],
-    #[data_folder + '/second_msr_pairs_nolarge.txt', 1, 'test'],
-    #[data_folder + '/first_msr_pairs_thelarge.txt', 1, 'train'],
-    #[data_folder + '/second_msr_pairs_thelarge.txt', 1, 'test'],
-
     [data_folder + '/first_nondup.txt', 0, 'train'],
     [data_folder + '/second_nondup.txt', 0, 'test'],
-    #[data_folder + '/rly_false_pairs.txt', 0, 'train'],
-    #[data_folder + '/small_part_negative.txt', 0, 'test'],
 ]
-
-
-'''
-dataset = [
-    [data_folder + '/rly_true_pairs.txt', 1, 'train'],
-    [data_folder + '/rly_false_pairs.txt', 0, 'train'],
-    [data_folder + '/small_part_msr.txt', 1, 'train'],
-    [data_folder + '/small2_part_msr.txt', 1, 'train'],
-    [data_folder + '/small_part_negative.txt', 0, 'train'],
-]
-'''
 
 '''
 dataset += [
-    [data_folder + '/manual_label_false.txt', 0, 'train'],
-    [data_folder + '/manual_label_true.txt', 1, 'train'],
-    [data_folder + '/openpr_label_false.txt', 0, 'train'],
-    [data_folder + '/openpr_label_true.txt', 1, 'train'],
-]
-'''
-
-
-'''
-dataset += [
-    [data_folder + '/msr_positive_pairs.txt', 1, 'train'],
-    [data_folder + '/big_false_data.txt', 0, 'train'],
+    [data_folder + '/manual_label_false.txt', 0, 'test'],
+    [data_folder + '/manual_label_true.txt', 1, 'test'],
+    [data_folder + '/openpr_label_false.txt', 0, 'test'],
+    [data_folder + '/openpr_label_true.txt', 1, 'test'],
 ]
 '''
 
@@ -126,34 +96,16 @@ def init_model_with_pulls(pulls, save_id=None):
 
 def init_model_with_repo(repo, save_id=None):
     print('init nlp model with %s data!' % repo)
-    #save_id = repo.replace('/','_') + '_all'
-    #init_model_with_pulls(get_pull_list(repo), save_id)
     if save_id is None:
-        # save_id = repo.replace('/','_') + '_marked'
-        # save_id = repo.replace('/','_') + '_default'
         save_id = repo.replace('/','_') + '_allpr'
     else:
         save_id = repo.replace('/','_') + '_' + save_id
-
     try:
         init_model_with_pulls([], save_id)
     except:
         # init_model_with_pulls(shuffle(get_repo_info(repo, 'pull'))[:10000], save_id)
         init_model_with_pulls(get_repo_info(repo, 'pull'), save_id)
 
-# ------------------------------------------------------------
-'''
-def get_feature_vector_from_path(data):
-    X_path = data.replace('.txt','') + '_commit_feature_vector_mix' + '_X.json'
-    y_path = data.replace('.txt','') + '_commit_feature_vector_mix' + '_y.json'
-    if os.path.exists(X_path) and os.path.exists(y_path):
-        # print('warning: feature vectore already exists!', out)
-        X = localfile.get_file(X_path)
-        y = localfile.get_file(y_path)
-        return X, y
-    else:
-        raise Exception('no such file %s' % data)
-'''
 
 # calc feature vet
 def get_sim(repo, num1, num2):
@@ -245,6 +197,7 @@ def get_feature_vector(data, label, renew=False, out=None):
     localfile.write_to_file(y_path, y)
     return (X, y)
 
+
 def classify(model_type=default_model):
     def model_data_prepare(dataset):        
         X_train, y_train = [], []
@@ -333,10 +286,6 @@ def classify(model_type=default_model):
     # print(clf.intercept_)
     # print(clf.loss_function_)
     
-    if model_type == 'boost':
-        print(clf.feature_importances_)
-    
-    
     # Predict
     acc = clf.score(X_test, y_test)
     print('Mean Accuracy:', acc)
@@ -373,7 +322,6 @@ def classify(model_type=default_model):
             t_pre_tot += 1
             if y_test[i] == 1:
                 t_pre += 1
-    
     
     print('threshold acc =', 1.0 * t_acc / t_tot)
     print('threshold re-call =', 1.0 * t_rec / t_rec_tot)

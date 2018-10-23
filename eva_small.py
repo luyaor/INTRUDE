@@ -14,6 +14,8 @@ way = 'leave_' + leave_way
 print('way=', way)
 print('infile=', infile)
 
+if leave_way == 'new':
+    way = 'new'
 
 if leave_way == 'text':
     clf.part_params = [0,0,1,1,1,1,1,1,1]
