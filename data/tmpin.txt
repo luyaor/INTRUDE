@@ -1,7 +1,0 @@
-ceph/ceph	5950	1304
-ceph/ceph	17482	1258
-ceph/ceph	7463	7075
-ceph/ceph	13693	10549
-ceph/ceph	9779	8184
-ceph/ceph	7497	7356
-ceph/ceph	20413	20384
