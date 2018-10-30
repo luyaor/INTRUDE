@@ -15,15 +15,15 @@ last_number = None
 renew_pr_list_flag = False
 
 predict_mode = True #fix
-speed_up = True
 
+speed_up = True
 filter_larger_number = True
 filter_out_too_old_pull_flag = True
 filter_already_cite = False
 filter_create_after_merge = False
 filter_overlap_author = False
-filter_out_too_big_pull_flag = False #fix
-filter_same_author_and_already_mentioned = True #fix
+filter_out_too_big_pull_flag = False
+filter_same_author_and_already_mentioned = True
 
 def get_time(t):
     return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")

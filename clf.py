@@ -27,7 +27,7 @@ from git import *
 
 # ----------------INPUT & CONFIG------------------------------------
 
-default_model = 'boost'
+default_model = 'boost' # default model: AdaBoost
 
 data_folder = '/home/luyao/PR_get/INTRUDE/data/clf'
 
@@ -47,7 +47,7 @@ dataset += [
 ]
 '''
 
-# new
+# model save name
 model_data_save_path_suffix = 'ok_text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
 
 if add_timedelta:
@@ -56,10 +56,10 @@ if add_timedelta:
 if add_conf:
     model_data_save_path_suffix += '_add_conf'
 
-part_params = None #[1,1,1,1,1,1,1,1,1]
+part_params = None
 
-draw_pic = False
-draw_roc = False
+draw_pic = False # draw PR curve
+draw_roc = False # draw ROC curve
 model_data_random_shuffle_flag = False
 model_data_renew_flag = False
 
@@ -72,6 +72,7 @@ print('Data Type:', model_data_save_path_suffix)
 
 # ------------------------------------------------------------
 
+# init NLP model
 def init_model_with_pulls(pulls, save_id=None):    
     t = [str(pull["title"]) for pull in pulls]
     b = []
@@ -107,7 +108,7 @@ def init_model_with_repo(repo, save_id=None):
         init_model_with_pulls(get_repo_info(repo, 'pull'), save_id)
 
 
-# calc feature vet
+# Calculate feature vector.
 def get_sim(repo, num1, num2):
     p1 = get_pull(repo, num1)
     p2 = get_pull(repo, num2)
@@ -198,6 +199,7 @@ def get_feature_vector(data, label, renew=False, out=None):
     return (X, y)
 
 
+# Build classification model
 def classify(model_type=default_model):
     def model_data_prepare(dataset):        
         X_train, y_train = [], []

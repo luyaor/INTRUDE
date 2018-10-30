@@ -16,17 +16,16 @@ from fetch_raw_diff import *
 text_sim_type = 'lsi'
 # text_sim_type = 'tfidf'
 
-# code_sim_type = 'bow'
 code_sim_type = 'tfidf'
+# code_sim_type = 'bow'
 
 extract_sim_type = 'ori_and_overlap'
 
-#add_timedelta = True
 add_timedelta = False
-
-#add_conf = True
 add_conf = False
 
+
+# ---------------------------------------------------------------------------
 
 def counter_similarity(A_counter, B_counter):
     C = set(A_counter) | set(B_counter)
@@ -382,25 +381,6 @@ def old_way(A, B):
     return model.query_sim_tfidf(get_tokens(A["title"]), get_tokens(B["title"])) + \
     model.query_sim_tfidf(get_tokens(A["body"]), get_tokens(B["body"]))
 
-def pold_way(A, B):
-    A["title"] = str(A["title"] or '')
-    A["body"] = str(A["body"] or '')
-    
-    B["title"] = str(B["title"] or '')
-    B["body"] = str(B["body"] or '')
-
-    return get_text_sim(A["title"], B["title"])[0] + get_text_sim(A["body"], B["body"])[0]
-
-def part_new(A, B):
-    A["title"] = str(A["title"] or '')
-    A["body"] = str(A["body"] or '')
-    
-    B["title"] = str(B["title"] or '')
-    B["body"] = str(B["body"] or '')
-
-    title_sim = get_text_sim(A["title"], B["title"])
-    desc_sim = get_text_sim(A["body"], B["body"])
-    return [title_sim[0], desc_sim[0]]
     
 # commits sim
 def get_commit_sim_vector(A, B):
