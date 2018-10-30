@@ -7,13 +7,15 @@ Python library dependencies:
 
 sklearn, numpy, SciPy, matplotlib, gensim, nltk, bs4, flask, GitHub-Flask
 
+---
+
 Configuration:
 
 git.py: LOCAL_DATA_PATH, access_token
 
 nlp.py: model_path
 
-
+---
 
 clf.py: Classification Model using Machine Learning.
 
