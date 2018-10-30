@@ -42,7 +42,7 @@ feature_vector = get_pr_sim_vector(pull1, pull2)
 detect.py: Detection on (open) pull requests.
 
 ``` bash
-python detect.py $repo_name $num_of_sampling
+detect.detect_one(repo, pr_num)
 ```
 
 
@@ -84,20 +84,12 @@ check_too_big(pull)
 ```
 
 
-fetch_raw_diff.py: Get data from API, raw diff parse.
+fetch_raw_diff.py: Get data from API, parse the raw diff.
 
 ``` python
 parse_diff(file_name, diff) # parse raw diff
 fetch_raw_diff(url) # parse raw diff from GitHub API
 ```
-
-
-
-fetch_pull_files.py: Get data from webpage.
-
-
-
-fetch_pull_content.py: Fetch the webpage.
 
 
 
