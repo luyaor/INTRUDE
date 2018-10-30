@@ -128,7 +128,7 @@ $(document).ready( function () {
             </td>
 
             <td class="level">
-                {{ "Probably" if pull.get('proba', -1) >= 0.99 else ("Maybe" if pull.get('proba', -1) >= 0.90 else '') }}
+                {{ "Probably" if pull.get('proba', -1) >= 0.6 else ("Maybe" if pull.get('proba', -1) >= 0.58 else '') }}
             </td>
 
             <td class="proba">

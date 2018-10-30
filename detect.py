@@ -342,6 +342,10 @@ def find_on_openpr(repo, time_stp=None):
 
 def detect_one(repo, num):
     print('detect on', repo, num)
+    speed_up = True
+    filter_create_after_merge = True
+    filter_larger_number = False
+
     ret = get_topK(repo, num , 1, True)
     if len(ret) < 1:
         return -1, -1
@@ -388,32 +392,4 @@ if __name__ == "__main__":
                     break
             except:
                 continue
-    '''
-
-    
-    '''
-    r = 'spring-projects/spring-framework'
-    if len(sys.argv) > 1:
-        r = sys.argv[1]
-    if len(sys.argv) > 2:
-        renew_pr_list_flag = (sys.argv[2] == 'True')
-    if len(sys.argv) > 3:
-        last_number = int(sys.argv[3])
-        print('last = ', last_number)
-    '''
-    
-    '''
-    with open('data/run_list.txt') as f:
-        repos = f.readlines()
-    
-    simulate_mode = False
-    renew_pr_list_flag = False
-    
-    for r in repos:
-        r = r.strip()
-        print('start detect open PR on', r)
-        default_time_stp = datetime.utcnow() - timedelta(days=7)
-        find_on_openpr(r, default_time_stp)
-        
-        print('total number=', total_number)
     '''
