@@ -84,33 +84,10 @@ if __name__ == "__main__":
     m = Model(texts)
     z1 = ['water', 'gold',  'in', 'the', 'shipment', 'shipment']
     z2 = ['aaa', 'bbb', 'a', 'gold', 'in', 'fire', 'in']
-    # print('sum', m.get_idf_sum(z))
+    
     print(m.query_sim_tfidf(z1, z2))
     print(m.query_sim_lsi(z1, z2))
-    #print(m.query_vet_len_mul(z1, z2))
-    '''
     
-    z1 = texts[0]
-    z2 = texts[0]
-    print(m.get_tfidf(z1))
-    print(m.get_tfidf(z2))
-    print(matutils.cossim(m.get_tfidf(z1), m.get_tfidf(z2)))
-    '''
-    # print(m.get_tfidf(['shipment']))
-    # print(m.get_tfidf(['shipment', 'in', 'fire']))
-    
-    # print(m.query_sim_tfidf(['shipment'],['shipment']))
     print(m.query_sim_tfidf(['gold', 'in', 'shipment', 'shipment', 'orz'],['shipment', 'in', 'fire']))
     print(m.query_sim_lsi(['gold', 'in', 'shipment', 'shipment', 'orz'],['shipment', 'in', 'fire']))
-    #print(m.query_vet_len_mul(['gold', 'in', 'shipment', 'shipment', 'orz'],['shipment', 'in', 'fire']))
     
-    # print(m.get_idf_sum(['shipment']))
-    # print(m.get_idf_sum(['shipment', 'in', 'fire']))
-    
-    '''
-    print(m.query_sim_tfidf(texts[0], texts[1]))
-    print(m.query_sim_lsi(texts[0], texts[1]))
-    print(m.query_sim_lsi(z, texts[1]))
-    print(m.get_lsi(z))
-    print(m.get_lsi(texts[1]))
-    '''

@@ -1,0 +1,7 @@
+-----
+GoogleChromeLabs/carlo	26	2	0.4626	0.0738	0.0620	0.0000	0.0000	0.2500	1.0000	0.0000	0.0000	0.0000	https://www.github.com/GoogleChromeLabs/carlo/pull/26	https://www.github.com/GoogleChromeLabs/carlo/pull/2
+GoogleChromeLabs/carlo	19	14	0.4412	0.1638	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	0.0000	https://www.github.com/GoogleChromeLabs/carlo/pull/19	https://www.github.com/GoogleChromeLabs/carlo/pull/14
+GoogleChromeLabs/carlo	6	4	0.5509	0.0704	0.0000	0.0000	0.0000	1.0000	1.0000	1.0000	1.0000	0.0000	https://www.github.com/GoogleChromeLabs/carlo/pull/6	https://www.github.com/GoogleChromeLabs/carlo/pull/4
+GoogleChromeLabs/carlo	5	4	0.6178	-0.0000	0.0000	1.0000	1.0000	1.0000	1.0000	1.0000	1.0000	0.0000	https://www.github.com/GoogleChromeLabs/carlo/pull/5	https://www.github.com/GoogleChromeLabs/carlo/pull/4
+GoogleChromeLabs/carlo	4	1	0.4866	0.0885	0.0000	0.0000	0.0000	1.0000	1.0000	0.0000	0.0000	0.0000	https://www.github.com/GoogleChromeLabs/carlo/pull/4	https://www.github.com/GoogleChromeLabs/carlo/pull/1
+GoogleChromeLabs/carlo	25	2	0.4700	0.0000	0.0000	0.0101	0.0000	0.2000	1.0000	0.0000	0.0000	0.0000	https://www.github.com/GoogleChromeLabs/carlo/pull/25	https://www.github.com/GoogleChromeLabs/carlo/pull/2

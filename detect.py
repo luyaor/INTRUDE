@@ -11,13 +11,10 @@ from comp import *
 c = classify()
 
 cite = {}
-last_number = None
 renew_pr_list_flag = False
 
-predict_mode = True #fix
-
-speed_up = True
-filter_larger_number = True
+speed_up = False
+filter_larger_number = False
 filter_out_too_old_pull_flag = True
 filter_already_cite = False
 filter_create_after_merge = False
@@ -54,8 +51,6 @@ def check_pro_pick_with_num(r, n1, n2):
 
 
 def have_commit_overlap(p1, p2):
-    return False
-    '''
     t = set(pull_commit_sha(p1)) & set(pull_commit_sha(p2))
     p1_user = p1["user"]["id"]
     p2_user = p2["user"]["id"]
@@ -63,7 +58,7 @@ def have_commit_overlap(p1, p2):
         if (x[1] == p1_user) or (x[1] == p2_user):
             return True
     return False
-    '''
+
     
 def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
     global last_detect_repo
@@ -86,11 +81,9 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
     for pull in pulls:
         cnt += 1
         
-        '''
         if filter_out_too_big_pull_flag:
             if check_large(pull):
                 continue
-        '''
 
         if filter_out_too_old_pull_flag:
             if abs((get_time(pullA["updated_at"]) - \
@@ -100,36 +93,30 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
         if filter_larger_number:
             if int(pull["number"]) >= int(num1):
                 continue
-                
-        if predict_mode:
-            # same
-            if str(pull["number"]) == str(pullA["number"]):
-                continue
-                
-            if filter_same_author_and_already_mentioned:
-                # same author
-                if pull["user"]["id"] == pullA["user"]["id"]:
-                    continue
 
-                # case of following up work (not sure)
-                if str(pull["number"]) in (get_pr_and_issue_numbers(pullA["title"]) + \
-                                           get_pr_and_issue_numbers(pullA["body"])):
-                    continue
-            
-            if filter_already_cite:
-                # "cite" cases
-                if (str(pull["number"]) in cite.get(str(pullA["number"]), [])) or\
-                (str(pullA["number"]) in cite.get(str(pull["number"]), [])):
-                    continue
-            
-            if filter_create_after_merge:
-                # create after another is merged
-                if (pull["merged_at"] is not None) and \
-                (get_time(pull["merged_at"]) < get_time(pullA["created_at"])) and \
-                ((get_time(pullA["created_at"]) - get_time(pull["merged_at"])).days >= 14):
-                    continue
-            
-        
+        if filter_same_author_and_already_mentioned:
+            # same author
+            if pull["user"]["id"] == pullA["user"]["id"]:
+                continue
+
+            # case of following up work (not sure)
+            if str(pull["number"]) in (get_pr_and_issue_numbers(pullA["title"]) + \
+                                       get_pr_and_issue_numbers(pullA["body"])):
+                continue
+
+        if filter_already_cite:
+            # "cite" cases
+            if (str(pull["number"]) in cite.get(str(pullA["number"]), [])) or\
+            (str(pullA["number"]) in cite.get(str(pull["number"]), [])):
+                continue
+
+        if filter_create_after_merge:
+            # create after another is merged
+            if (pull["merged_at"] is not None) and \
+            (get_time(pull["merged_at"]) < get_time(pullA["created_at"])) and \
+            ((get_time(pullA["created_at"]) - get_time(pull["merged_at"])).days >= 14):
+                continue
+
         if speed_up:
             if not speed_up_check(pullA, pull):
                 continue
@@ -149,11 +136,6 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
         elif 'leave' in use_way:
             feature_vector = leave_feat(pullA, pull, use_way)
             results[pull["number"]] = c.predict_proba([feature_vector])[0][1]
-        elif use_way == 'oldp':
-            results[pull["number"]] = pold_way(pullA, pull)
-        elif use_way == 'part_new':
-            feature_vector = part_new(pullA, pull)        
-            results[pull["number"]] = c.predict_proba([feature_vector])[0][1]
         elif use_way == 'old':
             results[pull["number"]] = old_way(pullA, pull)
 
@@ -161,70 +143,18 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
     return result
 
 
-def load_part(repo):
-    sheet_path = 'evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet.txt'
-    select_set = set()
-    if (os.path.exists(sheet_path)) and (os.path.getsize(sheet_path) > 0):
-        with open(sheet_path) as f:
-            for t in f.readlines():
-                tt = t.strip().split()
-                select_set.add(str(tt[1]))
-    return select_set
-
-def load_select(repo):
-    path = 'evaluation/'+repo.replace('/','_')+'_select.txt'
-    select_set = set()
-    with open(path) as f:
-        for t in f.readlines():
-            select_set.add(t.strip())
-    return select_set
-
-def load_select_runned(path):
-    s = set()
-    with open(path) as f:
-        for t in f.readlines():
-            if '---' in t:
-                continue
-            p = t.split()
-            if float(p[3]) < 0.59:
-                s.add(p[1].strip())
-    return s
-
-def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
-    print('predict_mode=', predict_mode)
-    print('filter_already_cite=', filter_already_cite)
-    print('filter_larger=', filter_larger_number)
-
+def run_list(repo, renew=False, run_num=200, rerun=False):
     init_model_with_repo(repo)
     pulls = get_repo_info(repo, 'pull', renew_pr_list_flag)
 
     all_p = set([str(pull["number"]) for pull in pulls])
+    select_p = all_p
     
-    # part_p = load_part(repo)
-    part_p = load_select(repo)
-    
-    log = open('evaluation/'+repo.replace('/','_')+'_stimulate_detect.log', 'a+')
-    '''
-    if not rerun:
-        select_p = set(shuffle(list(all_p - part_p))[:run_num])
-        out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet.txt', 'a+')
-    else:
-        select_p = part_p
-        out = open('evaluation/'+repo.replace('/','_')+'_stimulate_top1_sample200_sheet_rerun.txt', 'a+')
-    '''
-    select_p = part_p
-    out_path = 'evaluation/'+repo.replace('/','_')+'_run_on_select_new.txt'
-    
-    if os.path.exists(out_path):
-        print('keep run!')
-        print('total run=', len(select_p))
-        select_p = select_p - load_select_runned(out_path)
-        print('last for run=', len(select_p))
-    
-    out = open(out_path, 'a+')
-    
-    print('-----', file=out)
-    
+    log_path = 'evaluation/'+repo.replace('/','_')+'_stimulate_detect.log'
+    out_path = 'evaluation/'+repo.replace('/','_')+'_run_on_select_all.txt'
+        
+    print('-----', file=open(out_path, 'w+'))
+
     for pull in pulls:
         num1 = str(pull["number"])
         
@@ -240,111 +170,22 @@ def simulate_timeline(repo, renew=False, run_num=200, rerun=False):
         num2, prob = topk[0][0], topk[0][1]
         vet = get_pr_sim_vector(pull, get_pull(repo, num2))
         
-        # check_pick = check_pro_pick(pull, get_pull(repo, num2))
-        check_pick = 'None'
+        with open(out_path, 'a+') as outf:
+            print("\t".join([repo, str(num1), str(num2), "%.4f" % prob] + \
+                            ["%.4f" % f for f in vet] + \
+                            ['https://www.github.com/%s/pull/%s' % (repo, str(num1)),\
+                             'https://www.github.com/%s/pull/%s' % (repo, str(num2))]
+                           ),
+                  file=outf)
         
-        status = 'N/A'
-
-        '''
-        if (num2 in get_another_pull(pull)) or (num1 in get_another_pull(get_pull(repo, num2))):
-            status += '(mention)'
-        '''
-
-        print("\t".join([repo, str(num1), str(num2), "%.4f" % prob, str(check_pick)] + \
-                        [status] + \
-                        ["%.4f" % f for f in vet] + \
-                        ['https://www.github.com/%s/pull/%s' % (repo, str(num1)),\
-                         'https://www.github.com/%s/pull/%s' % (repo, str(num2))]
-                       ),
-              file=out)
-        out.flush()
-
-        print(repo, num1, ':', topk, file=log)
-        log.flush()
-    
-    log.close()
-    out.close()
-
-
-total_number = 0
-
-openpr_suffix = 'weekly'
-
-def find_on_openpr(repo, time_stp=None):
-    print('time_stp', time_stp)
-    predict_mode = True
-    filter_already_cite = True
-    filter_larger_number = False
-    
-    pulls = get_repo_info(repo, 'pull', renew_pr_list_flag)
-    '''
-    for pull in pulls:
-        cite[str(pull["number"])] = get_another_pull(pull)
-    '''
-    pulls = api.request('GET', 'repos/%s/pulls?state=open' % repo, True)
-    
-    if filter_already_cite:
-        for pull in pulls:
-            cite[str(pull["number"])] = get_another_pull(pull)
-
-    # init model
-    init_model_with_repo(repo)
-    
-    mode = 'a' if last_number else 'w'
-    print('write mode=',mode)
-    
-    out = open('detection/firehouse/'+repo.replace('/','_')+'_topk_' + openpr_suffix + '.txt', mode)
-    out2 = open('detection/firehouse/'+repo.replace('/','_')+'_top1_' + openpr_suffix + '.txt', mode)
-    
-    global total_number
-    
-    for pull in pulls:
-        if time_stp and (get_time(pull["created_at"]) < time_stp):
-            continue
-                
-        if pull["state"] != "open":
-            continue
- 
-        if 'revert' in pull["title"].lower():
-            continue
-        
-        num1 = str(pull["number"])
-        
-        if last_number and int(num1) >= last_number:
-            continue
-        
-        print('run on', repo, num1)
-        
-        topk = get_topK(repo, num1, 10)
-        num2 = topk[0][0]
-        prob = topk[0][1]
-
-        sim = get_pr_sim_vector(pull, get_pull(repo, num2))
-        
-        if prob >= 0.95:
-            total_number += 1
-            
-        print("%s %8s %8s %.4f" % (repo, str(num1), str(num2), prob))
-        print(" ".join("%.4f" % f for f in sim))
-        print('https://www.github.com/%s/pull/%s' % (repo, str(num1)))
-        print('https://www.github.com/%s/pull/%s' % (repo, str(num2)))
-        sys.stdout.flush()
-
-        print("%s %8s %8s %.4f" % (repo, str(num1), str(num2), prob), file=out2)
-        print(" ".join("%.4f" % f for f in sim), file=out2)
-        print('https://www.github.com/%s/pull/%s' % (repo, str(num1)), file=out2)
-        print('https://www.github.com/%s/pull/%s' % (repo, str(num2)), file=out2)
-        print(repo, num1, ':', topk, file=out)
-
-    out.close()
-    out2.close()
+        with open(log_path, 'a+') as outf:
+            print(repo, num1, ':', topk, file=outf)
 
 
 def detect_one(repo, num):
     print('detect on', repo, num)
     speed_up = True
     filter_create_after_merge = True
-    filter_larger_number = False
 
     ret = get_topK(repo, num , 1, True)
     if len(ret) < 1:
@@ -353,43 +194,18 @@ def detect_one(repo, num):
         return ret[0][0], ret[0][1]
 
 if __name__ == "__main__":
+    # detect one PR
+    if len(sys.argv) == 3:
+        r = sys.argv[1].strip()
+        n = sys.argv[2].strip()
+        print(detect_one(r, n))
+    
     # detection on history (random sampling)
-    if len(sys.argv) > 1:
-        predict_mode = True
+    if len(sys.argv) == 2:
         speed_up = True
         filter_create_after_merge = True
+        filter_larger_number = True
         r = sys.argv[1].strip()
-        simulate_timeline(r)
+        run_list(r)
     
-    '''
-    if len(sys.argv) > 1:
-        r = sys.argv[1].strip()
-        if len(sys.argv) > 2:
-            num = int(sys.argv[2].strip())
-        else:
-            num = 100
-        simulate_timeline(r, False, num)
     
-    if len(sys.argv) == 1:
-        while True:
-            try:
-                ok = True
-                with open('data/run_list.txt') as f:
-                    rs = f.readlines()
-                    for t in rs:
-                        
-                        sheet_path = 'evaluation/'+t.strip().replace('/','_')+'_stimulate_detect.log'
-                        if (os.path.exists(sheet_path)):
-                            continue
-                        
-
-                        try:
-                            simulate_timeline(t.strip())
-                        except Exception as e:
-                            ok = False
-                            print(e)
-                if ok:
-                    break
-            except:
-                continue
-    '''

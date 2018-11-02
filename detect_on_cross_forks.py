@@ -78,7 +78,7 @@ def detect_dup_pr_cross_repo(upstream, q, out_file):
                         # print(t, file=out2)
 
                     li = sorted(li, key=lambda x: x[3], reverse=True)
-                    if li[0][3] > 0.8:
+                    if li[0][3] > 0.55:
                         print(li[0])
                         print(li[0], file=out)
 
@@ -87,7 +87,7 @@ def detect_dup_pr_cross_repo(upstream, q, out_file):
 
 
 def detect_on_pr(repo):
-    out_file = 'detection/' + repo.replace('/', '_') + '_cross_forks.txt'
+    out_file = 'evaluation/' + repo.replace('/', '_') + '_cross_forks.txt'
 
     if os.path.exists(out_file):
         return
@@ -119,7 +119,7 @@ def detect_on_commit(repo):
 def run_cross_repo(r1, r2):
     q =[{'full_name': r1}, {'full_name': r2}]
     
-    out_file = 'detection/' + (r1 + '_' + r2).replace('/', '_') + '_cross_forks_version2.txt'
+    out_file = 'evaluation/' + (r1 + '_' + r2).replace('/', '_') + '_cross_forks_version2.txt'
 
     if os.path.exists(out_file) and (os.path.getsize(out_file) > 0):
         print('Already run before =', r1, r2)

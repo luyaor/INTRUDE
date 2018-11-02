@@ -51,10 +51,14 @@ feature_vector = get_pr_sim_vector(pull1, pull2)
 
 detect.py: Detection on (open) pull requests.
 
-``` bash
+``` python
 detect.detect_one(repo, pr_num)
 ```
-
+or
+``` bash
+python detect.py repo
+python detect.py repo pr_num
+```
 
 
 detect_on_cross_forks.py: Detection on pull requests of cross-projects.
@@ -62,6 +66,12 @@ detect_on_cross_forks.py: Detection on pull requests of cross-projects.
 ``` python
 detect_on_cross_forks.detect_on_pr(repo_name)
 ```
+or
+``` bash
+python detect_on_cross_forks.py # use hard_forks.txt
+python detect_on_cross_forks.py repo1 repo2
+```
+
 
 
 
