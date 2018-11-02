@@ -15,6 +15,8 @@ git.py: LOCAL_DATA_PATH, access_token
 
 nlp.py: model_path
 
+clf.py: data_folder
+
 ---
 
 clf.py: Classification Model using Machine Learning.
