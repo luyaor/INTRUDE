@@ -15,6 +15,8 @@ git.py: LOCAL_DATA_PATH, access_token
 
 nlp.py: model_path
 
+clf.py: data_folder
+
 ---
 
 clf.py: Classification Model using Machine Learning.
@@ -56,8 +58,8 @@ detect.detect_one(repo, pr_num)
 ```
 or
 ``` bash
-python detect.py repo
-python detect.py repo pr_num
+python detect.py repo # run on command line
+python detect.py repo pr_num # run on command line
 ```
 
 
@@ -68,8 +70,8 @@ detect_on_cross_forks.detect_on_pr(repo_name)
 ```
 or
 ``` bash
-python detect_on_cross_forks.py # use hard_forks.txt
-python detect_on_cross_forks.py repo1 repo2
+python detect_on_cross_forks.py # use hard_forks.txt, run on command line
+python detect_on_cross_forks.py repo1 repo2 # run on command line
 ```
 
 
