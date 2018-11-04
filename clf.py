@@ -65,10 +65,10 @@ model_data_renew_flag = False
 
 # ------------------------------------------------------------
 
-print('text_sim_type=', text_sim_type)
-print('code_sim_type=', code_sim_type)
-print('extract_sim_type=', extract_sim_type)
-print('Data Type:', model_data_save_path_suffix)
+print('text_sim_type =', text_sim_type)
+print('code_sim_type =', code_sim_type)
+print('extract_sim_type =', extract_sim_type)
+print('Model Data Save Path = ', model_data_save_path_suffix)
 
 # ------------------------------------------------------------
 
@@ -228,8 +228,8 @@ def classify(model_type=default_model):
             
         return (X_train, y_train, X_test, y_test)
     
-    print('Data Loading.........')
-    
+    print('--------------------------')
+    print('Loading Data')
     X_train, y_train, X_test, y_test = model_data_prepare(dataset)
     
     '''
@@ -259,7 +259,7 @@ def classify(model_type=default_model):
         print('extract=', part_params)
     
     print('--------------------------')
-    print('Model: training_set', len(X_train), 'testing_set', len(X_test), 'feature_length=', len(X_train[0]))
+    print('Size of Dataset: training_set', len(X_train), 'testing_set', len(X_test), 'feature_length=', len(X_train[0]))
     
     # model choice
 

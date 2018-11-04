@@ -124,6 +124,8 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
         if filter_overlap_author:
             if check_pro_pick(pullA, pull):
                 continue
+            if have_commit_overlap(pullA, pull):
+                continue
 
         if print_progress:
             if cnt % 100 == 0:
