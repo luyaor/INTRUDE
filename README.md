@@ -18,6 +18,17 @@ nlp.py: model_path
 clf.py: data_folder
 
 ---
+Main API:
+```
+python detect.py repo # detect all the PR of repo
+python detect.py repo pr_num # detect one PR
+
+python openpr_detector.py repo # detect all the open PR of repo
+
+python detect_on_cross_forks.py repo1 repo2 # detect the PR between repo1 and repo2
+```
+
+---
 
 clf.py: Classification Model using Machine Learning.
 
@@ -40,7 +51,6 @@ text_sim = query_sim_tfidf(tokens1, tokens2)
 ```
 
 
-
 comp.py: Calculate the similarity for feature extraction.
 
 ``` 
@@ -56,11 +66,6 @@ detect.py: Detection on (open) pull requests.
 ``` python
 detect.detect_one(repo, pr_num)
 ```
-or
-``` bash
-python detect.py repo # run on command line
-python detect.py repo pr_num # run on command line
-```
 
 
 detect_on_cross_forks.py: Detection on pull requests of cross-projects.
@@ -68,12 +73,6 @@ detect_on_cross_forks.py: Detection on pull requests of cross-projects.
 ``` python
 detect_on_cross_forks.detect_on_pr(repo_name)
 ```
-or
-``` bash
-python detect_on_cross_forks.py # use hard_forks.txt, run on command line
-python detect_on_cross_forks.py repo1 repo2 # run on command line
-```
-
 
 
 
