@@ -20,12 +20,12 @@ clf.py: data_folder
 ---
 Main API:
 ```
-python detect.py repo # detect all the PR of repo
+python detect.py repo # detect all the PRs of repo
 python detect.py repo pr_num # detect one PR
 
-python openpr_detector.py repo # detect all the open PR of repo
+python openpr_detector.py repo # detect all the open PRs of repo
 
-python detect_on_cross_forks.py repo1 repo2 # detect the PR between repo1 and repo2
+python detect_on_cross_forks.py repo1 repo2 # detect the PRs between repo1 and repo2
 ```
 
 ---
