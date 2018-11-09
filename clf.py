@@ -40,10 +40,10 @@ dataset = [
 
 '''
 dataset += [
-    [data_folder + '/manual_label_false.txt', 0, 'test'],
-    [data_folder + '/manual_label_true.txt', 1, 'test'],
-    [data_folder + '/openpr_label_false.txt', 0, 'test'],
-    [data_folder + '/openpr_label_true.txt', 1, 'test'],
+    [data_folder + '/manual_label_false_positive.txt', 0, 'test'],
+    [data_folder + '/manual_label_true_positive.txt', 1, 'test'],
+    [data_folder + '/openpr_label_false_positive.txt', 0, 'test'],
+    [data_folder + '/openpr_label_true_positive.txt', 1, 'test'],
 ]
 '''
 
