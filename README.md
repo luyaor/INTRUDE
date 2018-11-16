@@ -23,7 +23,7 @@ RQ1:
     
     (It will take `data/random_sample_select_pr.txt` & `data/clf/second_msr_pairs.txt` as input, and write the output into files: `evaluation/random_sample_select_pr_result.txt` & `evaluation/msr_second_part_result.txt`.)
 
-2. manually label output file: `evaluation/random_sample_select_pr_result.txt`, add Y/N at end (see `evaluation/random_sample_select_pr_result_example.txt` as example)
+2. manually label output file: `evaluation/random_sample_select_pr_result.txt`, add Y/N/Unknown at end (see `evaluation/random_sample_select_pr_result_example.txt` as example)
 
 3. `python rq1_parse.py`
 
