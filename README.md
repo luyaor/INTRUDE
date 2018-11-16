@@ -19,7 +19,7 @@ nlp.py: `model_path`
 
 RQ1:
 1. `python rq1.py`
-2. manually label output file: `evaluation/random_sample_select_pr_result.txt` (add Y/N at end)
+2. manually label output file: `evaluation/random_sample_select_pr_result.txt` (add Y/N at end, see `evaluation/random_sample_select_pr_result_example.txt` as example)
 3. `python rq1_parse.py`
 
    It will print precision & recall.

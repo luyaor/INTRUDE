@@ -7,7 +7,7 @@ way = 'new'
 if len(sys.argv) == 2:
     way = sys.argv[1].strip()
 
-file = 'evaluation/result_on_topk_%s_ok.txt' % way
+file = 'evaluation/result_on_topk_%s.txt' % way
 
 last_run = {}
 if os.path.exists(file):
