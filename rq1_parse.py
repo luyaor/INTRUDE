@@ -33,9 +33,9 @@ for thres in range(4200, 6801, 25):
                     precision_num[r][0] += 1
                 precision[r] = 1.0 * precision_num[r][0] / precision_num[r][1]
 
-    with open('evaluation/result_on_topk_new_ok_with_threshold.txt') as f:
+    with open('evaluation/msr_second_part_result.txt') as f:
         for t in f.readlines():
-            r, n1, n2, v = t.strip().split(' ')
+            r, n1, n2, v = t.strip().split()
             v = float(v)
 
             '''
@@ -56,7 +56,7 @@ for thres in range(4200, 6801, 25):
 
 
     def safe_div(n, d):
-        return n / d if d > 0 else 0
+        return n / d if d > 0 else -1
 
     '''
     pre = list(filter(lambda x: x != 'N/A', precision.values()))
