@@ -11,11 +11,35 @@ sklearn, numpy, SciPy, matplotlib, gensim, nltk, bs4, flask, GitHub-Flask
 
 Configuration:
 
-git.py: LOCAL_DATA_PATH, access_token
+git.py: `LOCAL_DATA_PATH`, `access_token`
 
-nlp.py: model_path
+nlp.py: `model_path`
 
-clf.py: data_folder
+---
+
+RQ1:
+1. `python rq1.py`
+2. manually label output file: `evaluation/random_sample_select_pr_result.txt` (add Y/N at end)
+3. `python rq1_parse.py`
+
+   It will print precision & recall.
+
+RQ2:
+1. `python rq2.py data/clf/second_msr_pairs.txt`
+
+   `python rq2.py data/clf/second_nondup.txt`
+2. `python rq2_parse.py`
+
+RQ3:
+1. `python rq3.py new`
+
+   `python rq3.py old`
+
+2. `python rq3_parse.py new`
+
+   `python rq3_parse.py old`
+ 
+   It will print topK recall for our method and another method.
 
 ---
 Main API:
