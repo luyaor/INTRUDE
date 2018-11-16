@@ -21,38 +21,39 @@ RQ1:
 
 1. `python rq1.py`
     
-    It will take `evaluation/random_sample_select_pr_result.txt` & `data/clf/second_msr_pairs.txt` as input, and write the output into files: `evaluation/random_sample_select_pr_result.txt` & `evaluation/msr_second_part_result.txt`
+    (It will take `evaluation/random_sample_select_pr_result.txt` & `data/clf/second_msr_pairs.txt` as input, and write the output into files: `evaluation/random_sample_select_pr_result.txt` & `evaluation/msr_second_part_result.txt`.)
 
-2. manually label output file: `evaluation/random_sample_select_pr_result.txt` (add Y/N at end, see `evaluation/random_sample_select_pr_result_example.txt` as example)
+2. manually label output file: `evaluation/random_sample_select_pr_result.txt`, add Y/N at end (see `evaluation/random_sample_select_pr_result_example.txt` as example)
 
 3. `python rq1_parse.py`
 
-   It will print precision & recall at different threshold to stdout.
+   (It will print precision & recall at different threshold to stdout.)
 
 
 RQ2:
 
 1. `python rq2.py data/clf/second_msr_pairs.txt`
+
    `python rq2.py data/clf/second_nondup.txt`
    
-   It will take `data/clf/second_msr_pairs.txt` & `data/clf/second_nondup.txt` as input, and write the output into files: `evaluation/second_nondup_history.txt` & `evaluation/second_msr_pairs_history.txt`.
+   (It will take `data/clf/second_msr_pairs.txt` & `data/clf/second_nondup.txt` as input, and write the output into files: `evaluation/second_nondup_history.txt` & `evaluation/second_msr_pairs_history.txt`.)
 
 2. `python rq2_parse.py`
 
-   It will print precision, FPR, saved commits at different threshold to stdout.
+   (It will print precision, FPR, saved commits at different threshold to stdout.)
 
 RQ3:
 1. `python rq3.py new`
 
    `python rq3.py old`
 
-    It will take `data/clf/second_msr_pairs.txt` as input, and write the output into files: `result_on_topk_new.txt` & `result_on_topk_old.txt`
+    (It will take `data/clf/second_msr_pairs.txt` as input, and write the output into files: `result_on_topk_new.txt` & `result_on_topk_old.txt`)
    
 2. `python rq3_parse.py new`
 
    `python rq3_parse.py old`
  
-   It will print topK recall for our method and another method to stdout.
+   (It will print topK recall for our method and another method to stdout.)
 
 ---
 Main API:
