@@ -29,7 +29,7 @@ from git import *
 
 default_model = 'boost' # default model: AdaBoost
 
-data_folder = '/home/luyao/PR_get/INTRUDE/data/clf'
+data_folder = 'data/clf'
 
 dataset = [
     [data_folder + '/first_msr_pairs.txt', 1, 'train'],

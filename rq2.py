@@ -61,7 +61,7 @@ def simulate(repo, num1, num2):
     for c1 in git.get_pull_commit(p1):
         for c2 in git.get_pull_commit(p2):
             if (len(c1['commit']['message']) > 0) and (c1['commit']['message'] == c2['commit']['message']): # repeat commit
-                return 2, [], []
+                return 2, [], [], []
     '''
     
     try:
@@ -69,13 +69,14 @@ def simulate(repo, num1, num2):
         all_pb = generate_part_pull(p2)
     except Exception as e:
         print('error on', repo, num1, num2, ':', e)
-        return -1, [], []
+        return -1, [], [], []
     
     # print('commit len=', len(all_pb), len(all_pb))
     
     history = []
     history_ret = []
-    
+    history_last = []
+
     l_a, l_b = len(all_pa), len(all_pb)
     num_a, num_b = 0, 0
     now_a, now_b = None, None
@@ -105,8 +106,9 @@ def simulate(repo, num1, num2):
             
             history.append(s)
             history_ret.append(ret)
+            history_last.append((l_a - num_a, l_b - num_b))
     
-    return 1, history, history_ret
+    return 1, history, history_ret, history_last
 
 m = clf.classify()
 
@@ -117,23 +119,23 @@ def run(s):
 
 
 if __name__ == '__main__':
-    
-    # run('dotnet/corefx 23755 18185')
-    
-    # in_file = 'data/mulc_second_msr_pairs.txt'
+
+    in_file = 'data/mulc_second_msr_pairs.txt'
     # in_file = 'data/mulc_second_nondup.txt'
     # in_file = 'data/clf/second_nondup.txt'
     # in_file = 'data/clf/second_msr_pairs.txt'
     
-    out_file = 'detection/' + in_file.replace('.txt','').replace('data/','').replace('clf/','') + '_his.txt'
-    out_log = out_file + '.log'
+    if len(sys.argv) == 2:
+        in_file = sys.argv[1].strip()
+    
+    out_file = 'evaluation/' + in_file.replace('.txt','').replace('data/','').replace('clf/','') + '_history.txt'
     
     print('input=', in_file)
     print('output=', out_file)
     
-    with open(out_log, 'w') as outf:
-        print('start', file=outf)
-        
+    with open(out_file, 'w') as f:
+        pass
+
     result = []
     
     with open(in_file) as f:
@@ -149,19 +151,15 @@ if __name__ == '__main__':
                 clf.init_model_with_repo(r)
                 last_repo = r
             
-            status, history, history_ret = simulate(r, n1, n2)
+            status, history, history_ret, history_last = simulate(r, n1, n2)
             
-            result.append((pair, history))
+            for i in range(len(history)):
+                history[i] = (history[i], max(history_last[i][0], history_last[i][1]))
             
             if status >= 0:
                 with open(out_file, 'a+') as outf:
-                    print(r, n1, n2, history, file=outf)
-                with open(out_log, 'a+') as outf:
-                    print(r, n1, n2, history_ret, file=outf)
+                    print(r, n1, n2, ':', history, file=outf)
 
 
-    result = sorted(result, key=lambda x: x[1], reverse=True)
-    with open(out_file + '.whole', 'w') as f:
-        print(result, file=f)
 
     

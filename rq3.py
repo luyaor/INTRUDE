@@ -1,9 +1,13 @@
 import os
 import sys
 
-way = 'part_new'
+way = 'new'
+# way = 'old'
 
-file = 'detection/result_on_topk_%s_ok.txt' % way
+if len(sys.argv) == 2:
+    way = sys.argv[1].strip()
+
+file = 'evaluation/result_on_topk_%s_ok.txt' % way
 
 last_run = {}
 if os.path.exists(file):
@@ -26,7 +30,6 @@ cnt_num = 0
 top_acc = [0 for i in range(30)]
 
 input_pairs = 'data/clf/second_msr_pairs.txt'
-# input_pairs = 'data/clf/second_msr_pairs_nolarge.txt'
 
 with open(input_pairs) as f:
     for t in f.readlines():
@@ -56,10 +59,11 @@ with open(input_pairs) as f:
                 top_acc[i] += 1
         print('now=', r, cnt_num, 'top1 acc =', 1.0 * top_acc[0] / cnt_num)
         
+
 print('end!')
 for i in range(30):
     t = 1.0 * top_acc[i] / cnt_num
     top_acc[i] = t
-    print('top%d acc =%.4f' % (i+1, t), file=out)
+    print('top%d acc =%.4f' % (i+1, t))
 
 out.close()
