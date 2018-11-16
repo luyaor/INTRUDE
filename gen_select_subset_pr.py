@@ -8,7 +8,7 @@ repo = 'mrdoob/three.js'
 if len(sys.argv) > 1:
     repo = sys.argv[1].strip()
 
-gen_num = 200
+gen_num = 400
 
 if len(sys.argv) > 2:
     gen_num = int(sys.argv[2].strip())
@@ -28,7 +28,8 @@ if os.path.exists(file):
         raise Exception('file already exists!')
     with open(file) as f:
         for t in f.readlines():
-            has.add(t.strip())
+            r, n = t.strip().split()
+            has.add((r, n))
     
 
 pulls = get_repo_info(repo, 'pull')
@@ -40,10 +41,10 @@ with open(file, 'a+') as f:
     for p in ps:
         if check_large(p):
             continue
-        if str(p['number']) in has:
+        if (repo, str(p['number'])) in has:
             continue
         cnt += 1
-        print(p['number'], file=f)
+        print(repo, p['number'], file=f)
 
         if cnt == gen_num:
             break
