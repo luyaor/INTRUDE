@@ -55,6 +55,18 @@ RQ3:
  
    (It will print topK recall for our method and another method to stdout.)
 
+RQ4:
+1. `python rq4.py`
+
+    (It will take `data/small_sample_for_precision.txt` & `data/small_sample_for_recall.txt` as input, and write the output into files: `evaluation/small_sample_for_precision.txt_XXXX.out.txt` & `evaluation/small_sample_for_recall.txt_XXXX.out.txt`)
+   
+2. manually label **all** the output files: `evaluation/small_sample_for_precision.txt_XXXX.out.txt`, add Y/N/Unknown at end (see `evaluation/small_sample_for_precision.txt_new_example.out` as example)
+
+3. `python rq4_parse.py`
+
+   (It will print precision for all the leave-one-out models under a fixed recall to stdout.)
+
+
 ---
 Main API:
 ```
