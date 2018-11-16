@@ -113,15 +113,6 @@ detect_on_cross_forks.detect_on_pr(repo_name)
 ```
 
 
-
-stimulate_part_pr.py: stimulate "part PR detection".
-
-``` python
-simulate(repo, pr_num1, pr_num2)
-```
-
-
-
 test_commit.py: compare on granularity of commits.
 
 
