@@ -18,11 +18,7 @@ repo = sys.argv[1].strip()
 openprs = git.api.request('GET', 'repos/%s/pulls?state=open' % (repo))
 # git.get_repo_info(repo, 'pull', True) # refresh pull requests list
 
-import logging
-import logging_config
-logger = logging.getLogger(__name__)
-
 for openpr in openprs:
     num1 = str(openpr['number'])
     num2, sim = detect.detect_one(repo, num1)
-    logger.critical("%s %s : %s %.4f" % (repo, num1, str(num2), sim))
+    print("%s %s : %s %.4f" % (repo, num1, str(num2), sim))
