@@ -76,6 +76,8 @@ python detect.py repo pr_num # detect one PR
 python openpr_detect.py repo # detect all the open PRs of repo
 
 python detect_on_cross_forks.py repo1 repo2 # detect the PRs between repo1 and repo2
+
+python print_html.py result_file # print html for the PR pairs
 ```
 
 ---
