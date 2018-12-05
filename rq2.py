@@ -8,6 +8,7 @@ import clf
 import comp
 import git
 import fetch_raw_diff
+from util import localfile
 
 def generate_part_pull(pull):
     commits = git.get_pull_commit(pull)
@@ -61,7 +62,7 @@ def simulate(repo, num1, num2):
     for c1 in git.get_pull_commit(p1):
         for c2 in git.get_pull_commit(p2):
             if (len(c1['commit']['message']) > 0) and (c1['commit']['message'] == c2['commit']['message']): # repeat commit
-                return 2, [], [], []
+                return 2, [], [], [], []
     '''
     
     try:
@@ -69,13 +70,14 @@ def simulate(repo, num1, num2):
         all_pb = generate_part_pull(p2)
     except Exception as e:
         print('error on', repo, num1, num2, ':', e)
-        return -1, [], [], []
+        return -1, [], [], [], []
     
     # print('commit len=', len(all_pb), len(all_pb))
     
     history = []
     history_ret = []
     history_last = []
+    history_commit = []
 
     l_a, l_b = len(all_pa), len(all_pb)
     num_a, num_b = 0, 0
@@ -90,9 +92,11 @@ def simulate(repo, num1, num2):
         if (pb is None) or (pa and (pa['time'] < pb['time'])):
             num_a += 1
             now_a = pa
+            cur_commit = copy.deepcopy(pa)
         else:
             num_b += 1
             now_b = pb
+            cur_commit = copy.deepcopy(pb)
         
         if now_a and now_b:
             ret = comp.calc_sim(now_a, now_b)
@@ -107,8 +111,9 @@ def simulate(repo, num1, num2):
             history.append(s)
             history_ret.append(ret)
             history_last.append((l_a - num_a, l_b - num_b))
-    
-    return 1, history, history_ret, history_last
+            history_commit.append(cur_commit)
+
+    return 1, history, history_ret, history_last, history_commit
 
 m = clf.classify()
 
@@ -137,6 +142,7 @@ if __name__ == '__main__':
         pass
 
     result = []
+    all_ret = []
     
     with open(in_file) as f:
         pairs = f.readlines()
@@ -151,7 +157,7 @@ if __name__ == '__main__':
                 clf.init_model_with_repo(r)
                 last_repo = r
             
-            status, history, history_ret, history_last = simulate(r, n1, n2)
+            status, history, history_ret, history_last, history_commit = simulate(r, n1, n2)
             
             for i in range(len(history)):
                 history[i] = (history[i], max(history_last[i][0], history_last[i][1]))
@@ -159,6 +165,11 @@ if __name__ == '__main__':
             if status >= 0:
                 with open(out_file, 'a+') as outf:
                     print(r, n1, n2, ':', history, file=outf)
+                
+                all_ret.append({'repo': r, 'num1': n1, 'num2': n2, 'history': history_commit})
+    
+    localfile.write_to_file(out_file + '.all_commit', all_ret)
+
 
 
 
