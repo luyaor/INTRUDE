@@ -29,8 +29,6 @@ Dataset:
 
 [Non-duplicate PRs for testing set](https://github.com/FancyCoder0/INTRUDE/blob/master/data/clf/second_nondup.txt)
 
-[PRs for RQ1 precision evaluation](https://github.com/FancyCoder0/INTRUDE/blob/master/data/random_sample_select_pr.txt)
-
 [labeled results for RQ1 precision evaluation](https://github.com/FancyCoder0/INTRUDE/blob/master/evaluation/random_sample_select_pr_result_labeled_by_authors.txt)
 
 ---
@@ -184,15 +182,6 @@ fetch_raw_diff.py: Get data from API, parse the raw diff.
 parse_diff(file_name, diff) # parse raw diff
 fetch_raw_diff(url) # parse raw diff from GitHub API
 ```
-
-
-
-gen.py: Generate the random pairs & potential pairs(from duplicate labels)
-
-``` python
-repo, pr_num1, pr_num2 = random_pairs()
-```
-
 
 
 ---
