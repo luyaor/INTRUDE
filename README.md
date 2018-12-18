@@ -29,7 +29,7 @@ Dataset:
 
 [Non-duplicate PRs for testing set](https://github.com/FancyCoder0/INTRUDE/blob/master/data/clf/second_nondup.txt)
 
-[Selected PRs for RQ1 precision evaluation](https://github.com/FancyCoder0/INTRUDE/blob/master/data/random_sample_select_pr.txt)
+[PRs for RQ1 precision evaluation](https://github.com/FancyCoder0/INTRUDE/blob/master/data/random_sample_select_pr.txt)
 
 ---
 
