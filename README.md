@@ -79,9 +79,11 @@ RQ3:
 
 RQ4:
 1. `python gen_select_subset_pr.py data/small_sample_for_precision.txt 70`
+
     (It will generate `data/small_sample_for_precision.txt` using random sampling)
 
     `python gen_select_subset_pr_pairs.py data/clf/second_msr_pairs.txt data/small_sample_for_recall.txt 200`
+    
     (It will generate `data/small_sample_for_recall.txt` using random sampling)
     
 2. `python rq4.py`
