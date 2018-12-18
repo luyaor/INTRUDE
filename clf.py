@@ -38,15 +38,6 @@ dataset = [
     [data_folder + '/second_nondup.txt', 0, 'test'],
 ]
 
-'''
-dataset += [
-    [data_folder + '/manual_label_false_positive.txt', 0, 'test'],
-    [data_folder + '/manual_label_true_positive.txt', 1, 'test'],
-    [data_folder + '/openpr_label_false_positive.txt', 0, 'test'],
-    [data_folder + '/openpr_label_true_positive.txt', 1, 'test'],
-]
-'''
-
 # model save name
 model_data_save_path_suffix = 'ok_text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
 

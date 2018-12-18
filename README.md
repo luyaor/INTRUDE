@@ -37,13 +37,17 @@ Dataset:
 
 RQ1:
 
-1. `python rq1.py`
+1. `python gen_select_subset_pr.py data/random_sample_select_pr.txt 400`
+
+    (It will generate `data/random_sample_select_pr.txt` using random sampling)
+
+2. `python rq1.py`
     
-    (It will take `data/random_sample_select_pr.txt` & `data/clf/second_msr_pairs.txt` as input, and write the output into files: `evaluation/random_sample_select_pr_result.txt` & `evaluation/msr_second_part_result.txt`.)
+    (It will take `data/random_sample_select_pr.txt` & `data/clf/second_msr_pairs.txt` as input, and write the output into files: `evaluation/random_sample_select_pr_result.txt` & `evaluation/msr_second_part_result.txt`)
 
-2. manually label output file: `evaluation/random_sample_select_pr_result.txt`, add Y/N/Unknown at end (see `evaluation/random_sample_select_pr_result_example.txt` as example)
+3. manually label output file: `evaluation/random_sample_select_pr_result.txt`, add Y/N/Unknown at end (see `evaluation/random_sample_select_pr_result_example.txt` as example)
 
-3. `python rq1_parse.py`
+4. `python rq1_parse.py`
 
    (It will print precision & recall at different threshold to stdout.)
 
@@ -74,13 +78,19 @@ RQ3:
    (It will print topK recall for our method and another method to stdout.)
 
 RQ4:
-1. `python rq4.py`
+1. `python gen_select_subset_pr.py data/small_sample_for_precision.txt 70`
+    (It will generate `data/small_sample_for_precision.txt` using random sampling)
+
+    `python gen_select_subset_pr_pairs.py data/clf/second_msr_pairs.txt data/small_sample_for_recall.txt 200`
+    (It will generate `data/small_sample_for_recall.txt` using random sampling)
+    
+2. `python rq4.py`
 
     (It will take `data/small_sample_for_precision.txt` & `data/small_sample_for_recall.txt` as input, and write the output into files: `evaluation/small_sample_for_precision.txt_XXXX.out.txt` & `evaluation/small_sample_for_recall.txt_XXXX.out.txt`)
    
-2. manually label **all** the output files: `evaluation/small_sample_for_precision.txt_XXXX.out.txt`, add Y/N/Unknown at end (see `evaluation/small_sample_for_precision.txt_new_example.out` as example)
+3. manually label **all** the output files: `evaluation/small_sample_for_precision.txt_XXXX.out.txt`, add Y/N/Unknown at end (see `evaluation/small_sample_for_precision.txt_new_example.out` as example)
 
-3. `python rq4_parse.py`
+4. `python rq4_parse.py`
 
    (It will print precision for all the leave-one-out models under a fixed recall to stdout.)
 
