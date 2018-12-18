@@ -17,6 +17,16 @@ nlp.py: `model_path`
 
 ---
 
+Dataset:
+[MSR dupPR](https://github.com/FancyCoder0/INTRUDE/blob/master/data/msr_positive_pairs.txt)
+[MSR dupPR for training set](https://github.com/FancyCoder0/INTRUDE/blob/master/data/clf/first_msr_pairs.txt)
+[MSR dupPR for testing set](https://github.com/FancyCoder0/INTRUDE/blob/master/data/clf/second_msr_pairs.txt)
+[Non duplicate PR for training set](https://github.com/FancyCoder0/INTRUDE/blob/master/data/clf/first_nondup.txt)
+[Non duplicate PR for testing set](https://github.com/FancyCoder0/INTRUDE/blob/master/data/clf/second_nondup.txt)
+
+
+---
+
 RQ1:
 
 1. `python rq1.py`
