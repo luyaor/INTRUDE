@@ -11,9 +11,11 @@ sklearn, numpy, SciPy, matplotlib, gensim, nltk, bs4, flask, GitHub-Flask
 
 Configuration:
 
-git.py: `LOCAL_DATA_PATH`, `access_token`
+git.py: `LOCAL_DATA_PATH` (for storing some data in local)
 
-nlp.py: `model_path`
+git.py: `access_token` (for using GitHub API to fetch data)
+
+nlp.py: `model_path` (for storing the model in local)
 
 ---
 
