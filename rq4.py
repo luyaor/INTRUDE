@@ -69,7 +69,12 @@ def run(leave_way, infile):
                 print('pass', (r, n2))
                 continue
 
-            n1, proba = detect.get_topK(r, n2 , 1, True, way)[0]
+            ret = detect.get_topK(r, n2 , 1, True, way)
+            
+            if len(ret) < 1:
+                n1, proba = -1, -1
+            else:
+                n1, proba = ret[0]
 
             with open(out, 'a') as outf:
                 print(r, n2, n1, proba, sep='\t', file=outf)
