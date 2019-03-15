@@ -22,6 +22,8 @@ filter_overlap_author = False
 filter_out_too_big_pull_flag = False
 filter_same_author_and_already_mentioned = True
 
+filter_version_number_diff = True
+
 def get_time(t):
     return datetime.strptime(t, "%Y-%m-%dT%H:%M:%SZ")
 
@@ -46,6 +48,11 @@ def check_pro_pick(p1, p2):
         return True
     return False
 
+def check_subset(p1, p2):
+    s1 = set([x[1] for x in pull_commit_sha(p1)])
+    s2 = set([x[1] for x in pull_commit_sha(p2)])
+    return s1.issubet(s2) || s2.issubet(s1)
+
 def check_pro_pick_with_num(r, n1, n2):
     return check_pro_pick(get_pull(r, n1), get_pull(r, n2))
 
@@ -60,7 +67,7 @@ def have_commit_overlap(p1, p2):
     return False
 
     
-def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
+def get_topK(repo, num1, topK=10, print_progress=False, use_way='new'):
     global last_detect_repo
     if last_detect_repo != repo:
         last_detect_repo = repo
@@ -126,7 +133,11 @@ def get_topK(repo, num1, topK=30, print_progress=False, use_way='new'):
                 continue
             if have_commit_overlap(pullA, pull):
                 continue
-
+        
+        if filter_version_number_diff:
+            if check_version_numbers(pullA, pull):
+                continue
+            
         if print_progress:
             if cnt % 100 == 0:
                 print('progress = ', 1.0 * cnt / tot)        
@@ -165,10 +176,10 @@ def run_list(repo, renew=False, run_num=200, rerun=False):
         
         print('Run on PR #%s' % num1)
         
-        topk = get_topK(repo, num1, 10)
+        topk = get_topK(repo, num1)
         if len(topk) == 0:
             continue
-
+        
         num2, prob = topk[0][0], topk[0][1]
         vet = get_pr_sim_vector(pull, get_pull(repo, num2))
         

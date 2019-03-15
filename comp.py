@@ -23,7 +23,7 @@ extract_sim_type = 'ori_and_overlap'
 
 add_timedelta = False
 add_conf = False
-
+add_commit_message = True
 
 # ---------------------------------------------------------------------------
 
@@ -225,19 +225,31 @@ def check_pattern(A, B):
     a_text = str(A["title"]) + ' ' + str(A["body"])
     b_text = str(B["title"]) + ' ' + str(B["body"])
 
-    a_set = set(get_numbers(a_text) + get_version_numbers(a_text)) - ab_num
-    b_set = set(get_numbers(b_text) + get_version_numbers(b_text)) - ab_num
+    a_set = set(get_numbers(a_text)) - ab_num
+    b_set = set(get_numbers(b_text)) - ab_num
     if a_set & b_set:
         return 1
     else:
-        def get_reasonable_numbers(x):
-            return get_pr_and_issue_numbers(x) + get_version_numbers(x)
-
-        a_set = set(get_reasonable_numbers(a_text)) - ab_num
-        b_set = set(get_reasonable_numbers(b_text)) - ab_num
+        a_set = set(get_pr_and_issue_numbers(a_text)) - ab_num
+        b_set = set(get_pr_and_issue_numbers(b_text)) - ab_num
         if a_set and b_set and (a_set != b_set):
             return -1
         return 0
+
+def check_version_numbers(A, B):
+    ab_num = set([A["number"], B["number"]])
+    a_text = str(A["title"]) + ' ' + str(A["body"])
+    b_text = str(B["title"]) + ' ' + str(B["body"])
+
+    a_set = set(get_version_numbers(a_text))
+    b_set = set(get_version_numbers(b_text))
+    if a_set & b_set:
+        return 1
+    elif a_set and b_set and (len(a_set & b_set) == 0):
+        return -1
+    else:
+        return 0
+    
 
 def get_code_sim(A, B):
     A_overlap_code_tokens = get_code_tokens(A)
@@ -272,7 +284,8 @@ def get_code_sim(A, B):
 
 
 def calc_sim(A, B):
-    pattern = check_pattern(A, B)
+    pattern_issue_number = check_pattern(A, B)
+    # pattern_version_number = check_version_numbers(A, B)
     title_sim = get_text_sim(A["title"], B["title"])
     desc_sim = get_text_sim(A["body"], B["body"])
     file_list_sim = list_similarity(get_file_list(A), get_file_list(B))
@@ -309,7 +322,7 @@ def calc_sim(A, B):
             'code': code_sim,
             'file_list': [file_list_sim, overlap_files_len],
             'location': location_sim, 
-            'pattern': [pattern],
+            'pattern': [pattern_issue_number],
            }
     
     if add_conf:
@@ -324,7 +337,17 @@ def calc_sim(A, B):
     if add_timedelta:
         delta_time = abs((get_time(A['created_at']) - get_time(B['created_at'])).days)
         ret['time'] = [delta_time]
-
+    
+    if add_commit_message:
+        def concat_commits(commits):
+            total_message = ''
+            for c in commits:
+                message = c['commit']['message']
+                total_message += message + '\n'
+            return total_message
+        
+        ret['commit_message'] = [get_text_sim(concat_commits(get_pull_commit(A)), concat_commits(get_pull_commit(B)))]
+    
     return ret
 
 def sim_to_vet(r):
@@ -337,6 +360,9 @@ def sim_to_vet(r):
     
     if add_conf:
         vet += r['conf']
+    
+    if add_commit_message:
+        vet += r['commit_message']
     
     return vet
 
