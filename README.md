@@ -22,6 +22,7 @@ nlp.py: `model_path` (for storing the model in local)
 Dataset:
 
 [dupPR for training set](https://github.com/FancyCoder0/INTRUDE/blob/master/data/clf/first_msr_pairs.txt)
+Reference paper: Yu, Yue, et al. "A dataset of duplicate pull-requests in github." Proceedings of the 15th International Conference on Mining Software Repositories. ACM, 2018. (link: http://yuyue.github.io/res/paper/DupPR-msr2017.pdf)
 
 [dupPR for testing set](https://github.com/FancyCoder0/INTRUDE/blob/master/data/clf/second_msr_pairs.txt)
 
