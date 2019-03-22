@@ -39,7 +39,7 @@ dataset = [
 ]
 
 # model save name
-model_data_save_path_suffix = 'ok_text_%s_code_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type)
+model_data_save_path_suffix = 'ok_text_%s_code_%s_%s_%s' % (text_sim_type, code_sim_type, extract_sim_type, feature_conf)
 
 if add_timedelta:
     model_data_save_path_suffix += '_add_time'
@@ -154,11 +154,11 @@ def get_feature_vector(data, label, renew=False, out=None):
         
         print('pairs num=', len(p[r]))
         
-        '''
+        
         # sequence
         cnt = 0
         for z in p[r]:
-            print(r, z[0], z[1])
+            # print(r, z[0], z[1])
             
             x0, y0 = get_sim(r, z[0], z[1]), z[2]
             X.append(x0)
@@ -166,10 +166,9 @@ def get_feature_vector(data, label, renew=False, out=None):
             print(r, z[0], z[1], x0, y0, file=out_file)
             
             cnt += 1
-            if cnt % 1 == 0:
+            if cnt % 100 == 0:
                 print('current:', r, cnt)
         '''
-
         # run parallel
         for label in [0, 1]:
             pairs = []
@@ -180,7 +179,7 @@ def get_feature_vector(data, label, renew=False, out=None):
                 result = pool.map(get_sim_wrap, pairs)
             X.extend(result)
             y.extend([label for i in range(len(result))])
-        
+        '''
 
     out_file.close()
 

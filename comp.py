@@ -25,6 +25,14 @@ add_timedelta = False
 add_conf = False
 add_commit_message = True
 
+feature_conf = ''
+if add_timedelta:
+    feature_conf += '_time'
+if add_conf:
+    feature_conf += '_conf'
+if add_commit_message:
+    feature_conf += '_commit_message'
+
 # ---------------------------------------------------------------------------
 
 def counter_similarity(A_counter, B_counter):
@@ -346,7 +354,12 @@ def calc_sim(A, B):
                 total_message += message + '\n'
             return total_message
         
-        ret['commit_message'] = [get_text_sim(concat_commits(get_pull_commit(A)), concat_commits(get_pull_commit(B)))]
+        try:
+            commit_sim = get_text_sim(concat_commits(get_pull_commit(A)), concat_commits(get_pull_commit(B)))
+        except:
+            commit_sim = [0.0]
+
+        ret['commit_message'] = commit_sim
     
     return ret
 

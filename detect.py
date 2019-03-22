@@ -51,7 +51,7 @@ def check_pro_pick(p1, p2):
 def check_subset(p1, p2):
     s1 = set([x[1] for x in pull_commit_sha(p1)])
     s2 = set([x[1] for x in pull_commit_sha(p2)])
-    return s1.issubet(s2) || s2.issubet(s1)
+    return s1.issubet(s2) or s2.issubet(s1)
 
 def check_pro_pick_with_num(r, n1, n2):
     return check_pro_pick(get_pull(r, n1), get_pull(r, n2))
