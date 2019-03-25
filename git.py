@@ -256,6 +256,10 @@ def get_another_pull(pull, renew=False):
     localfile.write_to_file(save_path, result)
     return result
 
+
+
+
+
 def fetch_file_list(pull, renew=False):
     repo, num = pull["base"]["repo"]["full_name"], str(pull["number"])
     save_path = LOCAL_DATA_PATH + '/pr_data/' + repo + '/' + num + '/raw_diff.json'
@@ -330,3 +334,4 @@ if __name__ == "__main__":
     print(len(fetch_file_list(get_pull('FancyCoder0/INFOX', '113', True))))
     print(get_another_pull(get_pull('facebook/react', '12503'), True))
     print([x['commit']['message'] for x in get_pull_commit(get_pull('facebook/react', '12503'),True)])
+
