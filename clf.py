@@ -34,7 +34,9 @@ data_folder = 'data/clf'
 dataset = [
     [data_folder + '/first_msr_pairs.txt', 1, 'train'],
     [data_folder + '/second_msr_pairs.txt', 1, 'test'],
-    [data_folder + '/first_nondup.txt', 0, 'train'],
+    # [data_folder + '/first_nondup.txt', 0, 'train'],
+    # [data_folder + '/trainset_allpr.txt', 0, 'train'],
+    [data_folder + '/trainset_only_merge_neg.txt', 0, 'train'],
     [data_folder + '/second_nondup.txt', 0, 'test'],
 ]
 
