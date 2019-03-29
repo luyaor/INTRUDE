@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f98ee37-3eb9-4b65-870f-7806848531d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/get_pr_pair_description.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git.py" beforeDir="false" afterPath="$PROJECT_DIR$/git.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/INTRUDE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/INTRUDE.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,16 +16,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/clf/first_nondup_feature_vector_ok_text_lsi_code_tfidf_ori_and_overlap_X.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2366" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fetch_raw_diff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-453">
+            <state>
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -34,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/git.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="212" column="4" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="4" />
+            <state relative-caret-position="70">
+              <caret line="212" column="7" selection-start-line="212" selection-start-column="7" selection-end-line="212" selection-end-column="7" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -46,45 +41,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
-              <folding>
-                <element signature="e#856#1077#0" />
-                <element signature="e#1757#1819#0" />
-                <element signature="e#1894#2600#0" />
-                <element signature="e#1979#2062#0" />
-                <element signature="e#2154#2600#0" />
-                <element signature="e#2218#2500#0" />
-                <element signature="e#2239#2414#0" />
-                <element signature="e#2285#2414#0" />
-                <element signature="e#2653#3057#0" />
-                <element signature="e#2911#3057#0" />
-                <element signature="e#3245#3266#0" />
-                <element signature="e#3332#5440#0" />
-                <element signature="e#3642#3794#0" />
-                <element signature="e#3956#4215#0" />
-                <element signature="e#4043#4132#0" />
-                <element signature="e#4383#5301#0" />
-                <element signature="e#4606#4904#0" />
-                <element signature="e#4913#5301#1" />
-                <element signature="e#5516#11130#0" />
-                <element signature="e#5565#6575#0" />
-                <element signature="e#5670#5962#0" />
-                <element signature="e#5816#5865#0" />
-                <element signature="e#5915#5962#0" />
-                <element signature="e#6032#6319#0" />
-                <element signature="e#6723#7092#1" />
-                <element signature="e#7126#7468#0" />
-                <element signature="e#7161#7346#0" />
-                <element signature="e#7201#7346#0" />
-                <element signature="e#7268#7321#0" />
-                <element signature="e#7644#7658#0" />
-                <element signature="e#8256#8486#0" />
-                <element signature="e#8649#8663#0" />
-                <element signature="e#9200#10031#1" />
-                <element signature="e#10071#10478#0" />
-                <element signature="e#10509#11114#0" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="194" column="39" selection-start-line="194" selection-start-column="39" selection-end-line="194" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="695">
+              <caret line="106" column="6" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -92,17 +59,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="386" column="31" lean-forward="true" selection-start-line="386" selection-start-column="22" selection-end-line="386" selection-end-column="31" />
+            <state relative-caret-position="156">
+              <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/wordext.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_pr_pair_description.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="360">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -114,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/print_html.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -126,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/show_result_ml_feature.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="11" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="16" selection-end-column="11" />
+              <caret line="16" column="11" selection-start-line="11" selection-start-column="7" selection-end-line="16" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -145,6 +121,8 @@
       <find>commit</find>
       <find>get_sim_wrap</find>
       <find>get_pull</find>
+      <find>dataset</find>
+      <find>ipynb</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,14 +134,15 @@
         <option value="$PROJECT_DIR$/getPRPairDescription.py" />
         <option value="$PROJECT_DIR$/git.py" />
         <option value="$PROJECT_DIR$/get_pr_pair_description.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-255" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1070" />
     <option name="y" value="-1057" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="width" value="2006" />
+    <option name="height" value="1007" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -176,11 +155,6 @@
             <path>
               <item name="INTRUDE" type="b2602c69:ProjectViewProjectNode" />
               <item name="INTRUDE" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="INTRUDE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="INTRUDE" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -208,6 +182,28 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="INTRUDE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="INTRUDE" type="Python.FlaskServer" factoryName="Flask server">
       <module name="INTRUDE" />
       <option name="target" value="$PROJECT_DIR$/git.py" />
@@ -239,21 +235,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2621000" />
+    <option name="totallyTimeSpent" value="4033000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-255" y="-1057" width="1920" height="1057" extended-state="0" />
+    <frame x="-1274" y="-1057" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17891374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -261,11 +251,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.15811373" />
+      <window_info anchor="bottom" id="Python Console" order="11" visible="true" weight="0.13678756" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" x="0" y="0" width="310" height="613" id="Documentation" side_tool="true" visible="true" weight="0.09105431" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,20 +280,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/clf/first_nondup_feature_vector_ok_text_lsi_code_tfidf_ori_and_overlap_X.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2366" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fetch_raw_diff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-453">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/localfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -304,9 +287,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getPRPairDescription.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/getPRPairDescription.py" />
     <entry file="file://$PROJECT_DIR$/rq2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-259">
@@ -317,51 +298,7 @@
     <entry file="file://$PROJECT_DIR$/show_result_ml_feature.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="11" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
-          <folding>
-            <element signature="e#856#1077#0" />
-            <element signature="e#1757#1819#0" />
-            <element signature="e#1894#2600#0" />
-            <element signature="e#1979#2062#0" />
-            <element signature="e#2154#2600#0" />
-            <element signature="e#2218#2500#0" />
-            <element signature="e#2239#2414#0" />
-            <element signature="e#2285#2414#0" />
-            <element signature="e#2653#3057#0" />
-            <element signature="e#2911#3057#0" />
-            <element signature="e#3245#3266#0" />
-            <element signature="e#3332#5440#0" />
-            <element signature="e#3642#3794#0" />
-            <element signature="e#3956#4215#0" />
-            <element signature="e#4043#4132#0" />
-            <element signature="e#4383#5301#0" />
-            <element signature="e#4606#4904#0" />
-            <element signature="e#4913#5301#1" />
-            <element signature="e#5516#11130#0" />
-            <element signature="e#5565#6575#0" />
-            <element signature="e#5670#5962#0" />
-            <element signature="e#5816#5865#0" />
-            <element signature="e#5915#5962#0" />
-            <element signature="e#6032#6319#0" />
-            <element signature="e#6723#7092#1" />
-            <element signature="e#7126#7468#0" />
-            <element signature="e#7161#7346#0" />
-            <element signature="e#7201#7346#0" />
-            <element signature="e#7268#7321#0" />
-            <element signature="e#7644#7658#0" />
-            <element signature="e#8256#8486#0" />
-            <element signature="e#8649#8663#0" />
-            <element signature="e#9200#10031#1" />
-            <element signature="e#10071#10478#0" />
-            <element signature="e#10509#11114#0" />
-          </folding>
+          <caret line="16" column="11" selection-start-line="11" selection-start-column="7" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -371,37 +308,82 @@
     <entry file="file://$PROJECT_DIR$/print_html.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comp.py">
+    <entry file="file://$PROJECT_DIR$/data/clf/first_nondup.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="386" column="31" lean-forward="true" selection-start-line="386" selection-start-column="22" selection-end-line="386" selection-end-column="31" />
+        <state relative-caret-position="120">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clf/second_nondup.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_pr_pair_description.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clf/first_nondup_feature_vector_ok_text_lsi_code_tfidf_ori_and_overlap_X.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4496" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetch_raw_diff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/git.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="212" column="4" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="4" />
+        <state relative-caret-position="70">
+          <caret line="212" column="7" selection-start-line="212" selection-start-column="7" selection-end-line="212" selection-end-column="7" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_pr_pair_description.py">
+    <entry file="file://$PROJECT_DIR$/comp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="156">
+          <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/wordext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="194" column="39" selection-start-line="194" selection-start-column="39" selection-end-line="194" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="106" column="6" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
         </state>
       </provider>
     </entry>
