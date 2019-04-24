@@ -23,8 +23,7 @@ LOCAL_DATA_PATH = '/DATA/luyao'
 api = GitHub(app)
 @api.access_token_getter
 def token_getter():
-    # access_token = '9c34a60a61bfcb213b52d8b388f577f34c379987'
-    access_token = 'e105acd704034559dd533967873a294f5dccd9fa'
+    access_token = '9c34a60a61bfcb213b52d8b388f577f34c379987'
     return access_token
 
 def text2list_precheck(func):
